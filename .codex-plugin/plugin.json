@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Art direction and design review for mobile apps in SwiftUI, Jetpack Compose and React Native/Expo, checked on a simulator.",
   "author": {
-    "name": "therynamo",
-    "url": "https://github.com/therynamo"
+    "name": "taste-mobile contributors",
+    "url": "https://github.com/therynamo/taste-mobile"
   },
   "homepage": "https://therynamo.github.io/taste-mobile/",
   "repository": "https://github.com/therynamo/taste-mobile",
@@ -15,7 +15,7 @@
     "displayName": "taste-mobile",
     "shortDescription": "Art direction and design review for mobile apps.",
     "longDescription": "Deals one art direction from a studied corpus of shipped apps, makes the agent commit to it in writing, then lints the code, captures the simulator and critiques the screenshots before it reports.",
-    "developerName": "therynamo",
+    "developerName": "taste-mobile contributors",
     "category": "Design",
     "capabilities": [],
     "websiteURL": "https://therynamo.github.io/taste-mobile/",

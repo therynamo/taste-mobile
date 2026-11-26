@@ -3,10 +3,7 @@
   "platform": "ios",
   "verified_driver": true,
   "device": {
-    "udid": "FA72D619-F4DF-4349-A386-3F22B1E5B9D0",
-    "name": "taste-mobile-shared-budget",
-    "runtime": "iOS 26.5",
-    "state": "Booted"
+    "runtime": "iOS 26.5"
   },
   "captured_at": "2026-11-26T19:26:31.088Z",
   "passes": [

@@ -2,7 +2,7 @@
   "name": "taste-mobile",
   "description": "Art direction and design review for mobile apps in SwiftUI, Jetpack Compose and React Native/Expo, checked on a simulator.",
   "owner": {
-    "name": "therynamo"
+    "name": "taste-mobile contributors"
   },
   "plugins": [
     {
@@ -12,7 +12,7 @@
       "source": "./",
       "skills": ["./skills/taste-mobile"],
       "author": {
-        "name": "therynamo"
+        "name": "taste-mobile contributors"
       },
       "homepage": "https://therynamo.github.io/taste-mobile/",
       "repository": "https://github.com/therynamo/taste-mobile",

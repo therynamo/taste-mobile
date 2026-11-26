@@ -3,10 +3,7 @@
   "platform": "ios",
   "verified_driver": true,
   "device": {
-    "udid": "7E0E4DF6-AC6E-4D79-9D80-C6FA2B6C24B7",
-    "name": "taste-mobile-reading-assistant",
-    "runtime": "iOS 26.5",
-    "state": "Booted"
+    "runtime": "iOS 26.5"
   },
   "captured_at": "2026-11-26T19:28:57.464Z",
   "passes": [
