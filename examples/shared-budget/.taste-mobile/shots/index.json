@@ -1,0 +1,247 @@
+{
+  "round": 3,
+  "platform": "ios",
+  "verified_driver": true,
+  "device": {
+    "udid": "FA72D619-F4DF-4349-A386-3F22B1E5B9D0",
+    "name": "taste-mobile-shared-budget",
+    "runtime": "iOS 26.5",
+    "state": "Booted"
+  },
+  "captured_at": "2026-11-26T19:26:31.088Z",
+  "passes": [
+    "light",
+    "dark",
+    "large"
+  ],
+  "shots": [
+    {
+      "screen": "home",
+      "pass": "light",
+      "file": "light/home.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 295676,
+      "luminance": 0.859
+    },
+    {
+      "screen": "home-empty",
+      "pass": "light",
+      "file": "light/home-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 206994,
+      "luminance": 0.815
+    },
+    {
+      "screen": "home-over",
+      "pass": "light",
+      "file": "light/home-over.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 294663,
+      "luminance": 0.9
+    },
+    {
+      "screen": "add",
+      "pass": "light",
+      "file": "light/add.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 224505,
+      "luminance": 0.884
+    },
+    {
+      "screen": "add-saved",
+      "pass": "light",
+      "file": "light/add-saved.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 157625,
+      "luminance": 0.893
+    },
+    {
+      "screen": "paid",
+      "pass": "light",
+      "file": "light/paid.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 314451,
+      "luminance": 0.931
+    },
+    {
+      "screen": "month",
+      "pass": "light",
+      "file": "light/month.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 271602,
+      "luminance": 0.943
+    },
+    {
+      "screen": "home",
+      "pass": "dark",
+      "file": "dark/home.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 320457,
+      "luminance": 0.252
+    },
+    {
+      "screen": "home-empty",
+      "pass": "dark",
+      "file": "dark/home-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 205334,
+      "luminance": 0.501
+    },
+    {
+      "screen": "home-over",
+      "pass": "dark",
+      "file": "dark/home-over.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 317968,
+      "luminance": 0.127
+    },
+    {
+      "screen": "add",
+      "pass": "dark",
+      "file": "dark/add.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 222808,
+      "luminance": 0.135
+    },
+    {
+      "screen": "add-saved",
+      "pass": "dark",
+      "file": "dark/add-saved.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 158545,
+      "luminance": 0.143
+    },
+    {
+      "screen": "paid",
+      "pass": "dark",
+      "file": "dark/paid.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 335064,
+      "luminance": 0.105
+    },
+    {
+      "screen": "month",
+      "pass": "dark",
+      "file": "dark/month.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 287162,
+      "luminance": 0.144
+    },
+    {
+      "screen": "home",
+      "pass": "large",
+      "file": "large/home.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 336352,
+      "luminance": 0.823
+    },
+    {
+      "screen": "home-empty",
+      "pass": "large",
+      "file": "large/home-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 330616,
+      "luminance": 0.815
+    },
+    {
+      "screen": "home-over",
+      "pass": "large",
+      "file": "large/home-over.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 307748,
+      "luminance": 0.844
+    },
+    {
+      "screen": "add",
+      "pass": "large",
+      "file": "large/add.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 312427,
+      "luminance": 0.833
+    },
+    {
+      "screen": "add-saved",
+      "pass": "large",
+      "file": "large/add-saved.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 219822,
+      "luminance": 0.883
+    },
+    {
+      "screen": "paid",
+      "pass": "large",
+      "file": "large/paid.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 295244,
+      "luminance": 0.88
+    },
+    {
+      "screen": "month",
+      "pass": "large",
+      "file": "large/month.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 261704,
+      "luminance": 0.907
+    }
+  ],
+  "trees": [
+    {
+      "screen": "home",
+      "file": "tree/home.json"
+    },
+    {
+      "screen": "home-empty",
+      "file": "tree/home-empty.json"
+    },
+    {
+      "screen": "home-over",
+      "file": "tree/home-over.json"
+    },
+    {
+      "screen": "add",
+      "file": "tree/add.json"
+    },
+    {
+      "screen": "add-saved",
+      "file": "tree/add-saved.json"
+    },
+    {
+      "screen": "paid",
+      "file": "tree/paid.json"
+    },
+    {
+      "screen": "month",
+      "file": "tree/month.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": "C10",
+      "severity": "WARN",
+      "screen": "add",
+      "pass": "tree",
+      "message": "1 control with an accessibility frame under 44x44 pt: \"Cancel\" 77x36. Confirm the hit region is 44x44 or larger."
+    }
+  ]
+}

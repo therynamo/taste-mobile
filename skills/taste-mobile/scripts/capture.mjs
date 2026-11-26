@@ -50,6 +50,12 @@ export function hasIdb() {
   return idbState;
 }
 
+/** idb starts one idb_companion per simulator and leaves it running. Capture stops the ones it caused. */
+const companions = (udid) => {
+  const r = tryRun('pgrep', ['-f', `idb_companion --udid ${udid}`]);
+  return r.ok ? String(r.out).split('\n').map((s) => s.trim()).filter(Boolean) : [];
+};
+
 function idbTree(udid) {
   const r = tryRun('idb', ['ui', 'describe-all', '--udid', udid]);
   if (!r.ok) return null;
@@ -71,7 +77,10 @@ export function treeChecks(screen, tree) {
     return out;
   }
   const controls = tree.filter((e) => ['Button', 'Link', 'Switch', 'Slider', 'TextField', 'SearchField'].includes(e.type) && e.enabled !== false && e.frame);
-  const small = controls.filter((e) => e.frame.width > 0 && e.frame.height > 0 && (e.frame.width < 44 || e.frame.height < 44) && e.frame.height < 100);
+  // System chrome reports a frame smaller than its hit region: the sheet grabber, and bar buttons
+  // (36 pt or more, in the top 120 pt). A custom control placed up there is skipped too.
+  const systemChrome = (e) => e.AXLabel === 'Sheet Grabber' || (e.frame.y < 120 && Math.min(e.frame.width, e.frame.height) >= 36);
+  const small = controls.filter((e) => e.frame.width > 0 && e.frame.height > 0 && (e.frame.width < 44 || e.frame.height < 44) && e.frame.height < 100 && !systemChrome(e));
   const tiny = small.filter((e) => e.frame.width < 28 || e.frame.height < 28);
   const name = (e) => `"${(e.AXLabel || e.type).slice(0, 28)}" ${Math.round(e.frame.width)}x${Math.round(e.frame.height)}`;
   if (small.length) {
@@ -296,7 +305,7 @@ function androidDriver(serial) {
 const stateDir = (dir) => join(resolve(dir), '.taste-mobile');
 
 const SCREENS_TEMPLATE = {
-  _note: 'One entry per screen. Give each launch arguments (args) or a deep link (url) that opens it directly. Prefer args on iOS: a custom-scheme link shows an "Open in app?" dialog the first time it is used on a simulator. settleMs is the wait before the screenshot.',
+  _note: 'One entry per screen. Give each launch arguments (args) or a deep link (url) that opens it directly. Prefer args on iOS: a custom-scheme link shows an "Open in app?" dialog the first time it is used on a simulator. settleMs is the wait before the screenshot: raise it to about 3000 for a React Native cold start.',
   bundleId: 'com.example.app',
   settleMs: 1500,
   screens: [
@@ -332,7 +341,7 @@ Device: ${index.device.name} (${index.device.runtime})
 
 ## Checks from capture
 ${auto}
-
+${index.round > 1 ? `\n## Fixed since round ${index.round - 1}\n- TODO (each fix, and the screenshot that shows it. The last round's critique is in critique-round-${index.round - 1}.md)\n` : ''}
 ${CRITIQUE_PASSES.map(([name, q]) => `## ${name}\n${q}\n\n- TODO`).join('\n\n')}
 
 ## Top three fixes this round
@@ -405,6 +414,10 @@ function writeOutputs(dir, index, { freshCritique }) {
   writeFileSync(join(state, 'shots', 'index.json'), JSON.stringify(index, null, 2) + '\n');
   writeFileSync(join(state, 'shots', 'contact.html'), contactSheet(index));
   const critique = join(state, 'critique.md');
+  if (freshCritique && existsSync(critique) && index.round > 1) {
+    const kept = join(state, `critique-round-${index.round - 1}.md`);
+    if (!existsSync(kept)) writeFileSync(kept, readFileSync(critique));
+  }
   if (freshCritique || !existsSync(critique)) writeFileSync(critique, critiqueTemplate(index));
 }
 
@@ -440,6 +453,7 @@ async function cmdRun(args) {
   const device = driver.describe();
   if (driver.platform === 'ios' && device.state !== 'Booted') throw new Error(`${device.name} is not booted. Boot it first: xcrun simctl boot ${device.udid}`);
 
+  const companionsBefore = driver.platform === 'ios' ? companions(device.udid) : [];
   const passes = (args.passes ?? 'light,dark,large').split(',').map((p) => p.trim()).filter(Boolean);
   for (const p of passes) if (!PASSES[p]) throw new Error(`Unknown pass "${p}". Use light, dark, large.`);
   const settle = Number(cfg.settleMs ?? 1500);
@@ -489,6 +503,7 @@ async function cmdRun(args) {
   } finally {
     driver.restore();
     if (!args['keep-status-bar']) driver.statusBar(false);
+    if (driver.platform === 'ios') for (const pid of companions(device.udid)) if (!companionsBefore.includes(pid)) tryRun('kill', [pid]);
   }
 
   const index = analyse(dir, {
@@ -535,8 +550,11 @@ async function main() {
     mkdirSync(state, { recursive: true });
     const p = join(state, 'screens.json');
     if (existsSync(p)) return console.log(`Kept the existing ${p}`);
-    writeFileSync(p, JSON.stringify(SCREENS_TEMPLATE, null, 2) + '\n');
-    return console.log(`Wrote ${p}. Set bundleId and list every screen with a deep link or launch arguments.`);
+    const tpl = { ...SCREENS_TEMPLATE };
+    if (typeof args.bundle === 'string') tpl.bundleId = args.bundle;
+    if (typeof args.screens === 'string') tpl.screens = args.screens.split(',').map((s) => s.trim()).filter(Boolean).map((name) => ({ name, args: ['-screen', name] }));
+    writeFileSync(p, JSON.stringify(tpl, null, 2) + '\n');
+    return console.log(`Wrote ${p}. ${typeof args.bundle === 'string' ? '' : 'Set bundleId (or pass --bundle <id> --screens home,detail). '}List every screen with a deep link or launch arguments.`);
   }
   if (cmd === 'devices') {
     const b = bootedDevices();
@@ -560,7 +578,8 @@ async function main() {
   }
   console.log(`taste-mobile capture
 
-  node capture.mjs init [--dir .]                 write .taste-mobile/screens.json to edit
+  node capture.mjs init [--dir .] [--bundle <id>] [--screens home,detail]
+                                                  write .taste-mobile/screens.json to edit
   node capture.mjs devices                        list booted iOS simulators
   node capture.mjs run --udid <udid> [--dir .]    light, dark and largest-text screenshots of every screen
         [--passes light,dark,large] [--keep-status-bar] [--android [--serial <id>]]

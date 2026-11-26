@@ -110,6 +110,11 @@ xcrun simctl spawn <udid> defaults write com.apple.Accessibility ReduceMotionEna
   semantic colours instead of fixed hex.
 - Icons: one open family such as `lucide-react-native`. SF Symbols only through `expo-symbols` on
   iOS, with the open family as the Android fallback.
+- Reported by the Expo example build (SDK 58), not re-tested: content with `flex: 1` rendered
+  blank inside a `formSheet`, so give sheet content its own height. React Native scales every
+  text style by one factor (3.57 at the largest size), so set a `maxFontSizeMultiplier` ceiling
+  per style on display text, never 1. `@expo/vector-icons` is not in the blank template: install
+  an icon family or draw the few icons the app needs.
 
 ### Fonts: the Expo variable-font cliff
 

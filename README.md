@@ -49,11 +49,30 @@ Other things it does:
 | A review, no build | "Use taste-mobile to review these screens. What reads as a default?" |
 | A direction you already chose | "Use taste-mobile with the glance-board direction." |
 
+## What it makes
+
+Three apps built by an agent with the skill, each from a three-sentence brief and an unseeded
+deal: a shared budget (SwiftUI), a club's match day (SwiftUI) and a reading assistant (Expo).
+
+<table>
+<tr>
+<td><img src="examples/shared-budget/screenshots/home.light.png" width="250" alt="Shared budget app: what is left this month, as a level"></td>
+<td><img src="examples/match-day/screenshots/today.light.png" width="250" alt="Match day app: a live score on a painted scoreboard"></td>
+<td><img src="examples/reading-assistant/screenshots/answer.light.png" width="250" alt="Reading assistant app: an answer set as footnotes"></td>
+</tr>
+<tr>
+<td>Loud Owned Shell</td><td>Broadcast Scoreboard</td><td>Typographic Writing Surface</td>
+</tr>
+</table>
+
+Source, design files, critiques and every screenshot are in [examples/](examples/). No one has
+run these on a phone: motion, haptics and sound are unchecked.
+
 ## How a run goes
 
 ```mermaid
 flowchart TD
-  A[Read the brief<br/>kind, audience, platform, stack] --> B[Deal three hands]
+  A[Read the brief<br/>kind, audience, platform, stack] --> B[Deal up to three hands]
   B --> C[Commit in MOBILE-DESIGN.md<br/>metaphor, restraint rule, not doing]
   C --> D[Build<br/>tokens, shell, one hero screen, the rest]
   D --> E[Lint the code]
@@ -85,7 +104,7 @@ flowchart TD
 ```
 skills/taste-mobile/
   SKILL.md             the run, the house rules, the tells
-  scripts/deal.mjs     deals three hands, writes MOBILE-DESIGN.md
+  scripts/deal.mjs     deals up to three hands, writes MOBILE-DESIGN.md
   scripts/lint.mjs     40 rules: motion, haptics, sound, tells, money, accessibility, platform
   scripts/capture.mjs  drives a booted simulator: light, dark, largest text
   scripts/gate.mjs     GATE: PASS | FAIL | OPEN, three rounds at most
@@ -93,7 +112,7 @@ skills/taste-mobile/
   references/          iOS, Android, stacks, motion, haptics and sound, assets, tells,
                        verification, and six modules: money, crypto, chat and AI,
                        sports, fitness, feed
-examples/              one brief dealt four ways
+examples/              three apps built with the skill, and one brief dealt four ways
 research/corpus/       the 114 apps the directions came from, as notes (no screenshots)
 tests/                 node --test tests/*.test.mjs
 ```

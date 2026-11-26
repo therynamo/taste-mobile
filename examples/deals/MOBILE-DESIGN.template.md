@@ -23,7 +23,7 @@ In this app, TODO (the domain object) becomes TODO (a real-world analogy).
 ## Governing asset
 - Dealt: one hero readout line (a bold value with a smaller same-baseline unit) that repeats on the widget and the Live Activity
 - What it is in this app: TODO
-- Where it appears: TODO (name at least three surfaces, for example home, detail, widget)
+- Where it appears: TODO (name at least three places, for example home, a result sheet, a widget. An asset dealt as "one surface" means one per screen: name the three screens that carry it)
 
 ## Display treatment
 - Dealt: bold values with smaller same-baseline unit suffixes
@@ -44,12 +44,15 @@ In this app, TODO (the domain object) becomes TODO (a real-world analogy).
 - Material: Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity.
 
 ## Modes
+- The Mode under Axes is the home mode: the one the design is drawn in first. It does not rule out the other.
 - Supported: TODO (light and dark | dark only | light only; give the reason if only one)
 
 ## Colour roles
 | Role | Light | Dark | Used for |
 |---|---|---|---|
 | TODO | | | |
+
+- Increased contrast: TODO (which roles change and to what, or "system colours only")
 
 ## Hero moments
 Budget: 2. Everything else stays calm.

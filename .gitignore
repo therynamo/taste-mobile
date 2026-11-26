@@ -11,3 +11,7 @@ examples/*/android/
 
 # Taste Skill build state for the landing page (local only)
 docs/.taste-skill/
+
+# Examples: full-size captures are rebuilt by capture.mjs; half-size copies live in screenshots/
+examples/*/.taste-mobile/shots/*
+!examples/*/.taste-mobile/shots/index.json

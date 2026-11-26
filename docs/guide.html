@@ -35,6 +35,7 @@
     <li><a href="#checks">The checks</a></li>
     <li><a href="#verdict">The verdict</a></li>
     <li><a href="#best">Get the best results</a></li>
+    <li><a href="#examples">Examples</a></li>
     <li><a href="#missing">When something is missing</a></li>
     <li><a href="#caveats">Caveats</a></li>
     <li><a href="#disclaimers">Disclaimers</a></li>
@@ -274,6 +275,37 @@ cd taste-mobile
   </div>
 </section>
 
+<section id="examples">
+  <h2>Examples</h2>
+  <p>Three apps built by a coding agent with the skill. Each started from a three-sentence brief and an unseeded deal, and none was dealt twice. Source, design files and critiques are in the <a href="https://github.com/therynamo/taste-mobile/tree/main/examples">examples folder</a>.</p>
+
+  <h3>Shared budget. SwiftUI, Loud Owned Shell</h3>
+  <p>Metaphor: the month's budget becomes a measuring jug the two of you pour from. Rule: only what is left is ever lime.</p>
+  <div class="shots">
+    <figure><img src="examples/shared-budget.home.light.png" alt="Home: what is left" loading="lazy" width="603" height="1311"><figcaption>Home: what is left</figcaption></figure>
+    <figure><img src="examples/shared-budget.add-saved.light.png" alt="After a spend is saved" loading="lazy" width="603" height="1311"><figcaption>After a spend is saved</figcaption></figure>
+    <figure><img src="examples/shared-budget.month.dark.png" alt="The month, dark" loading="lazy" width="603" height="1311"><figcaption>The month, dark</figcaption></figure>
+  </div>
+
+  <h3>Match day. SwiftUI, Broadcast Scoreboard</h3>
+  <p>Metaphor: a match becomes the painted scoreboard at the end of the ground. Rule: only one surface per screen is flooded with team colour.</p>
+  <div class="shots">
+    <figure><img src="examples/match-day.today.light.png" alt="Today: the live score" loading="lazy" width="603" height="1311"><figcaption>Today: the live score</figcaption></figure>
+    <figure><img src="examples/match-day.match.dark.png" alt="A finished match, dark" loading="lazy" width="603" height="1311"><figcaption>A finished match, dark</figcaption></figure>
+    <figure><img src="examples/match-day.table.light.png" alt="The league table" loading="lazy" width="603" height="1311"><figcaption>The league table</figcaption></figure>
+  </div>
+
+  <h3>Reading assistant. Expo, Typographic Writing Surface</h3>
+  <p>Metaphor: an answer becomes a footnote set on the page of the book it is about. Rule: never put an answer in a bubble, a card or a thread.</p>
+  <div class="shots">
+    <figure><img src="examples/reading-assistant.book.light.png" alt="The book page" loading="lazy" width="603" height="1311"><figcaption>The book page</figcaption></figure>
+    <figure><img src="examples/reading-assistant.answer.light.png" alt="An answer with its passages" loading="lazy" width="603" height="1311"><figcaption>An answer with its passages</figcaption></figure>
+    <figure><img src="examples/reading-assistant.kept.dark.png" alt="Kept answers, dark" loading="lazy" width="603" height="1311"><figcaption>Kept answers, dark</figcaption></figure>
+  </div>
+
+  <p class="note">All three gates printed <code>GATE: PASS</code> with one item open: motion, haptics and sound. No one has run these apps on a phone, and an agent judged the screenshots, not a designer. Each example's README lists the weak spots it left.</p>
+</section>
+
 <section id="missing">
   <h2>When something is missing</h2>
   <div class="table-wrap">
@@ -325,7 +357,7 @@ cd taste-mobile
   <h3>Commands</h3>
   <pre><code>deal.mjs kinds                         # the 14 kinds
 deal.mjs directions                    # every direction and its status
-deal.mjs deal --kind &lt;kind&gt; --dir .    # deal three hands
+deal.mjs deal --kind &lt;kind&gt; --dir .    # deal up to three hands
 deal.mjs take 2 --dir .                # take another hand
 lint.mjs --dir .                       # LINT: PASS | FAIL
 lint.mjs --rules                       # list the rules
@@ -341,7 +373,7 @@ gate.mjs --dir .                       # GATE: PASS | FAIL | OPEN</code></pre>
   <table>
     <tbody>
       <tr><td><code>MOBILE-DESIGN.md</code></td><td>The commitments. Keep it in the repo.</td></tr>
-      <tr><td><code>.taste-mobile/deal.json</code></td><td>The three hands and which was taken.</td></tr>
+      <tr><td><code>.taste-mobile/deal.json</code></td><td>The hands dealt and which was taken.</td></tr>
       <tr><td><code>.taste-mobile/screens.json</code></td><td>Each screen and the launch arguments that open it.</td></tr>
       <tr><td><code>.taste-mobile/shots/</code></td><td>Screenshots by pass, <code>contact.html</code>, <code>index.json</code>.</td></tr>
       <tr><td><code>.taste-mobile/critique.md</code></td><td>The eight passes, answered, and the top three fixes.</td></tr>

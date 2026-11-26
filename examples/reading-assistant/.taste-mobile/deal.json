@@ -1,0 +1,149 @@
+{
+  "version": "0.1.0",
+  "seed": "641548",
+  "kind": "chat-ai",
+  "kind_label": "AI assistants, agents, answer engines, AI notes",
+  "audience": "general",
+  "platform": "ios",
+  "stack": "expo",
+  "brand": null,
+  "requested_direction": null,
+  "picked": "typographic-writing-surface",
+  "hands": [
+    {
+      "id": "typographic-writing-surface",
+      "name": "Typographic Writing Surface",
+      "seen_in": [
+        "bear",
+        "craft",
+        "tot"
+      ],
+      "signature": {
+        "typography": "The type is the interface. A custom geometric-humanist sans with about 1.6 line height and hybrid Markdown that keeps faint ** markers visible beside rendered bold (bear); a per-document serif or sans style (craft); a user choice of SF, a book serif or mono (tot).",
+        "color": "One theme accent for links, cursor and headings (bear red #dd4c4f on light, green on charcoal, amber); user-chosen document backdrops and page tints (craft); seven fixed dot colours each repainting its page (tot). Chrome otherwise grey or near-white.",
+        "shape": "A rounded page card about 20pt floating on a backdrop with concentric inner radii (craft); otherwise few drawn shapes: about 8-10pt tag pills, capsule and circle floating controls.",
+        "density": "Low: one note per screen, wide 28-30pt side margins.",
+        "navigation": "Chrome shrinks to floating capsules: a back circle and an info/more capsule (bear), a glass back circle, share capsule and a 3-icon glass capsule tab bar (craft), or seven coloured rings as the entire navigation with no tab bar (tot).",
+        "imagery": "None beyond the user's own covers (craft) and thin outline icons.",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning: flag persistent formatting toolbars, tab bars or feature chrome that compete with the page. Advanced features stay hidden until invoked (text-sourced from bear).",
+      "axes": {
+        "shell": "quiet: chrome recedes until asked for",
+        "mode": "user-chosen page tint",
+        "density": "low",
+        "composition": "editorially fixed",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "the page itself as the interface, with 28-30 pt margins",
+      "display_treatment": "a face the user chooses per document",
+      "hero_moments": [
+        "chrome receding when writing starts",
+        "switching between documents or slots"
+      ]
+    },
+    {
+      "id": "dark-pro-minimal",
+      "name": "Dark Pro Minimal",
+      "seen_in": [
+        "linear",
+        "raycast",
+        "perplexity",
+        "phantom",
+        "coinbase-wallet",
+        "discord"
+      ],
+      "signature": {
+        "typography": "A neutral grotesque with grey sentence-case section labels and no display flourish (Inter-like in linear, SF in raycast, an FK-Grotesk-like face plus mono metadata numerals in perplexity).",
+        "color": "Dark surfaces stepped by lightness rather than shadow (linear app #18181a with chips on #1c1c1e/#2b2b2b; raycast #0f0f0f; perplexity #1a1a1a; coinbase-wallet navy #0a0f15; phantom pure black). Colour semantic only (health green/yellow/red). One reserved accent: linear periwinkle #7b80f0 for the swipe action, perplexity turquoise #20b8cd, raycast red #ff3647 only on the record state, phantom pastel lavender.",
+        "shape": "Capsules for every control (linear), 44pt circular header buttons (raycast), about 12pt cards; borders and lightness steps instead of shadows.",
+        "density": "Medium to high: single-line rows of about 56pt.",
+        "navigation": "Dark glass capsules: a custom floating 4-icon tab bar with a detached circular create button and grouped top-right capsules (linear, bespoke glass); circular glass header buttons and a floating composer (raycast, native glass). No visible refraction over text.",
+        "imagery": "Thin outline icons. No illustration. User-chosen emoji project icons are the only colour in linear's lists.",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning: flag refraction over dense text, decorative colour, or mascots and 3D art in the shell (discord carries these and reads louder than the direction).",
+      "axes": {
+        "shell": "quiet: achromatic chrome with one reserved accent",
+        "mode": "dark",
+        "density": "high",
+        "composition": "editorially fixed",
+        "depth": "one depth cue on the governing asset only, dropped under Reduce Motion (text-sourced: stills cannot show it)",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "one reserved accent that appears on a single gesture or action and nowhere else",
+      "display_treatment": "monospaced numerals for metadata",
+      "hero_moments": [
+        "a row changing status in place",
+        "the one accented action (for example, swipe to complete)"
+      ]
+    },
+    {
+      "id": "literary-warm-assistant",
+      "name": "Literary Warm Assistant",
+      "seen_in": [
+        "claude",
+        "granola",
+        "pi"
+      ],
+      "signature": {
+        "typography": "A text serif carries reading: assistant replies in a book serif with the user's words in sans (claude); regular-weight serif note titles at about 28-32pt over a sans for UI (granola); one warm serif for both speakers (pi).",
+        "color": "Warm paper ground (claude cream #f8f7f3, granola warm grey #eaebe5, pi cream #faf3e9), warm-grey and near-black text, and one muted accent or none: claude terracotta #da7756 on the send button only, granola lime #b2c248 only on recording surfaces, pi forest green #1c472d line icons.",
+        "shape": "Flat paper; large radii (user bubbles about 16-20pt, composer a 24pt rounded rectangle in claude); 44pt circular buttons.",
+        "density": "Low: wide margins, large serif body, generous empty space.",
+        "navigation": "Reduced to top-corner circular buttons and capsules; no tab bar visible in any of the three store sets. claude's chrome is the shared chat skeleton.",
+        "imagery": "None in claude and granola beyond outline icons; painted illustration tiles instead of icons in pi.",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning: this direction overlaps the 2026 cream-plus-serif-plus-orange default. Flag a generated brief that uses cream, serif and an orange accent together without a governing asset; require a non-orange accent or a non-cream ground, plus one structural escape from the chat skeleton.",
+      "axes": {
+        "shell": "quiet: paper, type and one muted accent",
+        "mode": "warm paper",
+        "density": "low",
+        "composition": "editorially fixed",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "a non-cream warm ground (warm grey or warm white) with serif replies",
+      "display_treatment": "replies in serif with the user's text in sans",
+      "hero_moments": [
+        "the voice visual changing with state",
+        "a reply arriving"
+      ]
+    }
+  ],
+  "modules": [
+    "chat-ai"
+  ],
+  "motion_scheme": {
+    "id": "standard",
+    "rule": "Critically damped springs everywhere (bounce 0). On Android, the M3 Standard scheme. No overshoot on any flow that moves money, signs or deletes."
+  },
+  "haptic_profile": {
+    "id": "standard",
+    "rule": "The mapping table in references/haptics-sound.md, with nothing on scroll, navigation or plain taps."
+  },
+  "hero_moment_budget": 2,
+  "never_deal": [
+    {
+      "id": "neutral-hyper-minimal-assistant",
+      "name": "Neutral Hyper-Minimal Assistant",
+      "why": "Never deal. Warn when a chat design reuses the skeleton and changes only the skin; require at least one structural lever (page structure or a state-encoding status visual)."
+    },
+    {
+      "id": "feed-grafted-assistant",
+      "name": "Feed-Grafted Assistant",
+      "why": "Never deal. meta-ai's Discover/Vibes feed is not in its store frames, so meta-ai is no longer visual evidence for this shape."
+    },
+    {
+      "id": "custom-glass-replica",
+      "name": "Custom Glass Replica",
+      "why": "Never deal on a platform without native glass. Posture must be declared in MOBILE-DESIGN.md or checked against the view tree, because screenshots cannot assign it."
+    }
+  ],
+  "note": null
+}

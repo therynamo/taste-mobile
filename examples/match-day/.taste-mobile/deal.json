@@ -1,0 +1,110 @@
+{
+  "version": "0.1.0",
+  "seed": "342190",
+  "kind": "sports",
+  "kind_label": "Scores, live game companions, fan apps",
+  "audience": "general",
+  "platform": "ios",
+  "stack": "swiftui",
+  "brand": null,
+  "requested_direction": null,
+  "picked": "broadcast-scoreboard",
+  "hands": [
+    {
+      "id": "broadcast-scoreboard",
+      "name": "Broadcast Scoreboard (fandom variant of Glance Board)",
+      "seen_in": [
+        "apple-sports",
+        "sleeper"
+      ],
+      "signature": {
+        "typography": "Heavy, width-condensed score numerals at about 30-40pt set directly on the team surface (apple-sports: SF on the width axis; sleeper: condensed italic), with timeout dashes or dots beneath. nba shows the same condensed heavy score numerals but not the team-colour surface.",
+        "color": "Tinted dark base (apple-sports Home deep green #002c00; sleeper navy #0c174b). Team colour floods the identity surface: a left-to-right two-team gradient fills the Live Activity and game sheet (apple-sports); giant italic team-code watermarks in team colour sit behind the score (sleeper). No other hue. No red LIVE badge in apple-sports: the clock and play sentence carry liveness.",
+        "shape": "Large concentric radii about 20-24pt on the game sheet and Live Activity cards; glass capsule buttons.",
+        "density": "Medium: one game per row of about 100pt; the detail sheet stacks line score, field graphic and stat bars.",
+        "navigation": "Minimal chrome: wordmark plus a Home glass capsule and a day switcher; no tab bar visible in apple-sports.",
+        "imagery": "Official crests, a possession glyph and a field graphic only. No photography or illustration.",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning: the only non-Apple exemplar (sleeper) sits inside the Pick'em Arcade anti-reference, so deal the scoreboard component only. Flag any multiplier, wallet-in-top-bar, promo chip, MORE/LESS pick button, 3D jersey or neon glow on or near the scoreboard. Team colour stays on identity surfaces, never on status.",
+      "axes": {
+        "shell": "loud on the identity surface only: team colour floods the game surface, chrome stays minimal",
+        "mode": "tinted dark",
+        "density": "medium",
+        "composition": "user-composed with a default order",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "italic team-code watermarks behind the score",
+      "display_treatment": "condensed italic score numerals with timeout dots beneath",
+      "hero_moments": [
+        "pinning a game to the top of the board",
+        "the game goes final: the surface settles from live to result"
+      ]
+    },
+    {
+      "id": "glance-board",
+      "name": "Glance Board",
+      "seen_in": [
+        "flighty",
+        "watch-duty",
+        "paku",
+        "the-outsiders",
+        "tide-guide",
+        "fotmob",
+        "sofascore",
+        "whoop",
+        "bevel",
+        "crouton",
+        "mela",
+        "copilot-money"
+      ],
+      "signature": {
+        "typography": "System SF (or the brand's text face) with bold values and smaller same-baseline unit suffixes ('8h 28m', '4:57a', '33 %'); small all-caps tracked labels for state or category set above the value ('IN AIR', 'RISING TIDE', 'ACRES', 'TOTAL BUDGET'). Tabular or monospaced figures are NOT part of the confirmed signature: only the-outsiders shows a monospaced face (likely SF Mono).",
+        "color": "Neutral base (white, near-white #f3f2f8-#f7f5f4, or near-black) or one single-hue base (tide-guide slate #354c67, whoop navy-slate #12171a). Status colour strictly semantic: green on time / optimal / under budget, amber tight or alert, red late / fire / over budget, blue rising. Brand hue confined to one chrome element (watch-duty amber header, copilot-money blue header gradient) or absent.",
+        "shape": "Large card radii about 16-24pt, sheets up to about 30pt and concentric with the display; pill filters, period selectors and range chips.",
+        "density": "A variant axis, not a signature: low (crouton cook mode, paku one reading) to high (flighty one line per leg, watch-duty stat grids, whoop 5-up tiles).",
+        "navigation": "3-4 labelled tabs in a floating Liquid Glass capsule, often with a detached circular button (flighty, tide-guide, the-outsiders, fotmob), or one entity per sheet over a map (watch-duty, paku).",
+        "imagery": "Data visuals instead of imagery: labelled curves, semantic map pins, score rings, rating chips. The same readout line or curve reappears on Live Activities, the Dynamic Island, widgets and Watch faces (flighty, tide-guide, paku, the-outsiders).",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning, not a gate: flag a screen that shows more than one competing entity per line or sheet, status colour used decoratively, or brand hue leaking into status.",
+      "axes": {
+        "shell": "quiet: neutral chrome, status colour is the only hue",
+        "mode": "light",
+        "density": "high",
+        "composition": "user-composed with a default order",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "a semantic map: one entity per sheet, status carried by pin colour",
+      "display_treatment": "monospaced readouts for every changing number",
+      "hero_moments": [
+        "the tracked entity changes state (the label and its semantic colour update together)",
+        "the readout hands off to a glance surface (Live Activity or widget)"
+      ]
+    }
+  ],
+  "modules": [
+    "sports"
+  ],
+  "motion_scheme": {
+    "id": "expressive-hero-only",
+    "rule": "Critically damped springs by default. Bounce up to 0.3 on the dealt hero moments and on drag release only. On Android, M3 Standard for the product with the Expressive scheme swapped in on hero moments."
+  },
+  "haptic_profile": {
+    "id": "standard",
+    "rule": "The mapping table in references/haptics-sound.md, with nothing on scroll, navigation or plain taps."
+  },
+  "hero_moment_budget": 2,
+  "never_deal": [
+    {
+      "id": "pickem-arcade",
+      "name": "Pick'em Arcade",
+      "why": "Never deal. Hidden payouts and goblin/demon modifiers (text-sourced for prizepicks) were not visible; underdog, sleeper and draftkings show payouts up front."
+    }
+  ],
+  "note": null
+}

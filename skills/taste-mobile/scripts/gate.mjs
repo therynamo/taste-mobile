@@ -189,8 +189,16 @@ export function gate(opts = {}) {
       round = 0;
     }
   }
+  // One round is one capture. Before any capture, a round is one run of the gate.
+  let captureRound = null;
+  try {
+    captureRound = JSON.parse(readFileSync(join(state, 'shots', 'index.json'), 'utf8')).round ?? null;
+  } catch {
+    captureRound = null;
+  }
+  if (captureRound !== null) round = captureRound;
   if (opts.count !== false) {
-    round += 1;
+    if (captureRound === null) round += 1;
     mkdirSync(state, { recursive: true });
     writeFileSync(roundPath, JSON.stringify({ round, verdict, at: new Date().toISOString() }, null, 2) + '\n');
   }

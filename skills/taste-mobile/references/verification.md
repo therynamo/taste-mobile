@@ -25,7 +25,22 @@ let args = ProcessInfo.processInfo.arguments
 let screen = args.firstIndex(of: "-screen").flatMap { args.indices.contains($0 + 1) ? args[$0 + 1] : nil } ?? "home"
 ```
 
-- **Use launch arguments on iOS.** `xcrun simctl launch <udid> <bundle-id> -screen detail`.
+```ts
+// React Native / Expo on iOS: the same arguments, with no native code.
+// iOS files "-key value" pairs in NSUserDefaults, and Settings reads them at startup.
+import { Settings } from 'react-native';
+const arg = (key: string) => { const v = Settings.get(key); return v == null || v === '' ? undefined : String(v); };
+const screen = arg('screen') ?? 'home';   // build the navigator's initial state from this
+```
+
+- **Use launch arguments on iOS.** `xcrun simctl launch <udid> <bundle-id> -screen detail`. In
+  React Native this was verified on a Release build with the bundle embedded (Expo SDK 58, iOS 26.5
+  simulator): see `examples/reading-assistant/src/launch.ts`. Android was not tried.
+- **Rounds.** One round is one capture. `capture.mjs` and `gate.mjs` print the same number, and
+  the last round's critique is kept as `critique-round-<n>.md`.
+- **Small targets (C10)** skips the sheet grabber and bar buttons of 36 pt or more in the top
+  120 pt: system chrome reports a frame smaller than its hit region. A custom control placed
+  there is skipped too, so check it by eye.
 - **A custom-scheme deep link shows an "Open in app?" dialog** the first time it is used on a
   simulator. It stays on screen until someone taps Open, and it covers every later screenshot.
   With idb installed, capture taps Open for you. Without idb, approve it once by hand first.

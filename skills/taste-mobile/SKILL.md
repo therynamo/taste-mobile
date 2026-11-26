@@ -51,7 +51,8 @@ node <skill>/scripts/deal.mjs deal --kind <kind> --audience <audience> \
   --platform <platform> --stack <stack> --dir <project>
 ```
 
-It prints three complete hands and writes `<project>/.taste-mobile/deal.json` and
+It prints up to three complete hands (a kind with fewer than three fitting directions deals
+fewer) and writes `<project>/.taste-mobile/deal.json` and
 `<project>/MOBILE-DESIGN.md`. Take hand 1 unless it clashes with the brief. To take another:
 `deal.mjs take 2 --dir <project>`. Do not re-deal until you like the result: that is choosing from
 memory with extra steps.
@@ -60,6 +61,14 @@ memory with extra steps.
 - The brief supplies brand assets: add `--brand "<what is owned>"`. Brand colour, type and logo
   replace the dealt governing asset and display treatment. The axes and modules still apply.
 - The "Never build these" list is the anti-references for this kind. Do not build them.
+
+**When two sources disagree,** the narrower one wins: a module beats the dealt direction, and the
+dealt direction beats a general reference. A money module that says bounce 0 removes the bounce
+from a hero moment. A module that forbids a haptic removes it from that moment.
+
+**When the project cannot make a dealt value** (a custom display face where only system fonts are
+allowed, a term from another sport), keep its job and change the means: the system face on its
+width and weight axes, the nearest equivalent in this sport. Write the swap in `MOBILE-DESIGN.md`.
 
 ### 3. Fill in MOBILE-DESIGN.md
 
@@ -183,7 +192,7 @@ tells in mobile.
 | Android | Build it. `capture.mjs run --android` is best effort and was not run by the authors. Check each screenshot by eye and say so |
 | An existing app to redesign | Read its tokens and screens first. Deal with `--brand`. Keep what is owned. Change one screen fully before touching the rest |
 | A review, not a build | Skip the deal. Run lint and capture, critique against `references/tells.md`, report findings as "reads as a default" |
-| The user rejects the direction | `deal.mjs take 2` or `take 3`. Deal again only if all three are refused |
+| The user rejects the direction | `deal.mjs take 2` or `take 3`, if that hand was dealt. Deal again only if every hand is refused |
 | A deep link shows an "Open in app?" dialog | Use launch arguments, approve it once by hand, or install idb so capture can accept it |
 | No idb | Capture still works. Target sizes and labels are not checked by script: check thumb reach by eye |
 | App Store submission is the goal | Run the 4.2 and 4.3 check at the end of `references/tells.md` |

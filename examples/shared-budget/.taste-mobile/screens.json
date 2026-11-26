@@ -1,0 +1,13 @@
+{
+  "bundleId": "dev.tastemobile.examples.shared-budget",
+  "settleMs": 2500,
+  "screens": [
+    { "name": "home", "args": ["-screen", "home"] },
+    { "name": "home-empty", "args": ["-screen", "home", "-state", "empty"] },
+    { "name": "home-over", "args": ["-screen", "home", "-state", "over"] },
+    { "name": "add", "args": ["-screen", "add"] },
+    { "name": "add-saved", "args": ["-screen", "add", "-state", "saved"] },
+    { "name": "paid", "args": ["-screen", "paid"] },
+    { "name": "month", "args": ["-screen", "month"] }
+  ]
+}

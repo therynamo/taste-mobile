@@ -110,6 +110,11 @@ These floors come from the HIG Typography page and were not re-read in the verif
 - A custom font meets the same minimum sizes and supports Dynamic Type and Bold Text.
 - System text for UI and body is never a tell. Do not deal a custom body face for
   distinctiveness. Instead, put any custom face on display text only.
+- **A dealt display face with system fonts only.** Use the system face on its own axes:
+  `.fontWidth(.condensed)` or `.expanded`, `.fontDesign(.rounded)`, `.serif` or `.monospaced`,
+  and weight. Look at the capture before trusting a combination: one example build found that
+  condensed width with `.italic()` rendered upright on iOS 26.5, and drew the slant with a shear
+  transform instead (reported by that build, not re-tested).
 
 | Style | Size/leading (pt) | Style | Size/leading (pt) |
 |---|---|---|---|

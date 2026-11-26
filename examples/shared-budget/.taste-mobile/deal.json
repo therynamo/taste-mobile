@@ -1,0 +1,155 @@
+{
+  "version": "0.1.0",
+  "seed": "547688",
+  "kind": "money",
+  "kind_label": "Banking, budgeting, payments, investing",
+  "audience": "general",
+  "platform": "ios",
+  "stack": "swiftui",
+  "brand": null,
+  "requested_direction": null,
+  "picked": "loud-owned-shell",
+  "hands": [
+    {
+      "id": "loud-owned-shell",
+      "name": "Loud Owned Shell",
+      "seen_in": [
+        "cash-app",
+        "monzo",
+        "nubank",
+        "klarna",
+        "venmo",
+        "kraken",
+        "ladder",
+        "nike-run-club"
+      ],
+      "signature": {
+        "typography": "A custom face carries the shell (Cash Sans; Monzo Sans with split-size pounds and pence on every amount; NuSans; Klarna Title, a condensed display face used for the hero balance; ladder's extended caps; kraken's bold italic section headers). List text uses the same family at regular weight.",
+        "color": "One owned colour floods one shell surface: cash-app green #01e013 on the pay screen, monzo coral #ff4f40 on the account card, klarna aubergine #2c2342 home header plus a pink token, nubank purple #8e0de3 on the confirm button, ladder lime #e8ff11 on pure black, kraken purple #7132f5 on promo cards. Transaction and activity lists stay ink on white.",
+        "shape": "Large cards about 16-20pt, full-pill buttons, round action buttons.",
+        "density": "Low to medium: a large balance and one or two data points per card.",
+        "navigation": "Conventional placement; monzo shows a floating glass tab bar, the rest flat bars or none visible.",
+        "imagery": "An authored image system: 3D coins and 3D object avatars inside UI cards (kraken), card renders, campaign photography, the brand's own glyph set.",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning: flag the owned colour or display face reaching the transaction list, status colour, or a confirm or signing sheet. nubank breaks this (purple confirm button) and still ships.",
+      "axes": {
+        "shell": "loud shell, quiet lists: the owned colour floods one surface and stays out of lists, status and confirm steps",
+        "mode": "light with one flooded surface",
+        "density": "low",
+        "composition": "editorially fixed",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "one owned colour that floods exactly one surface while lists stay ink on white",
+      "display_treatment": "a custom display face on the hero amount or title only",
+      "hero_moments": [
+        "the success state after a committed result"
+      ]
+    },
+    {
+      "id": "glance-board",
+      "name": "Glance Board",
+      "seen_in": [
+        "flighty",
+        "watch-duty",
+        "paku",
+        "the-outsiders",
+        "tide-guide",
+        "fotmob",
+        "sofascore",
+        "whoop",
+        "bevel",
+        "crouton",
+        "mela",
+        "copilot-money"
+      ],
+      "signature": {
+        "typography": "System SF (or the brand's text face) with bold values and smaller same-baseline unit suffixes ('8h 28m', '4:57a', '33 %'); small all-caps tracked labels for state or category set above the value ('IN AIR', 'RISING TIDE', 'ACRES', 'TOTAL BUDGET'). Tabular or monospaced figures are NOT part of the confirmed signature: only the-outsiders shows a monospaced face (likely SF Mono).",
+        "color": "Neutral base (white, near-white #f3f2f8-#f7f5f4, or near-black) or one single-hue base (tide-guide slate #354c67, whoop navy-slate #12171a). Status colour strictly semantic: green on time / optimal / under budget, amber tight or alert, red late / fire / over budget, blue rising. Brand hue confined to one chrome element (watch-duty amber header, copilot-money blue header gradient) or absent.",
+        "shape": "Large card radii about 16-24pt, sheets up to about 30pt and concentric with the display; pill filters, period selectors and range chips.",
+        "density": "A variant axis, not a signature: low (crouton cook mode, paku one reading) to high (flighty one line per leg, watch-duty stat grids, whoop 5-up tiles).",
+        "navigation": "3-4 labelled tabs in a floating Liquid Glass capsule, often with a detached circular button (flighty, tide-guide, the-outsiders, fotmob), or one entity per sheet over a map (watch-duty, paku).",
+        "imagery": "Data visuals instead of imagery: labelled curves, semantic map pins, score rings, rating chips. The same readout line or curve reappears on Live Activities, the Dynamic Island, widgets and Watch faces (flighty, tide-guide, paku, the-outsiders).",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning, not a gate: flag a screen that shows more than one competing entity per line or sheet, status colour used decoratively, or brand hue leaking into status.",
+      "axes": {
+        "shell": "quiet: neutral chrome, status colour is the only hue",
+        "mode": "dark",
+        "density": "low",
+        "composition": "editorially fixed",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "a labelled data curve with a scrub marker",
+      "display_treatment": "small all-caps tracked state labels set above each value",
+      "hero_moments": [
+        "the readout hands off to a glance surface (Live Activity or widget)"
+      ]
+    },
+    {
+      "id": "dark-pro-minimal",
+      "name": "Dark Pro Minimal",
+      "seen_in": [
+        "linear",
+        "raycast",
+        "perplexity",
+        "phantom",
+        "coinbase-wallet",
+        "discord"
+      ],
+      "signature": {
+        "typography": "A neutral grotesque with grey sentence-case section labels and no display flourish (Inter-like in linear, SF in raycast, an FK-Grotesk-like face plus mono metadata numerals in perplexity).",
+        "color": "Dark surfaces stepped by lightness rather than shadow (linear app #18181a with chips on #1c1c1e/#2b2b2b; raycast #0f0f0f; perplexity #1a1a1a; coinbase-wallet navy #0a0f15; phantom pure black). Colour semantic only (health green/yellow/red). One reserved accent: linear periwinkle #7b80f0 for the swipe action, perplexity turquoise #20b8cd, raycast red #ff3647 only on the record state, phantom pastel lavender.",
+        "shape": "Capsules for every control (linear), 44pt circular header buttons (raycast), about 12pt cards; borders and lightness steps instead of shadows.",
+        "density": "Medium to high: single-line rows of about 56pt.",
+        "navigation": "Dark glass capsules: a custom floating 4-icon tab bar with a detached circular create button and grouped top-right capsules (linear, bespoke glass); circular glass header buttons and a floating composer (raycast, native glass). No visible refraction over text.",
+        "imagery": "Thin outline icons. No illustration. User-chosen emoji project icons are the only colour in linear's lists.",
+        "motion_haptics_if_known": null
+      },
+      "corpus_warning": "Warning: flag refraction over dense text, decorative colour, or mascots and 3D art in the shell (discord carries these and reads louder than the direction).",
+      "axes": {
+        "shell": "quiet: achromatic chrome with one reserved accent",
+        "mode": "dark",
+        "density": "medium",
+        "composition": "editorially fixed",
+        "depth": "none",
+        "posture": "native iOS: system bars, sheets, gestures and glass come from the platform",
+        "material": "Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity."
+      },
+      "governing_asset": "one reserved accent that appears on a single gesture or action and nowhere else",
+      "display_treatment": "a neutral grotesque with grey sentence-case labels",
+      "hero_moments": [
+        "a row changing status in place"
+      ]
+    }
+  ],
+  "modules": [
+    "money"
+  ],
+  "motion_scheme": {
+    "id": "standard",
+    "rule": "Critically damped springs everywhere (bounce 0). On Android, the M3 Standard scheme. No overshoot on any flow that moves money, signs or deletes."
+  },
+  "haptic_profile": {
+    "id": "quiet",
+    "rule": "System-provided haptics only, plus success and error on committed results. No custom patterns."
+  },
+  "hero_moment_budget": 1,
+  "never_deal": [
+    {
+      "id": "social-ledger",
+      "name": "Social Ledger",
+      "why": "Never deal. No visual exemplar remains: venmo and coinbase-wallet store frames show no social feed, which supports the text finding that the pattern is in retreat."
+    },
+    {
+      "id": "funnel-first-utility",
+      "name": "Funnel-First Utility",
+      "why": "Never deal. The quiz funnel itself is text-sourced; the store frames show only the generic dashboard."
+    }
+  ],
+  "note": null
+}

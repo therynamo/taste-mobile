@@ -1,0 +1,14 @@
+{
+  "bundleId": "dev.tastemobile.examples.readingassistant",
+  "settleMs": 3000,
+  "screens": [
+    { "name": "book", "args": ["-screen", "book"] },
+    { "name": "answer", "args": ["-screen", "answer"] },
+    { "name": "answer-streaming", "args": ["-screen", "answer", "-state", "streaming"] },
+    { "name": "answer-error", "args": ["-screen", "answer", "-state", "error"] },
+    { "name": "passage", "args": ["-screen", "passage", "-passage", "2"] },
+    { "name": "kept", "args": ["-screen", "kept"] },
+    { "name": "kept-empty", "args": ["-screen", "kept", "-state", "empty"] },
+    { "name": "type", "args": ["-screen", "type"] }
+  ]
+}

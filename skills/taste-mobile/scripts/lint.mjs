@@ -347,7 +347,8 @@ function fileRules(file, text, ctx, add) {
   }
   if (stack === 'swift') {
     const fixed = (text.match(/\.system\(size:/g) || []).length;
-    if (fixed > 0 && !/ScaledMetric|relativeTo:/.test(text)) {
+    const code = text.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '');
+    if (fixed > 0 && !/ScaledMetric|relativeTo:/.test(code)) {
       add({
         rule: 'A03', name: 'fixed-size-type', severity: 'WARN', file, line: lineOf(text, /\.system\(size:/),
         message: `${fixed} fixed-size system font${fixed > 1 ? 's' : ''}. Font.system(size:) does not follow Dynamic Type.`,

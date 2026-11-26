@@ -55,7 +55,7 @@
     ],
     "display_treatment": [
       "heavy width-condensed score numerals at 30-40 pt",
-      "condensed italic score numerals with timeout dots beneath"
+      "condensed italic score numerals with a row of state dots beneath (timeouts, periods or sets: whichever the sport has)"
     ],
     "hero_moment": [
       "a score change: the numeral rolls and the play sentence updates",

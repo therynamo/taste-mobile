@@ -47,6 +47,25 @@ returns an optional feedback so it can return nil and stay silent.
 .sensoryFeedback(.success, trigger: saved)
 ```
 
+One module, so every haptic obeys the same toggle and shows up in the same log:
+
+```swift
+// Haptics.swift
+enum Haptics {
+  static var enabled: Bool { UserDefaults.standard.object(forKey: "haptics") as? Bool ?? true }
+  static func feedback(_ f: SensoryFeedback, _ interaction: String) -> SensoryFeedback? {
+    guard enabled else { return nil }
+    if ProcessInfo.processInfo.arguments.contains("-hapticsLog") { print("haptic", interaction, f) }
+    return f
+  }
+}
+// at the call site
+.sensoryFeedback(trigger: saved) { _, new in new ? Haptics.feedback(.success, "save spend") : nil }
+```
+
+The toggle lives in the app's settings screen, or in a sheet from the home screen's overflow menu
+when the app has no settings screen.
+
 `SensoryFeedback` members: `success`, `warning`, `error`, `selection`, `increase`, `decrease`,
 `start`, `stop`, `alignment`, `levelChange`, `pathComplete`, `impact`, `impact(weight:intensity:)`,
 `impact(flexibility:intensity:)`.
@@ -115,7 +134,8 @@ Grep for `UIImpactFeedbackGenerator`, `UINotificationFeedbackGenerator`,
 
 - Haptics cannot be felt on the iOS Simulator or the Android emulator. A physical device is needed.
 - Route every haptic through one module (`haptics.ts` or `Haptics.swift`). In debug builds it logs
-  `{interaction, type, timestamp, screen}` for each call.
+  `{interaction, type, timestamp, screen}` for each call. With no debug configuration (a plain
+  `swiftc` build, a Release bundle), switch the log on with a launch argument instead.
 - Assert the mapping from that log in a simulator UI test: which haptic fired for each
   interaction, that a scroll produced fewer than N events, and that each event had a state change
   within about 50 ms.

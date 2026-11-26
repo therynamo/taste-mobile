@@ -1,0 +1,52 @@
+{
+  "bundleId": "dev.tastemobile.examples.match-day",
+  "settleMs": 2500,
+  "screens": [
+    {
+      "name": "today",
+      "args": [
+        "-screen",
+        "today"
+      ]
+    },
+    {
+      "name": "today-empty",
+      "args": [
+        "-screen",
+        "today",
+        "-state",
+        "empty"
+      ]
+    },
+    {
+      "name": "today-error",
+      "args": [
+        "-screen",
+        "today",
+        "-state",
+        "error"
+      ]
+    },
+    {
+      "name": "fixtures",
+      "args": [
+        "-screen",
+        "fixtures"
+      ]
+    },
+    {
+      "name": "match",
+      "args": [
+        "-screen",
+        "match"
+      ]
+    },
+    {
+      "name": "table",
+      "args": [
+        "-screen",
+        "table"
+      ]
+    }
+  ]
+}

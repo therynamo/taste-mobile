@@ -1,0 +1,230 @@
+{
+  "round": 3,
+  "platform": "ios",
+  "verified_driver": true,
+  "device": {
+    "udid": "09F13E15-0B7D-43AE-AF2E-EB760648DEC6",
+    "name": "taste-mobile-match-day",
+    "runtime": "iOS 26.5",
+    "state": "Booted"
+  },
+  "captured_at": "2026-11-26T19:28:55.606Z",
+  "passes": [
+    "light",
+    "dark",
+    "large"
+  ],
+  "shots": [
+    {
+      "screen": "today",
+      "pass": "light",
+      "file": "light/today.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 910534,
+      "luminance": 0.732
+    },
+    {
+      "screen": "today-empty",
+      "pass": "light",
+      "file": "light/today-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 278949,
+      "luminance": 0.908
+    },
+    {
+      "screen": "today-error",
+      "pass": "light",
+      "file": "light/today-error.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 1012286,
+      "luminance": 0.697
+    },
+    {
+      "screen": "fixtures",
+      "pass": "light",
+      "file": "light/fixtures.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 947332,
+      "luminance": 0.74
+    },
+    {
+      "screen": "match",
+      "pass": "light",
+      "file": "light/match.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 874635,
+      "luminance": 0.726
+    },
+    {
+      "screen": "table",
+      "pass": "light",
+      "file": "light/table.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 457543,
+      "luminance": 0.824
+    },
+    {
+      "screen": "today",
+      "pass": "dark",
+      "file": "dark/today.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 811742,
+      "luminance": 0.136
+    },
+    {
+      "screen": "today-empty",
+      "pass": "dark",
+      "file": "dark/today-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 248415,
+      "luminance": 0.104
+    },
+    {
+      "screen": "today-error",
+      "pass": "dark",
+      "file": "dark/today-error.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 915666,
+      "luminance": 0.153
+    },
+    {
+      "screen": "fixtures",
+      "pass": "dark",
+      "file": "dark/fixtures.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 856009,
+      "luminance": 0.161
+    },
+    {
+      "screen": "match",
+      "pass": "dark",
+      "file": "dark/match.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 779917,
+      "luminance": 0.135
+    },
+    {
+      "screen": "table",
+      "pass": "dark",
+      "file": "dark/table.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 373682,
+      "luminance": 0.112
+    },
+    {
+      "screen": "today",
+      "pass": "large",
+      "file": "large/today.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 683420,
+      "luminance": 0.521
+    },
+    {
+      "screen": "today-empty",
+      "pass": "large",
+      "file": "large/today-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 462978,
+      "luminance": 0.897
+    },
+    {
+      "screen": "today-error",
+      "pass": "large",
+      "file": "large/today-error.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 699410,
+      "luminance": 0.524
+    },
+    {
+      "screen": "fixtures",
+      "pass": "large",
+      "file": "large/fixtures.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 699883,
+      "luminance": 0.559
+    },
+    {
+      "screen": "match",
+      "pass": "large",
+      "file": "large/match.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 781695,
+      "luminance": 0.439
+    },
+    {
+      "screen": "table",
+      "pass": "large",
+      "file": "large/table.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 432302,
+      "luminance": 0.592
+    }
+  ],
+  "trees": [
+    {
+      "screen": "today",
+      "file": "tree/today.json"
+    },
+    {
+      "screen": "today-empty",
+      "file": "tree/today-empty.json"
+    },
+    {
+      "screen": "today-error",
+      "file": "tree/today-error.json"
+    },
+    {
+      "screen": "fixtures",
+      "file": "tree/fixtures.json"
+    },
+    {
+      "screen": "match",
+      "file": "tree/match.json"
+    },
+    {
+      "screen": "table",
+      "file": "tree/table.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": "C10",
+      "severity": "WARN",
+      "screen": "today",
+      "pass": "tree",
+      "message": "1 control with an accessibility frame under 44x44 pt: \"Settings\" 36x36. Confirm the hit region is 44x44 or larger."
+    },
+    {
+      "id": "C10",
+      "severity": "WARN",
+      "screen": "today-empty",
+      "pass": "tree",
+      "message": "1 control with an accessibility frame under 44x44 pt: \"Settings\" 36x36. Confirm the hit region is 44x44 or larger."
+    },
+    {
+      "id": "C10",
+      "severity": "WARN",
+      "screen": "today-error",
+      "pass": "tree",
+      "message": "1 control with an accessibility frame under 44x44 pt: \"Settings\" 36x36. Confirm the hit region is 44x44 or larger."
+    }
+  ]
+}

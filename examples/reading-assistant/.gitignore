@@ -1,0 +1,10 @@
+# Build output: regenerate with ./build.sh <simulator udid>
+node_modules/
+ios/
+android/
+build/
+.expo/
+dist/
+*.tsbuildinfo
+expo-env.d.ts
+.DS_Store

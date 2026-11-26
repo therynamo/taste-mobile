@@ -1,0 +1,278 @@
+{
+  "round": 3,
+  "platform": "ios",
+  "verified_driver": true,
+  "device": {
+    "udid": "7E0E4DF6-AC6E-4D79-9D80-C6FA2B6C24B7",
+    "name": "taste-mobile-reading-assistant",
+    "runtime": "iOS 26.5",
+    "state": "Booted"
+  },
+  "captured_at": "2026-11-26T19:28:57.464Z",
+  "passes": [
+    "light",
+    "dark",
+    "large"
+  ],
+  "shots": [
+    {
+      "screen": "book",
+      "pass": "light",
+      "file": "light/book.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 494093,
+      "luminance": 0.896
+    },
+    {
+      "screen": "answer",
+      "pass": "light",
+      "file": "light/answer.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 468405,
+      "luminance": 0.898
+    },
+    {
+      "screen": "answer-streaming",
+      "pass": "light",
+      "file": "light/answer-streaming.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 395499,
+      "luminance": 0.894
+    },
+    {
+      "screen": "answer-error",
+      "pass": "light",
+      "file": "light/answer-error.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 286077,
+      "luminance": 0.887
+    },
+    {
+      "screen": "passage",
+      "pass": "light",
+      "file": "light/passage.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 449588,
+      "luminance": 0.894
+    },
+    {
+      "screen": "kept",
+      "pass": "light",
+      "file": "light/kept.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 415856,
+      "luminance": 0.911
+    },
+    {
+      "screen": "kept-empty",
+      "pass": "light",
+      "file": "light/kept-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 265681,
+      "luminance": 0.895
+    },
+    {
+      "screen": "type",
+      "pass": "light",
+      "file": "light/type.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 418225,
+      "luminance": 0.844
+    },
+    {
+      "screen": "book",
+      "pass": "dark",
+      "file": "dark/book.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 419938,
+      "luminance": 0.125
+    },
+    {
+      "screen": "answer",
+      "pass": "dark",
+      "file": "dark/answer.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 392681,
+      "luminance": 0.122
+    },
+    {
+      "screen": "answer-streaming",
+      "pass": "dark",
+      "file": "dark/answer-streaming.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 319838,
+      "luminance": 0.126
+    },
+    {
+      "screen": "answer-error",
+      "pass": "dark",
+      "file": "dark/answer-error.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 210140,
+      "luminance": 0.133
+    },
+    {
+      "screen": "passage",
+      "pass": "dark",
+      "file": "dark/passage.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 374246,
+      "luminance": 0.123
+    },
+    {
+      "screen": "kept",
+      "pass": "dark",
+      "file": "dark/kept.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 341879,
+      "luminance": 0.109
+    },
+    {
+      "screen": "kept-empty",
+      "pass": "dark",
+      "file": "dark/kept-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 189697,
+      "luminance": 0.125
+    },
+    {
+      "screen": "type",
+      "pass": "dark",
+      "file": "dark/type.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 327181,
+      "luminance": 0.104
+    },
+    {
+      "screen": "book",
+      "pass": "large",
+      "file": "large/book.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 342795,
+      "luminance": 0.894
+    },
+    {
+      "screen": "answer",
+      "pass": "large",
+      "file": "large/answer.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 364263,
+      "luminance": 0.872
+    },
+    {
+      "screen": "answer-streaming",
+      "pass": "large",
+      "file": "large/answer-streaming.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 363944,
+      "luminance": 0.876
+    },
+    {
+      "screen": "answer-error",
+      "pass": "large",
+      "file": "large/answer-error.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 369048,
+      "luminance": 0.871
+    },
+    {
+      "screen": "passage",
+      "pass": "large",
+      "file": "large/passage.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 345105,
+      "luminance": 0.894
+    },
+    {
+      "screen": "kept",
+      "pass": "large",
+      "file": "large/kept.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 338471,
+      "luminance": 0.877
+    },
+    {
+      "screen": "kept-empty",
+      "pass": "large",
+      "file": "large/kept-empty.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 348775,
+      "luminance": 0.89
+    },
+    {
+      "screen": "type",
+      "pass": "large",
+      "file": "large/type.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 422159,
+      "luminance": 0.835
+    }
+  ],
+  "trees": [
+    {
+      "screen": "book",
+      "file": "tree/book.json"
+    },
+    {
+      "screen": "answer",
+      "file": "tree/answer.json"
+    },
+    {
+      "screen": "answer-streaming",
+      "file": "tree/answer-streaming.json"
+    },
+    {
+      "screen": "answer-error",
+      "file": "tree/answer-error.json"
+    },
+    {
+      "screen": "passage",
+      "file": "tree/passage.json"
+    },
+    {
+      "screen": "kept",
+      "file": "tree/kept.json"
+    },
+    {
+      "screen": "kept-empty",
+      "file": "tree/kept-empty.json"
+    },
+    {
+      "screen": "type",
+      "file": "tree/type.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": "C10",
+      "severity": "WARN",
+      "screen": "type",
+      "pass": "tree",
+      "message": "2 controls with an accessibility frame under 44x44 pt (1 under 28 pt): \"Sheet Grabber\" 73x24, \"Done\" 55x42. Confirm the hit region is 44x44 or larger."
+    }
+  ]
+}
