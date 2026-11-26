@@ -140,7 +140,7 @@ green (`#002c00`), not dark blue; no ESPN BET panel appears in ESPN's frames.
 
 ## Sources
 
-On-screen evidence is the round 3 visual pass (`research/reports/Mobile app visual corpus pass.md`).
+On-screen evidence is the round 3 visual pass (`research/corpus/visual/`).
 
 - https://video.thescore.com/news/2885302/thescore-now-features-live-activities-events
 - https://lickability.com/blog/apple-sports/

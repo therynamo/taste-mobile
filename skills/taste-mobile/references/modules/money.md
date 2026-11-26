@@ -134,7 +134,7 @@ More behaviour rules from the same sources (all text-sourced):
 
 ## Sources
 
-On-screen evidence is the round 3 visual pass (`research/reports/Mobile app visual corpus pass.md`).
+On-screen evidence is the round 3 visual pass (`research/corpus/visual/`).
 
 - https://hn.jakechampion.name/reader/https://benji.org/family-values
 - https://www.iphoneincanada.ca/2026/11/05/wealthsimple-fey-uikit-trading-app-sneak-peek/

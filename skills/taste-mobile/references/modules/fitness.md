@@ -121,7 +121,7 @@ top of either.
 
 ## Sources
 
-On-screen evidence is the round 3 visual pass (`research/reports/Mobile app visual corpus pass.md`).
+On-screen evidence is the round 3 visual pass (`research/corpus/visual/`).
 
 - https://9to5google.com/2025/10/20/oura-app-redesign/
 - https://ouraring.com/blog/new-app-design/

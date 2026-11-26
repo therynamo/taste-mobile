@@ -1,5 +1,5 @@
 {
-  "_note": "Per-direction slot options. The dealer picks one governing asset, one display treatment and the hero moments from these lists, so two builds of the same direction still differ. Every option is drawn from the visible signatures in the 114-app corpus (research/reports/Mobile app visual corpus pass.md). Identity comes from the governing asset, never from the body typeface.",
+  "_note": "Per-direction slot options. The dealer picks one governing asset, one display treatment and the hero moments from these lists, so two builds of the same direction still differ. Every option is drawn from the visible signatures in the 114-app corpus (research/corpus/visual/). Identity comes from the governing asset, never from the body typeface.",
   "glance-board": {
     "shell": [
       "quiet: neutral chrome, status colour is the only hue"

@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide · taste-mobile</title>
+<meta name="description" content="How to install and use taste-mobile: the run, the deal, the commitments, the checks, how to get the best results, caveats and disclaimers.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..700&family=Funnel+Sans:wght@400..600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the guide</a>
+
+<header class="top">
+  <a class="brand" href="index.html"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M2.5 21.5V12a9.5 9.5 0 0 1 19 0v9.5h-6V12a3.5 3.5 0 0 0-7 0v9.5z"/></svg>taste-mobile</a>
+  <nav aria-label="Site">
+    <a href="index.html">Home</a>
+    <a href="guide.html" aria-current="page">Guide</a>
+    <a href="https://github.com/therynamo/taste-mobile">GitHub</a>
+    <a class="cta" href="#start">Get the skill</a>
+  </nav>
+</header>
+
+<div class="shell">
+<aside class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ol>
+    <li><a href="#start">Start here</a></li>
+    <li><a href="#run">How a run goes</a></li>
+    <li><a href="#deal">The deal</a></li>
+    <li><a href="#commit">The commitments</a></li>
+    <li><a href="#checks">The checks</a></li>
+    <li><a href="#verdict">The verdict</a></li>
+    <li><a href="#best">Get the best results</a></li>
+    <li><a href="#missing">When something is missing</a></li>
+    <li><a href="#caveats">Caveats</a></li>
+    <li><a href="#disclaimers">Disclaimers</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ol>
+</aside>
+
+<main id="main">
+
+<section class="lede">
+  <p class="eyebrow">Guide · version 0.1.0</p>
+  <h1>Use taste-mobile</h1>
+  <p class="intro">taste-mobile gives a coding agent a direction for a mobile app, makes it write that direction down, and checks the result on a simulator. This page covers the whole of it. It takes about ten minutes to read.</p>
+</section>
+
+<section id="start">
+  <h2>Start here</h2>
+  <p>Install the skill, boot a simulator, ask for an app.</p>
+
+  <h3>1. Install</h3>
+  <pre><code>npx skills add https://github.com/therynamo/taste-mobile --skill "taste-mobile"</code></pre>
+  <details>
+    <summary>Other ways to install</summary>
+    <p>As a Claude Code plugin:</p>
+    <pre><code>/plugin marketplace add therynamo/taste-mobile
+/plugin install taste-mobile@taste-mobile</code></pre>
+    <p>From a clone. This links the skill, so <code>git pull</code> updates it:</p>
+    <pre><code>git clone https://github.com/therynamo/taste-mobile
+cd taste-mobile
+./install.sh              # Claude Code
+./install.sh --codex      # Codex
+./install.sh --uninstall  # remove the links</code></pre>
+  </details>
+
+  <h3>2. Boot a simulator</h3>
+  <p>The skill never boots or erases a simulator. Boot one yourself, so it has something to look at.</p>
+  <pre><code>xcrun simctl boot "iPhone 17 Pro"</code></pre>
+
+  <h3>3. Ask</h3>
+  <blockquote>Use taste-mobile. Build an iPhone app for a couple who share one monthly budget. SwiftUI.</blockquote>
+
+  <div class="needs">
+    <p><strong>You need</strong></p>
+    <ul>
+      <li>Node 18 or later. The scripts have no other dependencies.</li>
+      <li>Xcode and an iOS simulator, for screenshots.</li>
+      <li>Optional: <a href="https://fbidb.io">idb</a>, for target-size and label checks.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="run">
+  <h2>How a run goes</h2>
+  <p>Seven steps, then a report. The agent does all of them. You read one file in the middle and the report at the end.</p>
+
+  <div class="flow" role="img" aria-label="Flow diagram of a run: read the brief, deal, commit, build, then a loop of lint, capture, critique and fix for up to three rounds, then the gate and the report.">
+    <div class="node"><span class="n">1</span><div><strong>Read the brief</strong><span>Kind, audience, platform, stack</span></div></div>
+    <div class="node"><span class="n">2</span><div><strong>Deal</strong><span>Three complete hands. Hand 1 is taken</span></div><code>deal.mjs</code></div>
+    <div class="node you"><span class="n">3</span><div><strong>Commit</strong><span>Metaphor, restraint rule, not doing</span></div><code>MOBILE-DESIGN.md</code><em>Read this one</em></div>
+    <div class="node"><span class="n">4</span><div><strong>Open the references</strong><span>Only the ones this app needs</span></div></div>
+    <div class="node"><span class="n">5</span><div><strong>Build</strong><span>Tokens, shell, one hero screen, the rest</span></div></div>
+    <div class="loop">
+      <p class="loop-label">Up to three rounds</p>
+      <div class="node"><span class="n">6a</span><div><strong>Lint</strong><span>40 rules over the source</span></div><code>lint.mjs</code></div>
+      <div class="node"><span class="n">6b</span><div><strong>Capture</strong><span>Every screen: light, dark, largest text</span></div><code>capture.mjs</code></div>
+      <div class="node"><span class="n">6c</span><div><strong>Critique</strong><span>Eight passes over the screenshots</span></div><code>critique.md</code></div>
+      <div class="node"><span class="n">6d</span><div><strong>Fix the top three</strong><span>Not everything. Then go round again</span></div></div>
+    </div>
+    <div class="node"><span class="n">7</span><div><strong>Gate</strong><span>PASS, FAIL or OPEN</span></div><code>gate.mjs</code></div>
+    <div class="node you"><span class="n">8</span><div><strong>Report</strong><span>What was seen, and what was not checked</span></div><em>Read this one</em></div>
+  </div>
+</section>
+
+<section id="deal">
+  <h2>The deal</h2>
+  <p>An agent asked to choose a style chooses the same one each time. So it does not choose. A script deals.</p>
+
+  <pre><code>node &lt;skill&gt;/scripts/deal.mjs deal --kind money --audience general \
+  --platform ios --stack swiftui --dir .</code></pre>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>Dealt</h3>
+      <ul>
+        <li><strong>A direction.</strong> One of 16, each seen in apps from two or more makers.</li>
+        <li><strong>A governing asset.</strong> The one thing that carries the identity.</li>
+        <li><strong>A display treatment.</strong> At most one. Body text stays the platform face.</li>
+        <li><strong>Hero moments.</strong> One to three. Everything else stays calm.</li>
+        <li><strong>Axes.</strong> Shell, mode, density, composition, depth.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Fixed by the kind of app</h3>
+      <ul>
+        <li><strong>Modules.</strong> Money, crypto, chat and AI, sports, fitness, feed. Rules a direction cannot override.</li>
+        <li><strong>Motion scheme and haptic profile.</strong> A bank does not bounce.</li>
+        <li><strong>Platform material.</strong> System glass on iOS chrome. Material 3 on Android.</li>
+        <li><strong>Never build these.</strong> The anti-references for this kind.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Which hand to take</h3>
+  <ol class="ladder" aria-label="Decision tree: which hand to take">
+    <li><span class="q">Does the brief name a direction?</span><span class="yes">Deal with <code>--direction &lt;id&gt;</code></span></li>
+    <li><span class="q">Do you have brand colours, type or a logo?</span><span class="yes">Deal with <code>--brand "…"</code>. They replace the dealt asset</span></li>
+    <li><span class="q">Does hand 1 clash with the brief?</span><span class="yes"><code>deal.mjs take 2</code>, and say why</span></li>
+    <li><span class="q">Did you refuse all three?</span><span class="yes">Deal again, once</span></li>
+    <li class="end"><span class="q">Otherwise</span><span class="yes">Take hand 1</span></li>
+  </ol>
+  <p class="note">A clash is a fact about the brief: a dark-only direction for an app used in sunlight. "I like another one more" is not a clash.</p>
+</section>
+
+<section id="commit">
+  <h2>The commitments</h2>
+  <p>The deal writes <code>MOBILE-DESIGN.md</code> with the blanks marked <code>TODO</code>. The agent fills them in before any UI code. The gate fails while one remains. Three lines matter most.</p>
+
+  <div class="commit">
+    <div>
+      <h3>Governing metaphor</h3>
+      <p>One sentence, in this exact form. It decides shape, motion and copy.</p>
+      <p class="good">In this app, a budget becomes a fuel gauge.</p>
+      <p class="bad">A clean, modern budgeting experience.</p>
+    </div>
+    <div>
+      <h3>Restraint rule</h3>
+      <p>One sentence that starts with Never or Only. It says how this app will not go wrong.</p>
+      <p class="good">Only the gauge is allowed colour. Lists stay ink on paper.</p>
+      <p class="bad">Keep things minimal where possible.</p>
+    </div>
+    <div>
+      <h3>Not doing</h3>
+      <p>Three things this design refuses. Specific enough to be checked.</p>
+      <p class="good">No card around each transaction. No confetti. No streak.</p>
+      <p class="bad">No clutter.</p>
+    </div>
+  </div>
+  <p class="note"><strong>This is the cheapest place to disagree.</strong> If the metaphor is wrong, say so now. Changing one sentence costs nothing. Changing it after four screens costs four screens.</p>
+</section>
+
+<section id="checks">
+  <h2>The checks</h2>
+  <p>Four layers a script or the agent can run, and one that needs you.</p>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Layer</th><th>Run by</th><th>Catches</th><th>Cannot catch</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Lint</strong></td><td><code>lint.mjs</code></td><td>Known tells, motion and haptic misuse, text scaling switched off</td><td>Anything visual</td></tr>
+      <tr><td><strong>Pixels</strong></td><td><code>capture.mjs</code></td><td>Blank screens, dark that equals light, text that does not scale</td><td>Whether it looks good</td></tr>
+      <tr><td><strong>Tree</strong></td><td><code>capture.mjs</code> with idb</td><td>Small targets, unlabelled buttons, a system dialog over the screen</td><td>Hit regions larger than the frame</td></tr>
+      <tr><td><strong>Eyes</strong></td><td>The agent, on every screenshot</td><td>Hierarchy, sameness, defaults, clipped text</td><td>Motion, haptics, sound</td></tr>
+      <tr class="you-row"><td><strong>Device</strong></td><td>You, holding a phone</td><td>Motion, haptics, sound, reach, real performance</td><td>Nothing. This is the real check</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>The eight critique passes</h3>
+  <div class="passes">
+    <div><strong>One second</strong><span>What is this screen for, and what is its main action?</span></div>
+    <div><strong>Squint</strong><span>Blurred, does one thing dominate? Is it the right thing?</span></div>
+    <div><strong>Cover the logo</strong><span>With the name hidden, could this be any app?</span></div>
+    <div><strong>Thumb reach</strong><span>Is the main action in reach, with targets of 44 pt or more?</span></div>
+    <div><strong>Trunk test</strong><span>Dropped here cold: where am I, and where next?</span></div>
+    <div><strong>Dark</strong><span>Is dark designed, or only inverted?</span></div>
+    <div><strong>Largest text</strong><span>Is anything clipped, overlapped or cut to nonsense?</span></div>
+    <div><strong>Sameness</strong><span>Same button, chrome and radius on every screen?</span></div>
+  </div>
+
+  <h3>A lint finding: fix it or waive it?</h3>
+  <ol class="ladder" aria-label="Decision tree: fix or waive a lint finding">
+    <li><span class="q">Is it a FAIL?</span><span class="yes">Fix it. These are functional or platform rules</span></li>
+    <li><span class="q">Is the pattern there on purpose, with a reason you can write down?</span><span class="yes">Waive it, with the reason, on that line</span></li>
+    <li class="end"><span class="q">Otherwise</span><span class="yes">Remove the pattern</span></li>
+  </ol>
+  <pre><code>// taste-mobile-ignore T03: brand-owned purple, token brand.primary</code></pre>
+  <p class="note">A waiver with no reason is rejected and reported. Waivers are listed in the final report.</p>
+</section>
+
+<section id="verdict">
+  <h2>The verdict</h2>
+  <p>The gate prints one line. Each means something exact.</p>
+
+  <div class="verdicts">
+    <div class="v pass"><code>GATE: PASS</code><p>Everything a script and stills can check was checked. Warnings may remain. Motion, haptics and sound are still unchecked.</p></div>
+    <div class="v fail"><code>GATE: FAIL</code><p>Something failed. Fix and run again. After three rounds the agent stops and reports what is left.</p></div>
+    <div class="v open"><code>GATE: OPEN</code><p>Nothing failed, but something was not checked: no screenshots, a missing mode, a platform not run. Not verified.</p></div>
+  </div>
+
+  <ol class="ladder" aria-label="Decision tree: what the gate prints">
+    <li><span class="q">Did anything fail, with rounds left?</span><span class="yes">Fix the top three. Run again</span></li>
+    <li><span class="q">Did anything fail, with three rounds used?</span><span class="yes"><code>FAIL</code>. Stop. Report what remains</span></li>
+    <li><span class="q">Was anything left unchecked?</span><span class="yes"><code>OPEN</code>. Say exactly what</span></li>
+    <li class="end"><span class="q">Otherwise</span><span class="yes"><code>PASS</code>. Report, with the warnings</span></li>
+  </ol>
+  <p class="note"><strong>An honest OPEN beats a forced PASS.</strong> If the agent tells you a build is verified and the gate said OPEN, it is wrong.</p>
+</section>
+
+<section id="best">
+  <h2>Get the best results</h2>
+  <div class="grid two">
+    <div class="card do">
+      <h3>Do</h3>
+      <ul>
+        <li><strong>Give a real brief.</strong> Who uses it, what they do most, which platform.</li>
+        <li><strong>Hand over brand assets.</strong> Colour, type, logo. They replace the dealt ones.</li>
+        <li><strong>Boot a simulator first.</strong> Otherwise nothing is seen running.</li>
+        <li><strong>Read <code>MOBILE-DESIGN.md</code> before the build.</strong> One page.</li>
+        <li><strong>Open the contact sheet.</strong> <code>.taste-mobile/shots/contact.html</code> shows every screen in every mode.</li>
+        <li><strong>Install idb.</strong> Target sizes and labels get checked.</li>
+        <li><strong>Hold the phone.</strong> Motion, haptics and sound are yours to judge.</li>
+      </ul>
+    </div>
+    <div class="card dont">
+      <h3>Do not</h3>
+      <ul>
+        <li><strong>Deal until you like it.</strong> That is choosing from memory with extra steps.</li>
+        <li><strong>Name an app to copy.</strong> Apps are evidence for a direction, never targets.</li>
+        <li><strong>Ask for everything at once.</strong> One hero screen, complete, then the rest.</li>
+        <li><strong>Waive to get a pass.</strong> A waiver needs a reason someone else would accept.</li>
+        <li><strong>Read PASS as "good".</strong> It means checked, not loved.</li>
+        <li><strong>Skip the largest text pass.</strong> It finds the most real bugs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Briefs that work</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Weak</th><th>Strong</th></tr></thead>
+    <tbody>
+      <tr><td>Make a nice finance app.</td><td>An iPhone app for a couple who share one monthly budget. They check what is left to spend, several times a day. SwiftUI.</td></tr>
+      <tr><td>Redesign this, make it pop.</td><td>Redesign the home screen. Keep our green and our wordmark. The main action is logging a run.</td></tr>
+      <tr><td>Is this good?</td><td>Review these four screens. What reads as a default, and what are the top three fixes?</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="missing">
+  <h2>When something is missing</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Situation</th><th>What happens</th></tr></thead>
+    <tbody>
+      <tr><td>No simulator</td><td>Lint runs. The gate prints <code>OPEN</code>. The report says no screen was seen running.</td></tr>
+      <tr><td>Android</td><td>The app is built. Capture through adb is best effort and untested. The gate holds at <code>OPEN</code>.</td></tr>
+      <tr><td>An existing app</td><td>The agent reads its tokens first, deals with <code>--brand</code>, and changes one screen fully before the rest.</td></tr>
+      <tr><td>A review, not a build</td><td>No deal. Lint, capture, then findings worded as "reads as a default".</td></tr>
+      <tr><td>You reject the direction</td><td><code>take 2</code> or <code>take 3</code>. A new deal only if all three are refused.</td></tr>
+      <tr><td>An "Open in app?" dialog covers the screenshots</td><td>The app should open screens from launch arguments. With idb, capture taps Open for you.</td></tr>
+      <tr><td>No idb</td><td>Capture still works. Target sizes and labels are not checked by script.</td></tr>
+      <tr><td>App Store submission</td><td>The agent runs the guideline 4.2 and 4.3 check in <code>references/tells.md</code>. It is a checklist, not an approval.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="caveats">
+  <h2>Caveats</h2>
+  <p>What this version does not do, or has not proved.</p>
+  <ul class="plain">
+    <li><strong>No benchmark yet.</strong> It has not been measured against another skill, or against no skill. There is no claim that it is better.</li>
+    <li><strong>The corpus is App Store screenshots</strong> of 114 apps, not the apps running. Store images are curated, and about a quarter were out of date when studied.</li>
+    <li><strong>Motion, haptics and sound guidance is text-sourced.</strong> It comes from platform documentation and written accounts, not from devices.</li>
+    <li><strong>Lint is pattern matching.</strong> It misses things and sometimes flags things that are fine.</li>
+    <li><strong>Android capture has never been run.</strong> It was written from documentation.</li>
+    <li><strong>Target-size checks read the accessibility frame.</strong> A control can have a larger hit region than its frame, so a warning is a prompt to look.</li>
+    <li><strong>Eight directions are held back.</strong> Stills could not show what defines them.</li>
+    <li><strong>Taste dates.</strong> The tells registry is dated. A pattern that reads as a default this year may not next year.</li>
+  </ul>
+</section>
+
+<section id="disclaimers">
+  <h2>Disclaimers</h2>
+  <ul class="plain">
+    <li>taste-mobile is not affiliated with Taste Skill, Apple, Google or any app named in its corpus. App names say where a pattern was seen. Trademarks belong to their owners.</li>
+    <li>No app screenshots are stored or redistributed. The corpus is written notes.</li>
+    <li>Do not copy an app, its name, its assets or its screens. The skill tells the agent the same.</li>
+    <li>A pass is not an App Store approval, an accessibility audit or a legal review. Apps that handle money, crypto or health data carry rules this skill does not know.</li>
+    <li>You are responsible for what you ship. The software is provided as is, under the MIT licence.</li>
+  </ul>
+</section>
+
+<section id="reference">
+  <h2>Reference</h2>
+
+  <h3>Commands</h3>
+  <pre><code>deal.mjs kinds                         # the 14 kinds
+deal.mjs directions                    # every direction and its status
+deal.mjs deal --kind &lt;kind&gt; --dir .    # deal three hands
+deal.mjs take 2 --dir .                # take another hand
+lint.mjs --dir .                       # LINT: PASS | FAIL
+lint.mjs --rules                       # list the rules
+capture.mjs devices                    # booted simulators
+capture.mjs init --dir .               # write screens.json
+capture.mjs run --udid &lt;udid&gt; --dir .  # screenshots, checks, critique template
+capture.mjs motion on --udid &lt;udid&gt;    # Reduce Motion on
+gate.mjs --dir .                       # GATE: PASS | FAIL | OPEN</code></pre>
+  <p class="note">Run each with <code>node &lt;skill&gt;/scripts/</code> in front.</p>
+
+  <h3>Files it writes in your project</h3>
+  <div class="table-wrap">
+  <table>
+    <tbody>
+      <tr><td><code>MOBILE-DESIGN.md</code></td><td>The commitments. Keep it in the repo.</td></tr>
+      <tr><td><code>.taste-mobile/deal.json</code></td><td>The three hands and which was taken.</td></tr>
+      <tr><td><code>.taste-mobile/screens.json</code></td><td>Each screen and the launch arguments that open it.</td></tr>
+      <tr><td><code>.taste-mobile/shots/</code></td><td>Screenshots by pass, <code>contact.html</code>, <code>index.json</code>.</td></tr>
+      <tr><td><code>.taste-mobile/critique.md</code></td><td>The eight passes, answered, and the top three fixes.</td></tr>
+      <tr><td><code>.taste-mobile/waivers.json</code></td><td>Optional. File-level waivers, each with a reason.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Kinds and what they deal</h3>
+  <div class="table-wrap">
+  <table class="kinds">
+    <thead><tr><th>Kind</th><th>For</th><th>Modules</th></tr></thead>
+    <tbody>
+      <tr><td><code>money</code></td><td>Banking, budgeting, payments, investing</td><td>money</td></tr>
+      <tr><td><code>crypto</code></td><td>Wallets, exchanges, DeFi</td><td>money, crypto</td></tr>
+      <tr><td><code>chat-ai</code></td><td>AI assistants, agents, answer engines</td><td>chat-ai</td></tr>
+      <tr><td><code>messaging</code></td><td>Person-to-person and community chat</td><td>chat-ai</td></tr>
+      <tr><td><code>sports</code></td><td>Scores, live game companions, fan apps</td><td>sports</td></tr>
+      <tr><td><code>fitness</code></td><td>Training, running, strength</td><td>fitness</td></tr>
+      <tr><td><code>health</code></td><td>Recovery, sleep, mood, self-care</td><td>fitness</td></tr>
+      <tr><td><code>productivity</code></td><td>Tasks, planners, calendars, pro tools</td><td></td></tr>
+      <tr><td><code>notes</code></td><td>Notes, writing, documents, journals</td><td></td></tr>
+      <tr><td><code>media</code></td><td>Music, podcasts, film and TV</td><td>feed</td></tr>
+      <tr><td><code>social</code></td><td>Feeds, close-friends apps, events</td><td>feed</td></tr>
+      <tr><td><code>utility</code></td><td>Weather, travel, camera, timers, trackers</td><td></td></tr>
+      <tr><td><code>learning</code></td><td>Language, kids, habits, practice</td><td></td></tr>
+      <tr><td><code>commerce</code></td><td>Shops, marketplaces, booking</td><td>money</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>The 16 directions</h3>
+  <p class="chips">
+    <span>Glance Board</span><span>Broadcast Scoreboard</span><span>Toy / Game-Engine Tactile</span><span>Dark Pro Minimal</span><span>Loud Owned Shell</span><span>Coach Character</span><span>User-Authored Poster</span><span>Authored Illustration</span><span>Body-State Companion</span><span>Shareable Artifact Studio</span><span>Ambient Sky</span><span>Rationed Ritual</span><span>Chromatic Timeline</span><span>Dark Content Stage</span><span>Typographic Writing Surface</span><span>Literary Warm Assistant</span>
+  </p>
+  <p>Each one's full signature, and the apps it was seen in, is in <a href="https://github.com/therynamo/taste-mobile/blob/main/skills/taste-mobile/references/directions.md">directions.md</a>.</p>
+</section>
+
+<footer>
+  <p>taste-mobile 0.1.0 · MIT · <a href="https://github.com/therynamo/taste-mobile">github.com/therynamo/taste-mobile</a></p>
+  <p>The idea of dealing a direction and gating the result comes from <a href="https://github.com/Leonxlnx/taste-skill">Taste Skill</a> by Leonxlnx. taste-mobile is a separate project and is not affiliated with it.</p>
+</footer>
+
+</main>
+</div>
+</body>
+</html>

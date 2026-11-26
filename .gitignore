@@ -8,3 +8,6 @@ DerivedData/
 *.app/
 examples/*/ios/
 examples/*/android/
+
+# Taste Skill build state for the landing page (local only)
+docs/.taste-skill/

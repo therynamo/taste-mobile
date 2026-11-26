@@ -116,7 +116,7 @@ treatments within one app (Rabby, Coinbase Wallet, Kraken, Family and Venmo all 
 
 ## Sources
 
-On-screen evidence is the round 3 visual pass (`research/reports/Mobile app visual corpus pass.md`).
+On-screen evidence is the round 3 visual pass (`research/corpus/visual/`).
 
 - https://support.rabby.io/en/articles/14124199-understanding-rabby-s-transaction-simulation
 - https://help.phantom.com/hc/en-us/articles/43483612411411--This-dApp-could-be-malicious-Do-not-proceed-unless-you-are-certain-it-is-safe
