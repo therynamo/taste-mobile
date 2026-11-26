@@ -1,0 +1,46 @@
+{
+  "slug": "rise",
+  "track_name": "RISE: Sleep Tracker",
+  "version": "1.655.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is entirely marketing art (app icon, slogan, laurels, press logos on a violet-to-sunset gradient with hills). 02-05 put an old iPhone X-style frame (notch) on the same violet sunset backdrop with light+bold captions, crop the phone hard (03 shows only a slice of the energy curve) and pop enlarged callouts out of the frame ('Peak', 'Dip', 'Avoid caffeine', 'Sleeping sounds'); real UI ~45-60%. 06 shows Apple's Calendar app with Rise-generated events, not Rise UI. In-UI dates (October 2021) indicate the screenshots are about five years old.",
+  "typography": {
+    "display": "unsure: a geometric grotesque with light and bold weights (resembles Work Sans) used for captions and in-app titles ('My sleep', 'Habits')",
+    "body": "custom geometric grotesque (same family, not SF); unsure",
+    "numerals": "large light-weight numeral with a small unit ('6.3 hrs'); semibold proportional for times ('7h 50m', '11:05p-6:55a'); percent in orange ('77%')",
+    "weights": "Light for the hero number and caption lead-ins, Bold for titles and emphasis; strong light/bold pairing",
+    "case_and_tracking": "Small caps labels with wide tracking ('LAST NIGHT', 'GREAT 5', 'SUPER 0'); sentence case elsewhere",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#24222e", "#16151a", "#212228"],
+    "text": "#ffffff",
+    "accents": ["#7b3ff2 (approx: violet buttons, tab tint, links)", "#f08a24 (approx: orange energy percent and curve peak)", "#c2449a (approx: magenta curve segment)"],
+    "accent_strategy": "Brand violet for interaction (selected tab, links, callout tags, '30m buffer'); the energy curve and sleep-debt arc are drawn in a violet-to-magenta-to-orange gradient that maps low to high energy. Habit rows get per-habit coloured circle icons.",
+    "source": "palette.json 02/04/05 (#24222e, #16151a, #212228 surfaces; #000000 base), 03 (#000000 curve background); #661cda/#4d1f9a/#1e0848 and #ba5479 are the violet sunset backdrop + visual match"
+  },
+  "shape": {
+    "radius_language": "small-medium: ~10-12pt cards and grouped lists, pill chips ('GREAT in 1 day', 'Auto'), circular icon buttons, a big circle for the sleep-debt number; arrow-tag callouts",
+    "concentric": "no",
+    "borders_shadows": "Hairline separators in grouped lists; outline pill badges; no shadows",
+    "materials": "flat dark; gradient strokes on the curve and arc only"
+  },
+  "liquid_glass_visible": "no; opaque dark tab bar and pre-iOS 26 chrome (notch-era device)",
+  "density": "medium: sleep home stacks a big gauge, two stat tiles and a last-night list; the energy tab is one tall timeline with sparse annotations",
+  "layout": "Sleep tab: 'My sleep' title with date range and profile icon; a half-arc sleep-debt gauge with the debt number in an overlapping circle; GREAT/SUPER night counters; tiles for daily debt change and Energy potential; a LAST NIGHT group with total sleep and detection info. Energy tab: a vertical time axis with the circadian curve drawn as a wavy gradient line, annotated with labels like 'Avoid caffeine' and a bottom sheet of habits.",
+  "navigation": "Visible tab bar with outline icons in violet/grey: Sleep, Energy, Tools, Progress, Learn (05 shows four tabs without Tools, so the screenshots come from different versions); a pull-up bottom sheet with alarm, 'Auto' and + controls above the tab bar; back chevrons with centred titles",
+  "imagery_and_icons": "No photography; gradient curves and arcs; waveform graphics on audio cards; small coloured circle icons per habit; emoji in calendar event titles (😴, 📈, 📉) exported to Apple Calendar",
+  "signature_visual_move": "Energy is a single vertical wavy line, violet in the dips and orange at the peaks, running down a time axis with Peak and Dip tags.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji", "Gradient backgrounds and gradient text"],
+  "direction_fit": {
+    "primary": "Ambient Sky",
+    "secondary": "Glance Board",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's 'calm wellness / data-curve', with the energy wave and sleep debt as the main metric, is confirmed. The scrubbable time axis driven by the body's circadian 'light' and the sunset gradient palette are closest to Ambient Sky; the sleep-debt gauge plus two tiles is a readiness-style Glance Board. Low confidence because the screenshots are about five years old."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Daily score: sleep debt is the main metric, shown as a large light numeral (6.3 hrs) in a circle overlapping a half-arc gauge drawn as a violet-to-orange gradient stroke; Energy potential 77% in orange. Colour scale: violet (low) to orange (high) gradient, not traffic light. Streak/calendar: 'GREAT 5 / SUPER 0' night counters and a 'GREAT in 1 day' badge with a lightning icon; calendar integration writes Morning grogginess / Morning peak / Afternoon dip blocks with emoji into Apple Calendar. Charts: the circadian energy curve, a smooth vertical line on a time axis with hour ticks. Numerals: light-weight large hero, semibold elsewhere. Screenshot dates (2021) and iPhone X frame mean the current UI is unverified."
+}

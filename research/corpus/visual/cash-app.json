@@ -1,0 +1,51 @@
+{
+  "slug": "cash-app",
+  "track_name": "Cash App",
+  "version": "5.78.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Every image is a flat colour backdrop (neon green #01e013, warm grey #e5e2dd, or black) with a large left-aligned caption and a frameless rounded UI crop (~40pt corners, no device bezel) occupying ~60-65% of the frame, plus small legal text. 04 (discount list) is a marketing composition of cards rather than a real screen. Roughly 60% UI on 01-03 and 05-06.",
+  "typography": {
+    "display": "Cash Sans (custom), visible in captions at a light-regular weight, large, tight leading; in-app titles ('Money', 'Paycheck') in the same family at semibold",
+    "body": "custom: Cash Sans",
+    "numerals": "bold lining figures, look proportional; no monospace visible; tabular unsure",
+    "weights": "Captions regular/light; balances bold; labels medium; secondary regular grey",
+    "case_and_tracking": "Sentence case; tight tracking on large numerals and captions",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f0f0f0 (visual; Money tab canvas), #ffffff on detail screens",
+    "surfaces": [
+      "#ffffff"
+    ],
+    "text": "#000000",
+    "accents": [
+      "#01e013",
+      "#1a7f2a (visual estimate, up-change green text)"
+    ],
+    "accent_strategy": "Brand-flooded at moments: the amount-entry keypad screen is entirely neon green, and the backdrop alternates green/grey/black. Inside screens the green is limited to progress rings, chart lines and icon chips; primary buttons are black pills.",
+    "source": "palette.json 01 and 05 (#01e013 40-45%, #ffffff 40%), 02 (#01e013 43% is the in-app keypad screen), 03-04 (#000000 backdrop); grey canvas visual"
+  },
+  "shape": {
+    "radius_language": "large and pill: cards ~16-20pt, all buttons full pills, range chips pills, circular icon chips",
+    "concentric": "yes",
+    "borders_shadows": "None; white cards on light grey, hairline dividers inside cards",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no: tab bar on the keypad screen is flat icons on the green flood",
+  "density": "low-medium; large balances, 1-2 data points per card, ~20pt between cards",
+  "layout": "Money tab: page title, stacked cards (Cash balance with two black pill buttons and a Paychecks row; Savings with ring illustration; Bitcoin with sparkline), section headers 'Save & invest', 'Explore'. Pay tab: huge amount, full-width custom keypad, Pool/Request tonal pills, black Pay pill.",
+  "navigation": "3-icon tab bar (bank, $, clock), icon-only, custom glyphs, current tab in black, others darker green on the green flood",
+  "imagery_and_icons": "Custom monoline icon set (outline, rounded terminals); small spot illustrations in black line with neon green fill (scissors cutting a card, green convertible, coconut drink); circular icon chips in black or green",
+  "signature_visual_move": "The pay screen floods the whole display with neon green and sets the amount in black at roughly six times body size above a bare keypad.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Owned neon green, custom Cash Sans, authored line illustrations; the loudness sits in the shell (pay screen, backdrops) while account cards stay black-on-white."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "MONEY ANATOMY. Balances left-aligned under a medium label, bold, ~2x body in cards ('$1,226.00'), ~3x centred in the savings ring ('$400.00'). Cents same size and weight as dollars; $ full size, no space. Tabular: no evidence either way; figures look proportional, and the third-party 'Cash Sans Mono' claim is not visible in any screen. Amount entry: '$20' in black bold at ~6x body centred on full-green screen, no cents until typed; keypad digits medium weight; Pool and Request as tonal darker-green pills; Pay as a full-width black pill. Positive amounts are black with a spaced plus ('+ $1,650.00', '+ $20.00', '+ 2.12%'), not green; up-change uses a green arrow and green figure ('↑ 1.18% today'). No negative shown. Charts: smooth neon-green spline (~3pt stroke) with no axes, fill or gridlines; range chips 1D/1W/1M/1Y/ALL as grey pills with selected darker; card sparkline jagged green. Savings uses a thick green progress ring around the balance. Transaction detail ('Paycheck') is a receipt-style card: icon chip, title, timestamp, big amount, then 'Transaction details' and 'What you can do' rows with outline icons."
+}

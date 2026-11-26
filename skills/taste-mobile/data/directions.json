@@ -1,0 +1,658 @@
+[
+  {
+    "id": "glance-board",
+    "name": "Glance Board",
+    "status": "ready",
+    "exemplars": ["flighty", "watch-duty", "paku", "the-outsiders", "tide-guide", "fotmob", "sofascore", "whoop", "bevel", "crouton", "mela", "copilot-money"],
+    "signature": {
+      "typography": "System SF (or the brand's text face) with bold values and smaller same-baseline unit suffixes ('8h 28m', '4:57a', '33 %'); small all-caps tracked labels for state or category set above the value ('IN AIR', 'RISING TIDE', 'ACRES', 'TOTAL BUDGET'). Tabular or monospaced figures are NOT part of the confirmed signature: only the-outsiders shows a monospaced face (likely SF Mono).",
+      "color": "Neutral base (white, near-white #f3f2f8-#f7f5f4, or near-black) or one single-hue base (tide-guide slate #354c67, whoop navy-slate #12171a). Status colour strictly semantic: green on time / optimal / under budget, amber tight or alert, red late / fire / over budget, blue rising. Brand hue confined to one chrome element (watch-duty amber header, copilot-money blue header gradient) or absent.",
+      "shape": "Large card radii about 16-24pt, sheets up to about 30pt and concentric with the display; pill filters, period selectors and range chips.",
+      "density": "A variant axis, not a signature: low (crouton cook mode, paku one reading) to high (flighty one line per leg, watch-duty stat grids, whoop 5-up tiles).",
+      "navigation": "3-4 labelled tabs in a floating Liquid Glass capsule, often with a detached circular button (flighty, tide-guide, the-outsiders, fotmob), or one entity per sheet over a map (watch-duty, paku).",
+      "imagery": "Data visuals instead of imagery: labelled curves, semantic map pins, score rings, rating chips. The same readout line or curve reappears on Live Activities, the Dynamic Island, widgets and Watch faces (flighty, tide-guide, paku, the-outsiders).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning, not a gate: flag a screen that shows more than one competing entity per line or sheet, status colour used decoratively, or brand hue leaking into status.",
+    "fits_app_kinds": ["travel", "weather and tides", "emergency and incidents", "air quality", "cooking mode", "sports match centre", "training readout", "readiness dashboard", "money dashboard"],
+    "blocking_captures": []
+  },
+  {
+    "id": "broadcast-scoreboard",
+    "name": "Broadcast Scoreboard (fandom variant of Glance Board)",
+    "status": "ready",
+    "exemplars": ["apple-sports", "sleeper"],
+    "signature": {
+      "typography": "Heavy, width-condensed score numerals at about 30-40pt set directly on the team surface (apple-sports: SF on the width axis; sleeper: condensed italic), with timeout dashes or dots beneath. nba shows the same condensed heavy score numerals but not the team-colour surface.",
+      "color": "Tinted dark base (apple-sports Home deep green #002c00; sleeper navy #0c174b). Team colour floods the identity surface: a left-to-right two-team gradient fills the Live Activity and game sheet (apple-sports); giant italic team-code watermarks in team colour sit behind the score (sleeper). No other hue. No red LIVE badge in apple-sports: the clock and play sentence carry liveness.",
+      "shape": "Large concentric radii about 20-24pt on the game sheet and Live Activity cards; glass capsule buttons.",
+      "density": "Medium: one game per row of about 100pt; the detail sheet stacks line score, field graphic and stat bars.",
+      "navigation": "Minimal chrome: wordmark plus a Home glass capsule and a day switcher; no tab bar visible in apple-sports.",
+      "imagery": "Official crests, a possession glyph and a field graphic only. No photography or illustration.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: the only non-Apple exemplar (sleeper) sits inside the Pick'em Arcade anti-reference, so deal the scoreboard component only. Flag any multiplier, wallet-in-top-bar, promo chip, MORE/LESS pick button, 3D jersey or neon glow on or near the scoreboard. Team colour stays on identity surfaces, never on status.",
+    "fits_app_kinds": ["sports scores", "live game companion", "fan app"],
+    "blocking_captures": []
+  },
+  {
+    "id": "toy-game-engine-tactile",
+    "name": "Toy / Game-Engine Tactile",
+    "status": "ready",
+    "exemplars": ["rooms", "not-boring-camera", "not-boring-weather", "opal"],
+    "signature": {
+      "typography": "Chrome on system SF or a plain sans; one custom display treatment for titles or readouts (blocky heavy rounded titles in rooms; very condensed numerals plus all-caps monospaced labels in not-boring-weather; a seven-segment LCD timer in opal).",
+      "color": "Dark base (#000000 rooms, #08080a opal, #191919 not-boring-camera, #1d1d1d not-boring-weather) with lit rims. Chrome near-monochrome with one accent (system blue in rooms, ice blue #93c0d8 in opal). Saturation lives in the rendered object, is data-mapped (red sun, cyan precipitation, amber alerts in not-boring-weather), or is user-chosen (17 colourway swatches in not-boring-camera).",
+      "shape": "Large radii about 16-28pt and pills on chrome; a chunky physical deck with about 40pt corners in not-boring-camera; real-time shading, grain or voxel lighting on the toy layer only.",
+      "density": "Low to medium: a hero 3D scene takes about half the screen, then a compact readout or card row.",
+      "navigation": "Conventional and visibly separate from the toy layer: a 3-item floating glass tab bar (rooms), large-title headers (opal), or timeline scrubbing with no bar (not-boring-weather).",
+      "imagery": "Rendered 3D objects are the score or the UI: voxel dioramas on per-room gradients, a gem on a stone plinth, a knurled camera body, a grainy weather diorama. Emoji tiles are acceptable as toy-box icons (rooms).",
+      "motion_haptics_if_known": "Not visible in stills. Text-sourced only: per-detent haptics paired with stereo sound in Not Boring apps."
+    },
+    "restraint_rule": "Warning: flag a toy surface that is not a visibly separate layer from the chrome, or a rendered effect that maps to no data value or user choice.",
+    "fits_app_kinds": ["utilities", "camera", "weather", "focus and screen time", "habit", "kids", "creative"],
+    "blocking_captures": []
+  },
+  {
+    "id": "dark-pro-minimal",
+    "name": "Dark Pro Minimal",
+    "status": "ready",
+    "exemplars": ["linear", "raycast", "perplexity", "phantom", "coinbase-wallet", "discord"],
+    "signature": {
+      "typography": "A neutral grotesque with grey sentence-case section labels and no display flourish (Inter-like in linear, SF in raycast, an FK-Grotesk-like face plus mono metadata numerals in perplexity).",
+      "color": "Dark surfaces stepped by lightness rather than shadow (linear app #18181a with chips on #1c1c1e/#2b2b2b; raycast #0f0f0f; perplexity #1a1a1a; coinbase-wallet navy #0a0f15; phantom pure black). Colour semantic only (health green/yellow/red). One reserved accent: linear periwinkle #7b80f0 for the swipe action, perplexity turquoise #20b8cd, raycast red #ff3647 only on the record state, phantom pastel lavender.",
+      "shape": "Capsules for every control (linear), 44pt circular header buttons (raycast), about 12pt cards; borders and lightness steps instead of shadows.",
+      "density": "Medium to high: single-line rows of about 56pt.",
+      "navigation": "Dark glass capsules: a custom floating 4-icon tab bar with a detached circular create button and grouped top-right capsules (linear, bespoke glass); circular glass header buttons and a floating composer (raycast, native glass). No visible refraction over text.",
+      "imagery": "Thin outline icons. No illustration. User-chosen emoji project icons are the only colour in linear's lists.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag refraction over dense text, decorative colour, or mascots and 3D art in the shell (discord carries these and reads louder than the direction).",
+    "fits_app_kinds": ["pro productivity", "developer tools", "answer engines", "trading terminal", "wallet", "community chat"],
+    "blocking_captures": []
+  },
+  {
+    "id": "loud-owned-shell",
+    "name": "Loud Owned Shell",
+    "status": "ready",
+    "exemplars": ["cash-app", "monzo", "nubank", "klarna", "venmo", "kraken", "ladder", "nike-run-club"],
+    "signature": {
+      "typography": "A custom face carries the shell (Cash Sans; Monzo Sans with split-size pounds and pence on every amount; NuSans; Klarna Title, a condensed display face used for the hero balance; ladder's extended caps; kraken's bold italic section headers). List text uses the same family at regular weight.",
+      "color": "One owned colour floods one shell surface: cash-app green #01e013 on the pay screen, monzo coral #ff4f40 on the account card, klarna aubergine #2c2342 home header plus a pink token, nubank purple #8e0de3 on the confirm button, ladder lime #e8ff11 on pure black, kraken purple #7132f5 on promo cards. Transaction and activity lists stay ink on white.",
+      "shape": "Large cards about 16-20pt, full-pill buttons, round action buttons.",
+      "density": "Low to medium: a large balance and one or two data points per card.",
+      "navigation": "Conventional placement; monzo shows a floating glass tab bar, the rest flat bars or none visible.",
+      "imagery": "An authored image system: 3D coins and 3D object avatars inside UI cards (kraken), card renders, campaign photography, the brand's own glyph set.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag the owned colour or display face reaching the transaction list, status colour, or a confirm or signing sheet. nubank breaks this (purple confirm button) and still ships.",
+    "fits_app_kinds": ["consumer money", "payments", "buy now pay later", "consumer fitness brand", "commerce"],
+    "blocking_captures": []
+  },
+  {
+    "id": "coach-character",
+    "name": "Coach Character",
+    "status": "ready",
+    "exemplars": ["duolingo", "finch"],
+    "signature": {
+      "typography": "Heavy rounded display type (lowercase Feather-Bold-like in duolingo; Rubik-like bold in finch) over a rounded or squarish body face.",
+      "color": "White or near-white base (#ffffff, #f3f4f4). Many hues, each mapped to one system (duolingo: green progress #58cc02, blue selection #1cb0f6, orange streak #ff9600, pink energy); finch floods illustrated scene backgrounds per context while list cards stay white.",
+      "shape": "About 14-18pt radii with a darker thick bottom lip on every tappable element, so buttons read as physical slabs.",
+      "density": "Low to medium: one task per screen in duolingo; an illustrated scene over roomy 56pt goal rows in finch.",
+      "navigation": "Modal lesson and celebration states without a tab bar in the store frames; bottom sheets with grab handles.",
+      "imagery": "One consistent flat-vector character cast on every screen, acting out the current state, with speech bubbles.",
+      "motion_haptics_if_known": "Not visible in stills."
+    },
+    "restraint_rule": "Warning: flag the character on money, signing or error sheets, and flag the absence of a personality off-switch. Neither is verifiable from store frames. A cloned flame-streak screen reads as Duolingo pastiche.",
+    "fits_app_kinds": ["learning", "self-care", "habit", "games", "weather persona"],
+    "blocking_captures": []
+  },
+  {
+    "id": "user-authored-poster",
+    "name": "User-Authored Poster",
+    "status": "ready",
+    "exemplars": ["partiful", "apple-invites", "luma", "universe"],
+    "signature": {
+      "typography": "Two registers. Loud: a custom wide grotesque with lowercase event titles (partiful). Quiet: SF Bold only (apple-invites, luma, universe).",
+      "color": "The user's cover sets the page: apple-invites bleeds the cover photo into a blurred gradient behind every card; luma tints the event page from its cover; partiful's page background follows the chosen theme (iridescent lavender, violet grid glow). Chrome otherwise neutral.",
+      "shape": "Large concentric radii (about 36pt invite cards in apple-invites, 16-20pt cover cards in luma); pill chips and RSVP controls.",
+      "density": "Low: one invite or event card per screen.",
+      "navigation": "Conventional: RSVP, guest lists and sheets stay native. apple-invites and luma use Liquid Glass (close circle, action capsule, segmented RSVP; floating 3-tab bar in luma). partiful uses no system glass.",
+      "imagery": "The user's cover art or photo is the only expression; sticker and torn-paper collage in partiful.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag expression leaking from the user's artifact into RSVP, lists or chrome. Emoji, purple glow and gradients are allowed on the user's artifact and should not trip the tell catalog there.",
+    "fits_app_kinds": ["events", "social invites", "personal sites"],
+    "blocking_captures": []
+  },
+  {
+    "id": "authored-illustration",
+    "name": "Authored Illustration",
+    "status": "ready",
+    "exemplars": ["headspace", "bears-gratitude", "grug", "vocabulary", "katha-room", "airbnb"],
+    "signature": {
+      "typography": "Splits two ways: custom type matched to the hand (grug's handwriting face, vocabulary's bold slab-ish serif with a humanist sans, headspace's rounded custom face, likely SF Rounded in bears-gratitude) or plain SF that lets the art carry identity (katha-room).",
+      "color": "A fixed small illustration palette (vocabulary cream #efebe0, teal #93c1c1, salmon #f49484), a per-screen pastel flood with tinted text and controls (bears-gratitude #fde28b), or per-content hues per tile (headspace, katha-room). Text avoids pure black (warm dark brown in headspace, tinted text in bears-gratitude).",
+      "shape": "Large radii about 16-24pt, flat, no shadows; no glass in the identity layer. grug draws no code shapes at all.",
+      "density": "Low: one illustration per card or tile, centred single columns.",
+      "navigation": "Conventional placement and labelled; custom in three of six (bears-gratitude text-tab top bar, grug day strip, vocabulary cream pill tab bar), native 3-tab bar in headspace.",
+      "imagery": "One consistent hand on every content surface (headspace flat rounded blobs, bears-gratitude outline bears, grug scribbles, katha-room folk art with mixed traditions). Dimensional variant: small glossy 3D objects as icons in flat, photo-led white chrome (airbnb).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag a second illustration style on content surfaces. The text rule 'navigation stays native' is broken by three award winners; soften to 'navigation stays conventional in placement and labelled'.",
+    "fits_app_kinds": ["journaling", "wellbeing", "kids", "learning", "lifestyle", "marketplace (dimensional variant)"],
+    "blocking_captures": []
+  },
+  {
+    "id": "body-state-companion",
+    "name": "Body-State Companion",
+    "status": "ready",
+    "exemplars": ["gentler-streak", "how-we-feel", "harvee", "oura", "daylio"],
+    "signature": {
+      "typography": "Not part of the signature: SF with SF Rounded heavy numerals (gentler-streak), a bold serif with bold italic on true black (how-we-feel), SF semibold with small grey units (harvee), a serif headline over light-weight large numerals (oura).",
+      "color": "A closed colour-meaning set rather than decoration: gentler-streak's green healthy corridor band, how-we-feel's four mood quadrants (red, yellow, blue, green), oura's state words (Optimal blue, Good teal, Needs care coral). Status text in semantic green with a check ('Normal', 'As Usual'). Mode varies: light (harvee warm off-white #f5f2e9), dark (how-we-feel #000000, oura #18191d), both (gentler-streak).",
+      "shape": "Large continuous corners about 20-32pt; capsule tab bars and chips.",
+      "density": "Low to medium with a hero state block on top.",
+      "navigation": "Floating glass capsule tab bar in gentler-streak, harvee and oura.",
+      "imagery": "The day's state as a plain-language headline ('Today Feels Great', 'I'm feeling grateful') plus one non-colour state carrier: a mascot (gentler-streak), a photoreal plush mascot whose colour and pose track state (harvee), a custom glyph per emotion (how-we-feel), drawn mood faces (daylio).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag nagging copy and alarm red on imprecise data. harvee (red 'Insufficient' chip) and daylio (red for 'awful') break the alarm-red rule.",
+    "fits_app_kinds": ["health", "recovery", "mental health", "mood journal", "sleep"],
+    "blocking_captures": []
+  },
+  {
+    "id": "shareable-artifact-studio",
+    "name": "Shareable Artifact Studio",
+    "status": "ready",
+    "exemplars": ["any-distance", "denim", "capwords", "strava"],
+    "signature": {
+      "typography": "Chrome on SF or a neutral sans; the artifact has its own type separate from the chrome (a wide display face on any-distance cards; a chunky outlined rounded sans on capwords stickers; user-chosen fonts on denim covers).",
+      "color": "Quiet, near-monochrome chrome (any-distance #080707, denim #f3f3f3 with system blue, strava #141414 with orange #fc5200 reserved for route, selected tab and primary actions); all saturation lives in the artifact.",
+      "shape": "Selectable masks and die-cuts on the artifact (Circle, Arch, Dip, Rounded in any-distance; thick white sticker edge in capwords); fanned shadowed cover stacks in denim; ordinary radii in chrome.",
+      "density": "Medium.",
+      "navigation": "Native or near-native chrome; denim is pre-iOS 26 chrome with grey circular toolbar buttons.",
+      "imagery": "The designed object is the product: route-on-photo story cards, photo stickers, mesh-gradient playlist covers. The store wrapper reuses the artifact as brand evidence.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag saturation or display type in the chrome rather than the artifact. Privacy defaults on the artifact (route clipping) are text-sourced and not visible in stills.",
+    "fits_app_kinds": ["fitness sharing", "creative tools", "language learning", "music playlists", "social"],
+    "blocking_captures": []
+  },
+  {
+    "id": "ambient-sky",
+    "name": "Ambient Sky",
+    "status": "ready",
+    "exemplars": ["lumy", "moonlitt"],
+    "signature": {
+      "typography": "SF Pro semibold, centred countdown or state copy over the sky ('Sunset / IN / 9 hours, 27 minutes'); time labels in white pills.",
+      "color": "Dark near-monochrome sky (lumy navy #000711 under a rendered sky gradient; moonlitt indigo #10194c to #25307d). Colour comes from data, not brand: each light phase has its hue in lumy (teal noon, yellow golden hour, orange sunset, magenta last light, blue hour); moonlitt's only warm colour is a copper-red eclipse moon.",
+      "shape": "Large list cards about 20-24pt; capsule and circular buttons; grouped glass capsule toolbars in moonlitt.",
+      "density": "Low on the main view; medium-high only in calendars.",
+      "navigation": "Two floating top buttons (lumy) or a floating 3-icon glass tab bar with glass toolbar groups (moonlitt).",
+      "imagery": "A rendered or photographic sky object on a dotted path (sun arc, moon orbit) with a scrubbable time axis (lumy tick scrubber; moonlitt edge rails with pill time labels).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag palette colour that does not follow the real sky or data. Legibility at the most opaque glass setting and Reduce Motion are text-sourced requirements, not visible in stills.",
+    "fits_app_kinds": ["sun and daylight", "moon and astronomy", "tides", "outdoor conditions", "sleep timing"],
+    "blocking_captures": []
+  },
+  {
+    "id": "rationed-ritual",
+    "name": "Rationed Ritual (behaviour direction)",
+    "status": "ready",
+    "exemplars": ["retro", "bereal", "lapse"],
+    "signature": {
+      "typography": "Not shared. Retro uses a tight high-contrast serif display over SF body; bereal a bold wordmark over a grotesque; lapse is not judgeable in-app. Deal no typeface from this direction.",
+      "color": "Achromatic chrome (white or black) so user photos are the only hue; a single red used only for a count badge (retro, bereal) or red-orange for focus brackets and flash (lapse).",
+      "shape": "Large radii on photos and strips (about 16-18pt; a black-bordered 14pt selfie inset in bereal; about 36pt viewfinder corners in lapse); pills and circles for controls.",
+      "density": "Low: one post or one week per screen height.",
+      "navigation": "Ordinary: a 5-icon unlabelled tab bar (retro), top text segments (bereal).",
+      "imagery": "The constraint drawn as UI state, which is what gets dealt: a week-number serif title over a film strip with one card per friend per week (retro); a blurred friend photo with an eye-slash and 'Share to view', plus lateness stamps (bereal); undeveloped shots as blurred gradient tiles with a padlock (lapse).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag a design that drops the constraint state (lock, blur, date stamp) or adds likes, editing or captions as requirements. This direction deals a behaviour plus its constraint-state component, never a palette or typeface.",
+    "fits_app_kinds": ["close-friends social", "photo journal", "disposable camera", "daily prompt"],
+    "blocking_captures": []
+  },
+  {
+    "id": "chromatic-timeline",
+    "name": "Chromatic Timeline",
+    "status": "ready",
+    "exemplars": ["structured", "notion-calendar", "amie"],
+    "signature": {
+      "typography": "SF Pro with a heavy bold date header (structured) or an Inter-like grotesque (notion-calendar, amie).",
+      "color": "Near-white neutral (structured #f4f3f7, amie #f5f5f5, notion-calendar warm off-white grid #f9f8f6) with per-block hue as the reading layer. Two variants: saturated duration-scaled capsules with a white glyph (structured: salmon, slate, navy, green, plum), or pale tint blocks with a 3pt left bar and saturated same-hue text (notion-calendar, amie). A red current-time line and today marker in both pale-tint apps.",
+      "shape": "Vertical capsules whose length equals duration (structured); about 4-10pt event blocks (notion-calendar, amie); large sheets.",
+      "density": "Medium (structured, amie) to high (notion-calendar multi-day views).",
+      "navigation": "Floating glass capsule tab bar plus a separate circular + button (structured); a floating circular menu button and no tab bar (notion-calendar).",
+      "imagery": "A glyph library inside task capsules (structured); none in the pale-tint variant.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: no exemplar satisfies the whole text rule. structured uses its salmon CTA as a default task hue; notion-calendar and amie carry no per-block icon. The non-colour cue is still required by the platform accessibility lint (Differentiate Without Color), which is separate from this taste warning.",
+    "fits_app_kinds": ["daily planner", "calendar", "ADHD-friendly tools", "time blocking"],
+    "blocking_captures": []
+  },
+  {
+    "id": "dark-content-stage",
+    "name": "Dark Content Stage",
+    "status": "ready",
+    "exemplars": ["spotify", "letterboxd", "calm"],
+    "signature": {
+      "typography": "A custom brand face with black-weight hero titles over regular rows (spotify); a Graphik-like semibold title over a light year (letterboxd); a light geometric sans for screen titles (calm).",
+      "color": "Near-black neutral stage (spotify #121212, letterboxd slate #181b20) or a deep tinted stage (calm #185d91). The brand shrinks to one or a few action colours: spotify green #1ed760 on play, selection and saved; letterboxd green #00e054 rating and watched, orange #ff8000 liked, blue #40bcf4 patron; calm a white-lavender Play pill. Surfaces take per-content tints sampled from the artwork (spotify mini player and audiobook cards).",
+      "shape": "Small radii on artwork (about 4pt in spotify and 2-4pt on letterboxd posters, about 8pt cards); pill chips; circular play buttons; artwork gradients fading into the stage.",
+      "density": "Medium to medium-high: 2x4 shortcut grid and 3-up shelves (spotify), 4-across poster grid and about 75pt diary rows (letterboxd); low in calm.",
+      "navigation": "Custom chrome; horizontal shelves with See All; floating round back button over hero art. Tab bars are cropped out of spotify frames; letterboxd frames are iOS 10 era.",
+      "imagery": "Artwork, posters and stills are the hero and the only multi-hue element; chrome never overlays them.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag brand hue on the stage itself, chrome or text overlaid on artwork, or the accent used for anything but play, log or selection. calm partly breaks the first clause (the night-sky blue stage is its brand).",
+    "fits_app_kinds": ["music and podcast streaming", "film and TV catalog", "audio wellness catalog", "media library"],
+    "blocking_captures": []
+  },
+  {
+    "id": "typographic-writing-surface",
+    "name": "Typographic Writing Surface",
+    "status": "ready",
+    "exemplars": ["bear", "craft", "tot"],
+    "signature": {
+      "typography": "The type is the interface. A custom geometric-humanist sans with about 1.6 line height and hybrid Markdown that keeps faint ** markers visible beside rendered bold (bear); a per-document serif or sans style (craft); a user choice of SF, a book serif or mono (tot).",
+      "color": "One theme accent for links, cursor and headings (bear red #dd4c4f on light, green on charcoal, amber); user-chosen document backdrops and page tints (craft); seven fixed dot colours each repainting its page (tot). Chrome otherwise grey or near-white.",
+      "shape": "A rounded page card about 20pt floating on a backdrop with concentric inner radii (craft); otherwise few drawn shapes: about 8-10pt tag pills, capsule and circle floating controls.",
+      "density": "Low: one note per screen, wide 28-30pt side margins.",
+      "navigation": "Chrome shrinks to floating capsules: a back circle and an info/more capsule (bear), a glass back circle, share capsule and a 3-icon glass capsule tab bar (craft), or seven coloured rings as the entire navigation with no tab bar (tot).",
+      "imagery": "None beyond the user's own covers (craft) and thin outline icons.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: flag persistent formatting toolbars, tab bars or feature chrome that compete with the page. Advanced features stay hidden until invoked (text-sourced from bear).",
+    "fits_app_kinds": ["notes", "writing", "documents", "scratchpad"],
+    "blocking_captures": []
+  },
+  {
+    "id": "literary-warm-assistant",
+    "name": "Literary Warm Assistant",
+    "status": "ready",
+    "exemplars": ["claude", "granola", "pi"],
+    "signature": {
+      "typography": "A text serif carries reading: assistant replies in a book serif with the user's words in sans (claude); regular-weight serif note titles at about 28-32pt over a sans for UI (granola); one warm serif for both speakers (pi).",
+      "color": "Warm paper ground (claude cream #f8f7f3, granola warm grey #eaebe5, pi cream #faf3e9), warm-grey and near-black text, and one muted accent or none: claude terracotta #da7756 on the send button only, granola lime #b2c248 only on recording surfaces, pi forest green #1c472d line icons.",
+      "shape": "Flat paper; large radii (user bubbles about 16-20pt, composer a 24pt rounded rectangle in claude); 44pt circular buttons.",
+      "density": "Low: wide margins, large serif body, generous empty space.",
+      "navigation": "Reduced to top-corner circular buttons and capsules; no tab bar visible in any of the three store sets. claude's chrome is the shared chat skeleton.",
+      "imagery": "None in claude and granola beyond outline icons; painted illustration tiles instead of icons in pi.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: this direction overlaps the 2026 cream-plus-serif-plus-orange default. Flag a generated brief that uses cream, serif and an orange accent together without a governing asset; require a non-orange accent or a non-cream ground, plus one structural escape from the chat skeleton.",
+    "fits_app_kinds": ["AI assistant", "AI notes", "companion chat", "reading"],
+    "blocking_captures": []
+  },
+  {
+    "id": "cinematic-dark-data",
+    "name": "Cinematic Dark Data",
+    "status": "held",
+    "exemplars": ["whoop", "robinhood", "mercury", "copilot-money"],
+    "signature": {
+      "typography": "Partial: a custom face at an unusual light or regular weight for amounts (mercury regular with superscript cents; robinhood regular-weight balance).",
+      "color": "Unconfirmed as specified. The two named exemplars are light in every store frame (mercury lavender-tinted #edecfa; copilot-money near-white #f7f9fc under a blue header). The only tinted not-black dark exemplar is whoop (navy-slate #12171a). robinhood is dark but pure #000000, which the direction rejects.",
+      "shape": null,
+      "density": null,
+      "navigation": null,
+      "imagery": "Partial: a chart as the hero of home (robinhood, mercury, copilot-money).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning (text-sourced): the four semantic money colours stay separate from the brand accent.",
+    "fits_app_kinds": ["budgeting", "business banking", "net worth", "readiness (whoop)"],
+    "blocking_captures": [
+      "copilot-money dark mode: Dashboard, Transactions, Budgets, Investments",
+      "mercury dark mode: Home with chart, account detail, Send flow",
+      "If neither has a tinted not-black dark mode, merge the direction into the money core plus the quiet end of the shell-loudness axis"
+    ]
+  },
+  {
+    "id": "analog-instrument",
+    "name": "Analog Instrument",
+    "status": "held",
+    "exemplars": ["kino", "halide"],
+    "signature": {
+      "typography": "Confirmed for one maker (Lux) only: a wide, squarish, extended all-caps technical face with very open tracking for every readout and mode label ('31 MIN', '30 · 4K · PRORES', 'AWB').",
+      "color": "Black chrome; one saturated colour per meaning (kino red only for record, olive-yellow for AF and lock, green for audio meters; halide yellow #f4e631 for every active or automatic state, red and green only in zebra and waveform diagnostics).",
+      "shape": "Circular AF badge, large white or red circular shutter, rounded gallery thumbnail.",
+      "density": "Low around the viewfinder; medium with overlay toolbars.",
+      "navigation": null,
+      "imagery": "Long-throw tick-mark scales: a curved focus arc and exposure ruler (kino), a linear focus ruler 0.2 to infinity (halide).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning (text-sourced): never obscure the shot; lock and disable controls during capture.",
+    "fits_app_kinds": ["pro camera", "video capture", "audio recording"],
+    "blocking_captures": [
+      "not-boring-camera full shooting screen and settings (second-maker candidate: mono all-caps readouts and knurled dials)",
+      "kino while recording (red perimeter, disabled controls)",
+      "halide Mark III Look picker and editor (store frames are Mark II)",
+      "A second-maker pro capture app added to the corpus by the user"
+    ]
+  },
+  {
+    "id": "fluid-continuity",
+    "name": "Fluid Continuity",
+    "status": "held",
+    "exemplars": ["things", "family"],
+    "signature": {
+      "typography": null,
+      "color": null,
+      "shape": "Static traces only: a floating inset tray detached from the screen edges with large concentric corners, icon buttons in both top corners and a Cancel/Connect pill pair (family); a grey drag slot left by the Magic Plus button (things).",
+      "density": null,
+      "navigation": null,
+      "imagery": null,
+      "motion_haptics_if_known": "Text-sourced only: 'we fly instead of teleport', label morphs (Continue to Confirm), trays unfold from their source."
+    },
+    "restraint_rule": "Warning (text-sourced): delight rises as feature frequency falls; persistent components never duplicate mid-animation.",
+    "fits_app_kinds": ["wallet", "task manager", "flow-heavy apps"],
+    "blocking_captures": [
+      "things screen recordings: Magic Plus drag, to-do unfolding, Upcoming scroll",
+      "family send and connect flows recorded (app is winding down; may be unavailable)",
+      "A second current exemplar recorded on device, because family's store frames are iPhone 8 era"
+    ]
+  },
+  {
+    "id": "sensory-first",
+    "name": "Sensory-First",
+    "status": "held",
+    "exemplars": ["oko"],
+    "signature": {
+      "typography": null,
+      "color": "Store frames only: a white map or camera screen with green, yellow and orange semantic status banners.",
+      "shape": null,
+      "density": "Low: one instruction banner over a full-screen map or camera.",
+      "navigation": null,
+      "imagery": null,
+      "motion_haptics_if_known": "Text-sourced only: art direction lives in haptic and audio vocabularies. Not verifiable from screenshots."
+    },
+    "restraint_rule": "Warning (text-sourced): fail silent when state is uncertain; every haptic pattern is distinct and documented.",
+    "fits_app_kinds": ["accessibility", "audio stories", "in-motion workouts"],
+    "blocking_captures": [
+      "oko on device with screen, audio and a person noting haptics",
+      "A non-visual capture protocol (audio recording plus haptic log), since stills cannot settle this direction"
+    ]
+  },
+  {
+    "id": "private-bank-editorial",
+    "name": "Private-Bank Editorial",
+    "status": "held",
+    "exemplars": ["robinhood", "wealthsimple"],
+    "signature": {
+      "typography": "Seen only on a premium upsell: a high-contrast classical serif for the rate ('Earn 3.6% APY') with a gold gradient (robinhood Gold screens). wealthsimple's Caslon and Futura appear only in the store wrapper; its app uses a neutral grotesque.",
+      "color": "Gold gradient on robinhood Gold surfaces only.",
+      "shape": null,
+      "density": null,
+      "navigation": null,
+      "imagery": null,
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning (text-sourced): serif for display only, money core unchanged, editorial spacing only on premium surfaces. The visual pass found it confined to exactly those surfaces.",
+    "fits_app_kinds": ["premium tier", "wealth", "brokerage"],
+    "blocking_captures": [
+      "nubank Ultravioleta screens from a Brazilian account",
+      "robinhood Gold member surfaces beyond the upsell",
+      "wealthsimple premium or Generation tier screens"
+    ]
+  },
+  {
+    "id": "pixel-heritage",
+    "name": "Pixel Heritage",
+    "status": "held",
+    "exemplars": ["le-chat"],
+    "signature": {
+      "typography": "A neutral neo-grotesque body; pixel glyphs for X and send on the voice panel.",
+      "color": "Off-white canvas #fbfbf9 with Mistral orange #fa500f.",
+      "shape": null,
+      "density": "Medium.",
+      "navigation": "The shared chat skeleton.",
+      "imagery": "A pixel 'M', a pixel cat sitting on suggestion cards, a pixel 'Working' loader, a stepped agent-progress rail.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: an escape by skin only; the chat skeleton is unchanged.",
+    "fits_app_kinds": ["AI assistant"],
+    "blocking_captures": ["A second-maker exemplar with a heritage pixel identity reaching in-app UI"]
+  },
+  {
+    "id": "research-index",
+    "name": "Research Index",
+    "status": "held",
+    "exemplars": ["perplexity"],
+    "signature": {
+      "typography": "A grotesque with mono numerals in metadata ('30,418', '3m').",
+      "color": "Dark #1a1a1a with one turquoise #20b8cd.",
+      "shape": "About 12pt cards, 8-10pt chips.",
+      "density": "Medium-high.",
+      "navigation": "Question-as-title answer pages rather than a chat thread.",
+      "imagery": "Citation apparatus: step and source disclosure rows, favicon stacks, numbered citation pills.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: an escape by structure; keep citations as first-class UI.",
+    "fits_app_kinds": ["answer engine", "research assistant"],
+    "blocking_captures": ["perplexity current build (store frames predate iOS 26 and show a 'perplexity pro' header)", "A second-maker citation-first answer app"]
+  },
+  {
+    "id": "collectors-shelf",
+    "name": "Collector's Shelf",
+    "status": "held",
+    "exemplars": ["letterboxd"],
+    "signature": {
+      "typography": "Light-weight grotesque for review text; diary dates as light large numerals inside a bordered square.",
+      "color": "Slate #181b20 with the green/orange/blue action triad.",
+      "shape": "2-4pt posters, pill badges.",
+      "density": "Medium-high: 4-across poster grid, about 75pt diary rows.",
+      "navigation": "Bottom tab bar with a green + for logging (text-sourced); frames are iOS 10 era.",
+      "imagery": "The user's collection of canonical objects is the profile: a poster wall and a diary dated by date watched.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Warning: every interaction anchors to a canonical object.",
+    "fits_app_kinds": ["film diary", "books", "collections"],
+    "blocking_captures": ["letterboxd on iOS 26: film page, diary, profile", "A second-maker collection app"]
+  },
+  {
+    "id": "broadcast-network-portal",
+    "name": "Broadcast Network Portal (merged into the sports module)",
+    "status": "dropped",
+    "exemplars": ["espn", "nba", "onefootball"],
+    "signature": {
+      "typography": "All-caps tracked or condensed section headers ('GAMES', 'LATEST NEWS').",
+      "color": "Generic shell: dark #000000 or neutral light; one red for live state (espn live clocks, nba live dot).",
+      "shape": "About 8-12pt tiles and cards.",
+      "density": "Medium-high stacked full-width modules.",
+      "navigation": "A portal home of stacked modules plus a vertical short-video rail (espn Verts, nba Moments) and a game page with a docked player.",
+      "imagery": "Broadcast stills, headshot cut-outs, team crests.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Merged: the shared match is information architecture over a generic shell (espn distinctiveness 2, nba 3), so it becomes a sports-module structure rule: the user's teams rank above promos and network tiles.",
+    "fits_app_kinds": ["sports media network"],
+    "blocking_captures": []
+  },
+  {
+    "id": "companion-calm",
+    "name": "Companion Calm (merged into Literary Warm Assistant)",
+    "status": "dropped",
+    "exemplars": ["pi"],
+    "signature": {"typography": null, "color": null, "shape": null, "density": null, "navigation": null, "imagery": null, "motion_haptics_if_known": null},
+    "restraint_rule": "Merged: pi's one warm serif on cream with a single green accent matches Literary Warm Assistant; its voice-first, composer-less structure is that direction's structural-escape variant.",
+    "fits_app_kinds": ["companion chat"],
+    "blocking_captures": []
+  },
+  {
+    "id": "glow-dark-wellness",
+    "name": "Glow-Dark Wellness (merged into Toy / Game-Engine Tactile)",
+    "status": "dropped",
+    "exemplars": ["opal"],
+    "signature": {"typography": null, "color": null, "shape": null, "density": null, "navigation": null, "imagery": null, "motion_haptics_if_known": null},
+    "restraint_rule": "Merged: opal's glow is the lit rim of a rendered gem, a Toy signature; calm, the hoped-for second exemplar, shows no glow.",
+    "fits_app_kinds": ["focus and screen time"],
+    "blocking_captures": []
+  },
+  {
+    "id": "social-map-feed",
+    "name": "Social Map Feed",
+    "status": "dropped",
+    "exemplars": ["strava", "alltrails"],
+    "signature": {"typography": null, "color": null, "shape": null, "density": null, "navigation": null, "imagery": null, "motion_haptics_if_known": null},
+    "restraint_rule": "Dropped: alltrails' social layer is only a Community tab and its screens are dominated by conditions along a scrubbable axis; strava reads as Shareable Artifact Studio.",
+    "fits_app_kinds": [],
+    "blocking_captures": []
+  },
+  {
+    "id": "readiness-dashboard",
+    "name": "Readiness Dashboard (Glance Board variant; fitness module grammar)",
+    "status": "dropped",
+    "exemplars": ["whoop", "bevel"],
+    "signature": {
+      "typography": null,
+      "color": "Not shared: whoop dark navy-slate, bevel light near-white #f4f7fb with lavender washes.",
+      "shape": "Shared grammar: three equal rings in a row (Strain, Recovery, Sleep), a coach card beneath, drill-down to one big ring plus a contributor table.",
+      "density": null,
+      "navigation": null,
+      "imagery": null,
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Merged: shared layout grammar, divergent look, so it lives in the fitness module and as a Glance Board variant.",
+    "fits_app_kinds": ["fitness readiness"],
+    "blocking_captures": []
+  },
+  {
+    "id": "neutral-hyper-minimal-assistant",
+    "name": "Neutral Hyper-Minimal Assistant",
+    "status": "anti-reference",
+    "exemplars": ["chatgpt", "gemini", "grok", "meta-ai", "poe", "manus"],
+    "signature": {
+      "typography": "Brand or system sans (OpenAI Sans, Google Sans, SF) with bubble-less assistant prose.",
+      "color": "One accent at most: iOS system blue #0279ff (chatgpt), Meta blue #006bf1 (meta-ai), none with white-pill inversion (grok), navy bottom glow (gemini).",
+      "shape": "Right-aligned tinted user bubble; pill composer.",
+      "density": "Low.",
+      "navigation": "The whole skeleton: circular menu button top-left, capsule of new-chat plus overflow top-right, little or no title, composer with + on the left, mic, and a filled voice circle on the right. No tab bar in any store set.",
+      "imagery": "None.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Never deal. Warn when a chat design reuses the skeleton and changes only the skin; require at least one structural lever (page structure or a state-encoding status visual).",
+    "fits_app_kinds": ["AI assistant"],
+    "blocking_captures": []
+  },
+  {
+    "id": "feed-grafted-assistant",
+    "name": "Feed-Grafted Assistant",
+    "status": "anti-reference",
+    "exemplars": ["character-ai"],
+    "signature": {
+      "typography": null,
+      "color": "Generic dark #131313.",
+      "shape": "Card grid.",
+      "density": null,
+      "navigation": "A five-icon tab bar plus a For You vertical feed with reaction counts.",
+      "imagery": "User-made character art and chat backgrounds.",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Never deal. meta-ai's Discover/Vibes feed is not in its store frames, so meta-ai is no longer visual evidence for this shape.",
+    "fits_app_kinds": ["AI assistant", "AI companion"],
+    "blocking_captures": []
+  },
+  {
+    "id": "funnel-first-utility",
+    "name": "Funnel-First Utility",
+    "status": "anti-reference",
+    "exemplars": ["cal-ai"],
+    "signature": {
+      "typography": "A custom geometric sans with a large bold hero number.",
+      "color": null,
+      "shape": "Ring-and-card macro dashboard with icon-title-value tiles.",
+      "density": null,
+      "navigation": "Per-screen drift: the tab bar shows an extra gear where a FAB sits on another screen.",
+      "imagery": null,
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Never deal. The quiz funnel itself is text-sourced; the store frames show only the generic dashboard.",
+    "fits_app_kinds": ["calorie tracking", "habit"],
+    "blocking_captures": []
+  },
+  {
+    "id": "pickem-arcade",
+    "name": "Pick'em Arcade",
+    "status": "anti-reference",
+    "exemplars": ["sleeper", "underdog", "prizepicks", "draftkings"],
+    "signature": {
+      "typography": "Extended or condensed heavy display faces; multipliers as the primary number ('1.79x', '~10.83x').",
+      "color": "Neon on dark: cyan on navy glass (sleeper), lime on violet (prizepicks), brand green on black with every price green (draftkings); glowing outlines on the selected card.",
+      "shape": "Binary pick buttons with the 'over' side promoted (filled MORE, outlined LESS).",
+      "density": "High.",
+      "navigation": "The wallet balance with an add-funds + sits in the top bar where a title or search would go.",
+      "imagery": "3D jersey or helmet renders instead of player photos; trading-card packs and casino props; promo chips and banners inside the core flow; social proof on the bet ('25K People Place This Bet', fire counts).",
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Never deal. Hidden payouts and goblin/demon modifiers (text-sourced for prizepicks) were not visible; underdog, sleeper and draftkings show payouts up front.",
+    "fits_app_kinds": ["fantasy sports", "sportsbook", "prediction market"],
+    "blocking_captures": []
+  },
+  {
+    "id": "social-ledger",
+    "name": "Social Ledger",
+    "status": "anti-reference",
+    "exemplars": [],
+    "signature": {"typography": null, "color": null, "shape": null, "density": null, "navigation": null, "imagery": null, "motion_haptics_if_known": null},
+    "restraint_rule": "Never deal. No visual exemplar remains: venmo and coinbase-wallet store frames show no social feed, which supports the text finding that the pattern is in retreat.",
+    "fits_app_kinds": ["payments", "wallet"],
+    "blocking_captures": []
+  },
+  {
+    "id": "custom-glass-replica",
+    "name": "Custom Glass Replica",
+    "status": "anti-reference",
+    "exemplars": ["telegram"],
+    "signature": {
+      "typography": null,
+      "color": null,
+      "shape": "Indistinguishable from native glass in stills: floating capsule tab bar with a detached search circle, glass title capsules, glass composer.",
+      "density": null,
+      "navigation": null,
+      "imagery": null,
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Never deal on a platform without native glass. Posture must be declared in MOBILE-DESIGN.md or checked against the view tree, because screenshots cannot assign it.",
+    "fits_app_kinds": ["messaging", "cross-platform apps"],
+    "blocking_captures": []
+  },
+  {
+    "id": "format-borrowed-feed",
+    "name": "Format-Borrowed Feed",
+    "status": "anti-reference",
+    "exemplars": [],
+    "signature": {"typography": null, "color": null, "shape": null, "density": null, "navigation": "Text-sourced only: a full-screen autoplay vertical feed grafted onto an app whose content is not short video (Substack, Spotify's 2023 home).", "imagery": null, "motion_haptics_if_known": null},
+    "restraint_rule": "Never deal. No visual exemplar in the corpus.",
+    "fits_app_kinds": ["newsletters", "music streaming", "social"],
+    "blocking_captures": []
+  },
+  {
+    "id": "platform-material-liquid-glass",
+    "name": "Platform material overlay (Liquid Glass)",
+    "status": "overlay",
+    "exemplars": ["moonlitt", "apple-invites", "beeper", "paku", "gentler-streak", "fotmob", "tide-guide", "luma", "linear"],
+    "signature": {
+      "typography": null,
+      "color": null,
+      "shape": "Always the same anatomy: a floating capsule tab bar (often with a detached circular accessory button) plus circular glass header buttons and grouped capsules; sometimes glass sheets, popovers, menus or a composer. Visible in 33 of 114 records.",
+      "density": null,
+      "navigation": "Floating capsule tab bar of 3-5 items.",
+      "imagery": null,
+      "motion_haptics_if_known": null
+    },
+    "restraint_rule": "Overlay on any direction; never the identity. No app's primary direction is glass.",
+    "fits_app_kinds": ["any iOS 26+ app"],
+    "blocking_captures": []
+  },
+  {
+    "id": "depth-modifier",
+    "name": "Depth modifier",
+    "status": "overlay",
+    "exemplars": [],
+    "signature": {"typography": null, "color": null, "shape": null, "density": null, "navigation": null, "imagery": null, "motion_haptics_if_known": "Text-sourced only (tilt-lit dials, AR routes); not verifiable from stills."},
+    "restraint_rule": "Secondary seasoning only; dropped under Reduce Motion.",
+    "fits_app_kinds": ["any"],
+    "blocking_captures": ["Screen recordings with device tilt for not-boring-camera and structured"]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "slug": "character-ai",
+  "track_name": "Character AI: Chat, Talk, Text",
+  "version": "1.17.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Very heavy. Each frame has a saturated flat backdrop (electric blue, butter yellow/orange, periwinkle/lilac, lilac/green, pink/mint, yellow) covered in a pixel-mosaic dither pattern, with a heavy lowercase grotesk caption. 01 is a collage: three phones, two large anime-style character illustrations, a '#1 ai chat app' headline and a '100M+ trusted downloads' laurel badge, so real UI is under ~30%. 02–06 show one dark-bezel phone each with ~55–60% real UI. The UI inside is dark and fairly plain; most of the colour and the pixel motif belong to the wrapper. The status bar shows 3:19 and pre-iOS 26 chrome, so these may be older captures.",
+  "typography": {
+    "display": "In-app: a geometric-leaning sans, medium/semibold for headers ('Create Character', 'Memory Usage', 'For You'); the '(c.ai)' and '(character.ai)' wordmarks use parentheses as a brand device. Captions: heavy lowercase grotesk with tight tracking (marketing only)",
+    "body": "unsure: a geometric-leaning sans, not SF; roleplay narration is set in italic",
+    "numerals": "proportional ('27.8k', '65% left', '8.7k')",
+    "weights": "Semibold card titles and headers; regular body and descriptions; italic for character narration in chat",
+    "case_and_tracking": "Sentence case in-app; lowercase wordmark; marketing captions all lowercase and tightly tracked",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#131313",
+    "surfaces": ["#1d1d1d", "#2b2b2f"],
+    "text": "#ffffff",
+    "accents": ["#ff1f53", "#fee600", "#00d0d0", "#ff4fc0"],
+    "accent_strategy": "Per-content: the UI chrome is neutral dark grey and white, and colour comes from character art, user-set chat backgrounds and the memory bar's category colours (yellow, cyan, pink, plum). The only fixed UI colour is the red End-call button. The saturated brand colours (blue #2462ec, yellow #fee600) sit in the marketing backdrops, not the UI.",
+    "source": "palette.json 06: #121213 36% = app canvas, #fee600 32% = marketing backdrop; 01 #2462ec 30% = marketing blue; 02 #fff59e / #daa856 = marketing yellow/orange. Pixel samples: canvas #131313 and card #1d1d1d (06), list rows #1e1e1e (03), End button #ff1f53 (04). Memory-bar colours are visual estimates from 03."
+  },
+  "shape": {
+    "radius_language": "large and pill: character cards ~16pt with image tops, list rows ~12pt, filter chips and buttons full pill, chat bubbles ~20pt, circular call buttons",
+    "concentric": "unclear",
+    "borders_shadows": "Outlined pill filter chips (unselected) with a white filled selected chip; no shadows",
+    "materials": "Flat dark surfaces; translucent grey chat bubbles over a user-chosen background image (05)"
+  },
+  "liquid_glass_visible": "no: opaque dark chrome and a standard tab bar; the screenshots look pre-iOS 26.",
+  "density": "medium-high: 2-column character grid with image, title, two-line description, chat count and creator handle; memory list rows with dots",
+  "layout": "Home: '(c.ai)' wordmark, filter chip row (Creative, Fantasy, Gaming, Lifestyle…), 2-column character card grid. For You (01): full-bleed vertical character post with 'Continue this moment in chat', creator row, caption and reaction chips with counts. Chat (05): character header, user and character bubbles with avatars, over a custom illustrated background. Memory (03): usage bar plus category list.",
+  "navigation": "Five-icon bottom tab bar, icons only (home filled, chat, '+' create, a library/card icon, profile avatar). Top bar has wordmark plus a 'C' badge, search and bell. Back chevrons on sub-screens. Chat header carries book, waveform and phone-call icons. Voice call is a full-screen view with minimise and overflow.",
+  "imagery_and_icons": "Character art (anime and painterly illustration, much of it AI-generated) is the dominant imagery; outline monoline icons for chrome; avatars everywhere; the pixel-mosaic motif appears only in the marketing backdrops.",
+  "signature_visual_move": "The UI steps back to neutral dark grey so each character's art and the user's chosen chat background supply all the colour.",
+  "tells_present": ["Cards everywhere; 'icon top-right, title top-left, description bottom' anatomy", "Flat React Native or Flutter UI that ignores Liquid Glass on iOS 26"],
+  "direction_fit": {
+    "primary": "Feed-Grafted Assistant (anti-reference)",
+    "secondary": "User-Authored Poster",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "A For You vertical feed with reaction counts is visible (01), confirming the feed graft. The 'Character-Led' half of the text tag does not fit the 17's Coach Character: there is no single mascot state machine; instead user-made characters and user-set backgrounds carry the expression while the chrome stays plain, which is the User-Authored Poster pattern."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Composer: a dark pill with the user's persona avatar at left, 'Message…', image and sticker buttons inside, and a separate circular fast-forward (skip/continue) button; below it a disclaimer 'This is A.I. and not a real person. Treat everything it says as fiction'. Greeting/empty state: not shown. Voice: modelled as a phone call (04) — the character's art full-bleed, 'Listening…' label, and three bottom controls: Mute (grey circle), the character's avatar with a white waveform overlay in the centre, and a red End circle; no orb. Thinking/streaming: not shown; a small speaker chip sits above character replies for TTS. Conversation list: not shown (the chat tab exists). The text record's complaint about raw persona text in list rows cannot be checked from these images; the home grid shows short descriptions truncated at two lines. Distinctiveness is scored mainly on the character art and backdrops; the UI alone would score 2."
+}

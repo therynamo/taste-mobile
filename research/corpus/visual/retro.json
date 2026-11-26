@@ -1,0 +1,46 @@
+{
+  "slug": "retro",
+  "track_name": "Retro — Photos with Friends",
+  "version": "129.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01–05 place a frameless rounded phone screen (~70% of the image) on a blurred, grainy photo backdrop (warm brown, teal, olive) with a serif caption in the top ~12%. All five screens look like real UI (week feed, profile, postcard order, recap card, Rewind). 06 is pure brand art: a dark grainy film still with a centred serif line and a 'Retro' wordmark.",
+  "typography": {
+    "display": "Bold, tightly spaced high-contrast serif for screen titles and usernames (Week 27, isareyes, July 5, 2021); captions use the same family in a light weight with italic emphasis words (Weekly, Private, mailed, recap, rewind). Name unsure",
+    "body": "system SF",
+    "numerals": "serif lining numerals in titles (Week 27, July 5, 2021); SF proportional elsewhere ($2.00, Weeks Posted: 32)",
+    "weights": "Bold serif display against regular/medium SF UI text; grey regular for date ranges (Jul 3 - 9)",
+    "case_and_tracking": "Sentence case; tight negative tracking on the serif display; day labels Mon/Tue/Wed over photos in white SF medium",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f2f2f2", "#000000", "#1c1c1e"],
+    "text": "#111111",
+    "accents": ["#e5383b"],
+    "accent_strategy": "Photos supply the colour; UI is strictly black/white/grey with a single red used only for the 'N new' badge. Dark mode (black) is used for full-screen photo contexts (postcard, recap, rewind).",
+    "source": "palette.json 01/02: #ffffff 24–27% = in-app light background, #512418 / #1c2f36 = blurred marketing backdrops; 03: #000000 26% = postcard screen; 06: #010101 55% = brand-art frame. #f2f2f2 add-tile and red badge are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~16pt on the weekly film strip and person cards, pill buttons (Recaps, Share Profile, Send Postcard, Share), circular avatars and icon buttons",
+    "concentric": "yes",
+    "borders_shadows": "1px black outline on secondary pill buttons; no shadows; strips are flush photo tiles with 2pt white gaps",
+    "materials": "Flat; dark translucent circles for close/overflow buttons over photos; the recap uses a textured instant-film (Polaroid-style) paper frame"
+  },
+  "liquid_glass_visible": "no (translucent circular close/overflow buttons only; the tab bar is opaque)",
+  "density": "low-medium: one large serif title, one filmstrip, then horizontally scrolling tall photo cards; profile stacks week rows with ~40pt gaps",
+  "layout": "Home: 'Week N' serif title with journal and chat icons, a 4-up film strip of the current week (Mon/Tue/Wed + add tile), then a horizontal carousel of per-friend weekly cards with a username/avatar header and a red 'N new' badge. Profile: serif handle, stats rows, pill actions, then week-by-week film strips.",
+  "navigation": "Bottom tab bar with 5 outline icons, no labels (home, friends, rewind/history, notifications, profile); opaque white in light screens and over the photo in Rewind. Modal flows (postcard, recap) use a centred title and a circular close button.",
+  "imagery_and_icons": "Users' own photos everywhere; SF-like outline glyphs; an instant-film frame on recap cards; a radial tick ring around the Rewind pause button.",
+  "signature_visual_move": "A tight bold serif 'Week 27' heads a four-frame film strip of the week, turning the feed into a dated journal page.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Rationed Ritual",
+    "secondary": "Shareable Artifact Studio (recap cards, postcards)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The week is the visible unit: titles are week numbers, strips are Mon–Sun, friends appear as one card per week. Monochrome UI lets photos carry colour, and recap/postcard outputs are designed objects."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Text record had typography unknown; the serif display is the clearest brand mark and also the 2026 'serif' default, so it reads as editorial journal rather than template only because of the week framing. No orange/cream, so the cream+serif+orange tell does not apply."
+}

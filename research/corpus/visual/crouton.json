@@ -1,0 +1,46 @@
+{
+  "slug": "crouton",
+  "track_name": "Crouton: Recipe Manager",
+  "version": "2026.5.1",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Medium. Each image is a solid vivid backdrop (blue, green, red, orange, indigo) with a white SF bold caption and an old iPhone 8-style home-button frame; the real screen is about 55% of each image. Status bars read 'Carrier' and show pre-notch devices, so the frames are dated (pre-iOS 26) relative to v2026.5.1. The per-image backdrop colours are wrapper only and do not appear in the UI.",
+  "typography": {
+    "display": "SF Pro bold large titles ('Meal Plan', 'Groceries'); recipe title in white bold SF over the photo",
+    "body": "system SF",
+    "numerals": "SF proportional for quantities; timer '09:55' in bold SF orange (tabular-looking); rounded-feel numeric keypad digits",
+    "weights": "Bold large titles, regular body, semibold for highlighted quantities and tinted button labels",
+    "case_and_tracking": "Sentence/title case, default tracking",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f1f3f2",
+    "surfaces": ["#ffffff", "#ecedf3"],
+    "text": "#1c1c1e",
+    "accents": ["#1a9ae6", "#f5b43c", "#34c77b", "#ff6b6b"],
+    "accent_strategy": "Semantic and functional: blue for ingredients, quantities and navigation; amber/orange for durations and timers; green for add/start; red for delete. Buttons use pale tinted fills with saturated tinted labels (blue on light blue, green on mint). Recipe photos supply the only other colour.",
+    "source": "palette.json 01-05 (#f1f3f2 / #f7f8f8 canvas, #ffffff cards); backdrop clusters #00a5ff, #00c16e, #ee3439, #fcb339, #4c59d7 are marketing; in-app blue/amber/green matched visually"
+  },
+  "shape": {
+    "radius_language": "large ~16pt cards and photo hero; pill tinted buttons ('Start', 'Scale', 'Ingredients', unit chips); circular icon buttons; ~8pt keypad keys",
+    "concentric": "unclear",
+    "borders_shadows": "No borders; cards separated by background contrast; floating timer card and ingredient popover carry a soft shadow",
+    "materials": "flat, with a pre-26 translucent tab bar"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium: card-per-step list with comfortable padding; cook mode is low density with one step centred and lots of whitespace",
+  "layout": "Recipe detail: photo hero card with title overlay, Start/basket/share action row, servings and prep chips, Ingredients card list. Steps: numbered cards with inline-coloured ingredients and durations. Cook mode: single step, prev/next circular arrows at the bottom, page dots. Meal Plan: day-grouped cards with thumbnail rows.",
+  "navigation": "Native 4-tab bar: Plan, Recipes, Groceries, Settings (outline icons, blue selected). Native back chevron with text ('All Recipes', 'Meal Plan'), large titles, circular tinted '...' and timer buttons top-right. Custom quantity-entry sheet replaces the keyboard for groceries.",
+  "imagery_and_icons": "Recipe photos (hero and thumbnails); SF Symbols outline icons in tabs and buttons",
+  "signature_visual_move": "Recipe text is a live interface: ingredients highlight in blue and durations in amber, and tapping a duration spawns a floating step timer.",
+  "tells_present": ["Cards everywhere (every step and meal in its own white card)"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Fluid Continuity (weak, inferred from popovers and timer)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Cook mode shows one step at a time with large text and big prev/next targets, the countertop variant of Glance Board; colour is strictly semantic (ingredient vs time). Visually it is close to stock iOS, so the direction lives in behaviour more than in style."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Confirms the text record's 'plain visuals, wins on interaction'. Screens are old marketing frames; current 2026 UI (likely Liquid Glass) is not shown. The pastel colour-coded custom keypad (fractions lavender, digits mint, operators amber, delete pink) is the most distinctive visual element."
+}

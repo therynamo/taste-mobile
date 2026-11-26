@@ -1,0 +1,46 @@
+{
+  "slug": "grok",
+  "track_name": "Grok",
+  "version": "1.4.68",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Light. Near-black backdrop (#0a0a0a) with a white two-line sans caption, then a dark titanium iPhone frame with side buttons. Real UI is ~70% of each image. All five are real app screens; 04 is the camera mode over a live photo.",
+  "typography": {
+    "display": "No in-app display type; captions use a neutral neo-grotesk with tight-ish tracking",
+    "body": "unsure: a neutral grotesk that looks wider than SF Pro but cannot be identified at this resolution",
+    "numerals": "proportional (embedded X post counts '1.2K', '1.1M')",
+    "weights": "Regular for user and assistant text; medium for segmented-control labels and the 'Speak' button; semibold for the embedded post's author name",
+    "case_and_tracking": "Sentence case; default tracking",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#1a1a1a", "#0a0a0a", "#222222"],
+    "text": "#ffffff",
+    "accents": ["#ffffff"],
+    "accent_strategy": "No hue at all: the 'accent' is inversion. The primary actions ('Speak', 'Stop', the active camera button) are white pills with black text on a black UI. The only chromatic element is the blue verification check on the embedded X post and a blue outer glow around the generated-app card in 05.",
+    "source": "palette.json 01–02: #0a0a0a 41% / #000000 26–28% = app canvas and backdrop; #141516 / #202020 = composer and bubble rims; #878f93 / #9a9ca1 = grey text and photo content. Pixel samples: canvas #000000, composer #1a1a1a (01), user-bubble border ~#222222 on near-black fill (01)."
+  },
+  "shape": {
+    "radius_language": "large: outlined user bubbles ~20pt, composer a rounded rectangle ~24pt, circular glass buttons, pill segmented control, pill 'Speak'/'Stop' buttons, media ~12pt",
+    "concentric": "yes",
+    "borders_shadows": "Hairline grey borders on user bubbles and the embedded post card; no shadows except a blue glow on the app card in 05",
+    "materials": "Glass on the circular menu/new-chat buttons and on the Imagine composer and camera controls over imagery (03, 04); the app preview card in 05 has a frosted lower half"
+  },
+  "liquid_glass_visible": "yes: circular top buttons with a light rim; the 'Type to Imagine' composer capsule and its side buttons float as glass over the template grid (03); camera-mode controls are glass over the live photo (04); frosted footer on the app card (05).",
+  "density": "low-medium in chat; medium-high on the Imagine template grid (carousel plus 2-column tiles edge to edge)",
+  "layout": "A top segmented mode switch (Ask / Imagine / Build) replaces a title. Chat: right-aligned outlined user bubbles, bubble-less assistant text, embedded X posts as cards. Imagine: 'Animate your photos' carousel and 'Featured Templates' 2-column grid. Build: generated app shown as a card with publish/play. Composer at bottom.",
+  "navigation": "Circular glass hamburger top-left, centred three-segment pill control (Ask, Imagine, Build), circular new-chat (or incognito glasses icon) top-right. No tab bar. Composer: 'Ask anything…' on top, then '+', a mode pill ('Auto ▾', 'Expert ▾' with rocket or bulb glyph), and a white 'Speak' pill.",
+  "imagery_and_icons": "Outline monoline icons; photography and AI-generated imagery as content; embedded X post UI. No mascot or companion characters appear.",
+  "signature_visual_move": "A black UI whose only emphasis is a white inverted 'Speak' pill, with modes switched by a segmented control in the title position.",
+  "tells_present": ["Gestalt sameness: 'they all look the same'", "Neon glow; glowing badges"],
+  "direction_fit": {
+    "primary": "Neutral Hyper-Minimal Assistant (anti-reference)",
+    "secondary": "Dark Pro Minimal",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record guessed Dark Pro Minimal plus Character-Led companions. The dark styling is confirmed, but there is no surface-level system, borders only on bubbles and no density, so it reads as the hyper-minimal template inverted to black rather than a pro tool. The companions (Ani, Rudi) do not appear in any store screenshot."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Composer: rounded-rectangle block (not a pill) in #1a1a1a with placeholder on top, then '+', a model/mode pill ('Auto', 'Expert') and a white 'Speak' pill with waveform glyph; in Build mode the right side becomes mic + disabled send arrow; in Imagine it becomes a glass capsule with an avatar thumb at left and a sliders button at right. Greeting/empty state: not shown. Voice: the 'Speak' button is a labelled pill, not an orb; camera mode (04) shows a row of four glass controls (camera active in white, speaker, mic, settings) above a text field and a white 'Stop' pill, with the answer overlaid on the feed. Thinking/streaming: not shown. Conversation list: not shown (drawer). Distinctive content: X posts embedded inline as source cards with engagement counts, the platform tie-in that is Grok's real differentiator."
+}

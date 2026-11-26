@@ -1,0 +1,46 @@
+{
+  "slug": "watch-duty",
+  "track_name": "Watch Duty: Wildfire & Floods",
+  "version": "2026.11.12",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light-medium. A foggy, desaturated conifer-forest photo backdrop with a two-line regular-weight dark caption on the top ~20%; a dark-bezel iPhone frame holds a real, uncropped screen in about 75% of the image. All six images show real UI and none is pure marketing. The fog backdrop is mood only.",
+  "typography": {
+    "display": "Wordmark 'WATCH DUTY' in heavy, tightly tracked all-caps grotesque in the amber header; sheet titles ('Vegetation Fire', 'Olympia Center') in semibold neutral grotesque",
+    "body": "a neutral grotesque that does not look like SF (letterforms suggest Inter or a similar web sans, consistent with the web-wrapped posture noted in the report); unsure",
+    "numerals": "Bold lining numerals with smaller trailing units ('2,021', '33 %', '63 °F', '0.30 in'); a stat grid aligns values in columns, though the figures may not be tabular; flight data in a two-column key/value grid",
+    "weights": "Heavy wordmark, semibold titles and values, regular secondary text, small caps-style labels",
+    "case_and_tracking": "Stat labels in ALL CAPS with slight tracking ('ACRES', 'CONTAINMENT', 'TEMP', 'GUST', 'ALTITUDE'); map control labels in small caps ('LAYERS', 'LEGEND', 'RADAR'); titles in title case",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f7f5f4",
+    "surfaces": ["#ffffff", "#f4f1ec", "#2a1f12"],
+    "text": "#2a2a2a",
+    "accents": ["#fbb72a", "#e8412c", "#3aa35a", "#8a8a8a"],
+    "accent_strategy": "One owned amber in the header and the selection outline, then strictly semantic map colour: red/orange flames and red perimeters for active fire, grey for contained, green 'Rx' for prescribed burns, blue for flood, a pale red tint for evacuation orders, amber chip for a hazardous gust, AQI colour halos. The radar mode swaps to a dark brown header with an amber wordmark.",
+    "source": "palette.json 01 (#f7f5f4 canvas, #e4c379 amber cluster), 02/04/06 (#ffffff sheet surfaces), 04 (#ebc981 amber), 03 (#1c1815 dark radar header, #70a495/#94c89c radar greens); flame red and Rx green matched visually; backdrop greys (#d7d8cb, #9a9d90) are marketing fog"
+  },
+  "shape": {
+    "radius_language": "small-to-large mix: ~8pt square-ish map control buttons and outlined action buttons, ~20pt bottom sheets, ~4pt status chips ('1 of 2', 'MEMBERS'), pin and flame glyph shapes",
+    "concentric": "no",
+    "borders_shadows": "Outlined 1pt full-width buttons ('Share', 'Turn off notifications'); thin vertical dividers in stat grids; map control tiles carry a light drop shadow; amber 2pt outline on the selected basemap thumbnail",
+    "materials": "flat, opaque sheets and solid header; no blur"
+  },
+  "liquid_glass_visible": "no",
+  "density": "high: map packed with incident pins, stat grids of 2-6 values per sheet, layer list with subtitles and toggles",
+  "layout": "Full-screen map under a solid amber header (hamburger, wordmark, camera). A right-edge column of three labelled map controls (Layers, Legend, Radar) and a locate button top-left. A bottom sheet with search at rest; tapping an incident expands it into a title/location block, a 2-up stat grid (Acres, Containment), status line, actions and an evacuation-order callout. Radar mode has a time-scrubber sheet with play button and NOW marker.",
+  "navigation": "No tab bar. Hamburger drawer top-left, camera (live cameras) top-right, persistent draggable bottom sheet, close X on detail sheets and floating cards. Layers is an accordion sheet with native-style green toggles.",
+  "imagery_and_icons": "Custom map glyph set: layered flame pins (sized and coloured by status), Rx pins, flood droplet pins, aircraft silhouettes with flight tracks, wind-barb station markers; outline UI icons (layers, map, radar, wind, waves, shield)",
+  "signature_visual_move": "A utilitarian amber header over a dense incident map whose layered flame pins encode status by colour and size, with each sheet opening on a caps-labelled stat grid.",
+  "tells_present": ["Generic font (body sans possibly Inter; unverified)"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One line or tile per entity, caps-labelled stat grids, strictly semantic status colour and a single owned brand amber confined to the header: the incident-map variant of Glance Board."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Feels web-like rather than native: the custom header, a possible web sans and outlined buttons fit the 'web-wrapped' posture. It is a counter-example to 'native = good'. It wins on reliability and information design, not on platform polish. A secondary direction is left empty on purpose: nothing beyond Glance Board shows."
+}

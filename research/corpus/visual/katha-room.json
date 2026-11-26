@@ -1,0 +1,46 @@
+{
+  "slug": "katha-room",
+  "track_name": "Indian audio stories for kids",
+  "version": "3.1.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Very heavy. All six sit on a deep violet-to-purple gradient backdrop with glowing yellow star sparkles, yellow and white rounded display captions, and an orange-rimmed device frame. 01-02 are a two-panel panorama (painted sleeping child plus a tilted story detail screen, about 35% UI). 03 is a tilted grid of story cover cards (cover art, not UI chrome). 04 is pure marketing art: puffy 3D Indic letters (Tamil, Hindi, Telugu, Kannada) with stars. 05 is the system lock-screen Now Playing panel. Only 06 (Story Queue) shows a full app screen, at about 60%.",
+  "typography": {
+    "display": "In-app: system SF Pro bold for story titles ('Story of Purandara Dasaru', 'Story Queue') and underlined bold section heads ('About'). Marketing uses a heavy rounded geometric sans plus a bold italic serif ('bedtime', 'stories'), not seen in the UI.",
+    "body": "system SF",
+    "numerals": "n/a (only system time and Now Playing elapsed/remaining)",
+    "weights": "Bold titles, regular row titles in the queue, semibold button labels.",
+    "case_and_tracking": "Title case for story names; sentence case elsewhere.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#230e37",
+    "surfaces": ["#39194f", "#2d074e"],
+    "text": "#ffffff",
+    "accents": ["#a24df0", "#f47a1a", "#e8392f"],
+    "accent_strategy": "Per-content: colour comes from each story's folk-art cover (saffron, red, blue, green on dotted patterns). Chrome is dark violet with a purple 'Take the Quiz' pill and a translucent 'Play' pill; a red heart for favourite and a green download badge. The orange frame and purple gradient are wrapper.",
+    "source": "palette.json 06 (#230e37 sheet, #39194f surface), 01-04 (#450b6b / #6a0e8c / #580d7c backdrop purples are wrapper); accent hexes are visual estimates from the quiz pill, cover backgrounds and heart"
+  },
+  "shape": {
+    "radius_language": "medium-large: cover tiles about 12-16 pt, pill buttons ('Take the Quiz', 'Play'), circular header buttons, sheet with large top radius",
+    "concentric": "unclear",
+    "borders_shadows": "Few: drop shadows under story cards in the marketing grid; no borders in the queue list.",
+    "materials": "Flat dark sheet; translucent frosted 'Play' pill and circular share button over the cover art; patterned art."
+  },
+  "liquid_glass_visible": "unclear: the 'Play' pill and share button over the art in 02 are translucent and could be glass; the queue screen uses grey circular buttons; 05 is system Now Playing glass, not the app",
+  "density": "low-medium: story detail is a full-bleed illustration with title and two actions; the queue is a list of 112 pt rows with a cover thumbnail, title, delete and drag handle",
+  "layout": "Story detail: full-bleed folk-art cover filling the top two-thirds, a 'Take the Quiz' pill over the art's bottom edge, then bold title, favourite/add/download icons and an 'About' section. Story Queue (sheet): down-chevron, centred title and + button; list of story rows with square cover and play glyph, trash and drag handle.",
+  "navigation": "No tab bar visible. Sheet-based queue with a down chevron; circular share and back buttons over the art. Lock-screen Now Playing and widgets carry playback.",
+  "imagery_and_icons": "Indian folk-art illustration as the asset: dot-and-line patterning in the Gond manner on many covers, but the set mixes several hands (Gond-like dot fill, Kalamkari/Madhubani-like line work, flat modern figures), and the marketing child is soft painterly 3D. SF Symbols for trash, play, share, heart, download.",
+  "signature_visual_move": "Each story is a full-bleed folk-art plate in dot-patterned Gond style with almost no UI laid over it, and listening continues from the lock screen.",
+  "tells_present": ["Purple, indigo, violet; purple-to-blue gradient (wrapper and dark violet UI chrome)", "Neon glow; glowing badges (glowing stars and caption glow in the wrapper)"],
+  "direction_fit": {
+    "primary": "Authored Illustration",
+    "secondary": "Sensory-First",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The governing asset is Indian folk-art illustration on every story, with native-ish chrome; the screen-off, lock-screen listening story supports Sensory-First. Confidence is medium because the art set is not one consistent hand, which is the direction's own restraint rule."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Wrapper is the most 'template-like' part: purple gradient, glowing sparkles and yellow headline. The UI chrome itself is plain dark SF. Several cover styles appear (Gond dot fill, outlined line art, flat cartoon), so the 'one consistent hand' claim of the Authored Illustration direction is only partly met. 'Moonlit, Keepsake, Story Pop' postcards from the text record are not shown."
+}

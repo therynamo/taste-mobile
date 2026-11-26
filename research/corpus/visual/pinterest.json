@@ -1,0 +1,53 @@
+{
+  "slug": "pinterest",
+  "track_name": "Pinterest",
+  "version": "14.45",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is 100% marketing (fashion photo + headline, no UI). 02 is a frameless masonry composite overlapping a model photo (UI-like but staged). 03 and 05 are composites: a pin card floats on a photo with oversized pale-green chips and a bottom sheet laid over it, so only fragments are real UI. 04 shows a frameless rounded screen (~75% real UI) with a pop-out skin-tone picker. 06 is the most real: full-bleed pin closeup with action row and Visit site button (~45% UI below the photo). Backdrop is a seasonal sage/olive green with pale mint headlines.",
+  "typography": {
+    "display": "Custom humanist-grotesque (Pinterest's Pin Sans, recognisable by the 'Pinterest' wordmark-matching letterforms), bold/semibold for sheet titles ('Shop the Pin', 'Pick a skin tone range', 'Snowflake cinnamon bread')",
+    "body": "custom (Pin Sans, likely)",
+    "numerals": "proportional; prices and counts in the same face",
+    "weights": "semibold titles, regular/medium body, medium buttons",
+    "case_and_tracking": "sentence case, slightly tight tracking on headlines",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": [
+      "#ecece6",
+      "#f1efea"
+    ],
+    "text": "#111111",
+    "accents": [
+      "#e60023"
+    ],
+    "accent_strategy": "One brand red reserved for the Save button (and the logo); everything else is white, warm light grey (Visit site pill, search capsule) and black text. The seasonal sage green is a marketing backdrop and campaign tint, not UI chrome. Pin photography supplies all other colour.",
+    "source": "palette.json 06 (#ffffff, #ecece6 Visit site pill), 04 (#ffffff, #f1efea); red Save read visually; greens #97a088/#9a9e82/#3b4a2c are marketing backdrop and photos"
+  },
+  "shape": {
+    "radius_language": "large: ~16pt on masonry pin tiles, ~24-28pt on sheets and screen corners, pill/capsule buttons (Save, Visit site, search capsule)",
+    "concentric": "yes: bottom sheet and the tiles inside it share rounded corners with consistent inset (03, 05)",
+    "borders_shadows": "no borders on tiles; soft drop shadow on floating bottom capsules and pop-out cards",
+    "materials": "flat white plus floating capsules; the sparkle button on the 06 photo sits in a translucent rounded square"
+  },
+  "liquid_glass_visible": "unclear: the 04 bottom navigation is three detached floating white capsules (home, search field, avatar) in the iOS 26 floating-tab-bar arrangement, but they read opaque white rather than refractive; the 06 sparkle button is translucent",
+  "density": "medium-high for imagery (2-column masonry, ~8pt gutters, captions only on some pins) and low for text",
+  "layout": "Two-column staggered masonry grid of photo pins with small '...' and optional caption under each; pin closeup = full-bleed image, action row (heart+count, comment+count, share, more) with red Save pill at right, source avatar, bold title, meta line, wide grey Visit site pill.",
+  "navigation": "Floating bottom bar of separate capsules: home icon button, expanding search field ('Emerald eyeshadow'), avatar button. Chip row for refinement (Modern rustic, Holiday table). Bottom sheets with grabber for Shop the Pin. Custom chrome.",
+  "imagery_and_icons": "Editorial photography dominates every screen. Custom outline icons (heart, speech bubble, share-up, ellipsis), black, ~2pt stroke; four-point sparkle glyph for AI/visual search.",
+  "signature_visual_move": "Edge-to-edge masonry photo tiles with almost no chrome, plus a single red Save pill as the only branded colour.",
+  "tells_present": [
+    "Sparkle without a label (06 sparkle button on the photo, unlabeled)"
+  ],
+  "direction_fit": {
+    "primary": "posture-only: feed core, content-deferent (neutral chrome, photography as the only colour, one brand action colour on Save)",
+    "secondary": "Shareable Artifact Studio (weak: boards and pins as objects); posture: unified custom system",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record called it the purest content-deferent feed. Screens agree: neutral chrome, custom face designed to recede, imagery carrying all colour, one red Save. The seasonal green is campaign art direction in the store wrapper, not the app."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Too marketing-heavy to judge chrome on 01, 02, 03, 05. The floating three-capsule bottom bar in 04 is the most distinctive chrome element in the batch's feed apps."
+}

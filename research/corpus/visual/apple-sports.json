@@ -1,0 +1,46 @@
+{
+  "slug": "apple-sports",
+  "track_name": "Apple Sports",
+  "version": "4.6",
+  "screenshots_examined": 3,
+  "marketing_wrapper": "Moderate and uniform. Each of the 3 frames is a light-grey backdrop (#f2f2f2, about 24% of pixels) with a two-line black SF caption on top and an upright, untilted iPhone 16-style device frame. Real UI is about 65% of each image. 01 is the system Lock Screen with three stacked Live Activities, not the app itself. 02 is the Home list. 03 is a game-detail sheet presented over Home.",
+  "typography": {
+    "display": "System SF Pro pushed to a bold, condensed width (the variable font's width axis) for every score: 10/27 on the Live Activity, home rows and detail header, and also for the team-stat values (31/47, 165/298). The 'Sports' wordmark beside the Apple logo is SF Pro semibold.",
+    "body": "system SF (SF Pro Text for team names, clock and play text; SF Mono for the 10-20-30-40-50 yard-line ruler under the field graphic in 03)",
+    "numerals": "condensed, heavy and tabular-looking for scores and team stats; regular proportional SF for the quarter line score (7 3 0 - 10); mono for the yard ruler",
+    "weights": "Heavy or bold condensed for scores; semibold for team names and clock ('3rd 11:55'); regular at reduced opacity (vibrancy) for league labels, down-and-distance ('2nd & 7 · IND 26') and Touchdown status",
+    "case_and_tracking": "Title and sentence case throughout; all-caps only for three-letter team codes (BAL, KC, ARS); normal tracking; no all-caps headers",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#002c00",
+    "surfaces": ["#001c01", "#082306", "#326933", "#150d2c", "#441536", "#7c102b"],
+    "text": "#f9f9f9",
+    "accents": ["#6f2834", "#161d2f", "#326933"],
+    "accent_strategy": "Per-content team colour. The Home background is a deep green (#002c00 fading to #001c01) that matches the 'Home' glass pill (#326933). It reads as a theme tint, not a neutral, though the frame does not show what sets it. The game sheet is a left-to-right gradient from the away team's purple (#150d2c/#441536) to the home team's red (#7c102b). Each Live Activity card is filled with its own two-team gradient: BAL purple to KC red, BAR navy to RSO blue, ARS red to NEW black. Team-stat bars use the two team colours. No separate brand accent and no semantic red or green.",
+    "source": "palette.json 02 (#002c00 31.6%, #001c01 19.6%, #326933 4.8%), 03 (#441536, #150d2c, #574169, #7c102b), 01 (#161d2f, #3c2c2f, #6f2834 Live Activity gradients). #f2f2f2 and #cfd0ce are the marketing backdrop and frame. Text is near-white with vibrancy; #f9f9f9 is the closest measured value."
+  },
+  "shape": {
+    "radius_language": "large: about 20-24pt on the game sheet and the Home list container, about 20pt on the Live Activity cards; pill for the 'Home' button, 'Open in tv' and 'Show less'; full circles for the share and clock buttons",
+    "concentric": "yes. The Home list container sits inset inside the device corner radius with matching curvature, and the Team Stats card inside the sheet repeats the sheet's radius at a smaller size.",
+    "borders_shadows": "No borders or shadows. Rows are split by hairline separators at low opacity. Depth comes from the stacked-sheet presentation (Home recedes behind the 03 sheet).",
+    "materials": "Glass and vibrancy. Translucent capsule buttons ('Home', 'Open in tv', share) show the tint through. A fine dotted or mesh texture is visible in the 03 sheet gradient, consistent with the reported jersey-cloth shader. The yard-line field graphic is a frosted, perspective-skewed bar."
+  },
+  "liquid_glass_visible": "yes. The 'Home' capsule (02), the 'Open in tv' capsule and the circular share and clock buttons on the game sheet (03) are glass. The Lock Screen 'Show less' and close controls (01) are system glass.",
+  "density": "medium. Home rows are about 100pt tall with generous vertical rhythm and one game per row. Detail packs a line score, a field graphic and stat bars into one scroll at about 45pt per stat row.",
+  "layout": "Home: an 'Apple Sports' wordmark top left with a 'Home' glass pill top right, a text-only Yesterday / Today / Upcoming switcher, then one rounded container listing games grouped under 'My Teams >' and league headers ('NFL >'). Each row is symmetric: crest and team name at the outer edges, big condensed scores inside them, and clock and situation centred. Game detail is a sheet: league, giant condensed scores with timeout dashes beneath, crests with records, a field-position graphic, a quarter line score, then glass actions, then Stats / Play-By-Play / Standings tabs and a Team Stats card with paired bars.",
+  "navigation": "No tab bar visible. The top bar holds the wordmark and a 'Home' glass capsule, which suggests a custom-home switcher. Day switching is a three-label text segmented control (bright selected label, dimmed others, no pill). Game detail is a native page sheet with a grabber and a 'Today' title in the receding layer behind it. Text tabs inside the sheet. Chrome is native.",
+  "imagery_and_icons": "Official team crests; a small football glyph for possession; SF Symbols (star for favourites, share, house, chevrons). No photography, illustration or emoji.",
+  "signature_visual_move": "Every game surface, from Live Activity to detail sheet, is filled with a gradient that runs from one team's colour to the other's, with heavy width-condensed SF numerals set straight on top.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Platform material overlay (native glass)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One symmetric line per game, condensed tabular-feel numerals, and no decoration beyond the team colour. This is the Broadcast Scoreboard (fandom) variant of Glance Board: team colour floods the identity surfaces (Live Activity, detail sheet) rather than staying on crests. Native glass and vibrancy are an overlay on top. Matches the text record's 'Data-Board + Liquid Material, best Broadcast Scoreboard exemplar'."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Scoreboard anatomy. Score numerals: SF bold or heavy at a condensed width, large (about 40pt on detail, about 30pt in rows), with timeout dashes under each score on the detail and Live Activity. Team colour and logos: the crest sits at the outer edge of each row and team colour becomes the whole surface as a two-team gradient (Live Activity cards, game sheet), with stat bars in each team's colour. On the Home list the colour appears only as a soft red glow behind the KC and ARS crests (both starred, both red crests; what triggers the glow is unclear) and as the overall green theme tint. Live state: a running clock with period ('3rd 11:55', '76:18'), down and distance in dimmed text, a football possession glyph beside the possessing score, and a status word ('Touchdown'). There is no red LIVE badge; liveness is carried by the clock. Live Activity shown (01): three stacked cards on the Lock Screen, each with league label, crests, condensed scores, clock, a field-progress bar (NFL) and a one-line play-by-play sentence ('P. Mahomes throws for 11 yards to T. Thornton. Touchdown.'). This matches the text record's 'key stats/plays' claim. Match-centre density: medium; the line score and five team-stat rows are visible, and box-score completeness cannot be judged from 3 frames. No odds visible in any frame. Text-record nuance: Creative Boom's 'dark blue palette' is not what 02 shows (deep green). Card radii, previously unknown, are large and concentric."
+}

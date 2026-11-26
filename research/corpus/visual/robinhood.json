@@ -1,0 +1,54 @@
+{
+  "slug": "robinhood",
+  "track_name": "Robinhood: Trading & Investing",
+  "version": "2026.47.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All six use a warm near-black #110e09 backdrop with a centred white caption and subcaption in the top ~40%, then a realistic black iPhone frame cropped at the bottom showing ~45% of the image as UI. 02 and 05 show in-app Gold promo screens (still real UI, but promotional).",
+  "typography": {
+    "display": "Captions and in-app headings: custom neutral grotesk at regular weight (consistent with the single-sourced 'Robinhood Phonic', unsure). Gold surfaces: a high-contrast classical serif for 'Earn 3.6% APY' and '3% IRA Match' (consistent with Martina Plantijn)",
+    "body": "custom grotesk (unsure name)",
+    "numerals": "lining, regular weight; tabular unsure",
+    "weights": "Strikingly light: balances and headings in regular, not bold; semibold only on change figures and chips",
+    "case_and_tracking": "Sentence case; range labels in caps (1D, YTD, ALL, LIVE); normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": [
+      "#19191b"
+    ],
+    "text": "#ffffff",
+    "accents": [
+      "#ccff00 (visual estimate of Robin Neon; palette.json 05 #889b37 is an anti-aliased blend)",
+      "#7b3fc8 (visual estimate, prediction-market bars)",
+      "gold gradient on Gold surfaces"
+    ],
+    "accent_strategy": "One owned accent: Robin Neon carries the chart line, change figure, range selector and IRA promo. Gold gradient reserved for the Gold tier. Purple appears only as a data colour in prediction markets.",
+    "source": "palette.json 01-06 (#110e09 ~43% backdrop, #000000 24-43% in-app canvas), 03 (#19191b card surface 16%); neon and purple visual"
+  },
+  "shape": {
+    "radius_language": "mixed: cards ~16pt with hairline border; filter chips full pills with outline; primary buttons full pills; selected range chip small rounded rect ~6pt",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline grey borders on cards and chips; no shadows",
+    "materials": "flat; 3D render used as list-header art (24 Hour Market)"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low on portfolio/crypto (one number and one chart fill the screen); medium on prediction markets (chip rows, horizontal card carousel)",
+  "layout": "Portfolio and crypto: label + value stacked top-left, full-width line chart, range selector row; nothing else above the fold. Prediction markets: nav bar with back and settings, horizontally scrolling outline chips, carousel cards with three probability bars and a white Trade pill.",
+  "navigation": "Standard back chevron and title nav bar; no tab bar visible in any crop",
+  "imagery_and_icons": "Line SF-Symbol-like outline icons in chips; 3D extruded '24' in blue-to-neon gradient as collection art; no photography in UI",
+  "signature_visual_move": "A single thin Robin Neon line chart on pure black, with the balance set in regular weight rather than bold.",
+  "tells_present": [
+    "Gradient backgrounds and gradient text (gold gradient '3.6%' and gold gradient Join Gold pill on the Gold upsell)"
+  ],
+  "direction_fit": {
+    "primary": "Cinematic Dark Data",
+    "secondary": "Private-Bank Editorial (Gold surfaces only)",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record tagged Calm Modular (widget Dashboard) plus Private-Bank Editorial. The screens show a chart-as-hero dark interface with a light-weight face and one bright data colour, which matches Cinematic Dark Data except that the canvas is pure #000. The serif appears only on Gold promotion screens, confirming Private-Bank Editorial as a premium-tier secondary. No widget Dashboard is shown."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "MONEY ANATOMY. Balance: white regular weight (not bold) ~1.8x body, label ('Investing', 'Crypto') set at the same size and weight directly above it, top-left. Cents same size; $ full size; no space. Tabular: unsure. Change line: '▲ $0.2800 (26.47%) Today' with filled triangle, figure in neon semibold, 'Today' in white. No negative amount shown, so the down colour is unverified. Chart: thin (~1.5pt) jagged neon line edge to edge, no fill, no axes, a dotted horizontal reference line (previous close), a glowing end-point dot on the live chart. Range selector: neon text labels, selected one in a filled neon rounded rectangle with black text; 'LIVE' with a dot prefix. Prediction markets use purple bars with % labels above and thresholds below. Gold upsell: serif hero numerals with gold gradient fill, gold gradient pill CTA. No amount entry or order confirm shown."
+}

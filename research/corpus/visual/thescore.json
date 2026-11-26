@@ -1,0 +1,46 @@
+{
+  "slug": "thescore",
+  "track_name": "theScore: Sports News & Scores",
+  "version": "26.16.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy and dated. Every frame is a royal-blue-to-black vertical gradient (#0039c8 / #022179 to #020408) with an ultra-condensed heavy all-caps caption in white and yellow ('THE ONLY SPORTS APP YOU NEED'). 01 adds a '4.8 APP RATING' star band. The devices are old white and black home-button iPhones (iPhone 8 class) with a blue neon glow behind the frame in 01, often tilted (02, 04, 05). Real UI is about 40-55% of each image. 04 is mostly a theScore BET account-linking promo with almost no UI. The status bars show '100%' and 9:41 PM, which is old iOS chrome, so the screenshots likely predate the current version.",
+  "typography": {
+    "display": "Marketing: ultra-condensed heavy grotesk in all caps (family unsure). In-app: bold sans for titles ('Buffalo Bills', 'Line Movement', 'Favorites'); the italic 'theScore' wordmark.",
+    "body": "system SF likely (regular-weight list rows, tab labels and stat rows look like SF Pro), but low certainty given the frame age",
+    "numerals": "tabular-looking regular weight for stat values (347.2, 311.4) and odds (-125, +390, 46.5); no condensed display numerals in-app; the Scores tab icon is a '0 2' scoreboard glyph",
+    "weights": "Bold for team and section titles, semibold for the selected tab and favourite team names, regular for values, grey for ranks ('(1st)', '(19th)')",
+    "case_and_tracking": "All-caps tracked text tabs (SCORES, NEWS, CHAT, BRACKET, LEADERS; TOP, NFL, F1, NBA) and date strip ('FRI SEPT 11'); sentence or title case elsewhere",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#121212",
+    "surfaces": ["#1b1c1e", "#161d29", "#141414"],
+    "text": "#e3e4e4",
+    "accents": ["#0c41cf", "#f5e9c4"],
+    "accent_strategy": "Two brand accents, both used as UI state. Blue marks the selected filter chip ('All', 'Division Seires'), the tab underline, stat progress bars, links and the account ring. Yellow marks the favourite team name ('Bills'), the active star and bell, and the yellow 'S' brand bar. The yellow is not cleanly measured: the #f5e9c4 / #eadbb5 clusters blend caption yellow with white. A green dot marks live CHAT. The line-movement chart is red for the away line and blue for the home line.",
+    "source": "palette.json 05 (#121212 33%, mostly UI), 03 (#1b1c1e, #141414), 01 (#161d29, #dcddd6 text), 04 (#e3e4e4). The blue cluster (#0c41cf / #0537c8 / #0039c8) is shared by the backdrop gradient and the UI accent. Yellow visually matched; the measured clusters are blends."
+  },
+  "shape": {
+    "radius_language": "mixed: pill for filter chips (All / Live / NFL / NBA) and bracket-round chips; about 8-10pt on bracket cells and the spread-vote buttons; circles for the avatar and team crests",
+    "concentric": "no",
+    "borders_shadows": "Thin grey outlines on vote buttons and bracket cells; hairline dividers; no shadows",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no. The frames show old iOS chrome (iPhone 8 status bar), an opaque tab bar and flat chips.",
+  "density": "medium-high. Stat lists run at about 60pt per row with value, rank and a progress bar; the scores list puts favourites first with line or total, time and network badge. Spacing is consistent but tight.",
+  "layout": "Scores: wordmark top bar with search and avatar, a horizontal date strip with blue underline, a row of sport filter pills, then a 'Favorites' section of matchup rows (team, spread or total, kickoff time, TV network badge). News: league text tabs over a full-bleed featured photo with a 'FEATURED' kicker, then a photo-card carousel. Team page: record, crest and streak header, text tabs (CHAT, SCHEDULE, TEAM STATS, PLAYER STATS), ranked stat rows with blue bars. Game Betting Info: a line-movement chart, an opening-vs-current table and a 'Which team will cover the spread?' vote.",
+  "navigation": "Visible 5-tab bar (05): News, Scores (a blue '0 2' scoreboard icon when selected), Favorites (star), Bet (a '-110' chip icon), Leagues (trophy). Filled icons with labels. All-caps text tabs with a blue underline at the top of each section. Native-ish but custom-skinned chrome.",
+  "imagery_and_icons": "Game photography for news cards; team crests; a custom icon set including the '0 2' and '-110' glyphs; filled star and bell in yellow",
+  "signature_visual_move": "The tab bar's own icons are data glyphs: a two-digit '0 2' scoreboard for Scores and a '-110' odds chip for Bet.",
+  "tells_present": ["Neon glow; glowing badges (marketing device glow only)", "Flat React Native or Flutter UI that ignores Liquid Glass on iOS 26 (frames predate iOS 26; cannot confirm)"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Loud Owned Shell (blue-and-yellow brand plus condensed caps, mostly in the wrapper)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Scores, stat and bracket screens are neutral dark lists with aligned numerals and a single brand blue for state. That is Glance Board, as the text record guessed. The owned blue and yellow and the condensed caps carry the brand, but loudly only in the marketing frames. The betting surfaces (Bet tab, line movement, odds votes) pull toward a sportsbook portal."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Scoreboard anatomy. Score numerals: regular-weight sans; the Scores list in 01 shows a pre-game row (spread T:45.5 / +4.5 and '1:00 PM' kickoff), and bracket cells right-align series scores (7 / 4) with the losing team dimmed to grey. Team colour and logos: crests inline; the favourite team name turns brand yellow; there is no team-colour fill anywhere. Live state: a 'Live' filter chip with a grey dot, and a green dot before 'CHAT' on team and league pages. No live clock is visible in these frames. No Live Activity or widget is shown, even though the text record's main evidence is per-sport Live Activities; that claim is untestable here. Match-centre density: the Betting Info tab shows a two-colour line-movement area chart, an opening-vs-current line table, and a fan vote with odds (DAL -125, TB +390). Betting typesetting: American odds in regular white sans inside outlined rounded buttons, with no green or red payout colouring; the Bet tab icon itself is '-110'."
+}

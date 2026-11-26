@@ -1,0 +1,46 @@
+{
+  "slug": "sleeper",
+  "track_name": "Sleeper - Fantasy Sports",
+  "version": "160.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy and fused. There is no device frame: the UI is rendered straight onto a navy-to-cyan mesh-gradient backdrop with a halftone or knit texture and a glowing cyan floor. Each frame has a two-line caption (small tracked cyan or magenta all-caps kicker plus a huge white extended display word: 'GET $100', 'COMBOS', 'CASH OUT', 'SCORES', 'LEAGUE DUES', 'DRAFT'). Promo legal text sits at the bottom of 01 and 05. Floating 3D objects (a glass piggy bank, coins, a basketball, tilted draft-pick cards) sit on top of the UI in 05 and 06. Because the backdrop and the app's own dark-navy glass look the same, the UI boundary is unclear. Roughly 60-70% is UI, but how much of the glow and gradient is in-app is unsure.",
+  "typography": {
+    "display": "custom or licensed wide (extended) geometric heavy sans. It is used in the captions and also in-app for screen titles ('Pick Combos', 'Live Game Feed'), player surnames on pick cards ('James', 'Brunson') and the username 'Beastmode'. The family is unsure.",
+    "body": "a geometric-humanist sans for labels and metadata ('PHI @ NYK Tues 7:00pm', 'member since Jan. 2016'); not SF (unsure which)",
+    "numerals": "condensed heavy italic on the live scoreboard (84 / 79); bold tabular for lines and prices (22.5, 28.5, $51.00, $75.00); small regular multipliers (1.89x, 1.92x); the Scores tab icon is a '7:3' glyph",
+    "weights": "Black or heavy for display and scores; bold for lines and payouts; regular for metadata; the selected tab is white and the others dimmed",
+    "case_and_tracking": "All-caps tracked for MORE / LESS buttons, the tab labels (FANTASY, SCORES, PICKS, FEED, ACCOUNT) and the caption kickers; title case for headings; lower-case text tabs ('draft', 'team', 'players', 'league'; 'live', 'stats', 'linups')",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#0c174b",
+    "surfaces": ["#151d53", "#1e286d", "#1c3468"],
+    "text": "#ffffff",
+    "accents": ["#1ac9e6", "#53c0de", "#d97484"],
+    "accent_strategy": "Brand-flooded neon. Cyan (#1ac9e6 / #52d8ee) is the interactive and positive colour: the selected '58%' cell, the CASH OUT and BUY MORE buttons, card outline glows, the chart fill, gain deltas ('+$1.50') and progress bars. Team colours flood identity elements: giant italic team-code watermarks (GSW blue, HOU red-purple), team badge circles and jersey art. The draft board uses a per-position rainbow (pink, purple, teal, orange, blue tiles; #d97484 measured). The live dot and LIVE label are pink-red. White text sits on glass.",
+    "source": "palette.json 01 (#0c174b 21%, #151d53, #53c0de cyan), 02 (#1e286d, #72d7ec), 03 (#52d8ee), 04 (#4f1858 magenta glow), 06 (#d97484 pink draft tiles, #1ac9e6 cyan). The backdrop and the UI share the navy clusters; white text unmeasured."
+  },
+  "shape": {
+    "radius_language": "large: about 20-28pt on glass panels (bet slip, cash-out card, live feed card) and pick cards; pill for sport chips, the search field, the tab-bar capsule and CTA buttons; circles for team badges, avatars and the up/down pick buttons; about 6pt on draft-board tiles",
+    "concentric": "yes on the tab bar (the selected-item tile sits inside the capsule) and the bet-slip card; otherwise unclear",
+    "borders_shadows": "Glowing cyan 1-2pt outlines on selected pick cards and panels; inner glow on glass; bloom under the floating tab bar",
+    "materials": "bespoke glass: frosted translucent panels over a textured gradient; 3D rendered glass objects (piggy bank, robot avatar, coins, shield badges); a halftone or knit texture behind"
+  },
+  "liquid_glass_visible": "yes, but bespoke rather than native: a frosted floating capsule tab bar, frosted bet-slip and cash-out panels, and glass search and sport chips (all frames). It looks custom-rendered, not system Liquid Glass.",
+  "density": "high. Pick cards pack a jersey, name, game, popularity count ('🔥84k'), a recent-form mini bar chart, the line and a MORE/LESS row with multipliers. The scoreboard stacks a score ribbon, header, play text, a 3D court and pick progress rings. Spacing is tight with layered overlaps.",
+  "layout": "Picks lobby: a hamburger, search field and wallet balance ('$ 200.00' with a cash icon), sport chips, a promo banner ('$100 DEPOSIT MATCH'), then a two-column grid of player pick cards. Scores: a horizontal score ribbon, a big team-versus-team header with giant italic team-code watermarks, a live play line, an isometric 3D court with the shot arc and shooter avatar, the user's pick progress rings, then a Live Game Feed with emoji reactions. Account: an avatar (robot mascot), flair badges and Track / Favorites / Activities tabs over a position card with a price chart and CASH OUT.",
+  "navigation": "Visible 5-tab floating glass capsule: FANTASY (star shield), SCORES ('7:3' glyph), PICKS (dollar-person glyph), FEED (lightning), ACCOUNT (robot head). Custom filled icons with all-caps labels; the selected tab sits in a lit tile. Top: hamburger, search and wallet. Lower-case text tabs with a short underline pill. Entirely custom chrome.",
+  "imagery_and_icons": "Rendered 3D jerseys with player numbers (no player photos), team badge discs with italic codes, a 3D isometric court, 3D glass piggy bank and coins, a robot mascot avatar, a custom filled glyph set; emoji in reactions (❤️ 🔥 😭) and the 🔥 popularity count",
+  "signature_visual_move": "Live scores are set as huge italic team-code watermarks in team colour behind condensed italic numerals, above an isometric 3D court that traces the last shot.",
+  "tells_present": ["Neon glow; glowing badges", "Gradient backgrounds and gradient text", "Emoji as icons, including 🚀 and Live Activity emoji (🔥 popularity counts, reaction emoji)", "Dark navy or black plus a neon accent plus a team-logo grid (sports-study cliché)", "Confetti-and-multiplier 'arcade' mechanics (sports-study cliché: MORE/LESS multipliers, deposit match)"],
+  "direction_fit": {
+    "primary": "Pick'em Arcade (anti-reference)",
+    "secondary": "Toy / Game-Engine Tactile (3D objects and isometric court as decoration, not data-mapped)",
+    "confidence": "high",
+    "agrees_with_text_record": "no",
+    "why": "The text record guessed Dark Pro Minimal plus chat-social. The screens show the opposite of minimal: neon cyan glass on a navy gradient, binary MORE/LESS picks with multipliers, a deposit-match banner on the lobby, wallet balance in the top bar, CASH OUT and BUY MORE on prediction contracts, and rendered 3D toys. That is the Pick'em Arcade stack. The live scoreboard (04) is, notably, the strongest non-Apple Broadcast Scoreboard treatment in the batch."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Scoreboard anatomy. Score numerals: condensed heavy italic white numerals (84 / 79) set between the team name and record, with a pink-red live dot and '3Q 9:38 · ESPN' centred. A compact score ribbon above uses white pills with team discs. Team colour and logos: team-colour discs with italic codes, giant translucent italic team codes ('GSW' blue, 'HOU' purple-red) as a watermark behind the scoreboard, and timeout dots in team colour (yellow for GSW, pink for HOU). Live state: pink-red '• LIVE' plus clock, play-by-play line, the 3D court shot trace, and pick progress rings that fill as stats accrue ('29.5 POINTS' with a down arrow). No Live Activity or widget is shown. Match-centre density: high but mixed with wagering (the '$25 for $218.00' entry sits on the scoreboard). Betting and odds typesetting: lines in bold white (22.5 PTS); MORE/LESS as a two-cell button row with ↑/↓ arrows and small multipliers (1.89x / 1.92x) in cyan or grey; combo slip header '$25 for + $118.00' with the payout in bold yellow-lime; the cash-out card shows contract price '$51.00', a cyan gain chip '+$1.50', 'Total Payout if Right $ 75.00' and a CASH OUT $48.75 button. Payouts are shown up front, so the hidden-payout pattern does not apply here. Market percentages (42% / 58%) and spread and total cells (+5.5 31%, O 98.5 68%) sit in glass cells with the favoured choice filled cyan."
+}

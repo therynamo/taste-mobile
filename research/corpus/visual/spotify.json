@@ -1,0 +1,46 @@
+{
+  "slug": "spotify",
+  "track_name": "Spotify: Music and Podcasts",
+  "version": "9.2.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All 6: two-tone marketing wrapper (pink #f798d0 panel inside a teal #5baa94 border), all-caps black caption with mixed bold/regular words (top ~25%), and a black iPhone frame showing ~65-70% real UI, cropped at the bottom; 02 is tilted. The tab bar is cropped out of every frame.",
+  "typography": {
+    "display": "Custom geometric-grotesque at bold/black weight for screen and playlist titles ('Hot Hits Canada', 'Alex + Sam', 'Jump back in', 'Search'); Spotify's proprietary face (Spotify Mix / Circular lineage), not SF",
+    "body": "custom (same Spotify family)",
+    "numerals": "proportional; small grey times (18:51, -4:26) and save counts",
+    "weights": "black/heavy hero titles, bold section headers, regular track titles, regular grey secondary lines",
+    "case_and_tracking": "sentence/title case in-app, tight tracking on big titles; all-caps only on marketing captions",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#121212",
+    "surfaces": ["#1f1f1f", "#2a2a2a", "#ffffff"],
+    "text": "#ffffff",
+    "accents": ["#1ed760"],
+    "accent_strategy": "One owned green for play buttons, the selected filter chip, the currently-playing track title and the saved check; every other hue is extracted per content (mini player and audiobook cards tinted from cover art: red for 'Radio', maroon for 'The Perfect Marriage', navy for 'Neon Gods'; hero gradients from artwork).",
+    "source": "palette.json 03 (#121212, 25%), 04 (#111313, #151a1b); #f798d0 pink and #5baa94 teal are marketing wrapper; green and tile greys read visually; 05 #822a29 = artwork-tinted audiobook card"
+  },
+  "shape": {
+    "radius_language": "small-to-medium: ~4pt on album art and shortcut tiles, ~8pt on cards and the mini player, pill chips and Preview pill, circle play buttons",
+    "concentric": "no",
+    "borders_shadows": "no borders; shortcut tiles are a lighter grey fill on black; no shadows",
+    "materials": "flat; artwork-coloured gradients fading into black behind headers"
+  },
+  "liquid_glass_visible": "no: mini player is an opaque artwork-tinted bar; tab bar not visible",
+  "density": "medium-high; 2x4 shortcut grid of 56pt tiles, 3-up shelves, list rows ~60pt with 48pt artwork",
+  "layout": "Home: avatar + filter chips (All, Music, Podcasts, Audiobooks), 2-column recent shortcut grid, then horizontal shelves ('Jump back in'). Playlist: full-bleed hero artwork with huge title, curator, action row (thumb, add, download, more ... shuffle, big green play), track list. Search: white search field, coloured category tiles with tilted cover art.",
+  "navigation": "Bottom tab bar is cropped out of every frame. Persistent mini player above it (artwork-tinted). Top: avatar button left, filter chips; screens use a floating round back button over hero art. Custom chrome throughout.",
+  "imagery_and_icons": "Album, podcast and audiobook artwork dominate. Custom outline icon set (add-circle, download-circle, ellipsis, shuffle, connect-device, camera), white/grey; the play button is a filled green circle.",
+  "signature_visual_move": "A #121212 stage where one owned green marks play and selection, and the mini player and cards take their colour from the current artwork.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "NEW: Dark Content Stage - near-black neutral stage, artwork-derived per-content colour, brand reduced to one owned accent on play/selection",
+    "secondary": "Loud Owned Shell (marketing wrapper and the green only; the in-app shell is quiet)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The screens show the text record's Dark Content Stage exactly: neutral black stage, artwork-sampled tints on the mini player and cards, green only on play/selection, a custom heavy display face."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Search category tiles with tilted cover art cut off at the corner are a recognisable Spotify move. The marketing wrapper's pink and teal are not in-app colours."
+}

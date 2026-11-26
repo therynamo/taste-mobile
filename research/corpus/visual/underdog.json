@@ -1,0 +1,46 @@
+{
+  "slug": "underdog",
+  "track_name": "Underdog: Sports, Games & Rips",
+  "version": "26.72.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Very heavy. 03 (Rips trading-card packs on sky blue) and 06 (a US map, 'LETTIN' DOGS OUT COAST TO COAST') are entirely marketing art with no UI. 01 is a promo poster ('PLAY $10 GET $50 IN BONUS ENTRIES' plus CFTC fine print) with a cropped, tilted phone in its lower third. 02, 04 and 05 show a yellow-framed iPhone on flat brand-colour backdrops (lemon #fffc01, green #00af50, sky #46b7ef) with lightning-bolt and swoosh graphics and ultra-condensed navy all-caps captions. 02 adds an oversized '~10.83x' badge on top of the phone. Real UI is about 0% in 03 and 06, about 35% in 01 and about 60% in 02, 04 and 05.",
+  "typography": {
+    "display": "Marketing: ultra-condensed heavy grotesk in all caps, navy (family unsure). In-app promo tiles reuse a condensed heavy display ('PRIMETIME JACKPOT', 'DEAL REVEAL', 'COLLEGE BOOSTDAY', italic 'WITCHING HOUR').",
+    "body": "a neo-grotesk with tight tracking for UI labels ('BOS Celtics', 'Spread', '132 markets', '4 Picks'); not obviously SF (unsure)",
+    "numerals": "bold proportional for lines ('-1.5', '↑ 222.5'); small regular grey for multipliers ('1.9x', '1.79x'); bold for percentages (59% / 41%) and balance ('$100 +'); not condensed in-app",
+    "weights": "Bold for team names, lines and section titles ('4 Picks', 'Popular Picks'); regular grey for meta ('Tue, 12pm • NBC/Peacock'); heavy condensed for promos",
+    "case_and_tracking": "Sentence or title case in the core UI; all-caps condensed only on promo tiles and team codes (DAL, NYG); tight tracking",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#02060f",
+    "surfaces": ["#0f1324", "#101934"],
+    "text": "#ffffff",
+    "accents": ["#00af50", "#fffc01"],
+    "accent_strategy": "The core UI is near-black with grey odds tiles and white type. Green is semantic for money: the payout '$108.30' in '$10 pays $108.30'. Team colour is per content: team names in team colour (NYG blue, DAL silver), the selected team pick button filled in team blue ('Giants 2.33x'), probability lines in team colour, and team avatars as illustrated sneakers in team-colour discs. The loud brand yellow, green and sky live in the wrapper and in the multi-colour promo tiles on the promos tab.",
+    "source": "palette.json 02 and 05 (#02060f / #00070f about 30-35% are the black app UI plus phone; #0f1324 and #101934 surfaces), 01 and 04 (#fffc01 brand yellow backdrop), 02 and 05 (#00af50 green backdrop, used as a visual match for the in-app payout green). White text unmeasured."
+  },
+  "shape": {
+    "radius_language": "medium: about 10-12pt on odds tiles and promo banners; pill for the balance chip ('$100 +'), bonus and boost chips and the 1H/1D/1W/ALL range chips; circles for team avatars and settings or search buttons",
+    "concentric": "no",
+    "borders_shadows": "Promo tiles have 2pt coloured outlines (green, yellow, pink-red); odds tiles are flat grey blocks; no shadows",
+    "materials": "flat, apart from illustrated promo art"
+  },
+  "liquid_glass_visible": "no",
+  "density": "high on market screens: three columns (Spread, Total, Winner) of two-line odds tiles per team row, '132 markets' links and a probability chart with volume. Medium on the pick slip.",
+  "layout": "League market list: a back arrow and 'NBA', search and balance, a 'Tomorrow' group, then per game two team rows (sneaker avatar plus name) against a 3 × 2 grid of odds tiles (Spread / Total / Winner), with time, network and a market count. Game: helmets and team codes, time and network, Game / Players / Entries tabs, a two-line probability chart (59% Cowboys vs 41% Giants, $5.4M vol), range chips, a two-button winner pick (Cowboys 1.61x / Giants 2.33x) and Spread and Total rows. Slip sheet: '4 Picks', a settings and balance pill, chips for '$24.99 Bonus Funds' and '30% Boost', grouped Team and Player picks, and '$10 pays $108.30' at the bottom. Promos tab: four full-width illustrated banners.",
+  "navigation": "Visible 5-icon tab bar with no labels (04): home, game controller, gift, check-circle, person. Outline icons. The pick slip is a sheet with a grabber. Custom chrome.",
+  "imagery_and_icons": "Illustrated team avatars (sneakers in team-colour discs), helmet renders, cartoon promo illustration (a bird in a money-stuffed helmet, a 'UD' pennant, a glowing clock), a dog-head mascot logo, trading-card pack art; outline UI icons; a rocket icon on '30% Boost'",
+  "signature_visual_move": "Every odds tile stacks the line in bold white over its payout multiplier in small grey ('↑ 222.5 / 1.93x'), so wagers read as multipliers rather than American odds.",
+  "tells_present": ["Confetti-and-multiplier 'arcade' mechanics (sports-study cliché: '~10.83x' badge, 30% Boost, bonus funds, jackpot promos)", "Dark navy or black plus a neon accent plus a team-logo grid (sports-study cliché; mild in-app)"],
+  "direction_fit": {
+    "primary": "Pick'em Arcade (anti-reference)",
+    "secondary": "Loud Owned Shell (owned lemon yellow, dog mascot, condensed caps; in the wrapper and promo tab)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Higher/Lower picks, multipliers as the primary number, boost and bonus chips on the slip, a promos tab of jackpot and boost banners, and trading-card 'Rips': the Pick'em Arcade stack the text record named. Its loud, owned voice is real, but it lives in the wrapper and the promo tiles. The core market UI is a fairly sober black odds grid."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Scoreboard anatomy. Score numerals: no live score is shown; the game header shows only '09-13, 8:20pm NBC/Peacock' between helmets. Team colour and logos: team code in team colour (DAL silver-grey, NYG blue), helmet renders, sneaker avatars in team-colour discs, the selected winner pick filled in team blue, and probability lines in team colours. Live state: not shown, though the caption says 'FOLLOW THE GAME LIVE'. No Live Activity or widget is shown (the text record cites Rips Live Activities). Match-centre density: a market screen rather than a stats screen; the probability chart has a volume figure and trade ticks (+$102, +$21, +$25). Betting and odds typesetting: lines in bold white with ↑/↓ for over and under; multipliers in small grey 'x' notation (1.9x, 1.79x, 2.33x) instead of American odds; the payout is stated up front in the slip ('$10 pays $108.30', payout in green); a '~10.83x' total multiplier badge; promo chips '$24.99 Bonus Funds' and '30% Boost' sit above the picks. CFTC and 'Underdog Predict' disclosures show that some picks are prediction-market contracts."
+}

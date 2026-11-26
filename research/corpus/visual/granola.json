@@ -1,0 +1,46 @@
+{
+  "slug": "granola",
+  "track_name": "Granola - AI Meeting Notes",
+  "version": "1.16.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 and 04 are entirely marketing art: a flat lime #b2c248 poster with a large serif headline, an App of the Day laurel and a two-column serif manifesto at the foot ('Before tech slop and corporate bloat...'). 02, 03, 05 and 06 show real UI in an oversized, deliberately cropped grey iPhone (only the left 85% visible) on textured print-style backdrops: pink graph paper, ochre with black brush scribbles, a black risograph/halftone collage, lilac dotted paper. 02 and 06 add an Apple Watch and 06 a Mac window. Real UI is ~50–70% of those four frames.",
+  "typography": {
+    "display": "Custom text serif for note titles and screen titles (Coffee catch-up with Jack, My notes, Q3 planning) at ~28–32pt regular weight, with ball terminals and bracketed serifs; name unsure",
+    "body": "custom neo-grotesque sans for chips, headings and bullets (unsure; not obviously SF)",
+    "numerals": "The Watch timer (0:07:26) is set in the display serif with lining proportional figures; call timers (03:44, 03:41) in the sans",
+    "weights": "Serif at regular weight even at display size; sans medium for section headings (Advice he's been getting), regular grey for bullets, regular for chips",
+    "case_and_tracking": "Sentence case everywhere; tight tracking on the serif display; # glyphs in light grey mark section headings",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#eaebe5",
+    "surfaces": ["#f7f7f5", "#fafaf8", "#262626"],
+    "text": "#1c1c1a",
+    "accents": ["#b2c248", "#ca513c", "#788b17"],
+    "accent_strategy": "Near-monochrome warm paper with almost no in-app accent; the brand lime appears only on the Watch recording face and a lime waveform in the call bar, and a muted brick red is reserved for hang-up. Loud colour lives in the marketing posters (lime, yellow #fecf43, lilac #a591d0, pink).",
+    "source": "palette.json 02/03: #eaebe5 = note background (50–60% share); 01/04 #b2c248 = lime poster; 05 #fecf43 = yellow backdrop, #1e1d1d = call bar; 06 #a591d0 = lilac backdrop. Circle buttons #f7f7f5, list surface #fafaf8, hang-up #ca513c, waveform #788b17 and text #1c1c1a sampled by pixel from 03 and 05."
+  },
+  "shape": {
+    "radius_language": "pill and circle: 44pt white circular icon buttons top-left/right, pill metadata chip (calendar + time + avatar) and circular folder/attach buttons with hairline borders; the call bar is a ~28pt rounded dark panel with pill controls",
+    "concentric": "yes",
+    "borders_shadows": "Hairline grey borders on chips; no shadows inside the note; the circular top buttons sit on a faint lighter fill",
+    "materials": "flat paper-like ground; the marketing backdrops carry print texture (risograph, scribble, graph paper) but the UI does not"
+  },
+  "liquid_glass_visible": "unclear: the floating circular top buttons have the iOS 26 shape, but they look opaque off-white rather than refractive",
+  "density": "low: one title, one chip row and generous empty space ('Write your notes here...'); notes are bulleted with ~16pt line gaps and large left indents",
+  "layout": "Note screen: circular dismiss/back button, very large serif title, a single chip row (date/time with attendee avatar, add-to-folder, attach), then free-writing space or AI-structured notes as # headings with grey bullets. Home (06): folder button left, a grouped call/search/avatar capsule right, serif 'My notes' title, a 'Coming up' list of meetings with date tiles.",
+  "navigation": "No tab bar visible. Top-corner circular buttons and a grouped capsule (call, search, profile) on home; recording state floats as a dark bottom panel during calls.",
+  "imagery_and_icons": "Thin outline icon set (calendar, folder-plus, paperclip, phone, search); photo avatars inside chips; no illustration in-app",
+  "signature_visual_move": "A meeting note is typeset like a printed page: a big regular-weight serif title on warm grey paper with nothing else competing.",
+  "tells_present": ["Cream plus serif plus orange (partial: warm paper and serif display, but the accent is lime, not orange)"],
+  "direction_fit": {
+    "primary": "Literary Warm Assistant (held candidate; Granola would be its second exemplar after Claude)",
+    "secondary": "Private-Bank Editorial (serif display, earth neutrals, editorial spacing; outside finance)",
+    "confidence": "med",
+    "agrees_with_text_record": "no text record",
+    "why": "The text record exists but every visual field and the direction are unknown. The screens show a serif-for-display, sans-for-UI split on a warm grey paper with near-zero accent and very low density, which is the Literary Warm signature without the terracotta. The loud lime/yellow/lilac print posters are the brand layer and stay out of the app chrome."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Two of six frames are pure posters and the other four crop the phone, so chrome below the fold (any tab bar, composer for the notes chat) is unseen. The Watch face reuses the serif for the running timer, a nice cross-device type decision. The manifesto copy on the posters ('Before tech slop and corporate bloat') positions the brand explicitly against the AI aesthetic. The warm-paper + serif pairing is close to the 2026 cream-serif-orange default; Granola escapes it with lime instead of orange and with print-texture art."
+}

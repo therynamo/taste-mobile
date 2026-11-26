@@ -1,0 +1,46 @@
+{
+  "slug": "whoop",
+  "track_name": "WHOOP",
+  "version": "5.80.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Moderate. A dark slate-blue gradient backdrop with a white two-line caption and a black phone silhouette. 02-06 show the top ~75% of a screen at near full width (real UI ~70% of the image). 01 overlaps the phone with two 3D band renders that hide the tab bar and part of the home feed.",
+  "typography": {
+    "display": "unsure: score numerals in a DIN-like straight-sided bold sans (75%, 85%, 14.2, 29.9); the WHOOP wordmark sits above each score in a thin wide logotype",
+    "body": "unsure: a geometric-humanist sans resembling Proxima Nova for insight copy and captions; not SF",
+    "numerals": "DIN-style bold numerals, large in gauges, right-aligned in metric rows (124, 49, 14.5, 1:05, 12,459); percent sign smaller",
+    "weights": "Bold numerals; Semibold all-caps labels; Regular body",
+    "case_and_tracking": "All-caps with wide letterspacing for metric labels, screen titles and links ('HEART RATE VARIABILITY', 'TODAY', 'DIVE INTO MY SLEEP'); sentence case for coaching copy",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#12171a",
+    "surfaces": ["#191f24", "#21292e", "#243039"],
+    "text": "#ffffff",
+    "accents": ["#16ec06 (approx: Recovery green ring)", "#0093e7 (approx: Strain blue ring)", "#7ba1bb (approx: Sleep slate-blue ring)", "#3dd6a0 (approx: up-trend teal, Healthspan particles)", "#f5a623 (approx: down-trend amber)"],
+    "accent_strategy": "Per-metric fixed colours: Sleep is slate blue, Strain is blue, Recovery takes the banded traffic-light colour (green at 85%). Small semantic triangles mark trend vs the prior 30 days (teal up, amber down, grey flat). Insight cards use a purple-to-teal gradient outline and periwinkle caps links. Base is a cool navy-slate, not black.",
+    "source": "palette.json 02-04 (#12171a, #191f24, #21292e, #243039 cover ~80% and are shared by UI and backdrop), 03 (#486f58 green ring tint), 05 (#3d6b62 particle orb) + visual match"
+  },
+  "shape": {
+    "radius_language": "small-to-medium ~12pt cards; pill/capsule tab bar and date switcher; circular gauges",
+    "concentric": "unclear",
+    "borders_shadows": "Thin hairline dividers between metric rows; gradient 1pt outline on the coach insight card; subtle top-highlight gradient on cards; a caret notch joins the gauge to the metric card",
+    "materials": "Dark gradient surfaces; translucent floating capsule tab bar; a particle-glow orb on Healthspan"
+  },
+  "liquid_glass_visible": "yes: floating capsule tab bar ('Community', 'More') with a separate circular WHOOP coach button at its right (01), matching the iOS 26 bar-plus-accessory layout",
+  "density": "medium-high: home stacks three gauges, an insight card, two monitor tiles and the My Day list; detail screens use 4-row metric tables; 12-16pt rhythm",
+  "layout": "Home: avatar + flame streak count, a TODAY date switcher, battery chip; WHOOP wordmark; a row of three equal ring gauges (Sleep %, Recovery %, Strain 0-21); a coach insight card; Health Monitor and Stress Monitor tiles; 'My Day' with Daily Outlook and activities. Each score drills into a screen with one big ring gauge, a 4-row contributor table and a coach card.",
+  "navigation": "Floating glass tab bar (items partly hidden; 'Community' and 'More' visible) plus a separate round coach button; detail screens have a back chevron, centred caps title and an info button",
+  "imagery_and_icons": "Thin outline custom metric icons (lungs, heart, dumbbell, shoe); generative particle orb for Healthspan; abstract fluid-art thumbnails for lab panels; no photography in-app",
+  "signature_visual_move": "Each score is a thick single ring on navy-slate with a huge DIN numeral inside and the WHOOP wordmark above it, notched into a caps-labelled contributor table.",
+  "tells_present": ["Streak counter plus 🔥", "Neon glow; glowing badges", "Gradient backgrounds and gradient text"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Cinematic Dark Data",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Readiness Dashboard (now a Glance Board variant) is confirmed: a score triad of rings, Recovery banded green, Strain on 0-21 (14.2), dense scroll home and a coach button. The tinted navy-slate base with white numerals and per-metric colour also matches Cinematic Dark Data's dark-data look."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Daily score: three equal-size ring gauges (Sleep 80% slate-blue, Recovery 85% green, Strain 14.2 blue); only Recovery uses the traffic-light band, so the triad is equal-weight but not all traffic-light. Strain's ring shows a white target tick, so the Recovery-derived Strain target is drawn on the ring. Sleep contributors use three-segment bars coloured Poor amber / Sufficient grey / Optimal teal. Streak: a flame glyph with '355' next to the avatar (top-left of Home); no calendar shown. Charts: segmented mini-bars and a 'Pace of Aging' tick-strip scale (-1.0x to 3.0x) with a pointer; no line charts visible. Numerals: DIN-like bold, right-aligned in rows, with trend triangles. The equal-weight triad is exactly the fitness-module anti-pattern 'equal-weight score triads', which suggests the module rule critiques the category leader itself."
+}

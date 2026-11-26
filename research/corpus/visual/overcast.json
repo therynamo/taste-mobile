@@ -1,0 +1,46 @@
+{
+  "slug": "overcast",
+  "track_name": "Overcast Podcast App",
+  "version": "2026.10.1",
+  "screenshots_examined": 1,
+  "marketing_wrapper": "None: the single screenshot is a raw full-bleed home screen with no caption, backdrop or frame (status bar cropped off). 100% real UI.",
+  "typography": {
+    "display": "SF Pro, regular/medium at large size for section headers ('Playlists', 'Podcasts') and the centred nav title 'Overcast'",
+    "body": "system SF",
+    "numerals": "proportional SF inside caps labels ('35 MIN LEFT', '20 MIN LEFT'); episode numbers in titles",
+    "weights": "regular for podcast and episode titles (not bold), medium section headers; grey caps metadata",
+    "case_and_tracking": "tracked small all-caps for status and author lines (PAUSED, NEW, MARCO ARMENT, CASEY LISS); sentence case elsewhere",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f5f6f5", "#fafaf9"],
+    "text": "#000000",
+    "accents": ["#fc7e0f", "#af52de", "#32ade6", "#34c759"],
+    "accent_strategy": "One brand orange for nav-bar actions (settings gear, search) and the selected playlist; each playlist also gets its own colour (orange, purple, blue, green) as a filled circle with a pale halo ring. Podcast artwork supplies the rest.",
+    "source": "palette.json 01 (#ffffff 57%, #f5f6f5 card and section-band fill, #fafaf9); orange and playlist hues read visually (system-like orange, purple, blue, green)"
+  },
+  "shape": {
+    "radius_language": "mixed: ~12-14pt continue-listening cards, ~8pt artwork, circles for playlist buttons, native rounded segmented control",
+    "concentric": "no",
+    "borders_shadows": "continue-listening cards have a light grey fill plus a soft outer shadow/rim; hairline separators in the podcast list; the selected playlist has an orange ring",
+    "materials": "flat, slightly skeuomorphic soft cards"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium; 2x2 horizontally scrolling continue-listening cards, a row of 4 playlist circles, podcast rows ~110pt with 96pt artwork",
+  "layout": "Home: centred title bar with gear and search; a horizontally scrolling 2-row shelf of in-progress episodes (artwork + caps status + title); 'Playlists' as large coloured circular buttons; 'Podcasts' list with Current/All segmented control, artwork-left rows with chevrons.",
+  "navigation": "Native-style centred navigation bar with orange gear (settings) and search; native segmented control; disclosure chevrons on rows. No tab bar visible.",
+  "imagery_and_icons": "Podcast cover art; SF Symbols-style glyphs (gear, magnifier, chevron) and white filled glyphs inside coloured circles for playlists (box, car, calendar, tray).",
+  "signature_visual_move": "Playlists as big filled colour circles with a pale halo ring, set in an otherwise plain white, SF-native list app with orange actions.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "posture-only: native utility (platform fidelity plus one orange brand accent)",
+    "secondary": "none",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "One raw screen shows a stock-iOS layout (SF, native segmented control, chevron rows) with one brand orange and per-playlist colour circles. That matches the text record's posture-only verdict; the identity lives in the audio features, which cannot be seen."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Only one screenshot, so the player screen (where Overcast's signature controls live) is unseen. Low evidence for any visual field beyond the home screen."
+}

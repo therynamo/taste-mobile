@@ -1,0 +1,46 @@
+{
+  "slug": "coinbase-wallet",
+  "track_name": "Coinbase Wallet: Trade to Win",
+  "version": "30.22",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Moderate. Each frame: dark navy backdrop with a teal glow rising from the bottom, a cyan eyebrow word (Multi-Chain, Predictions, Pro Features, More Markets, Built to Trade, Send) and a two-line white Title Case caption in the top ~20%. Below, a generic phone outline with a thick glowing cyan rim, a mock status bar (9:41, 5G) and real-looking full-width UI occupying ~75% of the frame, cropped at the bottom. The cyan rim and glow are wrapper, not UI.",
+  "typography": {
+    "display": "Custom geometric grotesque used in both captions and UI (large balance, screen titles, row titles); consistent with Coinbase's own Coinbase Sans/Display family, but not verified - name unsure.",
+    "body": "custom (same family; unsure of exact name)",
+    "numerals": "Lining, appear proportional (not monospaced); prices right-aligned so columns read aligned at the right edge only. Large balance and entry amounts in bold. Percent changes small, semibold, with a filled triangle glyph.",
+    "weights": "Bold for balance ($9,197.65), entry amounts ($10, 500), screen titles and asset names; regular/medium grey for secondary lines (holdings, market cap); semibold for prices.",
+    "case_and_tracking": "Title Case for captions and section headers (Coins, Perps, Predictions, Your Position); all-caps only for small chips (PASTE, MAX, timeframe 1H/4H/1D); default tracking.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#0a0f15",
+    "surfaces": ["#111a27", "#131b26"],
+    "text": "#ffffff",
+    "accents": ["#00f0ff (approx, cyan Trade button and +$ delta; visual estimate, not in palette.json)", "#7ee07e (approx, gain green; visual estimate)", "#f0706a (approx, loss red; visual estimate)"],
+    "accent_strategy": "One electric cyan brand accent used for the primary CTA (Trade pill), the 30-day gain line under the balance, chip icons and the verified badges; separate semantic green/red for price change, chart lines and candles. The cyan collides with the 'income/credit' role on the home balance delta (+$240.21 is cyan, row gains are green), so brand and semantic colour are not fully separated.",
+    "source": "palette.json 01-06: #0a0f15/#090e14 = app background and marketing backdrop (same value), #111a27/#131b26 = raised surfaces (action tiles, search field, swap cards), #396471/#236d7a/#285766 = the teal marketing glow around the frame, not UI. Cyan/green/red accents are too small to register in the top-8 and are visual estimates."
+  },
+  "shape": {
+    "radius_language": "mixed: ~16pt rounded squares for the four home action tiles and swap cards, full pills for search field, chips, token selectors, Trade button and amount presets; circular token icons and a circular swap-direction button",
+    "concentric": "yes - token-selector pills nest inside ~16pt swap cards with even inset; search pill with inner PASTE pill",
+    "borders_shadows": "No visible borders or shadows on UI; separation is purely by one-step lighter navy surfaces. A hairline divider above the Trade button and in the swap card.",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no - opaque flat navy surfaces; no tab bar visible to check bar material",
+  "density": "medium-high - token rows ~80pt tall at 600px with two-line left and two-line right; swap and send screens are lower density with a full numeric keypad; consistent ~16pt gutters",
+  "layout": "Home: avatar + screen title (Home/Discover/Market) top-left with history and scan icons top-right; centred bold total balance with a cyan 30-day delta; a row of four equal tile buttons (Deposit, Receive, Send, Trade); a search-assets-or-URL pill with PASTE; then a 'Coins >' section of token rows (icon with verified badge, name, holdings | value, change). Discover adds a horizontal chip filter (favourites, Coins, Perps, Predictions) and stacked sections. Trade is a two-card You Pay / You Receive swap with an in-app keypad and percentage presets. Send is a single centred big amount with an in-app keypad and quick-amount chips.",
+  "navigation": "No tab bar is visible in any frame (cropped below). Top bar is custom: avatar + large title (with dropdown on Market) left, clock/history and scan-frame icons right. Detail screens use back chevron + ellipsis; Send uses back + close X. Custom in-app keypads instead of the system keyboard.",
+  "imagery_and_icons": "Illustrated cartoon avatar (pink-haired character with glasses); real token logos in circles with a cyan verified check badge; outline icon set (clock, scan frame, paper plane, swap arrows, plus) in a custom stroke style; no photography, no 3D.",
+  "signature_visual_move": "A flat dark-navy trading shell where one electric-cyan pill (Trade) and cyan verified badges are the only brand colour against green/red market data.",
+  "tells_present": ["Neon glow (cyan glow is on the marketing frame; the in-app Trade button is a saturated cyan)"],
+  "direction_fit": {
+    "primary": "Dark Pro Minimal",
+    "secondary": "Glance Board",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record had only 'Social Ledger then Calm Modular / trading, visual tag unknown'. The listing confirms the social feed is gone (no feed, no posts) and shows a trading-terminal shell: dark multi-level surfaces, no borders, dense ticker rows, candlesticks, perps leverage chips and a 15-minute prediction countdown. That reads as Dark Pro Minimal applied to trading, with Glance Board rows. It is also close to the generic dark exchange template, which lowers distinctiveness."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Balance and amount anatomy: home total $9,197.65 is the largest element, bold, cents at the same size, centred, with '+$240.21 in the last 30 days' below in cyan + grey; no label above the balance (deviates from label-above rule). Row values bold proportional lining figures right-aligned with cents ($1,456.78) except USDC ($1,456, no cents) - inconsistent cents treatment. Gains green with an up triangle, losses salmon red with a down triangle (Discover: BankrCoin -0.92%, Hyperliquid -1.26%). Asset page price $0.4636 bold large. Send amount '$10' huge bold with a currency-toggle '↑↓ 10 USDC' below. Trust/risk: cyan verified badges on tokens, 'Read the rules' link on predictions, 'Total 10 USDC (i)' fee line on send; no signing sheet, transaction simulation, balance-delta preview or risk warning is shown in any frame; scam-token hiding is not visible. Slippage 3% row is visible on Trade. Gamified signals: 'Trade to Win' app name, 40x leverage chips, 15-minute Bitcoin countdown market. Crypto cliché: neon-on-black is partly present - dark navy (not pure black) with an electric cyan CTA and a glowing cyan device rim in the wrapper. No 3D coins or gradient orbs. 8 screenshots in listing, 6 cached."
+}

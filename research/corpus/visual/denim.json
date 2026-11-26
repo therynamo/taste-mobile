@@ -1,0 +1,46 @@
+{
+  "slug": "denim",
+  "track_name": "Denim - Playlist Cover Maker",
+  "version": "3.10.5",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Heavy. Every image uses a light grey (#f3f3f3) backdrop with a big two-line headline (black line plus one coloured line), hand-lettered all-caps sub-captions, and 3D clay props (googly eye, lightning bolt, pink shapes). 01 and 02 are pure marketing art (before/after and a fanned stack of covers). 03, 04 and 05 show real UI in older iPhone frames, at about 55-60% of the image.",
+  "typography": {
+    "display": "In-app: system SF Pro bold large title ('Covers'), SF bold section headers ('Colors', 'Featured Artists', 'Retro'). The covers themselves use many user-chosen faces (wide extended grotesk, italic bold, serif, condensed); the style picker in 03 shows eight 'Aa' samples. Marketing headlines are a geometric grotesk (unsure), not SF.",
+    "body": "system SF",
+    "numerals": "n/a (only 'Font Size (130)' and cover counts in grey SF)",
+    "weights": "Bold large title and section headers, semibold item titles, regular grey secondary ('4 Covers').",
+    "case_and_tracking": "Native title/sentence case in the UI; marketing sub-captions are hand-lettered all-caps.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#f3f3f3",
+    "surfaces": ["#e8e8e9", "#1c1c1e"],
+    "text": "#010c23",
+    "accents": ["#0a84ff"],
+    "accent_strategy": "Native: system blue only for the selected style ring and 'Title Case' picker; all other colour comes from the user's cover artwork (per-content). The coloured headline words (blue, cyan, coral, pink, green) and pink 3D props are wrapper only.",
+    "source": "palette.json 01-05 (#f3f3f3 backdrop, #e8e8e9 light surface, #010c23 / #131114 dark text and dark sheet); #1c1c1e dark sheet and #0a84ff system blue are visual matches to standard iOS values, not measured"
+  },
+  "shape": {
+    "radius_language": "mixed: cover thumbnails about 12-16 pt squircles, sheets with system large radius, circular toolbar buttons, small radius on selected style tile",
+    "concentric": "unclear",
+    "borders_shadows": "Soft drop shadows under stacked cover cards (fanned 'deck' of covers per playlist); otherwise native separators.",
+    "materials": "Flat native surfaces; a faint lavender gradient behind the Covers grid; covers carry mesh gradients and depth-effect photo cut-outs."
+  },
+  "liquid_glass_visible": "no: chrome is iOS 17/18-style (grey circular toolbar buttons, standard sheet); no glass tab bar visible",
+  "density": "medium: two-column grid of cover stacks with title and count; carousels of template tiles in rows",
+  "layout": "Home ('Covers'): large title, gear icon top-left, plus and ellipsis top-right, two-column grid of playlist cover stacks (several covers fanned behind the front one). Create sheet: horizontal carousels grouped by style (Colors: Mesh, Gradient, Fluo; Featured Artists: Depth Effect, Full Width; Retro: Cassette, CD) with a 'For my playlist' chooser pinned at the bottom.",
+  "navigation": "No tab bar visible. Native nav bar with large title and circular toolbar buttons; creation and styling happen in modal sheets (Create Cover, Customise Style) with close buttons; undo/redo in the editor toolbar.",
+  "imagery_and_icons": "User photos and artist photos, mesh and gradient covers, rendered cassette and CD props; SF Symbols for gear, plus, ellipsis, undo, eye. Wrapper adds 3D clay props.",
+  "signature_visual_move": "Each playlist appears as a fanned, shadowed stack of its cover versions, so the home screen reads like a crate of record sleeves.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Shareable Artifact Studio",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The UI is quiet native chrome and all expression lives in the output cover; the template carousels and font picker are tools for making a designed artifact. The text record's 'Liquid Material' secondary is not visible: mesh gradients sit in the covers, not the chrome."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Only 5 screenshots exist. The 'With Denim' cover is a mesh gradient; 'Depth Effect' places the artist over the title text. The UI shown predates iOS 26 chrome, so the screenshots may be older than version 3.10.5."
+}

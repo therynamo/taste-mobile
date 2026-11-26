@@ -1,0 +1,46 @@
+{
+  "slug": "structured",
+  "track_name": "Structured: Daily Planner Todo",
+  "version": "4.6.9",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. A flat blush-pink backdrop (#fae4e6) on all six with a two-weight lowercase headline (light 'your simple' over bold 'day planner'). 01 is almost entirely awards and press badges (Forbes quote, Editors' Choice, App of the Day laurels) with a sliver of the phone; 02 is the left half of a tilted device spanning into 01 (panorama). 03 shows the week view plus an enlarged repeat-settings sheet floating outside the frame. 05 is a widget and notification close-up. 06 is a device family composite (iPad, iPhone, Watch) under a grainy 3D cloud. Real UI is about 40-60% of most images.",
+  "typography": {
+    "display": "System SF Pro: heavy bold date header ('13. May') with the year in the salmon accent; bold task titles.",
+    "body": "system SF",
+    "numerals": "SF proportional; time ranges in regular grey ('7:00 - 7:15 AM (15 min)'); tiny superscript AM/PM on the week view hour rail; date numerals bold in the week strip.",
+    "weights": "Bold for headers and task titles, regular grey for time ranges and weekday labels.",
+    "case_and_tracking": "Sentence case in the UI. Marketing headlines are lowercase with a light/bold weight split; that is wrapper only.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f4f3f7",
+    "surfaces": ["#ffffff", "#edeced"],
+    "text": "#191717",
+    "accents": ["#f7928c", "#5b82a8", "#2f4f6f", "#8cc464", "#9a3a5c"],
+    "accent_strategy": "Per-content: each task carries its own hue (salmon, slate blue, navy, green, plum) as a capsule on the timeline plus a matching completion ring. The brand salmon doubles as the CTA (plus FAB, selected date, Generate button, selected segment) and is also the default 'Wake Up' task hue.",
+    "source": "palette.json 02-06 (#f4f3f7 / #f5f3f7 app background, #ffffff sheet, #191717 text); #fae4e6 is the marketing backdrop; task hues are visual estimates because each covers few pixels"
+  },
+  "shape": {
+    "radius_language": "pill: task nodes are vertical capsules whose height scales with duration (circles for short tasks), segmented control and day chips are full pills, widgets and input card about 20 pt, circular FAB",
+    "concentric": "yes: the floating tab capsule and FAB sit inside the rounded screen corner; the timeline sheet has a large top radius",
+    "borders_shadows": "Thin outline completion rings in the task hue; soft glow/shadow under the AI input card and FAB; no card borders.",
+    "materials": "Flat white sheet over a light grey header; translucent floating tab bar; grainy 3D cloud only in the wrapper."
+  },
+  "liquid_glass_visible": "yes: the floating bottom tab capsule (Inbox, Timeline, AI, Settings) with a separate circular + button beside it is the iOS 26 floating tab bar pattern; the 03 segmented control also looks glassy",
+  "density": "medium: a week strip with per-day coloured dot clusters, then a single vertical lane of task capsules at about 108 pt spacing; week view is denser (7 lanes)",
+  "layout": "Header: bold date with salmon year and chevron, a week strip with selected day in a salmon circle and stacked coloured dots under each day showing that day's tasks. A white sheet slides over it with all-day items as round icon bubbles, then the timeline: one vertical line threading coloured icon capsules, each with time range, title and a hollow completion ring at the right.",
+  "navigation": "Floating capsule tab bar with 4 items (Inbox, Timeline, AI with sparkle icon, Settings) and a separate salmon circular + FAB. Drag-down sheet for week view. Native-feeling segmented controls in sheets.",
+  "imagery_and_icons": "A custom/SF-style filled glyph library inside the task capsules (alarm, yoga, shower, bike, coffee, briefcase, Zzz); sparkle icon for AI; a grainy 3D cloud in the wrapper.",
+  "signature_visual_move": "The day is one vertical thread of coloured capsules whose length equals the task's duration, each stamped with a white icon.",
+  "tells_present": ["Sparkle ✨ for AI (labelled 'AI' and 'Generate', so not the unlabelled variant)"],
+  "direction_fit": {
+    "primary": "Chromatic Timeline",
+    "secondary": "Liquid Glass overlay (platform-material axis)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One vertical time axis where colour plus an icon per block is the reading layer, on a near-white neutral; this is the direction's defining exemplar. The ADA record's 'Data-Board' secondary fits less well than the glass overlay."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "The direction's restraint rule says the CTA colour should differ from event hues; Structured itself breaks this, since salmon is both the CTA and a default task colour (Wake Up), so the rule is a recommendation the exemplar does not follow. The pink backdrop dominates palette.json and should not be read as the app background. Icons are present on every task, satisfying Differentiate Without Color."
+}

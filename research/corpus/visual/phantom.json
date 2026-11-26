@@ -1,0 +1,46 @@
+{
+  "slug": "phantom",
+  "track_name": "Phantom: Trading Wallet",
+  "version": "26.43.1",
+  "screenshots_examined": 4,
+  "marketing_wrapper": "Moderate. Soft pastel gradient backdrops (lavender in 01, lavender-to-coral in 02-03, periwinkle blue in 04) with large blob shapes, a two-line sentence-case caption in the top ~22% (dark aubergine text on light backdrops, white on blue), and a rounded phone silhouette with a thick tinted rim (lavender/coral/violet) and no status bar. Real UI fills ~70% of each frame and is cropped at the bottom. All four frames show genuine UI; none is pure art.",
+  "typography": {
+    "display": "Captions are in a custom grotesque with tight apertures and a slightly condensed, friendly feel - consistent with the custom 'Phantom' face by F37 named in the text record, but not verifiable from glyphs alone. In-app large balance and headings ('$72,490.02', 'Tokens', 'Trending Tokens') look like a neutral grotesque close to SF Pro; unsure whether it is the custom face or system.",
+    "body": "unsure (neutral grotesque, plausibly system SF or the custom face at text sizes)",
+    "numerals": "Lining, right-aligned per row; in-app prices look proportional; the Trade token table (03) aligns Mcap and Change in right-aligned columns. No mono.",
+    "weights": "Medium/semibold for the large balance and section headers; regular for row names and values; small regular grey for secondary lines.",
+    "case_and_tracking": "Sentence/Title case; tickers in all caps in Explore (LINK, FET); default tracking.",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#0f0f0f", "#0d0d0d"],
+    "text": "#ffffff",
+    "accents": ["#ab9ff2 (approx; lavender active tab pill and swap button, close to palette #ada3f2 which is mostly backdrop)", "green gain / red loss (visual estimate, not in palette.json)"],
+    "accent_strategy": "One soft lavender brand accent used sparingly in the UI: the active top-tab pill and the circular swap-direction button. Everything else in the UI is black, near-black cards and white/grey text, with semantic green and red for gains and losses. The loud colour (lavender, coral, blue gradients) is confined to the marketing wrapper.",
+    "source": "palette.json 01-04: #000000 and #0f0f0f/#0d0d0d/#0f0e0e = in-app background and card surfaces (black ~20-24%, cards ~16-26%); #a992e5/#ada3f2/#c7bef8, #e5807d/#ec7b7e, #6d94f4/#6086e2 = marketing gradient backdrops; lavender accent matched visually to the active 'Home' pill in 01."
+  },
+  "shape": {
+    "radius_language": "mixed: full pills for the top tab switcher, filter chips and token selectors; ~16pt rounded cards for each token row, the cash row and the swap cards; circles for avatar, token icons, swap and icon buttons; device-like ~40pt sheet corners",
+    "concentric": "yes - token-selector pills sit inside the ~16pt swap cards with even inset; list group in Explore wraps rows in one larger ~20pt card",
+    "borders_shadows": "No borders or shadows; separation by near-black (#0f0f0f) cards on pure black.",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no - opaque pills and cards on pure black; no bottom bar visible",
+  "density": "medium - one token per separate card on Home and Tokens (lower density than a list), tighter in the Trade table and Explore grouped list; ~8pt gaps between cards, ~16pt gutters",
+  "layout": "Home: avatar plus three top pill tabs (Home / Trade / Explore) as the header; 'My Wallet' account switcher label above a large balance with '+$534.56 Today' in green; a Cash row card; then a 'Tokens' section of individual cards (icon, name, holdings | value, signed $ change). Trade: horizontal filter chips (Featured, Top Volume, Top Gainers), a two-card You Pay / You Receive swap with a lavender swap button, then a token table with Rank/Chain/Timeframe dropdown chips and column headers. Explore: chips (Tokens, People, Sites, ...), grouped Trending Tokens list, Trending Sites with rank-medal badges and external-link buttons.",
+  "navigation": "Primary navigation is a custom pill segmented switcher at the top of the screen (Home, Trade, Explore) next to the avatar, not a native bottom tab bar (no bottom bar visible in the cropped frames). The Tokens detail (02) is a modal with a circular close X and a filter icon button.",
+  "imagery_and_icons": "Illustrated cartoon avatar (character in cap and sunglasses); real token logos in circles, including meme-coin photos (Dogwifhat, POPCAT, DOGE); small outline/filled glyphs (sparkle for Featured, chart, arrow, person, globe); medal rank badges on Trending Sites. The Phantom ghost mascot does not appear anywhere in the UI in these frames.",
+  "signature_visual_move": "Pure black UI with each token on its own near-black rounded card and a single soft-lavender pill marking the active top tab, wrapped in pastel lavender-coral gradients.",
+  "tells_present": ["Cards everywhere (each token row is its own card)", "Sparkle icon without AI meaning ('Featured' chip uses a sparkle glyph)"],
+  "direction_fit": {
+    "primary": "Dark Pro Minimal",
+    "secondary": "Loud Owned Shell",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record tagged Character-Led Playful (ghost as brand) and the report lists Phantom under Loud Owned Shell. In the 2026 listing the ghost is absent, the UI is pure black with one restrained lavender accent and semantic green/red; loudness lives only in the pastel wrapper. In-app it reads as Dark Pro Minimal applied to trading; Loud Owned Shell survives only as marketing (owned lavender, custom caption face)."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Balance and amount anatomy: '$72,490.02' is the dominant element, ~2.5x section-header size, medium weight, cents at full size, left-aligned, with an account label ('My Wallet' v) above and a green '+$534.56 Today' line below. Row values regular weight with cents, and per-row signed dollar change in green (+$182.50) or red (-$394.29) - change is shown in dollars on Home and in percent on Trade/Explore. Swap amounts 0.1103/0.0075 large regular with $ equivalents below. Trust and risk: no signing sheet, simulation preview, or malicious-dApp warning appears in the four screenshots, so the simulation-first pattern documented in the text record cannot be visually confirmed from the listing. Meme-coin imagery (Dogwifhat, POPCAT) is foregrounded. Crypto cliché: UI is literally black (#000000) but the accent is a soft pastel lavender, not neon; no 3D coins or orbs; the wrapper uses soft pastel gradients and blobs rather than cosmic imagery. Only 4 screenshots in the listing."
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "mercury",
+  "track_name": "Mercury | Bank Differently",
+  "version": "6.19.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Lavender-tinted light backdrop #edecfa, Mercury logo or 'Business/Personal' tag chips, a regular-weight grotesk caption, then a frameless UI panel (~40pt top corners, hairline border, no bezel) that fades out at the bottom, ~65-70% UI. 02, 03 and 06 add floating glass cards over a blurred copy of the screen; 05 is mostly receipt photography.",
+  "typography": {
+    "display": "Custom grotesk at regular weight for both captions and in-app titles ('Move Money', 'Payments'); consistent with the text record's Arcadia (unsure); wordmark in wide tracked caps",
+    "body": "custom: same family (Arcadia per text record, unsure)",
+    "numerals": "lining, regular weight, superscript cents; tabular unsure",
+    "weights": "Uniformly light: balances, titles and amounts all regular (~400-480), no bold anywhere",
+    "case_and_tracking": "Sentence case; MERCURY wordmark uppercase with wide tracking; normal tracking in UI",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#edecfa",
+    "surfaces": [
+      "#f9f8fe",
+      "#f3f2fc",
+      "#e3e2f2"
+    ],
+    "text": "#1e1e2f (visual estimate, ink navy)",
+    "accents": [
+      "#5266eb (visual estimate, indigo primary button)",
+      "#1f8a5b (visual estimate, credit green)",
+      "#d0436a (visual estimate, outflow pink-red)"
+    ],
+    "accent_strategy": "One indigo/lavender family for all interactive chrome (filled primary, tonal pills, progress, chart); green and pink-red only on flow arrows and available balance.",
+    "source": "palette.json 01-06 (#edecfa ~30% canvas in every image, #f9f8fe/#f3f2fc surfaces), 04 (#e3e2f2 23% tonal panel/pills, #565071 dark purple card art); ink and accents visual"
+  },
+  "shape": {
+    "radius_language": "large and pill: floating cards ~28pt, panel ~40pt, all buttons pills, card art ~16pt, limit panel ~10pt",
+    "concentric": "yes",
+    "borders_shadows": "Hairline lavender borders; large soft shadows only under floating glass cards",
+    "materials": "Frosted glass popovers and cards over blurred content (account switcher, recurring payment card, upload pill)"
+  },
+  "liquid_glass_visible": "yes: the account switcher popover, the floating 'Green Thumb LLC' card and the 'Uploading Receipts' pill are translucent frosted layers over blurred UI, in the iOS 26 manner; no tab bar visible",
+  "density": "low-medium; generous 20-24pt padding, ~56pt rows, one chart and three sections on the home",
+  "layout": "Home: 'Mercury balance' label, big balance, 30D selector with inflow/outflow, edge-to-edge area chart, then sections 'Tasks' and 'Cards' with chevron headers. Move Money: title, horizontal pill actions (Send filled, Request, Deposit), 'Payments' list (Inbox, Needs Approval, Scheduled). Transaction: centred avatar, merchant, amount, action pills, timeline, category/notes/attachments.",
+  "navigation": "No tab bar in crops; account switcher via title dropdown; section headers with chevrons; sheets for category picking",
+  "imagery_and_icons": "Thin outline icons in pale circles; initials avatars; card art with line-wave texture; receipt photographs",
+  "signature_visual_move": "Every amount is set in a light-weight face with small raised cents, on a lavender-tinted canvas that is deliberately not white.",
+  "tells_present": [
+    "Purple, indigo, violet (owned lavender/indigo system; flags a false-positive risk for the tell)"
+  ],
+  "direction_fit": {
+    "primary": "Cinematic Dark Data",
+    "secondary": "Dark Pro Minimal",
+    "confidence": "low",
+    "agrees_with_text_record": "no",
+    "why": "The text record (from a web-derived teardown) says dark #0F0F14 with purple glow. Every store screenshot is light mode on a lavender-tinted canvas. The other Cinematic Dark Data signatures hold: a tinted non-neutral canvas, a custom face at an unusual light weight, calibrated balance, separate semantic colours, chart at the top of home. Treat it as a light variant; the 'dark' part is unverified."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "MONEY ANATOMY. Balance '$12,582,210.27' regular weight ~2x body, left-aligned under a regular label 'Mercury balance'; cents raised as superscript at ~55% size; $ full size, no space. The superscript-cents anatomy repeats on every list amount ('$5,000.00', '$128.32', '–$12,740.00', '–$14.31'), but the card limit panel uses inline cents ('$4,000.00', '–$3,215.00'), an inconsistency. Negatives use a true minus with no red: outflows are ink. Flow summary: '↗ $2.2M' with a green arrow and '↘ –$1.4M' with a pink-red arrow, abbreviated to millions. 'Available to spend $484.58' in green. Tabular: unsure. Chart: lavender line with a lavender-to-transparent gradient fill, edge to edge, no axes, with a '30D ▾' period dropdown. Spend progress: stacked indigo (posted) and lavender (pending) bar with dot legend. Recurring payment card shows a progress ring '7 of 8'. No amount entry or confirm screen shown."
+}

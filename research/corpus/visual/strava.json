@@ -1,0 +1,46 @@
+{
+  "slug": "strava",
+  "track_name": "Strava: Run, Bike, Walk",
+  "version": "491.0.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Consistent wrapper: a black-to-burnt-orange gradient backdrop, a wide geometric sans caption, and a generic phone frame outlined in Strava orange. Real UI fills about 70% of 02-06. 01 is mostly award marketing (Apple Watch App of the Year) with a cropped phone and an Apple Watch Ultra render. 05 pops a route card out of the frame.",
+  "typography": {
+    "display": "Screen titles and post titles in a plain grotesque, semibold ('Squad Run', 'Night Weight Training'); no expressive display face inside the app. Captions use a wide geometric sans (marketing only)",
+    "body": "unsure: a neutral grotesque that reads close to SF but with slightly rounder bold forms; possibly a custom Strava face",
+    "numerals": "proportional bold numerals for stats ('6.75 mi', '57m 56s', '4,115 lbs') with small regular labels above; units inline at the same size; no tabular alignment visible",
+    "weights": "Bold for stat values, names and titles; Regular for labels, comments and metadata",
+    "case_and_tracking": "Sentence case throughout; normal tracking. Tab labels appear bold italic in 04 but upright in 02/06",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#141414",
+    "surfaces": ["#21211f", "#23211f", "#000000"],
+    "text": "#ffffff",
+    "accents": ["#fc5200 (approx; the route and selected-tab orange is not a top measured colour)"],
+    "accent_strategy": "One accent: Strava orange is reserved for the GPS route line, the selected tab, the selected sport, the primary Save button, liked hearts, map pins and the muscle map fill. Everything else is greyscale. Achievement medals use gold/silver.",
+    "source": "palette.json 02 (#141414 28%, UI base), 03/04 (#21211f/#23211f sheet surfaces), 05 (#3a515d map water) + visual match; #a1593b/#aa6d51 are the backdrop gradient, not UI"
+  },
+  "shape": {
+    "radius_language": "mixed: small ~8pt photo and card corners, pill filter chips and primary button, circular sport selectors and glass-like circle buttons; avatars are rounded-square badge shapes with an orange frame",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline dividers between sections; outline pill chips; no visible shadows",
+    "materials": "flat dark surfaces; a dark translucent search pill floats over the map in 05"
+  },
+  "liquid_glass_visible": "unclear: the floating search bar and chips over the map (05) and the circular back/more buttons over the muscle map (04) look translucent, but the tab bar is an opaque dark strip",
+  "density": "medium: feed posts with a stat row, a photo or map and actions; 16-20pt section rhythm, generous horizontal padding",
+  "layout": "Home feed: top bar (avatar, search, 'Home' title, messages, bell), then activity posts: athlete row with badge avatar and time/place, title, a four-up stat row (Distance, Time, Elevation, Achievements), hero photo or map, kudos avatars, thumb/comment/share actions, latest comment.",
+  "navigation": "Visible 5-tab bar: Home, Maps, Record, Groups, You, with outline custom icons that become orange-filled when selected; centred text titles in the top bar; bottom sheets with grabbers over maps (Choose a Sport, activity details). Mostly custom chrome.",
+  "imagery_and_icons": "Lifestyle running photography in posts; user GPS maps; a stylised body/muscle map for strength; custom outline icon set (shoe, bike, yoga mat, thumbs-up kudos)",
+  "signature_visual_move": "A thick orange GPS line on a dark desaturated basemap is the post: even the Record screen shows a route drawn as a dog.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Shareable Artifact Studio",
+    "secondary": "Dark Pro Minimal",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's Social Map Feed (held candidate; listed under Shareable Artifact Studio as 'the map is the post') is confirmed: orange is reserved for route and kudos/selection exactly as recorded. The default dark theme with greyscale surfaces and hairlines is new information; the text record had no mode."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Daily score: none shown. Streak/calendar: not shown. Chart style: only an elevation/surface bar under the route card (05) with a legend '10% Paved / 67% Unpaved / 23% Unknown' using solid, dashed and outline orange strokes. Map style: dark Mapbox/OSM basemap with muted green parks and grey streets, route drawn as a thick saturated orange line with a green start dot; on the hiking map, orange pins with route counts. Metric numerals: bold proportional values with small regular labels above (not beneath, contradicting the Blake Crosley mockup in the text record), units inline. Watch app (01) uses a green/grey progress arc with a big '▲2s ahead' for Live Segments. The text record's mockup said labels sit beneath values; screenshots show labels above."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "gentler-streak",
+  "track_name": "Gentler Streak Workout Tracker",
+  "version": "6.0.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium. White/near-white backdrop with a navy + orange-red two-tone headline and grey subhead; an orange iPhone 16-style frame holds a real screen at about 60-65% of the image (01 adds a hand holding the phone and Health/Activity app icons; 05 adds orange footprint confetti). 02 is pure marketing: award laurels, App Store and ADA cube renders, 'WINNER' in italic red, and two Apple Watch renders (watch UI visible but not iPhone). 06 crops the phone so the mascot and Activity Path chart overflow the frame.",
+  "typography": {
+    "display": "In-app: SF Pro bold for state headlines ('Great Effort Today', 'Today Feels Great', 'Good'). Marketing captions use a separate rounded geometric bold (name unsure).",
+    "body": "system SF",
+    "numerals": "SF with large bold values and smaller same-baseline units ('8h 28m', '15.1 km', '18 floors'); tabular-looking time values ('23:11', '07:53'); step count in rounded heavy weight ('15,423' looks SF Rounded)",
+    "weights": "Bold/heavy for state titles and metrics, regular for explanatory paragraphs, medium grey for labels",
+    "case_and_tracking": "Sentence/title case; tiny ALL-CAPS state chips ('RESTED', 'EDIT') with open tracking",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f8fafb", "#15011d"],
+    "text": "#0b1b2b",
+    "accents": ["#f2541b", "#26d597", "#77a2c3", "#e4a04f"],
+    "accent_strategy": "Brand orange-red (mascot, selected tab, caption highlight) plus a green 'healthy corridor' band as the core data metaphor; each metric screen gets its own ambient colour field (blue for Health, orange-yellow glow for Steps, deep purple night for Sleep). Status is semantic green check text ('Normal', 'As Usual').",
+    "source": "palette.json 01/03/06 (#ffffff, #f8fafb surfaces; #26d597 / #9dc9b9 green band), 04 (#15011d sleep background), 03 (#77a2c3 blue ambient), 05 (#e4a04f steps glow); brand orange and navy text matched visually"
+  },
+  "shape": {
+    "radius_language": "large and pill: ~20pt cards, capsule tab bar and chips, circular glass icon buttons",
+    "concentric": "yes: selected-tab pill sits concentrically inside the capsule tab bar",
+    "borders_shadows": "Few borders; dashed-outline suggestion chips ('Rest'); soft glows instead of shadows",
+    "materials": "Liquid Glass chrome over blurred ambient colour fields; flat illustration for mascot"
+  },
+  "liquid_glass_visible": "yes: floating capsule tab bar with glass selection lozenge (01, 03, 04, 05), glass circular back and filter buttons (04, 05), glass capsule toolbar group top-right in 03",
+  "density": "medium: hero mascot/state block takes the top third, then 2x2 metric grids and charts with comfortable 16-20pt spacing",
+  "layout": "Today/Health: large mascot or face illustration at top over an ambient colour field, greeting, a one-line state headline with a short plain-language paragraph, then the Activity Path chart or Vitals cards. Metric detail screens: back + title/date + filter, a hero value or chart, 2x2 stat grid, trend chart.",
+  "navigation": "Floating Liquid Glass tab bar with 4 tabs: Today, Health, Workouts, Insights (filled custom glyph icons, labels; selected tab orange). Native back chevron in glass circles; horizontally scrolling metric chips.",
+  "imagery_and_icons": "Flat vector mascot (Yorhart, an orange heart-shaped figure) in action poses; a giant abstract smiling face as the day's state; custom filled tab glyphs; SF Symbols for activity types in black circles on the path chart",
+  "signature_visual_move": "Each day opens on a mascot pose or big face that stands for the body's state, above a green 'healthy corridor' band the user's activity line is meant to stay inside.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Body-State Companion",
+    "secondary": "platform-material overlay (native Liquid Glass adopter)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The state is shown as a mascot or face plus a plain-language verdict ('Today Feels Great', 'You're being Productive'); data stays in the corridor; chrome is system SF and native glass, exactly as the record's WWDC-sourced type note says."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Confirms 'system fonts only, variety from widths/variants' visually: SF Pro text with rounded heavy numerals. Ambient colour orbs per metric are a second signature. 'Streak' in the name but no flame or streak counter is visible."
+}

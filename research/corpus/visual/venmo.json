@@ -1,0 +1,46 @@
+{
+  "slug": "venmo",
+  "track_name": "Venmo",
+  "version": "26.27.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Every frame is a flat Venmo-blue (#008cff) backdrop with a white two-to-three-line caption in the top ~25-30%. The UI is shown as a cropped, frameless white phone silhouette (light-blue rim, no bezel or status bar) with an oversized floating card pulled out on top (keypad sheet, Pay with Venmo, notification, Split). 01, 02, 04, 05, 06: roughly 55-70% partial UI, recomposed. 03 is entirely marketing art (fanned debit cards plus two checklist pills) with no in-app UI.",
+  "typography": {
+    "display": "Custom geometric grotesque in the captions and in-app headings (Skye F, Direct Deposit, Split, Earned cash back): round o and e, open single-storey-feel terminals, slightly squarish 'a'. Captions in regular-medium weight, sentence case. Same face is used inside the app UI, so it is the brand face, not only marketing.",
+    "body": "custom (same brand grotesque as display; name not recognisable, unsure)",
+    "numerals": "Proportional, not obviously tabular: '$15' entry amount is large regular with a superscript, smaller dollar sign and no cents; '$30.88' and row amounts '$9.63' are bold proportional lining figures. Routing number set large in regular weight.",
+    "weights": "Regular for big entry amount and headings, semibold/bold for list-row titles, section headers and cash-back amounts, bold white on pill buttons.",
+    "case_and_tracking": "Sentence case everywhere, default tracking; no all-caps labels.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f5f8fc", "#ffffff"],
+    "text": "#393442",
+    "accents": ["#008cff", "#146dbe"],
+    "accent_strategy": "One brand accent: Venmo blue on primary pill buttons (Request/Pay), text links (Copy, Need help?, Current statement) and the + avatar ring. Category tiles on the rewards screen (05) are per-content gradient squares (orange, pink, blue, purple). Green used only for a '+1% split bonus applied' chip. No red/green for amount direction is shown.",
+    "source": "palette.json 01/02/04/05/06: #008cff/#028bff is the marketing backdrop and also the button/link blue (#146dbe is the darker in-app button fill); #ffffff UI surface; #f5f8fc/#f4f8fa pale tinted UI rim; #393442 from 03 is the dark card, the text near-black matches what is seen in 01/04."
+  },
+  "shape": {
+    "radius_language": "mixed: full pills for primary buttons and the segmented control, ~12pt on rows/cards (05 rewards rows, 02 balance card), ~8pt on text fields (01 note field, 06 amount fields), large ~24pt outer sheet corners",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline grey borders on rows, fields and the balance card; little shadow inside the UI (shadows in the screenshots belong to the pulled-out marketing cards).",
+    "materials": "flat; the debit card (02) carries an iridescent holographic gradient image"
+  },
+  "liquid_glass_visible": "no - the notification in 04 is a grey translucent iOS banner (marketing overlay), nothing else shows glass",
+  "density": "medium - generous padding on pay sheet (01) and Split (06), medium-dense list rows with three lines each in rewards (05); 16-ish pt side gutters",
+  "layout": "No home/feed screen is shown. Visible surfaces: the pay sheet (avatar, name, large amount, note, Request/Pay pill pair over a system-style numeric keypad), Split sheet with per-person amount fields, debit card detail with balance card, direct deposit details, and a credit-card rewards screen with a 3-segment control (Transactions / Trends / Rewards), hero earned amount and category rows.",
+  "navigation": "No tab bar visible in any frame, so the 2026 bottom-nav rebuild cannot be confirmed. A back chevron on the card screen (02); a pill segmented control on rewards (05). Keypad looks like the system numeric keypad with calculator operators added (custom).",
+  "imagery_and_icons": "Real portrait photos as avatars; emoji in user-typed notes (pizza, plate); white filled glyph icons on gradient category tiles (pizza slice, camera, cart, Venmo V); simple outline/filled system-like icons (eye, lock, back chevron).",
+  "signature_visual_move": "A flat Venmo-blue world where every action resolves into a pair of full-width blue pills (Request | Pay) sitting over a calculator-augmented keypad.",
+  "tells_present": ["Cards everywhere (rewards rows as bordered cards with icon-left, title, subtitle, amount-right)"],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record tagged it 'Social Ledger' (feed-first) plus Gen-Z Expressive. The listing shows no feed at all: it is sold as a payments/debit/credit/rewards app with one owned colour and a custom grotesque, money UI kept quiet and white. Social Ledger is an anti-reference anyway and the screenshots agree it is in retreat. Loudness lives in the shell colour and card art, not in the amounts."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Balance and amount anatomy: entry amount '$15' is very large (~3x body), regular weight, with a raised small dollar sign and no cents shown while entering; balance '$234.56' medium-size regular weight with cents at full size, label 'Venmo balance' above (matches the money-core label-above rule); rewards hero '$30.88' bold large; row amounts bold right-aligned, proportional figures. No negative/debit amounts appear in any frame, so positive/negative colouring cannot be judged; the only semantic colour is a green 'bonus applied' chip. Card number masked '••3214' with an eye toggle; account number masked with eye + Copy. The 'neon-on-black / 3D coin / gradient orb' cliché is absent; the only gradients are the holographic debit card art and the reward-category tiles. Emoji appear only in user notes, consistent with the text record's 'expression confined to notes'. Display face is the same custom grotesque in caption and UI; name unsure. 9 screenshots in the listing, 6 cached."
+}

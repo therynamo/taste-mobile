@@ -1,0 +1,46 @@
+{
+  "slug": "vocabulary",
+  "track_name": "Vocabulary - Learn words daily",
+  "version": "7.10.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium. Each image has a cream or muted-teal backdrop, a two-line serif headline and a thick white generic device frame (no notch) holding about 65-70% real UI. 04 adds the app's own line-drawn characters climbing over the frame. 01 shows lock-screen widgets and a notification rather than the app; 02 shows a mixed collage of widget sizes and themes.",
+  "typography": {
+    "display": "A sturdy bold serif with slab-like serifs for the word of the day, headings and quiz options ('encumber', 'Explore topics', 'That's correct!'); resembles Merriweather, unsure. Some themes swap in other faces: a condensed all-caps sans ('STOICISM') and a heavy rounded sans ('purport') appear on photo themes.",
+    "body": "custom humanist/geometric sans (not SF; resembles Proxima Nova, unsure)",
+    "numerals": "Serif lining numerals on the lock-screen clock widget ('11:11'); otherwise n/a.",
+    "weights": "Bold serif for words and titles; regular sans for definitions; semibold sans for tile labels.",
+    "case_and_tracking": "Lower-case headwords; small all-caps tracked 'CHAPTER 1' and 'START'; sentence case elsewhere.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#efebe0",
+    "surfaces": ["#fbfbf8", "#ffffff", "#93c1c1"],
+    "text": "#1a1a1a",
+    "accents": ["#93c1c1", "#f49484", "#b0d885"],
+    "accent_strategy": "A fixed two-colour illustration palette: muted teal and salmon/coral (always as a dotted shadow halftone) on cream with black ink line; green appears only as the semantic 'correct' state. Themes add photo backgrounds and alternate fonts per widget.",
+    "source": "palette.json 04 and 06 (#efebe0 cream base, #fbfbf8 / #ffffff cards), 03 and 05 (#93c1c1 teal), 01 (#f49484 salmon); correct-answer green #b0d885 and black ink are visual estimates"
+  },
+  "shape": {
+    "radius_language": "large: cards about 20-24 pt, answer buttons as full pills, topic tiles about 16 pt; floating pill tab bar",
+    "concentric": "unclear",
+    "borders_shadows": "Black 1.5 pt outlines with a hard offset bottom 'ledge' shadow on buttons and tiles (a pressed, printed look); no soft shadows except under the flashcard stack.",
+    "materials": "Flat print-like: cream paper, ink outline, halftone dot shadows in the illustrations; photo backgrounds on some word themes."
+  },
+  "liquid_glass_visible": "unclear: the lock-screen notification in 01 is a frosted system glass panel; the in-app tab bar is an opaque cream pill",
+  "density": "low: one word per screen, centred, with four icon actions; topic grid two columns with large illustrated tiles",
+  "layout": "Home ('Words'): a single headword centred on cream, IPA pronunciation chip with speaker icon, definition, a row of four outline icons (info, share, like, save), a top progress chip ('0/5'). Practice: progress bar, flashcard stack, three outlined pill answers, a result sheet. Journey: an isometric board-game path of hexagon-like tiles with a character at START. Topics: four utility tiles then illustrated category tiles.",
+  "navigation": "Custom floating pill tab bar with 5 labelled tabs (Words, Topics, Journey, Practice, Profile), outline icons, selected tab in a soft grey capsule. Close X and progress bar on practice.",
+  "imagery_and_icons": "One consistent hand: black-ink line illustration with flat teal fills and salmon halftone dot shadows, often isometric (topic tiles, journey map, characters). Outline icon set for actions and tabs. Stock photos on some themed word cards.",
+  "signature_visual_move": "Ink-line isometric illustrations with salmon halftone dot shadows, carried from topic tiles to the journey map to the characters on the marketing frame.",
+  "tells_present": ["Streak counter plus 🔥 (an illustrated flame with a count on the word card, not an emoji)"],
+  "direction_fit": {
+    "primary": "Authored Illustration",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "A single consistent illustrator's hand (ink line, teal, salmon halftone) appears on every tile, map and character, matching Apple's 'charming, consistent illustrations'. Navigation is a custom pill rather than native, which differs from the direction's 'navigation stays native' rule."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Cream plus serif plus a coral/orange accent is the 2026 'default' combination in the tell catalog, but here it is anchored by a distinctive illustration system and long predates that wave, so it reads as authored. A synthetic brief imitating this would hit the tell. The outlined pill buttons with hard bottom ledges are a second recognisable move. Seller is Monkey Taps (the text record had it unverified)."
+}

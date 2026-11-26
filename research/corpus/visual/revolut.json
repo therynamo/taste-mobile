@@ -1,0 +1,57 @@
+{
+  "slug": "revolut",
+  "track_name": "Revolut: send, spend, and save",
+  "version": "10.157",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is entirely marketing (3D card render on grey stone, award badges, no UI). 02-06: black #000000 backdrop, large white caption across the top ~25%, then a cropped UI panel inside a thin grey outline (no device bezel) taking ~55-60% of the frame, and a disclaimer footer band. About 55% real UI on 02-06, 0% on 01.",
+  "typography": {
+    "display": "Marketing captions: wide geometric grotesk, medium-bold, tight leading (consistent with Revolut's Aeonik Pro, unsure). In-app titles (Security, Jason) are the same neutral grotesk at semibold.",
+    "body": "custom or licensed neo-grotesk, Inter-like (unsure)",
+    "numerals": "proportional-looking bold lining figures for balances; tabular unsure",
+    "weights": "Balance bold; row titles regular; secondary text regular in grey; buttons medium",
+    "case_and_tracking": "Sentence case everywhere; normal tracking; no all-caps labels",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": [
+      "#161618",
+      "#212324",
+      "#3b3938"
+    ],
+    "text": "#ffffff",
+    "accents": [
+      "#72aebb",
+      "#6c5ce7 (visual estimate, % icon)",
+      "#f28c28 (visual estimate, category icon)",
+      "#2fbf71 (visual estimate, Active / up-change)"
+    ],
+    "accent_strategy": "No fixed brand accent in UI. Colour comes from per-account wallpaper (photo or gradient header) and per-category circular icons; green is semantic only (status, percent up).",
+    "source": "palette.json 03 (#000000 53%, #161618 20%), 04 (#212324, #3b3938 grouped card over photo), 05 (#72aebb teal account header gradient); others visual match"
+  },
+  "shape": {
+    "radius_language": "large: grouped cards ~20pt, UI panel ~24pt; pill 'Accounts' and Send/Request buttons; circular action buttons ~44pt",
+    "concentric": "yes",
+    "borders_shadows": "No borders or shadows on cards; separation by tonal steps on black",
+    "materials": "Translucent grey capsules and circles over the wallpaper (blur); otherwise flat"
+  },
+  "liquid_glass_visible": "unclear: the 'Accounts' pill and the four round action buttons are translucent over the photo header and could be iOS 26 glass or a plain blur; no tab bar visible to check",
+  "density": "medium; generous header (balance block takes ~40% of screen), then 3-row grouped lists with ~60pt rows and 16-20pt gaps between cards",
+  "layout": "Account screen: full-bleed photo/gradient wallpaper header with centred label + balance + 'Accounts' pill, a row of four circular quick actions (Add money, Move, Info/Details, More), then grouped cards (recent transactions with 'See all', then two half-width stat cards). Security screen: particle-wave header, three round actions, grouped settings list.",
+  "navigation": "No tab bar visible (cropped). Back arrow in a dark circle on the P2P chat screen; avatar top right. Custom chrome throughout.",
+  "imagery_and_icons": "Lifestyle photography as account wallpaper (interior, couple); generative particle wave on Security; custom filled glyph icon set in white; flags and merchant logos in circles",
+  "signature_visual_move": "Each account's balance sits centred on its own full-bleed photo or gradient wallpaper, so the account is identified by an image rather than a colour or name.",
+  "tells_present": [
+    "Gestalt sameness: centred balance over a row of round labelled action buttons, the shared neobank template"
+  ],
+  "direction_fit": {
+    "primary": "Cinematic Dark Data",
+    "secondary": "User-Authored Poster (per-account wallpaper as the user's artifact)",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Text record said modular plus user wallpapers; screenshots confirm wallpaper-led per-account headers and a 'no noise' list core. The dark photographic mood is closer to Cinematic Dark Data than to 'calm', but the canvas is pure #000 not tinted, and no chart is shown, so the fit is loose."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "MONEY ANATOMY. Balance: centred white bold, ~2.5-3x body (balance ~44pt vs ~16pt rows) with a small regular label above ('House deposit', 'Joint · GBP', 'Capital at risk'). Whole-pound balances on 02/04 show no pence; 05 shows '£2,840.05' with '.05' at ~40% size, same weight, baseline-aligned (not superscript). £ is full size and weight, no space. Tabular: unsure. Row amounts right-aligned, regular weight, uncoloured: credits '+£0.56', '+£150' in white/grey with a plus sign; debits '-£98.99', '-£1671.20' white with a hyphen-minus (note: no thousands separator on -£1671.20). Green is used only for '▲ 2.52%' and 'Active'. Chart: none shown. Send: P2P is a chat thread where payments are message bubbles (Sent chip, amount ~2x body bold, memo, time), with Request (dark pill) and Send (white pill) above the composer. No amount-entry or confirm screen shown. Disagreement: text record said visuals unknown; the screens show dark mode with black canvas, not the 'calm light modular' the old tag implied."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "prizepicks",
+  "track_name": "PrizePicks: Sports and Packs",
+  "version": "12.96",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Almost entirely marketing. 03 (Packs rip art), 04 (graded trading cards with '$8M VALUE' starbursts) and 06 (an NBA partner lockup on a neon retro grid) contain no UI. 01 and 02 show a small phone held by a person in a lifestyle photo on a purple gradient, so the UI is about 15-20% of the frame, tilted and low-resolution. 05 shows enlarged pick-card components floating on purple: real components, but restaged with no app chrome. Captions mix an ultra-condensed light sans, a heavy condensed lime-green sans and a monospaced typewriter kicker ('IN BONUS LINEUPS'). Overall about 10% real UI.",
+  "typography": {
+    "display": "Marketing: ultra-condensed sans in light and heavy weights ('PLAY $5 GET $50'), heavy italic condensed ('RIP PACKS.'), plus a monospaced typewriter face for small all-caps kickers. In-app (from 01, 05): heavy condensed all-caps for player surnames and team names ('STAFFORD', 'BRUNSON', 'GAME WINNER LOS ANGELES').",
+    "body": "unsure (too small to read; a geometric sans for tab labels and chips)",
+    "numerals": "condensed heavy for lines ('263.5', '26.5', '80.5', '21.5'); small condensed caps for the stat label ('PASS YARDS', 'REC YARDS')",
+    "weights": "Black condensed for names and lines; regular small caps for metadata ('LAR • QB', 'DAL • WR')",
+    "case_and_tracking": "All-caps throughout the pick cards with tight tracking; tracked monospaced caps for kickers",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#0e101d",
+    "surfaces": ["#191828", "#24243c", "#1c183a"],
+    "text": "#f7f4f8",
+    "accents": ["#9cff27", "#6104bc"],
+    "accent_strategy": "Brand-flooded: an electric lime (#9cff27) is both the promotional highlight and the primary action ('MORE' button fill, selected card outline, '+' wallet button, the balance figure '$1,027'). Violet (#6104bc / #220647) floods the banner and backdrop. Jersey renders carry team colour per card. No goblin-green or demon-red pick modifiers are visible in these frames.",
+    "source": "palette.json 06 (#0e101d 27%), 02 (#191828, #9cff27 17% lime), 01 (#6104bc, #220647 violet; #24243c surface), 04 (#f7f4f8 white). Most clusters are marketing; the in-app values come from the small phone in 01 and 02, so treat them as approximate."
+  },
+  "shape": {
+    "radius_language": "medium-large: about 16pt on pick cards and the promo carousel; pill for the 'Start Ripping' CTA, sport chips and wallet chip; split two-cell LESS / MORE footer on each card",
+    "concentric": "unclear",
+    "borders_shadows": "Lime 1-2pt outline glow on the active pick card; a soft spotlight gradient behind each jersey",
+    "materials": "flat dark cards with spotlit 3D jersey renders; neon glow in the marketing"
+  },
+  "liquid_glass_visible": "unclear. The tab bar in 01 looks translucent dark with a selected-item tile, but it is too small to judge.",
+  "density": "medium (from 01): a two-column grid of pick cards below a promo carousel and sport chips",
+  "layout": "Board (from 01, low-res): a 'PLAYERS >' switcher with logo, a balance chip with a lime '+', profile and search circles; a promo carousel ('PULL GRAILS', 'Start Ripping'); sport chips (Explore, NBA, Football); then a two-column grid of pick cards, each with a jersey render, team • position, first name, big surname, line and stat, and a LESS / MORE footer.",
+  "navigation": "A bottom tab bar (01, partly legible): Board, Entries, Feed, [unreadable], Rewards. Outline icons with labels; the selected tab sits in a rounded tile. Custom chrome.",
+  "imagery_and_icons": "3D-rendered jerseys and helmets instead of player photos; graded trading-card photography; lifestyle and creator photography in the marketing; outline icons; starburst 'NEW!' and '$8M VALUE' badges (marketing)",
+  "signature_visual_move": "Each pick is a spotlit 3D jersey above a giant condensed surname and line, with an arrow-in-circle LESS / MORE pair in which MORE is filled electric lime.",
+  "tells_present": ["Neon glow; glowing badges", "Purple, indigo, violet; purple-to-blue gradient", "Gradient backgrounds and gradient text", "Dark navy or black plus a neon accent plus a team-logo grid (sports-study cliché)", "Confetti-and-multiplier 'arcade' mechanics (sports-study cliché: deposit-match promos, packs, '$8M VALUE' starbursts)"],
+  "direction_fit": {
+    "primary": "Pick'em Arcade (anti-reference)",
+    "secondary": "Loud Owned Shell (violet plus lime, owned condensed type)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Binary LESS / MORE pick cards, a deposit-match and pack-rip promo layer, trading-card 'grails' and a lime-on-violet neon shell match the Pick'em Arcade signature. The text record's specific evidence (goblin and demon modifiers, payout hidden until submission, gross-winnings profile) cannot be confirmed or refuted from these frames: no slip, profile or modifier icon is visible. Confidence is med, not high, because only about 10% of the pixels are real UI."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Too marketing-heavy for a confident visual record; re-check with device captures of the Board, slip and My Lineups. Scoreboard anatomy: no score, live state, Live Activity or widget is shown. Team colour and logos: carried by 3D jersey and helmet renders ('NEW YORK 11', 'DALLAS 88') and game-winner art (team-coloured basketballs and helmets) instead of crests. Betting and odds typesetting: the line is the hero numeral (heavy condensed white, '263.5'), flanked in 05 by ↓ and ↑ arrows in outlined circles; on the in-app card (01) LESS is an outlined dark cell and MORE is a lime-filled cell with an up-arrow icon, so the 'over' choice is the visually promoted one. No multiplier, payout or entry amount is visible anywhere. Money in the shell: wallet balance '$1,027' in lime with a lime '+' add-funds button. Game-winner cards ('GAME WINNER · LOS ANGELES · TO BEAT KANSAS CITY') show the 2026 combo-picks product."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "opal",
+  "track_name": "Opal: Screen Time Control",
+  "version": "4.25",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. All six use a pale sky-blue gradient backdrop with floating 3D rock shards and a two-weight headline (regular plus bold). The device frame fades out at the bottom into the backdrop, so each screen is cropped to its top 60-70%. 01 adds a 4.9-star ratings badge, 02 the ADA 2025 Social Impact laurel. 05 drops the frame entirely: the focus-timer UI (LCD clock, stepper, Start button) is composited onto a rocky landscape, so UI and art are hard to separate there.",
+  "typography": {
+    "display": "System SF Pro: bold/semibold for metrics ('1h 23m', '2h 56m'), bold white headlines on the block screen. Custom 'Opal' wordmark top-left. 05 uses a seven-segment LCD numeral face for the focus timer.",
+    "body": "system SF",
+    "numerals": "SF semibold proportional for scores and durations, tinted ice blue; seven-segment LCD digits on the timer; small all-caps labels above stats.",
+    "weights": "Semibold/bold for values and titles, regular grey for secondary copy.",
+    "case_and_tracking": "Small all-caps tracked labels ('SCORE', 'SCREEN TIME', 'CULPRITS', 'LESS THAN USUAL'); sentence case elsewhere.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#08080a",
+    "surfaces": ["#181b1e", "#30363d", "#232226"],
+    "text": "#cae3f4",
+    "accents": ["#93c0d8", "#9fe8f5"],
+    "accent_strategy": "One accent: an ice/opal blue used for metric values, the progress ring glow, icon strokes and button rims. Third-party app icons (Instagram, TikTok, Facebook) supply the only other colour, plus a small orange flame count.",
+    "source": "palette.json 01-06: dark UI greys #08080a, #181b1e, #30363d; light blue clusters #93c0d8-#cae3f4 are partly the marketing backdrop and partly the accent, separated visually; #9fe8f5 ice highlight is a visual estimate"
+  },
+  "shape": {
+    "radius_language": "large: cards about 24-28 pt, pill buttons ('Start Timer', 'Learn Bedtime Tips', 'Block Apps No'), circular stepper and avatar buttons, rounded-rect locked app tiles",
+    "concentric": "yes: inner app tiles and buttons sit concentrically inside rounded glass cards",
+    "borders_shadows": "Bright hairline rims on glass cards and buttons (light-catching edges); glow around the progress ring; blurred backdrop beneath cards.",
+    "materials": "Frosted dark glass cards with lit edges, rendered 3D gem on a stone plinth in a cave scene, photo-backed rule cards, starfield specks."
+  },
+  "liquid_glass_visible": "yes, bespoke: rim-lit translucent cards and pill buttons over blurred imagery on Insights (04), Rules (06) and the timer (05); custom-drawn rather than the system tab bar",
+  "density": "low-medium: a hero gem scene, a three-stat row, then one card per section; rule cards in a 2-column grid",
+  "layout": "Home: 'Opal' wordmark top-left, flame streak count and avatar top-right; full-bleed 3D scene with the current gem on a plinth; a three-column stat row (Score, Screen Time, Culprits as app icons); then a 'My Apps' card with active rules and locked app tiles. Apps screen: large title, a row of locked app icons with 'Unblock', then 'Rules' as photo cards in a 2-column grid. Block screen: blurred app icon, bold headline, a wry two-line subtitle.",
+  "navigation": "No tab bar visible in any image. Large-title headers ('Apps'), section links with chevrons ('My Apps >', 'Rules >', 'Insights >'). Custom chrome throughout.",
+  "imagery_and_icons": "3D rendered gem and rock environments, stylised photos on rule cards, a classical-bust avatar, SF Symbols-style line icons (bed, shield, calendar, arrow) in ice blue, real third-party app icons.",
+  "signature_visual_move": "Home is a dim cave diorama with a glowing iridescent opal on a stone plinth as the score object, and every card is dark frosted glass with an ice-lit rim.",
+  "tells_present": ["Neon glow; glowing badges"],
+  "direction_fit": {
+    "primary": "Toy / Game-Engine Tactile",
+    "secondary": "Glow-Dark Wellness (held candidate)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The 3D gem as an earned collectible is the governing asset (Toy), and the near-black base with soft ice-blue glows and glass cards confirms the productivity record's 'Glow-Dark Wellness' description. The text record's 'dark gradient' doubt is resolved: the UI is near-black with a dark grey cave scene, not a coloured gradient."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "The pale blue backdrop dominates palette.json but is wrapper only; the app itself is dark. The ice-blue glow on the ring and lit rims reads as a 'glow' tell in isolation, but it is used with one accent and a coherent stone/gem world, so it is authored rather than template. Block-screen copy ('Past you was right.') matches the cheeky voice in the text record."
+}

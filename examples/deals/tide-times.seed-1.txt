@@ -1,0 +1,51 @@
+taste-mobile deal  seed 1  kind utility  audience general  platform ios
+
+1. Glance Board  [glance-board]  <- take this one unless it clashes with the brief
+   Governing asset    one hero readout line (a bold value with a smaller same-baseline unit) that repeats on the widget and the Live Activity
+   Display treatment  bold values with smaller same-baseline unit suffixes
+   Hero moment 1      the tracked entity changes state (the label and its semantic colour update together)
+   Hero moment 2      scrubbing the curve with a selection tick per data point
+   Shell              quiet: neutral chrome, status colour is the only hue
+   Mode / density     light / high
+   Composition        user-composed with a default order
+   Depth              one depth cue on the governing asset only, dropped under Reduce Motion (text-sourced: stills cannot show it)
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning, not a gate: flag a screen that shows more than one competing entity per line or sheet, status colour used decoratively, or brand hue leaking into status.
+   Seen in            flighty, watch-duty, paku, the-outsiders, tide-guide, fotmob, sofascore, whoop, bevel, crouton, mela, copilot-money (evidence, not targets: do not copy an app)
+
+2. Toy / Game-Engine Tactile  [toy-game-engine-tactile]
+   Governing asset    a small diorama built from the user's own content
+   Display treatment  blocky heavy titles
+   Hero moment 1      the object changes state when the data changes
+   Hero moment 2      turning or pressing the object, with an impact matched to its visual mass
+   Shell              loud: the object and its controls are the interface, system chrome nearly absent
+   Mode / density     dark with a lit rim / low
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag a toy surface that is not a visibly separate layer from the chrome, or a rendered effect that maps to no data value or user choice.
+   Seen in            rooms, not-boring-camera, not-boring-weather, opal (evidence, not targets: do not copy an app)
+
+3. Ambient Sky  [ambient-sky]
+   Governing asset    a sky whose hue comes from the real light phase
+   Display treatment  white pill time labels
+   Hero moment 1      scrubbing through time with a tick at each phase boundary
+   Hero moment 2      snapping back to now
+   Shell              quiet: the sky is the only surface, controls float over it
+   Mode / density     dark sky / low
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag palette colour that does not follow the real sky or data. Legibility at the most opaque glass setting and Reduce Motion are text-sourced requirements, not visible in stills.
+   Seen in            lumy, moonlitt (evidence, not targets: do not copy an app)
+
+Fixed for this kind (not dealt, not negotiable)
+   Modules            none
+   Motion scheme      expressive-hero-only: Critically damped springs by default. Bounce up to 0.3 on the dealt hero moments and on drag release only. On Android, M3 Standard for the product with the Expressive scheme swapped in on hero moments.
+   Haptic profile     rich: The mapping table, plus one custom pattern paired with a sound on a single hero moment.
+   Hero moments       at most 2
+   Material           Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity.
+
+Never build these for this kind
+   Funnel-First Utility: Never deal. The quiz funnel itself is text-sourced; the store frames show only the generic dashboard.
+

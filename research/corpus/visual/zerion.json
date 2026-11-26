@@ -1,0 +1,46 @@
+{
+  "slug": "zerion",
+  "track_name": "Zerion: Crypto Wallet & DeFi",
+  "version": "5.6.0",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Moderate to heavy. 01-04: saturated gradient backdrops (violet-to-coral with diagonal bands, cornflower-to-indigo, pink-to-violet-to-indigo, azure-to-aqua), a bold white Title Case caption in the top ~25%, and a frameless white phone silhouette with a thin blue rim and no status bar; real UI fills ~70%, cropped at the bottom. 05 is entirely marketing art: a 3D iridescent chrome padlock on a royal-blue faceted backdrop with two privacy captions and no UI.",
+  "typography": {
+    "display": "Captions use a wide, bold geometric grotesque in Title Case (unsure of name). In-app display (portfolio values, 'My Wallets', 'Top Movers') looks like SF Pro at semibold/bold.",
+    "body": "system SF (likely; neutral grotesque matching SF Pro Text metrics)",
+    "numerals": "Lining, proportional (not visibly tabular); signature split-weight cents: dollars in near-black, cents in light grey at the same size ('$41,249.34', '$715.52', '$0.683925' where everything after the first significant digits is grey).",
+    "weights": "Semibold/bold for values and section headers; regular for labels and percentages; grey for secondary and for cents.",
+    "case_and_tracking": "Sentence/Title case in UI ('My Wallets', 'Hot in Portfolio', 'Mints For You'); all-caps only for tiny metric chips (FDV, MCAP) and the ETH ticker above the token name; default tracking.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f9f9fc",
+    "surfaces": ["#ffffff", "#fbfcfc"],
+    "text": "#1c1c1e (approx near-black; visual estimate)",
+    "accents": ["#1fa64a (approx, gain green; visual estimate)", "#e5484d (approx, loss red; visual estimate)", "#2962ff (approx, verified badge / Z mark blue; visual estimate)"],
+    "accent_strategy": "Semantic only in the UI: green and red for change, grey for cents and secondary text, otherwise black on white. There is no brand accent colour in the app chrome; brand colour (blue-violet gradients) lives in the marketing wrapper. Imagery (token icons, NFT art) supplies the colour.",
+    "source": "palette.json 01-04: #ffffff/#fbfcfc/#f9f9fc = UI cards and the pale grouped background; #8c6cc3/#9286c8/#3b3eba, #4d90f3/#3742d5, #b55da3/#d46995/#543dc3, #30a2ed/#3083e6/#8bcedf = marketing gradient backdrops. 05: #324fdb/#2a3ecc/#1c198d = marketing art only. Semantic hexes are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~16-20pt cards (portfolio card, wallet rows, mover cards, chart card), full pills for See All, segmented Tokens/DeFi control, search field and timeframe selection; rounded-square wallet avatars ~12pt with a small Z badge",
+    "concentric": "yes - the floating bottom search field sits inside a larger rounded bottom container; wallet avatars sit inside cards with even inset",
+    "borders_shadows": "Hairline light-grey borders on white cards (wallet rows, Top Movers, Portfolio); faint stacked-card edge under the last wallet suggests more; no strong shadows.",
+    "materials": "flat; the bottom search container in 01 and 04 reads as a floating white/translucent bar but no blur is visible at this size"
+  },
+  "liquid_glass_visible": "unclear - a floating 'Search onchain' pill in a rounded bottom container (01, 04) looks like an iOS 26-style floating bar, but no refraction or blur is distinguishable",
+  "density": "medium - roomy portfolio hero, three wallet rows, horizontal carousels (dapps, movers, mints) on Discover; tighter asset rows with value plus signed % and $ on two lines",
+  "layout": "Home: 'Portfolio >' card with large total and day change; 'My Wallets' list with edit and + actions, each wallet a card (avatar, chain · name, value, % change, chevron); 'See All' pill; 'Hot in Portfolio 🔥' horizontal mini-cards; floating bottom search pill. Portfolio detail: centred title with 'All Networks' network picker, underline tabs (Tokens / Collectibles / History), chart card with timeframe pills, Assets header with a Tokens/DeFi segmented control and filter button, asset rows. Token page: ETH icon, verified name, price with change, line chart with red/green trade dots, timeframe pills, FDV/MCAP chips, Portfolio card with Unrealised PnL and Invested, social link buttons and an Explorer pill. Discover: top bar of three icons (eye, Z logo, @), Featured Dapps icon row, Top Movers cards, Mints For You NFT cards.",
+  "navigation": "No tab bar; a floating bottom search pill acts as the persistent bottom element (01, 04). Discover's top bar is three centred icons (eye / Zerion Z / @) - looks like a custom pager across watchlist, home and profile. Detail screens use a native-style back chevron with a two-line centred title; underline tabs and a pill segmented control.",
+  "imagery_and_icons": "Token logos and NFT/pixel-art wallet avatars; NFT artwork in Mints For You (photo, 3D render); fire emoji as a section icon ('Hot in Portfolio 🔥'); small outline icons (pencil, plus, heart, share, filter); 3D chrome padlock only in marketing art.",
+  "signature_visual_move": "Every money value is split by tone, with the dollars in black and the cents (or trailing decimals) in light grey, on calm white rounded cards.",
+  "tells_present": ["Emoji as icons ('Hot in Portfolio 🔥')", "Cards everywhere"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Dark Pro Minimal",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Text record tagged Signage Utilitarian / Data-Board (now Glance Board) at low confidence. The screenshots support a calm, semantic-only portfolio readout with one-line-per-entity rows and charts, but in light mode and without condensed or tabular numerals, so it is a soft fit. Secondary is a stretch: it shares Dark Pro Minimal's restraint (no brand accent, borders over shadows) but is light. No direction fits strongly; this is close to the generic light portfolio template."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Balance and amount anatomy: portfolio '$41,249.34' is large semibold with the cents in light grey at full size (a two-tone figure rather than a smaller superscript); a 'Portfolio >' label sits above it and '+5.87% ($2,286.15) Today' in green below. The same grey-cents treatment runs through wallet rows, asset rows, token prices and Top Movers, including long decimals ('$0.0000…'). Positive changes green, negative red ('-0.13%', '-0.27% ($2.26)'); percent first, dollar in parentheses. Token chart marks buys/sells as red and green dots on the price line. Unrealised PnL and Invested are shown on the token's Portfolio card. Trust and risk: verified blue check on Ethereum; no signing sheet, simulation or risk warning shown. Crypto cliché: in-app UI is light and plain - no neon, no black. The marketing wrapper leans on saturated purple-blue gradients and image 05 is a 3D iridescent chrome padlock, which is the '3D object' strand of the cliché (a padlock rather than a coin). Typeface of captions unsure."
+}

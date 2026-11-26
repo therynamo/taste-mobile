@@ -1,0 +1,46 @@
+{
+  "slug": "sofascore",
+  "track_name": "Sofascore: Live Sports Scores",
+  "version": "26.11.16",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy in 01, moderate in 02-06. 01 is entirely marketing: a grainy, motion-blurred street photo with floating notification banners, laurel '4.9/5' and '130M+ DOWNLOADS' badges, and a large cream 'Follow sports wherever you go' caption. It shows no app UI, only notification mock-ups. 02-06 use a grainy periwinkle or royal-blue noise backdrop (#546cf1 / #677df8 / #2035d6) with diagonal light planes, a two-level caption (thin all-caps kicker plus heavy cream word, e.g. 'SMART Ratings') with a thin bracket line, and an upright phone in a cream or gold frame. Real UI is about 65-70% of 02-06.",
+  "typography": {
+    "display": "custom geometric grotesk, likely the brand's own face (name unsure). It is used in the captions and appears to be the in-app face too: titles like 'Favorites' and 'Grand Slam record' share the same open, round letterforms and a distinctive open-top '4'.",
+    "body": "custom (same family; not SF, judging by the '4', 'a' and 'g')",
+    "numerals": "tabular in box scores and profile tables (29 / 5 / 12, 16.6M €); bold medium-size match scores ('3 - 3', '103 - 91'); the Grand Slam grid uses short bold tokens (1R, QF, SF, W) in equal-width cells",
+    "weights": "Bold scores and section titles, semibold names, regular grey secondary labels; the selected tab is medium white or black",
+    "case_and_tracking": "Sentence and title case in-app; the all-caps light kicker ('QUICK', 'SMART') is marketing only; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ebedf4",
+    "surfaces": ["#ffffff", "#1b1b1f", "#f1f5ef"],
+    "text": "#1b1b1f",
+    "accents": ["#354ee9", "#2035d6"],
+    "accent_strategy": "One brand blue for the selected tab-bar item, favourite stars, links, the 'Compare player' and 'Suggest changes' buttons, PTS-column emphasis, the chat FAB and the top app bar on Favorites. Everything else is semantic or per-content. Player ratings sit in small squares coloured by band: teal around 8+, green around 7, olive or yellow around 6, blue for 10. The Attack Momentum chart uses green bars up for the home side and periwinkle bars down for the away side. Event headers are dark with a soft team- or flag-colour glow (Thunder/Pacers gold; Sinner's green-to-red Italian tint).",
+    "source": "palette.json 03 (#ebedf4 page background, #ffffff 23%), 06 (#1b1b1f 16% dark event header and text), 04 (#f1f5ef / #dae6c0 heatmap pitch). The blue clusters (#354ee9, #2035d6, #546cf1) are shared by the grain backdrop and the UI accent."
+  },
+  "shape": {
+    "radius_language": "small to medium: about 8-12pt on content cards and the competition grid tiles, about 4pt on rating squares and Grand Slam cells, pill for sport filter chips, the date chip and the team-filter segmented control; circles for FAB and headshots",
+    "concentric": "unclear",
+    "borders_shadows": "Cards are white blocks on a light grey-blue ground with very faint shadows; hairline row dividers; a yellow left-edge bar marks starters in the box score",
+    "materials": "flat, with a dark gradient event header"
+  },
+  "liquid_glass_visible": "unclear. The bottom tab bar (03) highlights the selected item with a grey capsule in the iOS 26 manner, but the bar reads as an opaque white strip and no other glass is visible.",
+  "density": "high. The box score has about 54pt rows with headshot, name, number and position, then PTS / REB / AST and a rating square. The profile, Grand Slam grid and season-rating timeline are tightly packed. Spacing is consistent, with about 8pt gaps between cards.",
+  "layout": "Event: a dark header (date chip, crests with stars, a bold centred score and status, scorers with minutes) above scrolling text tabs (Details, AI Insights, Lineups, Statistics, Play-by-play), then a competition breadcrumb card, the Attack Momentum strip with goal markers, and a minute-by-minute incident list. Favorites: a blue app bar with Events / Teams / Competitions / Athletes tabs, sport filter chips, then a two-column grid of competition tiles with a corner sport glyph and a blue star. Player: tabs, season filters, an average-rating timeline with per-match rating chips, then a season heatmap card.",
+  "navigation": "Visible 5-tab bar: Matches, Leagues, Favorites, Feed, Profile (outline icons with labels; the selected one turns blue with a grey capsule). Top: back arrow, bell and star in the event header; text tabs with a white or black underline. A floating blue circular chat FAB at bottom right on event pages. Custom but platform-aware.",
+  "imagery_and_icons": "Club, league and competition logos, national flags, player headshots; a consistent outline icon set; small sport glyphs in tile corners; event glyphs (ball, card, substitution arrows) in the incident list",
+  "signature_visual_move": "The Attack Momentum strip, green bars above and periwinkle bars below a centre line with goal markers pinned at the minute they happened, sits right under the score.",
+  "tells_present": ["Cards everywhere; 'icon top-right, title top-left, description bottom' anatomy (the Favorites competition grid)"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Loud Owned Shell (owned blue plus custom face in the shell and store art; the data core stays quiet)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Neutral white data cards, aligned tabular box scores, banded semantic rating colour and one named signature visualisation (Attack Momentum) match the Glance Board and sports-module rules. Team colour appears only as a glow in the event header. The owned blue and custom grotesk give the shell a brand voice without flooding the data."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Scoreboard anatomy. Score numerals: bold, medium-size, centred with a spaced hyphen ('3 - 3', '103 - 91'), not condensed, and the status word sits under the score ('Finished'). Team colour and logos: large crests flanking the score; team colour appears only as a soft radial glow in the dark event header (gold for the Pacers, green and red for Sinner/Italy), never in tables. Live state: not shown live in these frames (all finished); the incident list carries minute stamps, card and substitution glyphs and an inline running score pill ('▶ 3-3'). No Live Activity or widget is shown; 01's notifications ('24' Goal: [2] - 2 Lamine Yamal') are notification mock-ups. Match-centre density: high. Attack Momentum bars, an incident timeline, and a box score with a legend, a sortable PTS column, starter markers and colour-banded ratings. The tennis Grand Slam grid shades cells from pale to solid blue as rounds deepen (W in solid blue). An 'AI Insights' tab is visible in 02. Text-record disagreement: the bottom bar shown is Matches / Leagues / Favorites / Feed / Profile (5), not 'Sport, Favourites, Feed, Fantasy' (4)."
+}

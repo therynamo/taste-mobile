@@ -1,0 +1,46 @@
+{
+  "slug": "flighty",
+  "track_name": "Flighty – Live Flight Tracker",
+  "version": "4.12.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is pure marketing art (a 3D airliner over a violet contour-line terrain with ADA 2023 and App of the Year badges) and is the left half of a panorama with 02. 02 shows the My Flights sheet in a tilted phone (about 55%) with a New York Times quote. 03 is the Live Activity and Dynamic Island on system wallpaper. 04 and 05 use backdrops with a yellow outlined pill tag ('#1 CAUSE OF DELAYS') and show a cropped map-plus-sheet and floating delay cards over a red-lit control tower render. 06 (teal-to-blue gradient) shows Friends' Flights. The backdrop colours (violet, maroon, teal) are wrapper only.",
+  "typography": {
+    "display": "System SF Pro: bold large titles ('My Flights', 'Friends' Flights', 'Where's My Plane?'), semibold route lines with the city names bold and 'to' regular ('Tokyo to San Francisco').",
+    "body": "system SF",
+    "numerals": "SF semibold proportional-looking times next to airport codes ('NRT 6:10PM', 'SFO 11:00AM'); not visibly monospaced at this resolution; leading-zero '09:41' in the mocked status bar.",
+    "weights": "Bold titles and city names, semibold times and codes, regular grey metadata (flight number, date).",
+    "case_and_tracking": "All-caps airport codes and small all-caps state labels ('IN AIR', 'UNTIL GATE ARRIVAL', 'RUNNING LATE'); sentence case elsewhere.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f2f2f7", "#1c1c1e", "#2c2c2e"],
+    "text": "#000000",
+    "accents": ["#1a9a4a", "#f29a1a", "#e5322d", "#f5c518", "#1e7cf0"],
+    "accent_strategy": "Strictly semantic: green for on time/early/departing, orange for 'Tight' connections, red for late/delay/grounded, yellow badge for gate ('A10'), blue for route arcs and selected tab. Airline logos are the only brand colour inside the UI. The violet in the wrapper does not appear in the app chrome.",
+    "source": "palette.json 02 (#ffffff sheet, #1c1c1e dark), 01 (#1c1c1e / #2d2a4a wrapper), 06 (#ffffff and teal wrapper); semantic hexes are visual estimates because each covers few pixels"
+  },
+  "shape": {
+    "radius_language": "large: sheets about 30 pt top radius, dark alert cards about 16 pt, Live Activity at system radius, pill tags ('RUNNING LATE', 'A10'), circular buttons",
+    "concentric": "yes: floating tab capsule and the separate circular search button sit inside the sheet's bottom corners",
+    "borders_shadows": "Hairline separators between flights; airline-logo tails; soft shadow under the floating tab capsule.",
+    "materials": "A 3D satellite globe and maps under a white sheet; glass tab capsule; dark translucent alert cards."
+  },
+  "liquid_glass_visible": "yes: floating glass tab capsule (Flights, Friends, Passport) plus a separate circular glass search button in 02; glass lock-screen buttons in 03 are system",
+  "density": "high: each flight row packs airline logo, flight number, date or countdown, route, two airport codes with times and state icons, plus connection warnings between rows",
+  "layout": "My Flights: a 3D satellite globe with route arcs fills the top half; a white sheet slides up with a large title, share and avatar buttons, a left column of aggregate stats ('IN AIR', '4h') and a list of flight rows, each one line per leg with departure and arrival times and a connection buffer ('55m at JFK — Tight'). Flight detail: map with radar overlay and plane marker, then a sheet with the aircraft photo, tail number, a red 'RUNNING LATE' pill and a vertical leg timeline.",
+  "navigation": "Floating glass tab capsule with 3 labelled tabs (My Flights, Friends, Passport) and a separate circular search button; bottom sheet over a map; filter chips with Memoji avatars on Friends.",
+  "imagery_and_icons": "Satellite globe and map, airline logos, real aircraft livery renders, Memoji avatars for friends, SF Symbols for departure/arrival arrows, walking man, share, search; 3D plane and tower renders only in the wrapper.",
+  "signature_visual_move": "Every flight is one departure-board line (codes, times, semantic-coloured arrows), and the same line reappears in the Live Activity and Dynamic Island.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One line per entity, strictly semantic status colour, all-caps codes and system-surface extensions (Live Activity, Dynamic Island) are the Glance Board signatures, and Flighty is their source."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The secondary study (Blake Crosley) says flight numbers and times are monospaced; at 600 px they look like SF semibold with proportional or tabular figures, not a mono face, so treat 'monospaced' as unconfirmed. The 'indigo accent' in that study shows up only in the marketing wrapper, not in the app chrome shown. Purple backdrops would trip the purple tell, but they are wrapper only."
+}

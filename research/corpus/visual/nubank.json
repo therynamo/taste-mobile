@@ -1,0 +1,55 @@
+{
+  "slug": "nubank",
+  "track_name": "Nu: Everyday mobile banking",
+  "version": "8.0.21",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01, 02 and 05 are lifestyle photography with a hand-held phone (screen tilted and partly unreadable) or a card on a receipt tray, plus a floating money card on 05. 03, 04 and 06 are cleaner: purple #8e0de3 or cream backdrop, bold caption, realistic iPhone frame with a purple offset block behind it, ~55-60% UI. 04 overlays a marketing feature list card over the bottom of the UI.",
+  "typography": {
+    "display": "NuSans Display: heavy, tightly tracked rounded-terminal grotesk in captions (cream on purple, purple on cream)",
+    "body": "custom: NuSans Text (consistent with the brand-refresh description)",
+    "numerals": "lining, bold for balances; tabular unsure",
+    "weights": "Balances bold; labels regular in muted purple-grey; buttons semibold",
+    "case_and_tracking": "Sentence case; tight negative tracking on display; normal on body",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": [
+      "#f4f2f5 (visual, segmented control track)",
+      "#ffffff"
+    ],
+    "text": "#260f3b",
+    "accents": [
+      "#8e0de3",
+      "#2e8b57 (visual estimate, earned/APY green)"
+    ],
+    "accent_strategy": "One owned purple used sparingly in UI (logo token, caret, confirm button, card art, icon tints); semantic green only for earnings. The purple floods the marketing wrapper, not the screens.",
+    "source": "palette.json 04 and 06 (#8e0de3 31-46% backdrop, matched to in-app confirm button and logo), 03 (#ffffff 40% UI canvas), 02 (#260f3b aubergine text/header); caption cream #f2f0ef from 01"
+  },
+  "shape": {
+    "radius_language": "large and pill: segmented control and action buttons full pills/circles, cards ~20pt, card art ~12pt",
+    "concentric": "yes",
+    "borders_shadows": "Hairline outlines plus very soft shadow on circular action buttons and the Unfreeze pill; hairline dividers",
+    "materials": "Frost/ice texture overlay on the frozen card (state shown as material); 02 home cards look translucent but the photo is too blurred to judge"
+  },
+  "liquid_glass_visible": "unclear: 02 home cards appear translucent over a purple header, but the device is tilted and soft-focus",
+  "density": "low; one balance, three actions, a disclaimer on the account screen",
+  "layout": "Account screen: back + eye (hide balance) + more in top bar, Spend/Save segmented control, centred nu token, label, big balance, earnings line, APY chip, three circular outlined actions (Deposit, Transfer, Send). Card screen: card art, Unfreeze pill, copyable detail fields.",
+  "navigation": "Back chevron and close X in nav bars; segmented control for sub-accounts; no tab bar visible",
+  "imagery_and_icons": "Thin outline arrow icons; 3D-rendered purple illustration (wallet, cards, coins) for cashback; lifestyle photography in wrapper; frost texture on frozen card",
+  "signature_visual_move": "Freezing a card covers the card art with a frost texture, so the state is shown as a material change.",
+  "tells_present": [
+    "Gestalt sameness: centred balance over round labelled action buttons",
+    "Purple, indigo, violet (owned here; flags a false-positive risk for the tell)"
+  ],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Owned flat purple, custom NuSans, 3D illustration system, and an in-app UI that keeps purple to tokens and the confirm button. The Ultravioleta Private-Bank Editorial variant does not appear in these US screenshots."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "MONEY ANATOMY. Balance: '$1,200.00' bold, ~3x body, centred under a regular muted label 'Spending balance' and a purple circular nu token (a circle here, not the square container the brand post describes). Cents same size and weight; $ full size, no space. Earnings: '▲ $10.00 earned to date' in green with filled triangle; '3.50% APY' in a mint pill. Tabular: unsure. A secondary small line shows '$ 2,394.08' with a space after $, inconsistent with the main balance. Amount entry (international transfer): 'USD 100.00' with the ISO code in grey medium and the amount in black medium, ~1.7x body, left-aligned with a purple caret and a flag; recipient row 'BRL 520.00' with a flag dropdown; rate row '1 USD = 5.20 BRL' with a refresh spinner 'Updating in 15 min'; confirm is a purple circular check button. No negative amounts or charts shown; 02 shows a credit-card progress bar in purple. Cashback card: '$50.23' bold under a 3D illustration."
+}

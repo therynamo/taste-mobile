@@ -1,0 +1,46 @@
+{
+  "slug": "pi",
+  "track_name": "Pi, your personal AI",
+  "version": "26.1116.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Soft pastel backdrops (yellow-green gradient, sage, pale blue, mint, blush, sand) with a serif caption that italicises one word ('Talk through it', 'Learn', 'live', 'play', 'Help'). The phone is drawn as a thick black outline with no bezel detail, often tilted and cropped off one side (03, 06), so real UI is ~50–65%. 01 is pure brand art: a 'Pi' wordmark filled with a painted meadow texture, a hand-drawn black line and a row of painted thumbnails. 02 and 05 are UI (Discover tiles); 03 is a topic detail page; 04 is the voice screen; 06 is a chat.",
+  "typography": {
+    "display": "Warm serif with soft, bracketed terminals for tile labels ('Just vent', 'Relationship advice'), topic titles and the wordmark; italic used for emphasis in captions",
+    "body": "custom serif for both Pi's replies and the user's messages (06); a plain grotesk sans for the voice status line (04). Serif name unsure",
+    "numerals": "proportional serif ('1)' list numbering in 06); otherwise n/a",
+    "weights": "Regular serif throughout; no bold visible in-app",
+    "case_and_tracking": "Sentence case; slightly tight display tracking; generous body size (~19–20pt)",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#faf3e9",
+    "surfaces": ["#f6eadc", "#ece0d4"],
+    "text": "#1a1612",
+    "accents": ["#1c472d", "#00b65f"],
+    "accent_strategy": "Near-monochrome warm cream with a deep forest-green line icon (hamburger, back arrow) as the only UI accent; voice mode adds layered mint-to-green arcs. Painted illustrations supply all other colour.",
+    "source": "palette.json 04: #faf3e9 56% = app canvas, #daf2ce 35% = mint backdrop; 06: #f3eadd 40% / #faf3e9 38% = backdrop and canvas. Pixel samples: canvas #faf3e9 (06, 04, 02), user bubble #f6eadc (06), icon disc #ece0d4 (06), hamburger green #19472d (06), voice arcs #d8f2cd / #9fe69a / #00b65f (04), status text #585045 (04). Body text is near-black; JPEG sampling bottoms at #030000, so the hex is an estimate."
+  },
+  "shape": {
+    "radius_language": "large: illustration tiles ~20pt, user bubble ~16pt, circular icon discs, voice arcs as wide shallow curves",
+    "concentric": "yes",
+    "borders_shadows": "No borders; a very soft shadow under the text+image tiles; flat elsewhere",
+    "materials": "Flat warm paper; painterly illustration texture"
+  },
+  "liquid_glass_visible": "no: opaque beige icon discs, flat paper canvas.",
+  "density": "low: large serif body, few elements per screen, voice screen almost empty",
+  "layout": "Discover home: a two-column then full-width mosaic of illustrated topic tiles with serif labels set over the image or beside it. Chat: bubble-less serif replies, user turns in a slightly darker cream block with the same serif. Topic page: full-bleed painting header with a serif title, then serif prose. Voice: almost blank cream page with a centred status line and arcs rising from the bottom.",
+  "navigation": "Only a beige circular hamburger (green glyph) top-left in chat, a circular back arrow on topic pages and X / overflow discs in voice. No tab bar, no composer visible.",
+  "imagery_and_icons": "Painted illustrations (mid-century gouache / editorial painting look, plausibly AI-generated) for every topic tile and header; a painted-texture wordmark; very few icons, all thin line icons in dark green or black.",
+  "signature_visual_move": "Every surface reads like a printed paperback: the user's words and Pi's replies share one warm serif on cream, with painted tiles in place of icons.",
+  "tells_present": ["Cream plus serif plus orange (the 2026 default)"],
+  "direction_fit": {
+    "primary": "Companion Calm (held candidate, not among the 17)",
+    "secondary": "Authored Illustration",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Stripped chrome, an almost empty voice screen and a soft serif match the text record's 'conventions stripped back, voice first'. The painted tile system adds an illustration layer the text record did not know about, but it is not one consistent illustrator's hand (styles range from pop-art burst to surrealist sheep), so Authored Illustration fits only loosely."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Composer: not shown in any screenshot. Greeting/empty state: Discover is the empty state — illustrated prompt tiles ('Just vent', 'Help with a decision', 'Brainstorm ideas', 'Relationship advice', 'Let Pi guess your horoscope'), which matches ustwo's 'gently guides users'. Voice: the quietest in the batch — a blank cream screen with 'Pi is listening, and responds when you finish speaking' in grey sans and three layered green arcs (light mint, mid green, saturated green) rising from the bottom edge like a horizon; no orb, no waveform. Thinking/streaming: not shown. Conversation list: not shown. The tell match is partial: cream + serif without the orange (green instead); it reads as an authored choice from 2023 rather than the 2026 default, so flag with low weight."
+}

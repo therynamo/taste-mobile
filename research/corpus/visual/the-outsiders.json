@@ -1,0 +1,46 @@
+{
+  "slug": "the-outsiders",
+  "track_name": "The Outsiders Fitness Tracker",
+  "version": "1.8.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium-heavy. Hot-pink plus white or black bold geometric headlines over a purple glow (01, 02), white (03, 04, 06) or blue (05) backdrop. 01 holds the phone in a hand with an ADA 2026 finalist laurel; 02 is two Apple Watch Ultras with Editors' Choice and privacy badges; 06 is pure marketing (app icon to Health icon, privacy copy). 03, 04 and 05 show the iPhone UI at about 70% of the image, cropped at the bottom.",
+  "typography": {
+    "display": "System SF Pro bold for screen titles ('Progress', 'Good', 'Today 25 January') and section heads ('Training Balance', 'Body Metrics').",
+    "body": "system SF",
+    "numerals": "mono: metric values set in a monospaced face, likely SF Mono ('0.84', '1.27', '22:34', '07:09', '1,063', '+107%'); unit letters small and offset ('7h 57m'); tabular columns in the weekly table.",
+    "weights": "Bold titles, bold mono values, regular body copy, small all-caps status labels.",
+    "case_and_tracking": "All-caps small status chips ('OPTIMAL', 'NORMAL', 'AS USUAL', 'HIGH', '4-WEEK OVERVIEW'); sentence case prose.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#1c1c1e", "#2c2c2e"],
+    "text": "#ffffff",
+    "accents": ["#b012c9", "#1a8f2a", "#0aa5ff", "#8a1fc0", "#ff0a6c"],
+    "accent_strategy": "Per-metric colour floods: each detail screen tints its header with that metric's hue (magenta readiness, green training load, purple sleep, blue progress) that fades to black, and the chart and icon take the same hue. Status uses semantic green check chips. No red alerts visible. The hot pink #ff0a6c is a wrapper/brand colour (headlines, icon).",
+    "source": "palette.json 01 (#3a0052 / #a20495 magenta header), 03 (#000000, #08510f green header), 04 (#114a6a / #000b10 blue), 05 (#3d0049 purple); 06 (#ffffff wrapper); semantic green and pink are visual estimates"
+  },
+  "shape": {
+    "radius_language": "large: cards about 20 pt, metric tiles about 14 pt, pill filter chips and period selector ('6W'), circular glass header buttons",
+    "concentric": "yes: tab capsule and metric tiles follow card radii; chart inset inside card",
+    "borders_shadows": "Glowing hue rim on circular back buttons; a glowing end-dot on line charts; no card borders, separators as hairlines.",
+    "materials": "Black base with coloured gradient glow headers; translucent glass buttons; floating glass tab capsule."
+  },
+  "liquid_glass_visible": "yes: floating capsule tab bar (Today, Progress, Workouts) in 01 and tinted circular glass buttons for back, calendar and filters in 03 and 05",
+  "density": "high for a health app: five-up metric tile row, a 6-week dot matrix table with load and change columns, two-by-two sleep stat grid; spacing is tight but consistent",
+  "layout": "Today: date title with avatar, a full-width magenta readiness band with a big percentage, plain-language state ('Prime Readiness') and advice, then 'Training Balance' card (mono ratio, sparkline, OPTIMAL chip) and a horizontal row of Body Metrics tiles with mini charts. Detail screens: coloured hero (icon + metric name, giant mono value, date, one-paragraph interpretation), period navigator, then a banded chart (High Risk, Optimal, Detraining).",
+  "navigation": "Floating glass tab bar with 3 labelled tabs (Today, Progress, Workouts), filled icons, selected tab in pink. Push detail screens with circular glass back buttons; period pill pickers.",
+  "imagery_and_icons": "Charts as the imagery (line charts with risk bands, dot-matrix weekly load, sleep hypnogram); SF Symbols filled (bolt, moon, heart, thermometer, lungs); user avatar photo.",
+  "signature_visual_move": "Each metric screen opens with a full-width wash of that metric's own colour behind a giant monospaced value and a plain-language verdict.",
+  "tells_present": ["Purple, indigo, violet; purple-to-blue gradient (magenta and purple metric headers; wrapper purple glow)"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Body-State Companion",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Monospaced tabular numerals, aligned columns, status chips and one value per screen are Glance Board signatures; every number is paired with a plain-language state ('Good', 'Prime Readiness', 'AS USUAL'), the Body-State translation without a mascot."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The text record's 'yellow and orange instead of red' is not visible in these frames, because all states shown are good (green chips). Gradient headers are per-metric and data-coded, so the purple tell is weaker than it looks in isolation. The listing name is now 'The Outsiders Fitness Tracker' (the text record has 'Athlete Tracker')."
+}

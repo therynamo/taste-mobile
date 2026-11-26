@@ -1,0 +1,468 @@
+{
+  "_note": "Per-direction slot options. The dealer picks one governing asset, one display treatment and the hero moments from these lists, so two builds of the same direction still differ. Every option is drawn from the visible signatures in the 114-app corpus (research/reports/Mobile app visual corpus pass.md). Identity comes from the governing asset, never from the body typeface.",
+  "glance-board": {
+    "shell": [
+      "quiet: neutral chrome, status colour is the only hue"
+    ],
+    "modes": [
+      "light",
+      "dark",
+      "one single-hue base"
+    ],
+    "density": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "composition": [
+      "editorially fixed",
+      "user-composed with a default order"
+    ],
+    "governing_asset": [
+      "one hero readout line (a bold value with a smaller same-baseline unit) that repeats on the widget and the Live Activity",
+      "a labelled data curve with a scrub marker",
+      "a semantic map: one entity per sheet, status carried by pin colour",
+      "a gauge with an honest per-metric scale and a target tick"
+    ],
+    "display_treatment": [
+      "bold values with smaller same-baseline unit suffixes",
+      "small all-caps tracked state labels set above each value",
+      "monospaced readouts for every changing number"
+    ],
+    "hero_moment": [
+      "the tracked entity changes state (the label and its semantic colour update together)",
+      "scrubbing the curve with a selection tick per data point",
+      "the readout hands off to a glance surface (Live Activity or widget)"
+    ]
+  },
+  "broadcast-scoreboard": {
+    "shell": [
+      "loud on the identity surface only: team colour floods the game surface, chrome stays minimal"
+    ],
+    "modes": [
+      "tinted dark"
+    ],
+    "density": [
+      "medium"
+    ],
+    "composition": [
+      "user-composed with a default order"
+    ],
+    "governing_asset": [
+      "a team-colour surface: a two-team gradient behind each game",
+      "italic team-code watermarks behind the score",
+      "a field graphic that shows where play is"
+    ],
+    "display_treatment": [
+      "heavy width-condensed score numerals at 30-40 pt",
+      "condensed italic score numerals with timeout dots beneath"
+    ],
+    "hero_moment": [
+      "a score change: the numeral rolls and the play sentence updates",
+      "the game goes final: the surface settles from live to result",
+      "pinning a game to the top of the board"
+    ]
+  },
+  "toy-game-engine-tactile": {
+    "shell": [
+      "loud: the object and its controls are the interface, system chrome nearly absent"
+    ],
+    "modes": [
+      "dark with a lit rim"
+    ],
+    "density": [
+      "low",
+      "medium"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "a rendered 3D object that is the readout (its state maps to data)",
+      "a small diorama built from the user's own content",
+      "a physical control deck: a knurled dial and chunky keys"
+    ],
+    "display_treatment": [
+      "blocky heavy titles",
+      "condensed numerals with monospaced all-caps labels",
+      "a segment-display timer"
+    ],
+    "hero_moment": [
+      "turning or pressing the object, with an impact matched to its visual mass",
+      "the object changes state when the data changes",
+      "picking a colourway"
+    ]
+  },
+  "dark-pro-minimal": {
+    "shell": [
+      "quiet: achromatic chrome with one reserved accent"
+    ],
+    "modes": [
+      "dark"
+    ],
+    "density": [
+      "medium",
+      "high"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "a three-step ladder of dark surfaces separated by lightness, with borders instead of shadows",
+      "one reserved accent that appears on a single gesture or action and nowhere else",
+      "a command surface reachable from every screen"
+    ],
+    "display_treatment": [
+      "a neutral grotesque with grey sentence-case labels",
+      "monospaced numerals for metadata"
+    ],
+    "hero_moment": [
+      "the one accented action (for example, swipe to complete)",
+      "the command surface opening over the current screen",
+      "a row changing status in place"
+    ]
+  },
+  "loud-owned-shell": {
+    "shell": [
+      "loud shell, quiet lists: the owned colour floods one surface and stays out of lists, status and confirm steps"
+    ],
+    "modes": [
+      "light with one flooded surface",
+      "black with one flooded surface"
+    ],
+    "density": [
+      "low",
+      "medium"
+    ],
+    "composition": [
+      "editorially fixed",
+      "user-composed with a default order"
+    ],
+    "governing_asset": [
+      "one owned colour that floods exactly one surface while lists stay ink on white",
+      "an authored object system: rendered coins, cards or object avatars",
+      "a physical card render that the app returns to"
+    ],
+    "display_treatment": [
+      "a custom display face on the hero amount or title only",
+      "split-size numerals (large units, small fractions)",
+      "extended caps for section titles"
+    ],
+    "hero_moment": [
+      "the commit moment on the flooded surface",
+      "the card render turning to show its other side",
+      "the success state after a committed result"
+    ]
+  },
+  "coach-character": {
+    "shell": [
+      "loud: thick-lipped controls and a character on most screens"
+    ],
+    "modes": [
+      "light"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "one flat-vector character cast that acts out state",
+      "slab buttons with a thick darker bottom lip on everything tappable",
+      "speech-bubble guidance in the character's voice"
+    ],
+    "display_treatment": [
+      "a heavy rounded display face over a rounded body face"
+    ],
+    "hero_moment": [
+      "a task completes and the character reacts",
+      "the progress path advances one step",
+      "a milestone in the product's own form (not a flame and a number)"
+    ]
+  },
+  "user-authored-poster": {
+    "shell": [
+      "quiet chrome, loud content: the user sets the colour, the app does not"
+    ],
+    "modes": [
+      "set by the user's cover"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "user-composed with a default order"
+    ],
+    "governing_asset": [
+      "the user's cover image sets the page (a blurred cover gradient or a sampled tint)",
+      "a user-chosen theme used as the page background"
+    ],
+    "display_treatment": [
+      "a wide grotesque with lowercase titles",
+      "system bold only (the quiet register)"
+    ],
+    "hero_moment": [
+      "picking a cover re-tints the whole page",
+      "committing an RSVP",
+      "sharing the finished page"
+    ]
+  },
+  "authored-illustration": {
+    "shell": [
+      "owned: illustration and palette carry the brand, controls stay plain"
+    ],
+    "modes": [
+      "light",
+      "pastel flood per screen"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "one illustration hand on every content surface",
+      "a fixed palette of three hues used flat, with no pure black text",
+      "a pastel flood per screen with text tinted to match"
+    ],
+    "display_treatment": [
+      "a face matched to the hand (handwritten, slab-like serif or rounded)",
+      "plain system type that stays out of the illustration's way"
+    ],
+    "hero_moment": [
+      "the illustration responds when an entry is completed",
+      "the day's entry is revealed",
+      "a collection fills in"
+    ]
+  },
+  "body-state-companion": {
+    "shell": [
+      "quiet: the state headline is the loudest thing on screen"
+    ],
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "density": [
+      "low",
+      "medium"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "a plain-language state headline as the hero of home",
+      "one non-colour state carrier (a pose, a glyph or a shape that tracks state)",
+      "a closed colour-meaning set: each hue means one state and nothing else"
+    ],
+    "display_treatment": [
+      "rounded numerals",
+      "a serif headline over a light grotesque"
+    ],
+    "hero_moment": [
+      "today's state is revealed",
+      "a check-in is logged",
+      "a trend is explained in a sentence"
+    ]
+  },
+  "shareable-artifact-studio": {
+    "shell": [
+      "quiet chrome, loud artifact: display type and colour live only inside the artifact"
+    ],
+    "modes": [
+      "near-monochrome light",
+      "near-monochrome dark"
+    ],
+    "density": [
+      "medium"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "the shareable artifact (a poster, sticker or card) with its own type and colour",
+      "masks and die-cut shapes on the artifact while chrome keeps ordinary radii"
+    ],
+    "display_treatment": [
+      "display type that appears only inside the artifact"
+    ],
+    "hero_moment": [
+      "the artifact is generated from the user's data",
+      "switching the artifact's style",
+      "export and share"
+    ]
+  },
+  "ambient-sky": {
+    "shell": [
+      "quiet: the sky is the only surface, controls float over it"
+    ],
+    "modes": [
+      "dark sky"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "a sky whose hue comes from the real light phase",
+      "an object on a dotted path",
+      "a scrubbable time axis"
+    ],
+    "display_treatment": [
+      "a centred semibold countdown",
+      "white pill time labels"
+    ],
+    "hero_moment": [
+      "scrubbing through time with a tick at each phase boundary",
+      "a phase change recolours the sky",
+      "snapping back to now"
+    ]
+  },
+  "rationed-ritual": {
+    "shell": [
+      "quiet: achromatic chrome around user photos"
+    ],
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "the constraint state as a drawn component (a lock, a blur, a date stamp or a countdown)",
+      "achromatic chrome, so the user's photos are the only hue"
+    ],
+    "display_treatment": [
+      "none dealt: this direction shares behaviour, not type"
+    ],
+    "hero_moment": [
+      "the unlock or reveal",
+      "capturing inside the window",
+      "the period turning over"
+    ]
+  },
+  "chromatic-timeline": {
+    "shell": [
+      "owned: block hues carry the page, chrome stays near-white"
+    ],
+    "modes": [
+      "near-white"
+    ],
+    "density": [
+      "medium",
+      "high"
+    ],
+    "composition": [
+      "user-composed with a default order"
+    ],
+    "governing_asset": [
+      "a vertical time axis where capsule length equals duration",
+      "a hue per block as the reading layer, with a glyph as the non-colour cue",
+      "a now-line that crosses the day"
+    ],
+    "display_treatment": [
+      "a heavy date header"
+    ],
+    "hero_moment": [
+      "dragging a block to reschedule, with a tick at each snap",
+      "completing a block",
+      "the now-line crossing into a block"
+    ]
+  },
+  "dark-content-stage": {
+    "shell": [
+      "quiet: near-black stage, artwork is the only colour"
+    ],
+    "modes": [
+      "near-black neutral",
+      "deep tint"
+    ],
+    "density": [
+      "medium",
+      "high"
+    ],
+    "composition": [
+      "editorially fixed",
+      "user-composed with a default order"
+    ],
+    "governing_asset": [
+      "artwork as the only multi-hue element on a near-black stage",
+      "surfaces tinted from the current artwork",
+      "one accent that appears only on play or selection"
+    ],
+    "display_treatment": [
+      "black-weight hero titles",
+      "a semibold title over a light secondary line"
+    ],
+    "hero_moment": [
+      "play",
+      "artwork expanding into its detail page",
+      "logging or rating an item"
+    ]
+  },
+  "typographic-writing-surface": {
+    "shell": [
+      "quiet: chrome recedes until asked for"
+    ],
+    "modes": [
+      "light",
+      "user-chosen page tint"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "the page itself as the interface, with 28-30 pt margins",
+      "one theme accent for links and the cursor",
+      "floating capsules as the only chrome"
+    ],
+    "display_treatment": [
+      "a reading face at about 1.6 line height",
+      "a face the user chooses per document"
+    ],
+    "hero_moment": [
+      "chrome receding when writing starts",
+      "switching theme",
+      "switching between documents or slots"
+    ]
+  },
+  "literary-warm-assistant": {
+    "shell": [
+      "quiet: paper, type and one muted accent"
+    ],
+    "modes": [
+      "warm paper"
+    ],
+    "density": [
+      "low"
+    ],
+    "composition": [
+      "editorially fixed"
+    ],
+    "governing_asset": [
+      "a serif reading face on warm paper with a muted accent that is not orange",
+      "a non-cream warm ground (warm grey or warm white) with serif replies",
+      "a status visual that encodes state (listening, thinking, speaking)"
+    ],
+    "display_treatment": [
+      "replies in serif with the user's text in sans",
+      "regular-weight serif titles at 28-32 pt"
+    ],
+    "hero_moment": [
+      "a reply arriving",
+      "the voice visual changing with state",
+      "thinking shown as readable status lines"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+taste-mobile deal  seed 2  kind utility  audience general  platform ios
+
+1. Toy / Game-Engine Tactile  [toy-game-engine-tactile]  <- take this one unless it clashes with the brief
+   Governing asset    a rendered 3D object that is the readout (its state maps to data)
+   Display treatment  a segment-display timer
+   Hero moment 1      the object changes state when the data changes
+   Hero moment 2      turning or pressing the object, with an impact matched to its visual mass
+   Shell              loud: the object and its controls are the interface, system chrome nearly absent
+   Mode / density     dark with a lit rim / medium
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag a toy surface that is not a visibly separate layer from the chrome, or a rendered effect that maps to no data value or user choice.
+   Seen in            rooms, not-boring-camera, not-boring-weather, opal (evidence, not targets: do not copy an app)
+
+2. Ambient Sky  [ambient-sky]
+   Governing asset    a sky whose hue comes from the real light phase
+   Display treatment  white pill time labels
+   Hero moment 1      a phase change recolours the sky
+   Hero moment 2      snapping back to now
+   Shell              quiet: the sky is the only surface, controls float over it
+   Mode / density     dark sky / low
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag palette colour that does not follow the real sky or data. Legibility at the most opaque glass setting and Reduce Motion are text-sourced requirements, not visible in stills.
+   Seen in            lumy, moonlitt (evidence, not targets: do not copy an app)
+
+3. Glance Board  [glance-board]
+   Governing asset    a gauge with an honest per-metric scale and a target tick
+   Display treatment  small all-caps tracked state labels set above each value
+   Hero moment 1      the readout hands off to a glance surface (Live Activity or widget)
+   Hero moment 2      the tracked entity changes state (the label and its semantic colour update together)
+   Shell              quiet: neutral chrome, status colour is the only hue
+   Mode / density     dark / low
+   Composition        user-composed with a default order
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning, not a gate: flag a screen that shows more than one competing entity per line or sheet, status colour used decoratively, or brand hue leaking into status.
+   Seen in            flighty, watch-duty, paku, the-outsiders, tide-guide, fotmob, sofascore, whoop, bevel, crouton, mela, copilot-money (evidence, not targets: do not copy an app)
+
+Fixed for this kind (not dealt, not negotiable)
+   Modules            none
+   Motion scheme      expressive-hero-only: Critically damped springs by default. Bounce up to 0.3 on the dealt hero moments and on drag release only. On Android, M3 Standard for the product with the Expressive scheme swapped in on hero moments.
+   Haptic profile     rich: The mapping table, plus one custom pattern paired with a sound on a single hero moment.
+   Hero moments       at most 2
+   Material           Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity.
+
+Never build these for this kind
+   Funnel-First Utility: Never deal. The quiz funnel itself is text-sourced; the store frames show only the generic dashboard.
+

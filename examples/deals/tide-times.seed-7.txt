@@ -1,0 +1,51 @@
+taste-mobile deal  seed 7  kind utility  audience general  platform ios
+
+1. Coach Character  [coach-character]  <- take this one unless it clashes with the brief
+   Governing asset    one flat-vector character cast that acts out state
+   Display treatment  a heavy rounded display face over a rounded body face
+   Hero moment 1      the progress path advances one step
+   Hero moment 2      a task completes and the character reacts
+   Shell              loud: thick-lipped controls and a character on most screens
+   Mode / density     light / low
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag the character on money, signing or error sheets, and flag the absence of a personality off-switch. Neither is verifiable from store frames. A cloned flame-streak screen reads as Duolingo pastiche.
+   Seen in            duolingo, finch (evidence, not targets: do not copy an app)
+
+2. Toy / Game-Engine Tactile  [toy-game-engine-tactile]
+   Governing asset    a small diorama built from the user's own content
+   Display treatment  a segment-display timer
+   Hero moment 1      turning or pressing the object, with an impact matched to its visual mass
+   Hero moment 2      picking a colourway
+   Shell              loud: the object and its controls are the interface, system chrome nearly absent
+   Mode / density     dark with a lit rim / medium
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag a toy surface that is not a visibly separate layer from the chrome, or a rendered effect that maps to no data value or user choice.
+   Seen in            rooms, not-boring-camera, not-boring-weather, opal (evidence, not targets: do not copy an app)
+
+3. Ambient Sky  [ambient-sky]
+   Governing asset    an object on a dotted path
+   Display treatment  a centred semibold countdown
+   Hero moment 1      snapping back to now
+   Hero moment 2      a phase change recolours the sky
+   Shell              quiet: the sky is the only surface, controls float over it
+   Mode / density     dark sky / low
+   Composition        editorially fixed
+   Depth              none
+   Posture            native iOS: system bars, sheets, gestures and glass come from the platform
+   Corpus warning     Warning: flag palette colour that does not follow the real sky or data. Legibility at the most opaque glass setting and Reduce Motion are text-sourced requirements, not visible in stills.
+   Seen in            lumy, moonlitt (evidence, not targets: do not copy an app)
+
+Fixed for this kind (not dealt, not negotiable)
+   Modules            none
+   Motion scheme      expressive-hero-only: Critically damped springs by default. Bounce up to 0.3 on the dealt hero moments and on drag release only. On Android, M3 Standard for the product with the Expressive scheme swapped in on hero moments.
+   Haptic profile     rich: The mapping table, plus one custom pattern paired with a sound on a single hero moment.
+   Hero moments       at most 2
+   Material           Liquid Glass is chrome only: system tab bar, toolbars and sheets. It is never the identity.
+
+Never build these for this kind
+   Funnel-First Utility: Never deal. The quiz funnel itself is text-sourced; the store frames show only the generic dashboard.
+

@@ -1,0 +1,170 @@
+{
+  "_note": "The app-kind router. Each kind lists the ready directions that fit it (first = strongest fit in the corpus), the category modules it attaches, and its budgets. Modules are never dealt and a direction cannot override them. Audience bias is the skill owner's ruling, not a corpus finding.",
+  "kinds": {
+    "money": {
+      "label": "Banking, budgeting, payments, investing",
+      "directions": ["loud-owned-shell", "glance-board", "dark-pro-minimal"],
+      "modules": ["money"],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "quiet",
+      "anti_references": ["social-ledger", "funnel-first-utility"],
+      "held": ["cinematic-dark-data", "private-bank-editorial"]
+    },
+    "crypto": {
+      "label": "Wallets, exchanges, DeFi",
+      "directions": ["dark-pro-minimal", "glance-board", "loud-owned-shell"],
+      "modules": ["money", "crypto"],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "quiet",
+      "anti_references": ["social-ledger", "pickem-arcade"],
+      "held": ["fluid-continuity"]
+    },
+    "chat-ai": {
+      "label": "AI assistants, agents, answer engines, AI notes",
+      "directions": ["literary-warm-assistant", "dark-pro-minimal", "typographic-writing-surface", "authored-illustration"],
+      "modules": ["chat-ai"],
+      "motion_scheme": "standard",
+      "hero_moments": 2,
+      "haptic_profile": "standard",
+      "anti_references": ["neutral-hyper-minimal-assistant", "feed-grafted-assistant", "custom-glass-replica"],
+      "held": ["pixel-heritage", "research-index"]
+    },
+    "messaging": {
+      "label": "Person-to-person and community chat",
+      "directions": ["dark-pro-minimal", "rationed-ritual", "loud-owned-shell"],
+      "modules": ["chat-ai"],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "standard",
+      "anti_references": ["custom-glass-replica"],
+      "held": [],
+      "note": "In messaging the platform posture carries most of the art direction: system type, one accent, a wallpaper. Declare the posture first."
+    },
+    "sports": {
+      "label": "Scores, live game companions, fan apps",
+      "directions": ["broadcast-scoreboard", "glance-board"],
+      "modules": ["sports"],
+      "motion_scheme": "expressive-hero-only",
+      "hero_moments": 2,
+      "haptic_profile": "standard",
+      "anti_references": ["pickem-arcade"],
+      "held": []
+    },
+    "fitness": {
+      "label": "Training, running, strength, activity sharing",
+      "directions": ["glance-board", "shareable-artifact-studio", "loud-owned-shell", "body-state-companion"],
+      "modules": ["fitness"],
+      "motion_scheme": "expressive-hero-only",
+      "hero_moments": 2,
+      "haptic_profile": "standard",
+      "anti_references": ["funnel-first-utility"],
+      "held": ["sensory-first"]
+    },
+    "health": {
+      "label": "Recovery, sleep, mood, mental health, self-care",
+      "directions": ["body-state-companion", "authored-illustration", "glance-board", "ambient-sky", "coach-character"],
+      "modules": ["fitness"],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "quiet",
+      "anti_references": ["funnel-first-utility"],
+      "held": ["sensory-first"]
+    },
+    "productivity": {
+      "label": "Tasks, planners, calendars, pro and developer tools",
+      "directions": ["dark-pro-minimal", "chromatic-timeline", "typographic-writing-surface", "toy-game-engine-tactile"],
+      "modules": [],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "quiet",
+      "anti_references": [],
+      "held": ["fluid-continuity"]
+    },
+    "notes": {
+      "label": "Notes, writing, documents, journals",
+      "directions": ["typographic-writing-surface", "authored-illustration", "literary-warm-assistant", "rationed-ritual"],
+      "modules": [],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "quiet",
+      "anti_references": [],
+      "held": []
+    },
+    "media": {
+      "label": "Music, podcasts, film and TV, audio catalogs",
+      "directions": ["dark-content-stage", "shareable-artifact-studio"],
+      "modules": ["feed"],
+      "motion_scheme": "expressive-hero-only",
+      "hero_moments": 2,
+      "haptic_profile": "standard",
+      "anti_references": ["format-borrowed-feed"],
+      "held": ["collectors-shelf"]
+    },
+    "social": {
+      "label": "Feeds, close-friends apps, events and invites",
+      "directions": ["rationed-ritual", "user-authored-poster", "shareable-artifact-studio"],
+      "modules": ["feed"],
+      "motion_scheme": "expressive-hero-only",
+      "hero_moments": 2,
+      "haptic_profile": "standard",
+      "anti_references": ["format-borrowed-feed"],
+      "held": []
+    },
+    "utility": {
+      "label": "Weather, travel, camera, timers, trackers, single-purpose tools",
+      "directions": ["glance-board", "toy-game-engine-tactile", "ambient-sky", "coach-character"],
+      "modules": [],
+      "motion_scheme": "expressive-hero-only",
+      "hero_moments": 2,
+      "haptic_profile": "rich",
+      "anti_references": ["funnel-first-utility"],
+      "held": ["analog-instrument"]
+    },
+    "learning": {
+      "label": "Language, kids, habits, skill practice",
+      "directions": ["coach-character", "authored-illustration", "toy-game-engine-tactile", "shareable-artifact-studio"],
+      "modules": [],
+      "motion_scheme": "expressive-hero-only",
+      "hero_moments": 3,
+      "haptic_profile": "rich",
+      "anti_references": ["funnel-first-utility"],
+      "held": []
+    },
+    "commerce": {
+      "label": "Shops, marketplaces, booking, buy now pay later",
+      "directions": ["loud-owned-shell", "authored-illustration"],
+      "modules": ["money"],
+      "motion_scheme": "standard",
+      "hero_moments": 1,
+      "haptic_profile": "quiet",
+      "anti_references": [],
+      "held": []
+    }
+  },
+  "audiences": {
+    "general": { "boost": [], "drop": [] },
+    "pro": {
+      "boost": ["dark-pro-minimal", "glance-board", "typographic-writing-surface"],
+      "drop": ["coach-character", "toy-game-engine-tactile", "authored-illustration"]
+    },
+    "gentle": {
+      "boost": ["body-state-companion", "authored-illustration", "ambient-sky", "literary-warm-assistant"],
+      "drop": ["loud-owned-shell", "dark-pro-minimal", "broadcast-scoreboard"]
+    },
+    "playful": {
+      "boost": ["toy-game-engine-tactile", "coach-character", "user-authored-poster", "shareable-artifact-studio"],
+      "drop": ["dark-pro-minimal"]
+    }
+  },
+  "haptic_profiles": {
+    "quiet": "System-provided haptics only, plus success and error on committed results. No custom patterns.",
+    "standard": "The mapping table in references/haptics-sound.md, with nothing on scroll, navigation or plain taps.",
+    "rich": "The mapping table, plus one custom pattern paired with a sound on a single hero moment."
+  },
+  "motion_schemes": {
+    "standard": "Critically damped springs everywhere (bounce 0). On Android, the M3 Standard scheme. No overshoot on any flow that moves money, signs or deletes.",
+    "expressive-hero-only": "Critically damped springs by default. Bounce up to 0.3 on the dealt hero moments and on drag release only. On Android, M3 Standard for the product with the Expressive scheme swapped in on hero moments."
+  }
+}

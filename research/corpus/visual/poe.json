@@ -1,0 +1,46 @@
+{
+  "slug": "poe",
+  "track_name": "Poe – Fast AI Chat",
+  "version": "6.1.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All six images share one template: an indigo-to-magenta vertical gradient backdrop (#5149bf/#674bcb at the top to #b152e9 at the bottom), a one-word white headline (Fast, Powerful, Image, Video, Voice, Group chat) with a thin cyan rule and a white subline in the top ~22%, then a custom dark-purple device frame (#22073e) cropped at the bottom edge. Real UI fills roughly 65% of each frame and is cut off below the first answer, so the composer and tab bar are never shown.",
+  "typography": {
+    "display": "System SF Pro: semibold ~17pt nav titles and bot names (Science for Kids, Assistant, Explore); no large titles; the marketing headline is SF Pro Display bold",
+    "body": "system SF",
+    "numerals": "proportional system; small grey timestamps with read ticks inside bubbles (09:45, 18:04); follower counts in grey regular (255.8K followers)",
+    "weights": "Semibold names and list titles, regular body and descriptions, bold inline emphasis in answers (photosynthesis, Ingredients:), semibold uppercase OFFICIAL badge",
+    "case_and_tracking": "Sentence case throughout; only the OFFICIAL tag is uppercase with slight positive tracking; default tracking elsewhere",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f6f6f8", "#e3e2e7", "#c0c1ec"],
+    "text": "#020202",
+    "accents": ["#5c5cd8"],
+    "accent_strategy": "One accent: an indigo-violet used for the user's bubbles, back chevrons and links (View more, Learn more, @handles); everything else is neutral grey. Third-party model icons (Claude starburst, GPT, Gemini, Nano-Banana yellow) bring the only other colour, per-content.",
+    "source": "palette.json 01–06: #674bcb / #5149bf / #b152e9 = marketing gradient, #22073e = device frame, #f6f6f8 = bot-card and bubble surface, #ffffff = app background. User-bubble #5c5cd8 and chip #e3e2e7 sampled by pixel from 01; #c0c1ec is the invite-button tint in 06."
+  },
+  "shape": {
+    "radius_language": "large and pill: bot card ~16pt, bubbles ~16–18pt with no tail, pill action chips (History, Rates) and pill reaction badges, filter chips in Explore are ~10pt rounded rectangles with a hairline border, bot icons are ~22% squircles",
+    "concentric": "no",
+    "borders_shadows": "Flat grey fills for cards and incoming bubbles; hairline borders only on Explore filter chips; a hairline divider in the bot card and between Explore rows; no shadows",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no: opaque white nav bars with plain chevron and SF Symbol buttons; no floating capsules visible in any frame",
+  "density": "medium: bot profile card stacks five rows of metadata above the thread; Explore rows are ~110px tall with icon, title, two-line description and an OFFICIAL badge; 8–12pt gaps",
+  "layout": "Thread screen opens with a bot-profile card (icon, name, owner handle, followers, History / Rates / add / share pills, description, provider disclosure, OFFICIAL tag) pinned above the conversation; Explore is a search field, two rows of category chips and a vertical bot directory.",
+  "navigation": "Standard iOS nav bar with back chevron, bot avatar and two-line title (chat name over bot name), compose and share icons right; Explore uses a centred plain title and no visible tab bar in the cropped frames",
+  "imagery_and_icons": "SF Symbols-style outline icons for chrome; bot identities are third-party brand squircles (the bot avatar is the only per-content colour); generated photo, video and audio player cards in replies",
+  "signature_visual_move": "Every thread starts with a store-like profile card for the bot, so the model, not the conversation, is the headline.",
+  "tells_present": ["Purple, indigo, violet; purple-to-blue gradient (marketing backdrop; indigo user bubble in UI)", "Gradient backgrounds and gradient text (marketing wrapper only)"],
+  "direction_fit": {
+    "primary": "Neutral Hyper-Minimal Assistant (anti-reference), messenger variant",
+    "secondary": "none",
+    "confidence": "med",
+    "agrees_with_text_record": "no text record",
+    "why": "The text record exists but left direction and every visual field unknown. Visually Poe is a stock iOS messenger (tail-less bubbles, read ticks, reactions) with one indigo accent and no lever from the chat module: system type, cool accent, no mark-born metaphor, no state-encoding status visual. The group-chat-with-bots metaphor from the text record is confirmed (06: humans and Gemini-Pro in one thread)."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Chat anatomy: user bubbles are solid indigo #5c5cd8 with white text and an inline timestamp plus double tick; bot replies sit in a full-width grey #f6f6f8 card under a small bot-icon + name label rather than in a bubble; reactions are white pills that overlap the bubble's bottom edge. Composer never visible. The bot-profile card is a directory/store pattern grafted onto chat, so Poe reads as a model marketplace with a messenger skin."
+}

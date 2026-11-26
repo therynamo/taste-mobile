@@ -1,0 +1,46 @@
+{
+  "slug": "airbnb",
+  "track_name": "Airbnb",
+  "version": "26.47.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Warm off-white (#f5f2ed) backdrop with a centred two-line caption in the top ~20%, then a frameless rounded phone screen (no bezel, ~75%) cropped at the bottom so the tab bar never shows. All six frames are real UI: home (All), Homes tab, Paris itinerary map + sheet, Services, an Experience detail, and the friends Travel map.",
+  "typography": {
+    "display": "Airbnb Cereal (the brand's custom geometric sans) in semibold for section headers (Recently viewed, Popular experiences in Los Angeles), sheet titles (Paris, Travel map) and listing titles; captions use the same face",
+    "body": "custom (Airbnb Cereal)",
+    "numerals": "proportional Cereal; prices and ratings inline ($884 for 2 nights · ★4.86); dates as May 15 – 19; day numbers in small grey circles on the itinerary rail",
+    "weights": "Semibold headers and titles, regular grey metadata; medium in chips",
+    "case_and_tracking": "Sentence case; tight display tracking in captions; one small all-caps label on the 3D calendar (STARTS IN / DAYS)",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f7f7f7", "#f1eeea", "#ebebeb"],
+    "text": "#222222",
+    "accents": ["#ff385c"],
+    "accent_strategy": "Near-silent: one brand red/pink appears only as tiny moments (heart badges on map pins, the red '7' on the 3D calendar); everything else is black text, grey metadata and photography. Colour comes from photos and the 3D icon objects.",
+    "source": "palette.json 01–06: #f5f2ed 24–32% = marketing backdrop; #ffffff 20–32% = app background; #e8e6e2 / #e4e3de = chip and card fills; #83786d / #897162 / #8c7761 = photo content. #bae8f7 in 06 = map water. Brand pink is a visual estimate."
+  },
+  "shape": {
+    "radius_language": "large and pill: ~20pt listing photo corners, ~20pt cards and sheets, pill search bar and raised category chips, circular arrow buttons and avatars",
+    "concentric": "yes",
+    "borders_shadows": "Soft, diffuse drop shadows under the search pill, category chips, cards and the sheet (the chips look raised and pressable); no hard borders; hairline divider inside the stay card",
+    "materials": "Mostly flat white with soft elevation; the selected category chip looks inset/pressed (darker grey with inner shading); 3D rendered objects as icons"
+  },
+  "liquid_glass_visible": "no (raised soft-shadow pills, not translucent glass)",
+  "density": "medium: horizontally scrolling carousels of ~145pt photo cards with two text lines each; section headers with arrow buttons every ~300pt",
+  "layout": "Home: pill 'Start your search' at top, horizontal category pills (All / Homes / Experiences / Services) with 3D icons, an upcoming-trip card with a 3D tear-off calendar, then stacked horizontal carousels (Recently viewed, Popular experiences) of rounded photo cards with heart toggles and 'Popular'/'Guest favorite' badges.",
+  "navigation": "Bottom tab bar not visible (cropped by the marketing frame). Top: floating search pill; category switcher as raised pill chips; detail uses a plain back arrow with share/heart icons; maps use a bottom sheet with grab handle, back circle and a vertical day rail.",
+  "imagery_and_icons": "Professional photography for listings and experiences; soft, glossy 3D rendered objects as category and service icons (globe, house, hot-air balloon, concierge bell, red car, luggage, grocery bag, door, calendar); custom 3D-ish map pins with heart badges; thin outline UI glyphs (heart, share, arrow).",
+  "signature_visual_move": "Small glossy 3D objects (hot-air balloon, concierge bell, tear-off calendar) used as icons inside otherwise flat white, photo-led chrome.",
+  "tells_present": ["Cards everywhere (carousel of photo cards per section)"],
+  "direction_fit": {
+    "primary": "Authored Illustration",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The 3D pictograph system is confined to category chips, service tiles, map pins and the trip calendar, with the rest typographic and photo-led, exactly as the 'dimensional variant' description and the open-design.ai split say. The direction rests on a small share of pixels, so the 3D icons are a seasoning over a conventional marketplace layout."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Brand red is far rarer than expected: there are no red CTAs in any frame. The soft raised chips with shadows read as tactile rather than glass. The tab bar can't be judged."
+}

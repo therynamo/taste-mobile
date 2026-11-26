@@ -1,0 +1,46 @@
+{
+  "slug": "oura",
+  "track_name": "Oura",
+  "version": "7.33.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light. Pure black backdrop, a warm off-white two-line caption in a light grotesque, and a frameless rounded screen crop (no device bezel) that fills ~70% of the image and is cut off at the bottom. The black backdrop merges with the app's near-black UI, so palette.json's #000000 (44%) is mostly backdrop.",
+  "typography": {
+    "display": "A transitional/editorial serif for headline sentences ('Go get 'em!', 'Rising heart health, with a dip in stress management', 'Your cardiovascular age is below your actual age.'); typeface name unsure",
+    "body": "custom: a light, slightly wide grotesque (not SF) for body, labels, scores and captions; name unsure",
+    "numerals": "light-weight large proportional numerals (88, 84, 15, 7h 16m); no condensed or heavy figures; scores sit inside circles on Today",
+    "weights": "Light/Regular dominate, even for big numbers; Medium for small caps status labels",
+    "case_and_tracking": "Small all-caps with wide tracking for status words and section labels ('READINESS', 'NEEDS CARE', 'THRIVING', 'TIME ASLEEP', 'CYCLE DAY'); serif headlines in sentence case",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#18191d",
+    "surfaces": ["#1a191e", "#25262a", "#222326"],
+    "text": "#f2ede6 (approx: warm off-white)",
+    "accents": ["#5aa9e6 (approx: Optimal/Thriving blue, REM/Light sleep)", "#3fc1a5 (approx: Good/Looking good teal)", "#e8907a (approx: Needs care coral)", "#d9b45a (approx: crown gold)", "#287192 (header sky/teal glow)"],
+    "accent_strategy": "Semantic state words and soft gradient glows: state labels are coloured (blue Optimal/Thriving, teal Good, coral Needs care) and screen headers carry a faint teal or blue top glow; data is drawn in blues and white. No red; 'needs care' is a soft coral. A gold crown marks top scores.",
+    "source": "palette.json 02/05/06 (#18191d, #1a191e, #25262a card surfaces), 01 (#287192/#548ba4 sky photo and glow), 03/04 (#252d2d/#232a2c teal-tinted surfaces) + visual match; #000000 is mostly backdrop"
+  },
+  "shape": {
+    "radius_language": "large: ~20-24pt cards, ~32pt screen corners, circles for score bubbles and buttons, capsule tab bar and pills",
+    "concentric": "yes: the capsule tab bar, its circular companion button and the rounded cards follow the screen corner radius",
+    "borders_shadows": "No hard borders; cards separate by a slightly lighter fill with soft inner gradients; thin rings outline score circles and glass buttons",
+    "materials": "Glass: capsule tab bar, circular and grouped glass buttons with rim highlights; photo and gradient backgrounds (mountain photo on Today, coloured flowing ribbons on My Health)"
+  },
+  "liquid_glass_visible": "yes, prominently: floating capsule tab bar (Today, Vitals, My Health) plus a separate circular '+ sparkle' button; circular and paired glass header buttons (menu, share/settings, info/profile, back); on detail screens the tab bar becomes a glass row of metric icons",
+  "density": "low on Today and My Health (one big signal, one headline, one paragraph); medium on Vitals (2-column card grid) and Sleep (hypnogram plus legend); generous 20-24pt rhythm",
+  "layout": "Today: OURA wordmark header, a horizontal row of circled scores (Readiness 88, Sleep 84, Activity 91, Cycle day 6, ...), then one hero: a 0-100 arc dial over a mountain photograph with '88 READINESS', a serif headline ('Go get 'em!'), a short paragraph and 'Learn more' pill; cards below. Vitals: segmented date scroller, section headers with icons, 2-up cards (Readiness Score, Symptom Radar, Sleep Score, Body Clock) each with a big value or a state word.",
+  "navigation": "Three-tab floating glass bar: Today (sun), Vitals (leaf), My Health (tree), outline icons with labels, filled when selected; separate circular add/AI button; underline date scroller ('Yesterday / Today'); circular glass back and share buttons",
+  "imagery_and_icons": "Landscape photography behind the hero score; abstract flowing gradient ribbons with glass medallion icons on My Health; thin outline custom icon set (sprout, moon, flame, cycle, heart, waves); sparkle icon paired with a label ('Dive in with Advisor')",
+  "signature_visual_move": "One readiness number on a thin 0-100 arc laid over a landscape photograph, followed by a serif sentence that says what to do with it.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Body-State Companion",
+    "secondary": "Glance Board",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's 'Liquid Material + calm adaptive state-coloured wellness' and One Big Thing are both visible: glass is the overlay, and the identity is a plain-language state voice (serif headlines, Needs care / Thriving) with colour as a state vocabulary and no alarm red. It is the prioritised variant of the readiness board, not an equal-weight triad."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Daily score: Readiness 88 as a thin white arc dial (0 to 100 with tick dots) over a photo, plus a row of circled secondary scores; on Vitals the score is a big light numeral with a coloured state word (Optimal blue, Good teal). Colour scale: state words (Needs care coral to Thriving blue), never red. Streak/calendar: none shown; a 'Yesterday / Today' scroller. Charts: stepped hypnogram in four blues (Awake white, REM light blue, Light blue, Deep dark blue) with pill time stamps and a movement tick strip; a smooth teal line against Above/Aligned/Below bands with a pill callout ('8 years younger'); a temperature deviation bar chart with white rounded bars and a callout ('Nov 1, +0.1°F'); a three-segment slider for Cardiovascular Age. Numerals: light-weight proportional, large. This is the softest 'dark' of the three: near-black #18191d with teal/blue glows, warm off-white text and a serif, not Whoop's navy-slate and DIN numerals."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "linear",
+  "track_name": "Linear Mobile",
+  "version": "1.110.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Near-black (#08090b) backdrop with a two-tone caption (white line + grey line) in the top ~14%, then a thin-bezel dark iPhone frame. Real UI is ~70% of each frame. 01, 02, 03, 04 and 06 are real app screens; 05 is a Lock Screen with a Linear notification over a branded technical wallpaper ('LINEAR ORBIT INC. DEPARTMENT OF PORTABLE DEVICE APPLICATIONS'), so it is brand art plus system UI.",
+  "typography": {
+    "display": "Neo-grotesque sans for screen titles (Inbox, Expand the mobility platform) at ~24pt medium/semibold; looks like Inter rather than SF (straight-sided, slightly wider), but unsure",
+    "body": "custom (likely Inter) / unsure",
+    "numerals": "proportional in body; issue IDs (I-32, P-RIDE-50, AGI-2028) in small grey caps-height sans, not mono; the wallpaper uses a mono for its corporate label",
+    "weights": "Medium/semibold titles and row titles, regular grey secondary text, regular grey section labels (In Progress, Discovery, Properties)",
+    "case_and_tracking": "Sentence case; section labels are sentence-case grey, not uppercase; default to slightly tight tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#18181a",
+    "surfaces": ["#1c1c1e", "#2b2b2b", "#242426"],
+    "text": "#ededef",
+    "accents": ["#7b80f0", "#4cb782", "#eb5757", "#f2c94c"],
+    "accent_strategy": "Semantic only on a neutral grey stack: green/yellow/red health badges on projects, coloured status/priority icons, and a periwinkle-indigo reserved for the swipe action and focus states. No brand flood; colour mostly arrives through user-chosen project icons and avatars.",
+    "source": "palette.json 01, 02, 06: #08090b 18–36% = marketing backdrop and device bezel; #18181a / #171719 = app background; #1c1c1e / #2b2b2b = chips, segmented pill and floating bar; #606175 in 02 = the indigo swipe action blended. Accents are visual estimates."
+  },
+  "shape": {
+    "radius_language": "pill and large: every control is a capsule (segmented tabs, property chips, floating tab bar, toolbar), circular icon buttons; composer and sheets ~20pt",
+    "concentric": "yes",
+    "borders_shadows": "Depth by surface lightness steps, not shadows; faint 1px light edge on floating capsules; no row dividers",
+    "materials": "Dark frosted glass on the floating bottom bar, top-corner button groups and composer; content area flat"
+  },
+  "liquid_glass_visible": "yes: floating capsule tab bar with a separate circular glass button bottom, grouped glass capsules (+ / …) top right, glass composer over the keyboard; custom rather than stock (no refraction visible).",
+  "density": "medium-high: ~56pt single-line rows in project lists, two-line inbox rows with 36pt avatars, chips packed in wrapping rows with ~8pt gaps; tight but not cramped",
+  "layout": "Detail-first: grey ID line, icon + title, horizontal capsule segmented tabs, then grouped rows under grey sentence-case labels; Inbox is a two-segment filter (Priority / Other) above avatar rows with relative time right-aligned.",
+  "navigation": "Custom floating bottom capsule with 4 icon-only tabs (inbox, scan/focus, a bolt/pulse glyph, a contextual item with a stepper chevron) plus a detached circular create button; glass back button and +/… capsule top; full-screen modal composer with chip row and format toolbar above keyboard. Non-native tab bar.",
+  "imagery_and_icons": "Custom monoline outline icon set for chrome; project icons are user-chosen emoji and filled colour glyphs; status icons are Linear's own (half-filled ring, signal bars); photo avatars in inbox.",
+  "signature_visual_move": "Every control collapses into a dark glass capsule floating over a near-black list, with colour arriving only from status glyphs.",
+  "tells_present": ["Emoji as icons (user-chosen project emoji in lists)"],
+  "direction_fit": {
+    "primary": "Dark Pro Minimal",
+    "secondary": "platform-material overlay (bespoke glass)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Multiple dark surface levels separated by lightness rather than shadow, semantic-only colour, dense rows, and a custom capsule tab bar exactly as the blog describes; no refraction visible."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The emoji in project rows are user content, so the tell is weak. The Linear Agent screen (03) shows a 'Thinking…' label for a genuine AI task, which fits the chat module rather than the shimmer tell. The lock-screen wallpaper's mono label and RGB swatch strip are brand art, not in-app UI."
+}

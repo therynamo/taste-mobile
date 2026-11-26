@@ -1,0 +1,46 @@
+{
+  "slug": "gemini",
+  "track_name": "Google Gemini",
+  "version": "1.2026.4570305",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light: a white backdrop with a two- or three-line caption in near-black Google Sans with one keyword in Google blue, then a black-bezel iPhone with Dynamic Island. Real UI is ~75% of each image. All six are real app screens; 02 is the camera-sharing (Live) mode over a photo.",
+  "typography": {
+    "display": "Google Sans family in captions and in-app headings ('Create with Omni', 'Try a template or describe a track in chat'), regular weight, ~20pt in-app",
+    "body": "custom: Google Sans / Google Sans Text (recognisable letterforms in 'Ask Gemini', 'Gemini Flash')",
+    "numerals": "proportional ('4 / 10', counts in quiz badges)",
+    "weights": "Regular for body and headings; medium for chip labels; the model name splits weights ('Gemini' regular white, 'Flash' grey)",
+    "case_and_tracking": "Sentence case; default tracking; no uppercase",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#1c1c1e", "#202022", "#14214e"],
+    "text": "#ffffff",
+    "accents": ["#1b3ca3", "#3873f5", "#a8c7fa"],
+    "accent_strategy": "Blue family only, plus semantic red/green in the quiz. A deep navy fills the voice and send buttons; a navy-to-black glow rises from the bottom edge on the creation screens (04, 05); a bright blue gradient lozenge is the Live voice control (02); a pale Material blue fills the quiz 'Next' button. Everything else is black and dark grey.",
+    "source": "palette.json 01–06: #ffffff ~35% = marketing backdrop; #000000 14–27% = app canvas; #1e1f21 / #1e222e / #191c29 = bubbles, cards and navy glow. Pixel samples: voice button #16296e–#1b3ca3 (01, 05), bottom glow #14214e (05), Live lozenge #3873f5 (02), user bubble ~#1c1c1e, quiz card #202022 (06). #a8c7fa is a visual estimate of the 'Next' button."
+  },
+  "shape": {
+    "radius_language": "pill and large: full-pill composer (~28pt) in chat, a ~28pt rounded composer block in creation modes, user bubbles ~28pt (pill-like), template tiles ~24pt, circular glass buttons, pill quiz buttons",
+    "concentric": "yes",
+    "borders_shadows": "Faint light rim on glass buttons and composer; semantic 2pt red/green outlines on quiz answers; no shadows on black",
+    "materials": "Glass on the circular menu button, the pen/overflow capsule and the composer (specular rim visible on black); flat elsewhere"
+  },
+  "liquid_glass_visible": "yes: top-left circular menu button, top-right pen + overflow capsule, and the composer show a light specular rim; in 04 and 05 the composer block is translucent over the template tiles.",
+  "density": "low-medium: one column with generous gaps; the creation screens use a 1+2 or 2×2 tile grid",
+  "layout": "Chat: model picker 'Gemini Flash ▾' top-left beside the menu button, right-aligned dark grey user bubbles, bubble-less white assistant text, inline rich media (annotated 'Explore' illustration in 03), action row and a 'Gemini is AI and can make mistakes' disclaimer. Creation modes (Omni video, Lyria music): small icon + centred heading, tile grid of templates, and a composer with a removable mode chip ('Videos ×', 'Music ×').",
+  "navigation": "Circular glass hamburger (drawer) and a model dropdown top-left; capsule with new-chat pen and overflow top-right (or a single dashed-pen button for temporary chat). No tab bar. Composer: '+', 'Ask Gemini', mic, navy voice button; creation composer adds aspect-ratio and reference-image buttons. Live mode (02): bottom row of video, screen-share, blue gradient lozenge, mic and X.",
+  "imagery_and_icons": "Thin rounded outline icons (Google Symbols-like); photography and AI illustration as content; the Gemini spark mark does not appear in any screenshot.",
+  "signature_visual_move": "A navy light that rises from the bottom edge behind the glass composer, the dark-mode form of the 'Neural Expressive' glow.",
+  "tells_present": ["Gestalt sameness: 'they all look the same'", "Gradient backgrounds and gradient text"],
+  "direction_fit": {
+    "primary": "Neutral Hyper-Minimal Assistant (anti-reference)",
+    "secondary": "platform-material overlay (content-carrying glass)",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record tags 'Ambient Gradient Intelligence' with a blue-and-white pulsating homepage gradient. The store set shows dark mode only, no homepage, no spark and no full-screen gradient; the glow appears only as a navy band at the bottom of two creation screens and the Live lozenge. What remains is ChatGPT's skeleton in black with Google Sans, which is the anti-reference with glass over it. The gradient claim may hold in light mode or on the home screen; the store set cannot confirm it."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Composer: full pill on chat screens with '+', 'Ask Gemini', mic and a navy filled voice circle; in creation modes it becomes a taller rounded block with a mode chip, placeholder ('Describe your video'), '+', mic, a blue send circle and a second row of option buttons. Greeting/empty state: the 'Hi [name]' home is not shown; creation modes use an icon + centred heading as their empty state. Voice: Live with camera (02) is a full-bleed camera feed with the spoken prompt in a dark speech bubble and a bright blue gradient pill as the central control (an orb-like blob rather than a disc). Thinking/streaming: not shown. Conversation list: not shown (drawer). Quiz (06) uses semantic red/green outlines and badges ('Not quite', 'Right answer'), a segmented progress bar and pill Back/Next, which is the most structured non-chat UI in the batch."
+}

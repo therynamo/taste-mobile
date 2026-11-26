@@ -1,0 +1,46 @@
+{
+  "slug": "harvee",
+  "track_name": "Harvee: Watch Stress Monitor",
+  "version": "4.9",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is pure marketing: a photoreal plush mascot floating on a pool ring with ADA, '#1 in 5 countries' and Harvard/Oxford logos. 02 shows the Today screen in a phone frame (about 65%) over a pool photo. 03 shows the habit cards floating frameless over the pool. 04 is a single HRV baseline card on a warm off-white backdrop. 05 is a cycle-day ring over a mascot render (mostly art). 06 is a flat Watch illustration with a complication and two mascot avatars. Real phone UI appears only in 02, 03 and 04.",
+  "typography": {
+    "display": "System SF Pro: semibold state word in the accent ('Normal'), bold card values ('Excellent', '184', '7,834').",
+    "body": "system SF",
+    "numerals": "SF proportional semibold with small grey unit suffixes ('184cal', '16 min', '75 mg'); not mono.",
+    "weights": "Semibold/bold values, regular grey labels and prose.",
+    "case_and_tracking": "Sentence case throughout; no all-caps labels.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f5f2e9",
+    "surfaces": ["#ffffff", "#fcfcfa"],
+    "text": "#1c1f28",
+    "accents": ["#6b6fd8", "#3a8ef0", "#6cc04a", "#ef3b4a"],
+    "accent_strategy": "Semantic plus one brand hue: periwinkle/indigo for the stress state and gauge; status chips in blue (Ok), green (Excellent) and red (Insufficient); system Activity ring colours on the fitness card. The mascot's colour changes with state (green, lilac-pink, orange-violet).",
+    "source": "palette.json 04 and 06 (#f5f2e9 / #f3efe6 warm off-white, #ffffff cards, #1c1f28 text); 01-03 teal and olive clusters are the pool photo wrapper; accent hexes are visual estimates from the gauge and chips"
+  },
+  "shape": {
+    "radius_language": "large: cards about 22-24 pt, pill date chip, pill stress gauge segments, circular header buttons, vertical pill sliders on habit cards",
+    "concentric": "yes: tab capsule, cards and inner sliders all use rounded, nested radii",
+    "borders_shadows": "Very soft shadows under white cards; no borders; a glow on the stress gauge thumb.",
+    "materials": "Flat white cards on warm off-white; a photoreal 3D plush mascot in a rendered room at the top of Today; translucent glass tab capsule."
+  },
+  "liquid_glass_visible": "yes: floating capsule tab bar (Today, Patterns, Playbook) and translucent circular header buttons in 02",
+  "density": "medium: a hero mascot scene, then a state block, then a two-column grid of compact habit cards each with value, status chip and vertical slider",
+  "layout": "Today: profile and share buttons with a centred date pill; a mascot render (pose matches the day, e.g. holding a pilates ring) as the hero; 'Stress Level' with the state word in accent colour, one paragraph of plain-language interpretation and a segmented horizontal gauge; then 'Activities' cards (Sleep with hypnogram, Fitness with Activity rings, then Steps, Mindfulness, Alcohol, Daylight, Caffeine, Water in a 2-column grid).",
+  "navigation": "Floating glass tab bar with 3 labelled tabs (Today, Patterns, Playbook), selected tab in a light capsule; top circular buttons; collapsible section chevron.",
+  "imagery_and_icons": "3D photoreal felt/plush creature with closed smiling eyes, rendered in real-looking rooms; SF Symbols outline icons on cards (bed, figure, footprints, wine glass, sun, cup, drop); real Activity rings.",
+  "signature_visual_move": "A fuzzy plush creature whose colour and pose change with your stress state sits at the top of Today, followed by a plain-language verdict instead of a raw number.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Body-State Companion",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The mascot is the readout (its colour and pose track state), and every metric is translated into a word ('Normal', 'Excellent', 'Ok'). This is the purest exemplar, as the text record said."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "The text record could not describe the mascot; it is a photoreal felt/plush 3D creature with closed eyes that comes in several colours. One finding cuts against the direction's restraint rule 'No alarm red for imprecise data': Mindfulness at 10 min shows a red 'Insufficient' chip with a red down-arrow. The warm off-white plus single indigo accent keeps the shell quiet."
+}

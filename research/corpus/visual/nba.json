@@ -1,0 +1,46 @@
+{
+  "slug": "nba",
+  "track_name": "NBA: Live Games & Scores",
+  "version": "120746.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is entirely marketing art (app icon, three player cut-outs over a red grid backdrop, condensed caps captions). 02-06 put an iPhone frame (Dynamic Island) on a dark-red grid backdrop under a two-line caption; about 65-70% of each image is real UI. 02 and 04 pop one card out of the device (enlarged score card, Game Pulse card) as a marketing callout, so its scale is exaggerated.",
+  "typography": {
+    "display": "Custom condensed grotesque in all caps for section headers ('GAMES', 'GAME STORIES', 'LATEST NEWS') and highlight titles; same family as the captions. Typeface name unsure (NBA house condensed face)",
+    "body": "system SF for team names, play-by-play, stat lines, tab labels and buttons",
+    "numerals": "condensed heavy display numerals for scores (101, 98, 50); SF for the clock and quarter ('Q4 3:30'); box-score cells regular SF with the total column in condensed bold",
+    "weights": "Heavy/Bold condensed for headers and scores; Regular and Semibold SF for body; bold inline emphasis in play text ('pull-up three')",
+    "case_and_tracking": "All-caps condensed display with tight tracking; sentence case body",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#f6f6f7",
+    "surfaces": ["#ffffff", "#000000", "#0f0f14"],
+    "text": "#000000",
+    "accents": ["#1d5fbf (approx, unmeasured: selected tab and +2 run cell)", "#d0102b (approx, unmeasured: live dot)", "#f5c518 (approx, unmeasured: More arrow, NEW badges)"],
+    "accent_strategy": "Neutral black/white base; NBA blue marks the selected tab and away-team cells; small red dot means live; yellow arrow and NEW badges for editorial. Team colour appears only on team-identity chips in the Game Pulse score bug (SAS grey, DAL blue) and in team logos. The deep red is the marketing backdrop, not the UI.",
+    "source": "palette.json 02 (#ffffff 31%, #f6f6f7 20% UI; #3c0009/#7f0015 backdrop), 04 (#f8f8f9, #090002), 03 (#000000 video header) + visual match; accents not in the measured top colours"
+  },
+  "shape": {
+    "radius_language": "mixed: large ~16-20pt game cards and Game Pulse sheet, ~8pt news tiles and run cells, pill for Tap To Watch and the Game Pulse chip, capsule tab bar",
+    "concentric": "yes, on the floating capsule tab bar with its inset selected pill",
+    "borders_shadows": "Hairline dividers between score and broadcaster rows; dashed grid lines in the box score; soft shadows on lifted cards",
+    "materials": "Mostly flat white cards; translucent/blurred capsule tab bar and circular glass buttons over video"
+  },
+  "liquid_glass_visible": "yes: the floating capsule tab bar with a lighter selected pill (02, 06), circular back/share/search buttons over imagery (05, 06), and the floating 'Game Pulse' chip (03)",
+  "density": "medium-high: one game per card with two big scores, but the game page stacks video, box score and stories; even 12-16pt rhythm",
+  "layout": "Games tab: 'GAMES' title with a spoiler-toggle eye and calendar icon, a week strip of dates, then a vertical list of score cards (logo/name, score, live clock, score, logo/name) each with a broadcaster footer (ESPN, prime video, League Pass, NBC|peacock). Game detail: sticky dark score bug over live video, a feed selector, box score table, then Game Stories carousel.",
+  "navigation": "5-item floating tab bar: Home, Games, Standings, Moments, Discover, with filled custom glyphs and labels; selected tab tinted blue in a pill. Moments is a full-bleed vertical video feed with For You / Following top tabs. Back chevrons and share in circular buttons. Mostly native iOS 26 chrome with custom icons.",
+  "imagery_and_icons": "Game photography and video dominate; team logos; editorial tiles with gold 3D type treatments ('STANDINGS', 'MILESTONE'); custom filled tab glyphs; emoji in headlines (🏆, 🔥)",
+  "signature_visual_move": "Game Pulse turns a scoring run into a per-possession grid of black (home) and blue (away) cells under a play-by-play headline.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Broadcast Network Portal (held candidate)",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record covered only the Vision Pro app (Spatial Depth). The iPhone screens show a Glance Board score list with condensed numerals and semantic live state, plus a TikTok-style Moments video feed and an editorial portal home, which is the Broadcast Network Portal pattern. No spatial depth on iPhone."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Sports module checks: team colour stays mostly on logos and the score bug (complies). Signature visualisation is Game Pulse's run grid with named inputs (points per possession), which fits the 'one signature visualisation' rule. Broadcaster logos on every card make it read as a TV guide. The spoiler eye toggle on Games is a nice restraint control. The Vision Pro spatial work in the text record is not visible here."
+}

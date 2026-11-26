@@ -1,0 +1,46 @@
+{
+  "slug": "kino",
+  "track_name": "Kino - Pro Video Camera",
+  "version": "1.4.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Near-black backdrops with large captions in every frame. 01 and 02 show the capture UI inside an old home-button iPhone mockup (cropped); 03 is a before/after grade split of footage, essentially marketing; 04 is a tilted modern iPhone showing the Libraries sheet; 05 is a tilted landscape phone with the exposure dial; 06 is pure marketing (a floating exposure-dial graphic and a Creator Kit icon). About 35% of total pixels are real UI, and the UI is always partly cropped.",
+  "typography": {
+    "display": "Wide, squarish, extended technical sans in all caps with very open tracking (INSTANT GRADE, TRULY PRIVATE, and in-app readouts 31 MIN, 30 · 4K · PRORES, AUTO, EXPOSURE); custom or licensed, name unsure",
+    "body": "system SF in sheets (Libraries, Photos Library, Files); marketing body copy is a grotesque, unsure",
+    "numerals": "condensed-width small readouts on the dials (0.6, +0.5); the wide technical face for format/time readouts; not visibly tabular",
+    "weights": "Medium readouts, regular dial values; marketing uses bold for the yellow emphasis line",
+    "case_and_tracking": "All-caps with wide tracking for every capture readout and section label; sentence case only in system sheets",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#131313", "#1f1b24", "#2a2a2a"],
+    "text": "#f2f2f2",
+    "accents": ["#ff1a1a", "#e3d81f", "#5ccf4c"],
+    "accent_strategy": "Black instrument chrome with one meaning per colour: red only for record, olive-yellow for AF and the lock state, green for audio meter levels; the rainbow hexagon prism marks the grade picker. The footage supplies all other colour.",
+    "source": "palette.json 01/02: #000000 ~28% = viewfinder chrome and device; 04/06: #131313 = marketing backdrop and sheet surface; 03 #d6be9a and 05 #928ee8 / #282580 = footage, not UI. Accent hexes are visual estimates (palette sampling doesn't reach the small controls)."
+  },
+  "shape": {
+    "radius_language": "mixed: circular record and AF buttons, ~16pt rounded-square gallery thumbnail and grade button, ~14pt viewfinder corners, ~16pt grouped list in the sheet; the dial is a curved arc",
+    "concentric": "yes",
+    "borders_shadows": "Thin grey ring around the record button and grade button; tick marks as hairlines; no shadows",
+    "materials": "Flat black chrome; tick-marked dials; the grade picker hexagon has a prismatic/iridescent fill"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low around the viewfinder: two small readout rows above, one dial and three primary buttons below; everything else is the image",
+  "layout": "Portrait capture: top readout row (audio L/R meters left, remaining time right; then AUTO and fps · resolution · codec), inset rounded viewfinder, curved focus dial with ticks and a white index, then a bottom row of gallery thumbnail / red record / grade hexagon.",
+  "navigation": "No tab bar; single-screen camera with a pull-down Libraries sheet (chevron handle, grouped rows); a back chevron button in the corner; format picker reached from the top readout.",
+  "imagery_and_icons": "Users' footage; custom capture glyphs (AF badge, lock, sun exposure glyph), a prismatic hexagon for Instant Grade; system-style Photos flower and folder icons in the Libraries sheet.",
+  "signature_visual_move": "A curved, tick-marked focus dial arcs beneath an inset viewfinder, with a single red record button as the only saturated control.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Analog Instrument",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Tick-marked long-throw dials, all-caps technical readouts, black chrome with single-meaning accents and a large record button all match; the red recording perimeter isn't shown in any frame."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Version 1.4.3 but the frames are clearly the 2024 launch set on old device mockups. The red recording ring, waveform and grade artwork cards are not visible; a device capture would be needed to confirm them."
+}

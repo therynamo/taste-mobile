@@ -1,0 +1,46 @@
+{
+  "slug": "things",
+  "track_name": "Things 3",
+  "version": "3.25.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All six use the same template: a flat blue (#548bda) backdrop with a two-weight caption band in the top ~13%, then a black-bezel iPhone frame cropped at the bottom. Real UI fills roughly 75% of each image and is unaltered app screens (sidebar, Today, Upcoming, quick-entry sheet over keyboard, project with headings, note detail).",
+  "typography": {
+    "display": "System SF Pro Bold for screen titles (Today, Upcoming, Prepare Presentation) at large-title size, left-aligned with a small coloured icon before it; section headings (Slides and notes, Preparation) in SF semibold blue",
+    "body": "system SF",
+    "numerals": "proportional SF; large bold day numbers (10, 11) beside a grey weekday label in Upcoming; times coloured, not tabular-aligned; note numbered lists render the markdown marker in a monospaced grey ('1.')",
+    "weights": "Bold titles, semibold headings and sidebar items, regular to-do titles, regular grey secondary line (project name) under each to-do",
+    "case_and_tracking": "Sentence case throughout, default system tracking; no all-caps labels",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f3f5f7", "#eff3f9"],
+    "text": "#1c1c1e",
+    "accents": ["#4a8ff0", "#1e63c4", "#f0306a", "#f5c518"],
+    "accent_strategy": "One blue owns action (Magic Plus, Save, heading text, checklist circles); everything else is per-list semantic iconography (yellow Today star, pink-red Upcoming calendar, teal Anytime, khaki Someday, green Logbook) plus green/blue calendar-event times and a pink 'today' deadline flag. The list itself is black on white.",
+    "source": "palette.json 01–06: #ffffff 47–57% = app background; #548bda 15–21% = marketing backdrop, not UI; #f3f5f7 / #eff3f9 = event block and selection surfaces; #474e5e / #303030 = device bezel and keyboard. Accent and text hexes are visual estimates against the backdrop sample."
+  },
+  "shape": {
+    "radius_language": "large: ~24pt sheet/card corners on the quick-entry and note sheets, ~14pt on the grey calendar-event block, full circles for back/more buttons and Magic Plus, pill for the 'Errand' tag and Save button; to-do checkboxes are small rounded squares (~4pt)",
+    "concentric": "yes",
+    "borders_shadows": "Hairline grey dividers under section headings and between checklist rows; soft diffuse shadow on the floating sheet, the round nav buttons and the Magic Plus; no card borders",
+    "materials": "Mostly flat white paper; the circular back and overflow buttons read as light glass capsules (OS 26 style); dimmed scrim behind the entry sheet"
+  },
+  "liquid_glass_visible": "yes, lightly: the circular back (<) and overflow (…) buttons in the top corners are frosted glass circles; the bottom toolbar in 06 is a dark capsule. Content area is opaque white.",
+  "density": "medium: ~57pt row pitch with a two-line to-do (title + grey project line), generous gaps between groups, wide left margin; relaxed rather than compact",
+  "layout": "Sidebar-style home list (Quick Find search pill, then Inbox/Today/Upcoming/Anytime/Someday/Logbook with coloured icons, then Areas with nested projects shown as pie-progress circles). List screens: large icon+title, optional calendar block, to-do rows grouped under headings, floating blue Magic Plus bottom-right.",
+  "navigation": "No tab bar. Push navigation from the sidebar list with circular glass back and overflow buttons; quick-entry is a floating card sheet above the keyboard; floating action button (Magic Plus) bottom-right; contextual dark capsule toolbar in multi-select/notes.",
+  "imagery_and_icons": "Custom small filled colour icons for the fixed lists (star, calendar, layers, box, book), outline cube for Areas, pie-progress circles for projects, SF-style outline glyphs for note/checklist/tag/flag metadata. No photos or illustration.",
+  "signature_visual_move": "A floating blue Magic Plus button dragged into the list, leaving a grey insertion slot between rows, on an otherwise colourless white list.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Fluid Continuity",
+    "secondary": "platform-material overlay (native glass adopter)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Statically the screens are near-native white lists; the drag slot in 03 and 05 is the only frame-visible trace of the continuity/gesture identity. Nothing in the visuals argues for a different direction, but stills cannot prove the motion claim."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Visually close to a polished Reminders; identity is in gesture and motion, which stills can't show. The per-list coloured icon set and the pie-progress project glyph are the most ownable static marks."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "headspace",
+  "track_name": "Headspace: Sleep & Meditation",
+  "version": "8.42.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is pure brand art (logo, sleeping orange-dot character on layered yellow/orange hills, award laurels; no UI). 02-06 put a simplified, drawn device frame (no notch, generic) on the same yellow/orange layered-hill backdrop under a two-tone caption, and each enlarges one card that breaks out of the frame. The UI occupies roughly 65-75% of each frame, but the pop-out cards are staged. 03 shows an Android-style status bar, so frames may be cross-platform or dated relative to 8.42.1.",
+  "typography": {
+    "display": "Custom rounded geometric grotesque in bold for headlines and card titles (consistent with the documented Aperçu-derived proprietary face; exact cut unsure)",
+    "body": "custom - same family at regular/medium for meta and descriptions; not SF",
+    "numerals": "n/a (only durations like '3-10 min', proportional)",
+    "weights": "Bold titles, medium/regular meta; captions mix dark-brown bold with orange bold highlight words",
+    "case_and_tracking": "Sentence/title case throughout, normal tracking, no all-caps",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#faf7f4",
+    "surfaces": ["#ffffff", "#141640"],
+    "text": "#3d3a3a",
+    "accents": ["#ff7400", "#ffe14f", "#0a6cf5"],
+    "accent_strategy": "Per-content: each category/course tile carries its own saturated illustration colour (orange, purple, pink, blue). Brand orange/yellow dominate artwork; a single blue is reserved for primary play/begin CTAs. Sleep section switches to a navy dark theme with lavender illustrations.",
+    "source": "palette.json 02 (#faf7f4 off-white canvas), 05/06 (#ffffff surfaces), 03 (#101340/#06092a sleep dark, #5431a5 purple backdrop), 01 (#ff7400, #ffe14f brand); dark-brown text and blue CTA matched visually"
+  },
+  "shape": {
+    "radius_language": "large: ~16pt cards and category tiles, fully pill CTAs (Play, Begin Course, teacher choice), circular back button and avatar crops",
+    "concentric": "unclear",
+    "borders_shadows": "Light cards use a thin light-grey 1pt border rather than shadow; staged pop-out cards carry a soft shadow (marketing); search field outlined",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low-medium: generous padding, one card per row with illustration thumbnail right; 2x2 category grid",
+  "layout": "Today: greeting row with heart/history/bell icons, 'Start your day' heading, vertical timeline (dashed line with dot markers) of content cards each with a thumbnail illustration. Explore: search field, 2x2 coloured category tiles, list of full-width coloured course rows. Detail: big illustration hero, title, meta, description, teacher picker, blue pill CTA.",
+  "navigation": "Visible 3-tab bar: Today, Explore, profile (user's name 'Katie'); outline icons with bold selected state, labels under. Standard back chevron + centred title top bar. Segmented text tabs 'Recent / Recommended' with underline.",
+  "imagery_and_icons": "Flat vector illustration with rounded blobs and simple closed-eye smiles (sun, clouds, wave, fire, sleepy shapes); teacher photos in circles; small outline UI icons (clock, speaker, pencil), outline tab icons",
+  "signature_visual_move": "Every piece of content is fronted by a flat, rounded illustration whose blob characters wear the same closed-eye smile as the logo.",
+  "tells_present": ["Cards everywhere (icon/thumbnail-right card anatomy repeated)"],
+  "direction_fit": {
+    "primary": "Authored Illustration",
+    "secondary": "Warm Clinical modifier (calm, readable lists under the art)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One consistent illustration hand drives every tile and hero; navigation and lists stay conventional. Character appears as brand smile rather than as a coach state machine."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Blue CTA is the only non-brand hue and is used consistently for 'start' actions. Text is warm dark brown/grey rather than black, matching the 'no pure black' claim in the text record. The card-heavy list layout is the generic part; the illustration system is what makes it ownable."
+}

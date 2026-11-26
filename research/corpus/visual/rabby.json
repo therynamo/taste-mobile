@@ -1,0 +1,46 @@
+{
+  "slug": "rabby",
+  "track_name": "Rabby Wallet - Crypto & EVM",
+  "version": "0.7.1",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Light. Every frame is a flat Rabby-blue (#4c65ff) backdrop with a faint large circle, a bold white Title Case two-line caption in the top ~15%, and a straight generic phone outline (thick black rim, status bar, home indicator). The UI inside is complete and uncropped apart from the bottom of scrolling lists, ~75-80% of each frame. These are the most UI-honest screenshots in the batch.",
+  "typography": {
+    "display": "Bold neutral grotesque for balances and screen titles ('$12,369', 'GasAccount', 'Perps', 'Lending'); looks like SF Pro at bold/heavy. Captions in a bold geometric-leaning sans (unsure).",
+    "body": "system SF (likely)",
+    "numerals": "Lining, proportional; heavy bold for hero balances; amounts in table rows right-aligned in columns ('amount' / 'USD Value' in 05; 'APY' / 'My Supplies' in 04) - column alignment is by right edge, figures look proportional.",
+    "weights": "Heavy/bold for hero values, titles, tickers and row amounts; medium for tile labels; regular grey for timestamps, sublabels and column headers.",
+    "case_and_tracking": "Title Case in captions and section headers ('Positions', 'Explore Perps', 'Total Balance'); tickers in caps; default tracking.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f7f8f8",
+    "surfaces": ["#ffffff", "#1e2947"],
+    "text": "#1e2947",
+    "accents": ["#4c65ff", "#5ec26a (approx, green Send button and gains; visual estimate)", "#e64a4a (approx, red risk dot on leverage chips; visual estimate)"],
+    "accent_strategy": "One brand blue (#4c65ff) for primary buttons (Deposit, Swap, Open Position), icon tints in the feature tiles, tag chips and outlined Manage button; a second filled colour, green, is used for the Send button as well as for gains and the 'Healthy' status - so green doubles as action and semantic. Dark navy (#1e2947) hero cards carry the money summary on Perps and Lending. Losses/debits are not red ('-$1.20' in navy); red appears only as a risk dot on leverage chips.",
+    "source": "palette.json 01-05: #4c65ff = marketing backdrop and the same in-app brand blue (buttons, icons); #f7f8f8/#f3f6f7/#eff3f5 = grey app background; #ffffff/#fefefe/#fcfdfe = white cards; #1e2947/#202845/#2c377b = dark hero cards and primary text; #8a98ed/#a9b4e7 = pale blue tints. Green and red are visual estimates."
+  },
+  "shape": {
+    "radius_language": "medium-large: ~16pt white cards and feature tiles, ~12pt buttons (Withdraw/Deposit/Send/Swap are rounded rectangles, not pills), ~8pt icon squircles inside tiles, small ~6pt tag chips (Long 40x, Lending, Cross)",
+    "concentric": "yes - inner Lending sub-cards nest inside the AAVE protocol card with even inset; Withdraw/Deposit buttons inset within the hero card",
+    "borders_shadows": "Mostly borderless white cards on light grey with very faint shadow; outlined Manage button; hairline separators in position cards; a subtle mint-green wash behind the Total Balance header.",
+    "materials": "flat; one isometric illustration (coin dropping into a slot) on GasAccount; faint oversized mascot/logo silhouette watermark inside the dark hero cards"
+  },
+  "liquid_glass_visible": "no - opaque white bottom search field and action bar; custom chrome",
+  "density": "high - multi-column data (amount / USD value, APY / My Supplies), position cards with leverage chips, TP/SL lines, health factor; home is a 2x4 grid of feature tiles",
+  "layout": "Home (03): 'Total Balance' with eye toggle and settings; a white card with heavy '$12,369', green change and a wallet-count chip (3 >); a green Send and blue Swap button pair; a 2-column grid of feature tiles (Bridge, Receive, Perps, Lending, Rabby Points, Transaction, Approvals, Dapps); bottom search 'Search Dapp/Token'. Wallet detail (05): wallet name with copy, big balance with green % change, Token/DeFi/NFT segmented tabs with chain filter, protocol cards (AAVE) broken into Lending sub-cards with Supplied/Rewards tables and Manage/Claim buttons, sticky Send/Swap/more bar. Perps (02): dark hero card with balance, PnL and Available, Withdraw/Deposit, Positions list with Long 40x and risk-percentage chips, TP/SL, 'Open Position' full-width button. Lending (04): market selector, dark Net worth card with Est. Daily and a 'Health factor 16.84 Healthy' chip, Supply/Borrow tabs, table of assets with APY. GasAccount (01): illustration, $10.00 balance, Withdraw/Deposit, list of timestamped debits.",
+  "navigation": "No tab bar. Home is a launcher grid of feature tiles; feature screens use a back chevron, centred two-line title (feature name + account switcher with avatar), and a history clock icon. Sticky bottom action bars (Open Position; Send / Swap / more).",
+  "imagery_and_icons": "Filled glyph icons in brand blue inside pale-blue squircles (bridge, download, bowtie for Perps, smile-face for Lending, star, clock, shield for Approvals, compass); token logos; pixel-art wallet avatars; one isometric coin illustration; faint mascot silhouettes in dark cards.",
+  "signature_visual_move": "Dark navy hero cards carrying the account's net worth and risk (health factor, PnL) above dense white data tables, on a flat Rabby-blue brand.",
+  "tells_present": ["Cards everywhere (home is a grid of icon-top-left, label-bottom tiles)"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record proposed 'Instrumented Trust' (security-preview-first) mixed with Data-Board, resting on the signing-simulation pattern. The listing does not show the signing screen at all; it shows a dense DeFi dashboard (perps, lending, protocol tables, health factor, approvals). Visually that is Glance Board: one line per entity, semantic status chips, column tables. 'Instrumented Trust' is not visually confirmed by the store frames, although the Approvals tile and the health-factor chip hint at it."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Balance and amount anatomy: hero balances heavy bold, large; home '$12,369' and wallet '$93,538' drop cents, while Perps '$124.01', Lending '$1,224.01' and GasAccount '$10.00' keep them - inconsistent cents treatment. Gains green ('+$111.23 (+12.5%)', '+$24.32 (+0.87%)', '+$22.5 (+4.5%)'), dollar first and percent in parentheses. Debits in GasAccount shown as '-$1.20' in navy (minus sign only, no red) and one row has an inconsistent space ('- $50.00'). Table figures right-aligned. Trust and risk signals visible: 'Health factor 16.84' with a green 'Healthy' chip and info icon; leverage chips 'Long 40x' with orange/red/green dot risk markers; Take Profit / Stop Loss line; 'Approvals' shield tile on home (token-approval management); eye toggle to hide balance. Not visible: the transaction simulation / balance-delta signing sheet and the yellow/red pre-sign alerts that the text record documents - so the hero crypto-trust surface is absent from the listing. Crypto cliché: mostly absent - light UI, flat blue, no neon; a small isometric 3D-ish coin illustration on GasAccount is the only nod. Placeholder data visible in shots ('TsstWallet', repeated identical rows '$140.93', 'ETH 635.4027') - mock data in the marketing, not an app tell."
+}

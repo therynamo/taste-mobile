@@ -1,0 +1,46 @@
+{
+  "slug": "lumy",
+  "track_name": "Lumy",
+  "version": "2026.2.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. All six images sit on a near-black navy backdrop with a neon yellow-green caption. 01 shows a home-screen widget stack in an older (iPhone 14 Pro-style) frame, 02 shows the lock-screen Live Activity and Dynamic Island, 03 the system widget gallery, and 04 four Apple Watch faces. Only 05 and 06 show the in-app main screen, at about 70% of the frame, cropped at the bottom by a fade. Widgets, Live Activity and Watch faces are the app's own design but rendered inside system chrome.",
+  "typography": {
+    "display": "In-app: system SF Pro semibold for the event name and countdown ('Sunset / IN / 9 hours, 27 minutes'), centred over the sky. Marketing captions use a separate geometric, slightly rounded sans with wide tracking (unsure of name), which is not in the UI.",
+    "body": "system SF",
+    "numerals": "Large proportional SF semibold times ('7:10') with tiny stacked 'DST / PM' superscript labels; widgets use the same coloured SF numerals. Not mono, not rounded.",
+    "weights": "Regular for row labels, semibold for countdown and times; tiny all-caps 'IN' connector in light grey.",
+    "case_and_tracking": "Sentence/title case in the UI; tiny all-caps 'IN', 'DST', 'PM'. Caption headings in the wrapper are all-caps and widely tracked.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000711",
+    "surfaces": ["#091a31", "#27416d", "#061634"],
+    "text": "#d2e9f2",
+    "accents": ["#e1c592", "#f0903a", "#c84f8a", "#3f7fe0", "#5fd6c0"],
+    "accent_strategy": "Per-content and data-driven: each sun event has its own hue (teal solar noon, yellow golden hour, orange sunset, magenta night/last light, blue blue hour), and the hero sky gradient is rendered from the current light. No single brand accent inside the UI; the neon yellow-green belongs only to the marketing captions.",
+    "source": "palette.json 01 (#000711 backdrop, #091a31 card, #d2e9f2 light text/widget bg), 02 (#e1c592 warm lock-screen light), 05 (#27416d / #061634 sky blues); event accent hexes are visual estimates, not in palette.json because each covers too few pixels"
+  },
+  "shape": {
+    "radius_language": "large: list card about 20-24 pt; capsule 'Today' button and circular share button; widgets use system widget radius",
+    "concentric": "unclear",
+    "borders_shadows": "Thin hairline dividers between rows inside the navy card; capsule buttons have a faint blue stroke; no drop shadows.",
+    "materials": "Rendered sky gradient with a glowing sun disc and a dotted sun-path arc over a black horizon; translucent navy card; glow on widget arcs."
+  },
+  "liquid_glass_visible": "unclear: the 'Today' capsule and share circle in 05/06 look like translucent tinted buttons with a light rim, but the frames are older devices and no refracting tab bar is visible; the text record's Liquid Glass claim is not confirmed by these images",
+  "density": "low: one hero countdown, one sky scene, a tick-mark scrubber, then two-row cards; generous vertical spacing",
+  "layout": "Top: 'Today' capsule left, share right. Centre: event name and countdown over a full-width rendered sky with the sun on a dotted path. Below the horizon: a horizontal tick scrubber (blue ticks for elapsed time), then stacked rounded cards of event/time rows. More cards fade below the fold.",
+  "navigation": "No tab bar visible in the main screen; two floating top buttons only. Lots of system-surface presence: home-screen widgets, lock-screen widgets, Live Activity, Dynamic Island, Watch faces.",
+  "imagery_and_icons": "Rendered sky and sun (data-driven illustration), sun-arc glyphs in widgets, SF Symbols for share, bell and sunrise icons, a 24-hour ring dial in the widget and Watch face.",
+  "signature_visual_move": "The top half of the main screen is a live-rendered sky whose colour and sun position follow the real time, with event times set in hues that match each phase of light.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Ambient Sky",
+    "secondary": "Glance Board",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The palette and lighting are driven by real light (sky gradient, glowing sun, phase-coloured times) and there is a scrubbable time axis; the widgets and Watch faces add a Glance Board readout of event times."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Identity confirmed: seller Raja Vijayaraman, Photo & Video genre, a sun/daylight tracker with golden hour, sunset, blue hour and moon widgets. It matches the ADA 2025 Lumy record. Four of six images show system surfaces (widgets, Live Activity, Watch), so the in-app evidence rests on 05 and 06. The 24-hour ring (blue night, tan dawn/dusk bands, red 'now' dot) recurs across widget and Watch face as a second motif."
+}

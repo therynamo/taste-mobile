@@ -1,0 +1,46 @@
+{
+  "slug": "claude",
+  "track_name": "Claude by Anthropic",
+  "version": "1.261123.51",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Every frame uses a dark, warm, out-of-focus lifestyle photo as backdrop with a white serif caption. 01, 04 and 05 show a frameless cream app panel (~60% of the image) cropped at the bottom, with an oversized card (map, artifact sheet, file card) breaking out past the panel edges. 02 is entirely a lifestyle photo of a man speaking into a phone plus a voice-waveform button: pure marketing. 03 is a grid of third-party connector app icons on a blurred photo: pure marketing. 06 is a photo of a hand holding a phone with three Claude notifications on the Lock Screen: system UI, not app UI.",
+  "typography": {
+    "display": "Serif display in captions (a sharp, moderately high-contrast text serif with tight tracking); inside the app, rich cards use a serif for titles ('Rincón del Toro') and a light grotesk for others ('All About Minnie')",
+    "body": "custom: assistant replies are set in a serif (Tiempos/Copernicus-like, name unsure); user bubbles, composer, chips and card meta use a grotesk sans (consistent with Styrene/Anthropic Sans, unsure)",
+    "numerals": "proportional (ratings '4.7', '1.2K' in sans; '~20' in user text)",
+    "weights": "Regular serif for assistant body; regular sans for user bubbles; semibold serif for place card title; light/regular sans for file card title",
+    "case_and_tracking": "Sentence case; serif captions tightly tracked; UI default tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f8f7f3",
+    "surfaces": ["#f0ede6", "#ffffff", "#f6f5f3"],
+    "text": "#141413",
+    "accents": ["#da7756"],
+    "accent_strategy": "One warm accent: terracotta on the send button only (and on the notification app icon in 06). Everything else is cream, warm grey and near-black. Rich cards (maps, artifact sheets) bring their own colours.",
+    "source": "palette.json 05: #fbfaf6 13%, #f7f6f3 11%, #f2f0ec 14% = cream canvas; #ffffff 20% = file card and composer; #09090a / #32383d / #596269 = blurred dark photo backdrop. palette.json 01 #7adcf1 16% = the embedded map water, not brand. Pixel samples: canvas #f8f7f3 (05), user bubble #f0ede6 (01/05), send button #d2765d–#db7755 (05). Text hex is an estimate; JPEG sampling bottoms out near black."
+  },
+  "shape": {
+    "radius_language": "large: user bubbles ~20pt, composer a rounded rectangle ~24pt (not a pill), file chips ~14pt, breakout cards ~20pt; circular icon buttons; model chip is a pill",
+    "concentric": "yes",
+    "borders_shadows": "Hairline borders on file chips; breakout cards and floating top buttons carry soft shadows; no dividers between turns",
+    "materials": "Flat paper-like cream canvas; floating white/cream top controls"
+  },
+  "liquid_glass_visible": "unclear: the top-left circular menu button and the top-right capsule (new chat + overflow) are detached and shadowed in the iOS 26 glass position, but on cream no translucency or refraction is readable.",
+  "density": "low: ~16pt between turns, large serif body, wide side margins; the composer is a tall two-row block",
+  "layout": "Thread with no title bar: right-aligned cream user bubbles in sans, bubble-less serif assistant prose, then rich cards (map with place carousel, artifact sheet, file card) inline; composer at bottom.",
+  "navigation": "Top-left circular hamburger and a top-right capsule with a filled chat-plus glyph and overflow. No tab bar visible (the Nov 2026 Chat/Projects/Code/Artifacts tab bar from the text record does not appear). Artifacts open as a dark full sheet with circular X and overflow buttons (04). Composer: two rows, text on top; '+', model pill ('Opus'), mic, terracotta send circle below.",
+  "imagery_and_icons": "Outline monoline chrome icons; filled chat-plus glyph for new chat; lifestyle photography only in the marketing wrapper; the asterisk/starburst mark appears only on the notification icon (06). Connector logos as squircle app icons in 03 (marketing).",
+  "signature_visual_move": "Assistant replies set in a book serif on cream paper, while the user's own words stay in sans inside a slightly darker cream bubble.",
+  "tells_present": ["Cream plus serif plus orange (the 2026 default)"],
+  "direction_fit": {
+    "primary": "Literary Warm Assistant (held candidate, not among the 17)",
+    "secondary": "Neutral Hyper-Minimal Assistant (anti-reference) for the chrome",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Serif reading type, cream canvas and a single terracotta accent are visible and confirm the text record. But the chrome (circle menu button, capsule of new-chat + overflow, bottom composer, bubble-less assistant) is the same skeleton as ChatGPT and Meta AI, so the escape is through two of the five levers (type genre, accent temperature), not layout."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Composer: rounded-rectangle card (not pill), white, placeholder/draft text on top, then '+' circle, 'Opus' model pill, mic circle and a terracotta filled send circle with an up arrow. Greeting/empty state: not shown. Voice: the store set shows only a black disc with white vertical waveform bars (02); no orb or glow appears, contrary to the 'pulsing glow' secondary source. Thinking/streaming: not shown. Agent work: 06 sells background tasks via Lock Screen notifications ('Claude responded', 'Report's done'), not Live Activities, which matches the report's note that no AI app uses Live Activities. Conversation list: not shown. Artifact (04) is user-generated content in its own dark theme with a purple 'ANSWER' chip and italic sans question, so its colours are not Claude's. Claude is also the reference point for the 'cream + serif + orange' tell: the tell describes generic copies of this look, so on Claude itself it is the original, not slop."
+}

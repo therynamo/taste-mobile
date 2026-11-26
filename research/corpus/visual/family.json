@@ -1,0 +1,46 @@
+{
+  "slug": "family",
+  "track_name": "Family - Crypto Wallet",
+  "version": "0.2.9",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Moderate, and dated. White backdrop with a large black sentence-case caption (top in 01/03/05, bottom in 02/04/06) and one big colour swoosh per frame (teal, violet, yellow, red, violet, sky blue) behind a realistic iPhone 8-style device with a home button and a 9:41 AM status bar. Real UI fills ~55-65% of each frame; 02, 04 and 06 are cropped to the lower half of the screen. In 03 one row (the pending transaction) is pulled out wider than the phone as a marketing emphasis. The home-button device frame means these screenshots are old (pre-2020 device art) and likely predate the wind-down build.",
+  "typography": {
+    "display": "A geometric grotesque with a single-storey-looking 'a' in captions and double-storey in UI, round 'o', tight default tracking at large sizes; the same family appears in-app ('Benji', '$14,568', 'Wallets'). Custom or licensed brand face, name unsure.",
+    "body": "custom (same grotesque as display; unsure of name). Keyboard in 04 is the system keyboard.",
+    "numerals": "Lining, proportional; balance '$14,568' is bold with a small raised dollar sign and no cents; row values '$13,989.00' regular, right-aligned with cents; ETH amounts in grey regular.",
+    "weights": "Bold for balance, screen titles and wallet names on tiles; semibold for asset names; regular grey for secondary lines and amounts.",
+    "case_and_tracking": "Sentence case throughout; no all-caps; default tracking.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f7f7f7", "#e4e5e9"],
+    "text": "#1e1f21",
+    "accents": ["#00aef0 (approx, sky-blue primary Connect and Sending-to accent; visual estimate)", "#6366f1 / #00b89c / #f5b400 / #ff6a00 (approx, user-chosen wallet colours on tiles; visual estimates)", "#ff3b4f (approx, red chat bubbles in 04 - the wallet's theme colour; visual estimate)", "#2bbf5a (approx, gain green; visual estimate)"],
+    "accent_strategy": "Per-content: each wallet carries a user-picked solid colour (tile fill, and apparently the chat bubble colour), on a white neutral base. Interactive primary is a bright sky blue (Connect, Sending to). Gains green as text and as a tinted green chip; losses grey with a minus sign (-0.04% is grey, not red).",
+    "source": "palette.json 01-06: #ffffff UI and marketing background (40-62%), #000000/#010101 device bezel, #1e1f21/#373639/#36373a dark text and device, #f7f7f7/#e4e5e9 grey fills (tabs, Cancel button, received bubbles), #3fc3b1/#a16693/#a02731/#74bc97/#9070a0/#65a7cb = marketing swooshes and NFT art. UI accent hexes are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~20pt rounded wallet tiles, ~28-32pt corners on the floating connect tray, full pills for Cancel/Connect, chips and chat bubbles; circles for avatars and icon buttons",
+    "concentric": "yes - the connect tray in 06 floats inset from the screen edges with its pill buttons and the inner 'Connection Request' pill sitting at consistent insets; selected wallet tile has a concentric outer outline ring",
+    "borders_shadows": "Mostly flat; a soft wide shadow under the floating tray and the lifted pending row; a dashed-outline pill for listing prices (0.05 ETH) and an 'N/A' outlined pill; a hairline underline for the Tokens/Collectibles tab.",
+    "materials": "flat white with dimmed backdrop behind the tray"
+  },
+  "liquid_glass_visible": "no - pre-iOS 26 screenshots; opaque white tray over a grey scrim",
+  "density": "low-medium - large balance hero, two-up wallet tiles, activity rows with small grey verb line above a bold object line; generous whitespace",
+  "layout": "Wallet home: avatar + wallet name top-left with more, chat and scan icons top-right; centred big balance with green +$ and +% chip; underline segmented tabs (Tokens / Collectibles); token rows with chain-badge icons. Activity: a 'Pending' section with the in-flight transaction as a lifted card ('Sending to Simon Hayes', progress ring on the ETH icon), then history rows with a grey verb line ('Sent to', 'Swapped', 'Connected App', 'Listed on', 'Received from') above a bold object. Wallets: settings and alert icons, 'Your Wallets' two-up grid of colour tiles with icon or photo, name and ETH balance, then 'Watching'. Collectibles: two-up NFT grid grouped by collection. Chat: pill bubbles with voice-note waveforms. Connect: floating tray with dApp icon, verified name, domain, 'Connection Request' pill, Wallet and Chains rows, Cancel/Connect.",
+  "navigation": "Custom: no tab bar visible in any frame. Top bar is custom (avatar + name, icon buttons). Modal flows are floating inset trays with icon buttons in both top corners (more, help) rather than a native sheet with a grabber - the tray system described in the essay is visible in 06.",
+  "imagery_and_icons": "Real photo avatar; emoji-like micro-avatars inline in activity text; NFT art (Dead Fellaz illustrated, Blitmap pixel art); token logos with small chain badges; filled white glyph icons on wallet tiles (cart, house, thumbs-up, shop); outline icons in the top bar (more, speech bubble, scan).",
+  "signature_visual_move": "Every wallet is a user-coloured rounded tile, and every action opens as a floating inset tray with one question and a Cancel/Connect pill pair.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Fluid Continuity",
+    "secondary": "",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Text record names Family the canonical Fluid Continuity exemplar. Stills cannot show motion; what they do show is consistent with it: the floating inset tray (06), the pending transaction elevated as a stack above Activity (03), the label-verb-over-object activity grammar. The tag rests on the essay; confidence is low from stills alone."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Balance and amount anatomy: '$14,568' is the dominant element, bold, centred, with a smaller raised $ and no cents (cents dropped on the hero but kept on rows, e.g. '$13,989.00'); below it '+$5.50' green text and '+2.20%' in a green-tinted pill. Row percentages green when positive, grey with '- 0.04%' when negative (no red for losses - quiet semantics). Swap row shows '+964.69 USDC' in green; sends shown grey without sign. Trust and risk signals: connect tray shows dApp icon, name with blue verified check, domain, a 'Connection Request' pill with info icon, the wallet being connected and the chain badges, plus a help '?' button; the pending row shows a progress ring and the counterparty avatar. No transaction simulation or signing sheet is visible. Fluid Continuity in stills: only indirectly - the tray anatomy and the lifted pending card (the 'spinner flies to Activity' moment cannot be seen). Crypto cliché: absent - white, flat, colourful but not neon; no 3D coins or orbs (the 3D-looking sphere is Zora's logo). Version 0.2.9 dated Aug 2026 during wind-down; device frames (iPhone 8) indicate legacy screenshots."
+}

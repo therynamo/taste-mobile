@@ -1,0 +1,46 @@
+{
+  "slug": "bevel",
+  "track_name": "Bevel: AI Health Coach",
+  "version": "3.3.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 02 is entirely marketing art (floating Garmin, Apple Watch, Oura rings and a band on a sky backdrop with partner logos). 01 has a hand holding the phone on a sky backdrop with floating glass icon bubbles and an Apple Watch Ultra render covering the lower UI; real UI is ~40%. 03-06 put an iPhone frame under a large caption (with an emoji-like coloured icon inline in the caption) on a tinted gradient; UI is ~60-65%, and 05/06 pop cards out of the frame.",
+  "typography": {
+    "display": "Captions use a neo-grotesque display (marketing). In-app titles ('Good afternoon, John!', 'Tempo Run', 'Recovery') are semibold and look like SF Pro",
+    "body": "system SF (likely; neutral grotesque with SF proportions)",
+    "numerals": "proportional semibold numerals with a smaller percent sign (65%, 41%) and units set lighter and grey (31.3 ms, 1,700 kcal); not condensed",
+    "weights": "Semibold for values and titles, Regular for body, grey Regular for units and metadata",
+    "case_and_tracking": "Sentence case everywhere; no caps labels; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f4f7fb",
+    "surfaces": ["#ffffff", "#fcfcfe", "#eff0f7"],
+    "text": "#1f2024",
+    "accents": ["#ff7a30 (approx: Strain orange)", "#9fd420 (approx: Recovery yellow-green)", "#7c7fe6 (approx: Sleep lavender)", "#2cbfa0 (approx: Outdoor Run teal)", "#4cbb5a (approx: 'Normal range' green)"],
+    "accent_strategy": "Per-metric colour: Strain is a yellow-to-red gradient, Recovery a yellow-to-green gradient, Sleep lavender; status copy in green ('Normal range'); orange triangles flag deviations. Each caption is tinted to its metric. Base is a cool near-white with pale blue/lavender washes.",
+    "source": "palette.json 04 (#ffffff/#f8f8fc/#fdfdff), 06 (#f4f7fb 22%, #ffffff 20%, #eff0f7), 03 (#1f2024 is the dark marketing backdrop, #dde3f1/#e5e8f6 UI lavender wash), 04 (#35363a dark text/button) + visual match; accents are not top measured colours"
+  },
+  "shape": {
+    "radius_language": "large: ~20pt cards, ~24-28pt sheet corners, pill segment chips and buttons, circular gauge pucks and buttons",
+    "concentric": "yes: rings sit inside raised white circular pucks; tab bar capsule with inset selected pill",
+    "borders_shadows": "Soft diffuse shadows under white cards and gauge pucks; hairline dividers inside grouped cards; a lavender glow outline on the insight card",
+    "materials": "Glass/blur: frosted circular buttons, frosted composer and quick-action chips, frosted capsule tab bar; a painterly landscape illustration behind Recovery"
+  },
+  "liquid_glass_visible": "yes: circular glass back/close/more buttons (03, 04, 06), the floating capsule tab bar with the 'Ask Bevel anything' pill above it (01), and frosted chips over the AI home (03)",
+  "density": "medium: generous 16-20pt padding, one card per idea; the home stacks greeting, three gauges, one coach card and Stress & Energy stats",
+  "layout": "Home: date picker and avatar chips, greeting with city and weather, a row of three ring gauges (Strain, Recovery, Sleep), a coach message card, then 'Stress & Energy' stats (Highest/Lowest/Avg) and an 'Ask Bevel anything' pill floating above the tab bar. Metric detail screens are sheets with a big value, a range label, chip filters and a line chart.",
+  "navigation": "Floating glass capsule tab bar (Home, Journal visible; more hidden behind the watch render) with an AI 'Ask Bevel' pill above; sheets with close X and more buttons; native iOS 26 chrome",
+  "imagery_and_icons": "Painterly landscape illustrations as metric backgrounds (meadow for Recovery); a 3D blob ghost mascot for Bevel Intelligence; 3D object thumbnails (avocado, document) on quick actions; filled coloured glyphs (flame, leaf, snowflake, chevrons); emoji in coach headlines (🌿, 🌱); sparkle icon with a label",
+  "signature_visual_move": "Each daily score is a gradient ring inside a raised white puck, set over a painted landscape that changes with the metric.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji", "Cards everywhere; 'icon top-right, title top-left, description bottom' anatomy", "Gradient backgrounds and gradient text"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Body-State Companion",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's 'Readiness Dashboard, softer and lighter variant than Whoop' is confirmed: the same Strain/Recovery/Sleep ring triad, but in a light, glassy, illustrated shell. The ghost mascot and gentle copy ('Make room for rest') lean toward Body-State Companion. It is not the dark navy look."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Seller on the listing is 'Starlight Tech LLC', not Finerpoint as in the text record. Daily score: three equal ring gauges (Strain 65% orange with hatched overflow segment, Recovery 60% yellow-green, Sleep 75% lavender), percent in the centre; Recovery detail is a single large ring (41%, yellow-green gradient) over illustration. Colour scale: gradient rings rather than hard red/yellow/green bands; at 41% Recovery stays yellow-green, so low recovery is not shown in alarm red. Streak/calendar: not shown. Charts: line chart with dot markers coloured by value (yellow to red gradient), a shaded personal-range band, dashed average line with an 'Avg. 66%' pill, light 33/67/100 gridlines; sparkline cards with shaded bands. Numerals: semibold proportional with lighter grey units. The AI screen (03) is the converged chat template: centred mascot, greeting, suggestion chips, pill composer with '+', model chip 'Fast', mic and send. Apple Watch face (01) mirrors the three rings."
+}

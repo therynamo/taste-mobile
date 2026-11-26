@@ -1,0 +1,46 @@
+{
+  "slug": "chatgpt",
+  "track_name": "ChatGPT",
+  "version": "1.2026.321",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All six share one template: a black two-line caption on near-white (#fafafa) in the top ~18%, then a white-rimmed phone frame with no bezel detail, sitting on a soft pastel wash (pink/lilac/peach in 01, 02, 04; lilac-blue in 03, 05; sky blue in 06). The frame is cropped at the bottom, so real UI is ~65% of each image. Every image is a real chat screen; no lock-screen or pure-art frames. None shows the Nov 2026 Home/Explore tab bar.",
+  "typography": {
+    "display": "Captions and UI share one geometric-humanist sans with a round O and single-storey feel at display sizes, consistent with OpenAI Sans; there is no in-app display title (the top bar has no title)",
+    "body": "custom, very likely OpenAI Sans / unsure on exact cut",
+    "numerals": "proportional (prices '€6', '52 BCE', '508 CE' in running text)",
+    "weights": "Regular body for both user and assistant text; bold only for inline markdown (list item leads, section labels 'Starters', prices in 05); captions medium",
+    "case_and_tracking": "Sentence case throughout; default tracking; captions slightly tight",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#e9f2ff", "#fafafa"],
+    "text": "#000000",
+    "accents": ["#0279ff", "#7d81fe"],
+    "accent_strategy": "One accent, iOS system blue: the filled voice button in the composer and the blue text inside pale-blue user bubbles. The only other colour is the periwinkle-to-white voice orb in 02. Assistant text is plain black on white with no bubble.",
+    "source": "palette.json 01–06: #ffffff 24–38% = app canvas; #fafafa / #fbfbfb 19–22% = caption band; #c9aaa8, #d2c5d3, #dbc3dc, #e3e8f7, #bdeafb = marketing pastel backdrops. Pixel samples: voice button #0279ff (03 at 446,1130), user bubble #e9f2ff and bubble text ~#608dd0 (03), orb #7d81fe–#a0b3ff (02). Text is near-black; JPEG sampling bottoms at #000000."
+  },
+  "shape": {
+    "radius_language": "pill and large: full-pill composer (~28pt), circular icon buttons, user bubbles ~20pt with a pill feel on one line, generated images ~16pt",
+    "concentric": "yes",
+    "borders_shadows": "No borders; floating top buttons and composer carry a very soft diffuse shadow; no dividers between turns",
+    "materials": "Flat white canvas; floating white controls over content (composer floats over the image in 01 with a fade under it)"
+  },
+  "liquid_glass_visible": "unclear, leaning yes: the top-left circular menu button, the compose/more capsule and the floating pill composer are detached and shadowed over content, which matches iOS 26 glass placement, but on white no tint or refraction is readable.",
+  "density": "low: one message column with ~24pt gaps between turns, a 6-icon action row under each answer, large empty areas under short answers (03)",
+  "layout": "Thread-only: no title in the top bar, right-aligned blue user bubbles, left-aligned bubble-less assistant prose with an action row (copy, speak, thumbs up/down, regenerate, share), floating composer at bottom. Rich content (generated images, markdown menus) inline.",
+  "navigation": "Top-left circular hamburger (drawer) and a top-right capsule grouping new-chat and overflow; 02 swaps the capsule for a sliders button during voice. No tab bar visible in any screenshot. Composer: + (tools sheet), 'Ask ChatGPT' placeholder, mic (dictation), filled blue voice button.",
+  "imagery_and_icons": "Outline monoline icon set (custom-looking, close to SF Symbols weight) for all chrome and action rows; photography only as user content and generated images.",
+  "signature_visual_move": "Pure white thread where the only colour is the system-blue voice button and the blue-tinted user bubbles.",
+  "tells_present": ["Gestalt sameness: 'they all look the same' (it is the template the others share)"],
+  "direction_fit": {
+    "primary": "Neutral Hyper-Minimal Assistant (anti-reference)",
+    "secondary": "platform-material overlay (native adopter, likely)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "White canvas, one sans, one pill composer, bubble-less assistant text and a single system-blue accent are exactly the archetype the text record names. One correction: the text record expected a 'pulsating blue disc'; the visible orb is periwinkle-to-white, and the composer's accent is iOS system blue rather than an OpenAI brand colour."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Composer: full pill, '+' left, 'Ask ChatGPT' placeholder, mic glyph, then a filled blue circle with a waveform glyph for voice; in voice mode (02) the composer shrinks to a short pill with + and a separate muted-mic circle and a black X close disc. Greeting/empty state: not shown in any screenshot. Voice: merged into the thread (02) as a soft periwinkle blob/orb floating above the composer while messages stay visible, matching the Nov 2025 voice-in-chat change. Thinking/streaming: not shown; answers appear fully rendered with an action row. Conversation list: not shown (drawer implied by the hamburger). The store set still shows the drawer-era chrome even though v1.2026.321 post-dates the Nov 19 2026 Home/Explore redesign, which is opt-in and staged; the screenshots cannot confirm the tab bar."
+}

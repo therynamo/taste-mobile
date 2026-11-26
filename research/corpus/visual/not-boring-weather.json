@@ -1,0 +1,46 @@
+{
+  "slug": "not-boring-weather",
+  "track_name": "(Not Boring) Weather",
+  "version": "3.54",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "No device frames: each image is a full-bleed render with a bold caption at the top (~10–15%). 01 is entirely marketing (award laurels stacked around a 3D red sun with black clouds). 03 is a composite of home-screen widgets, not the app. 02, 04 and 06 show real in-app screens (precip detail, moon detail, a skinned home), and 05 is an alert state crop. Roughly 50% of the set is genuine app UI.",
+  "typography": {
+    "display": "In-app hero numerals are a very tall, tightly condensed grotesque (the '65' and 'GOOD' in widgets, temps in the week strip), plus extruded 3D type in the scene ('Precip'); captions use a heavy wide grotesque (marketing, unsure which)",
+    "body": "custom (monospaced uppercase for all labels and readouts; resembles JetBrains Mono / IBM Plex Mono, unsure)",
+    "numerals": "condensed for temperatures; mono and tabular for data readouts (0.09 IN, 78%, 3:03A, 9/17/24) and axis labels",
+    "weights": "Heavy/black condensed numerals, regular mono labels; condition text ('Mostly Clear') in a heavy grotesque",
+    "case_and_tracking": "All-caps mono labels with open tracking (RATE, CHANCE, ILLUMINATION, TODAY SAT SUN); times abbreviated as 12A/3A/6P",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#1d1d1d",
+    "surfaces": ["#363636", "#ffffff", "#2b2b2c"],
+    "text": "#ffffff",
+    "accents": ["#fe223a", "#1ec0ff", "#ffad00"],
+    "accent_strategy": "Data-mapped: red = sun/heat, cyan = precipitation (bars, particles, chart fill), amber = alerts; scene otherwise greyscale. Skins swap the whole palette (06 is a cream #f0e8dd skin with orange/pink/cyan/violet block numerals).",
+    "source": "palette.json 04/05: #101010–#1d1d1d = dark scene backgrounds; 03: #363636 = dark widget surface, #ffffff = light widget; 01: #fe223a = 3D sun; 02: #a6d2e0 blend of cyan precip on grey #b2bdc1–#e6e6e6 vignette; 06: #f0e8dd = cream skin background. Cyan and amber hex are visual estimates."
+  },
+  "shape": {
+    "radius_language": "mixed: full pills for the selected readout row, the hour chip and the alert banner; ~24pt on widget tiles; the 3D world is spheres and jagged rock",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline dotted leader lines between label and value in readouts; real-time 3D lighting and cast shadows on scene objects; no UI drop shadows",
+    "materials": "Rendered 3D with grainy, matte, noise-textured surfaces (clouds, moon, sun); UI chrome flat"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low at the top (hero 3D scene takes ~55% of the screen), medium in the bottom data panel (5–6 mono rows at ~34pt pitch, a chart and a scrubber)",
+  "layout": "Top half is a live 3D weather scene; bottom is an instrument panel: a highlighted pill row with the key value, leader-dotted readout rows, a time-axis area chart, a dotted scrubber with a knob, and a DAY/WEEK toggle.",
+  "navigation": "No visible tab bar or nav bar in the screens shown; navigation by scrubbing the timeline and toggling DAY/WEEK; detail views appear as full screens with the scene changing per metric.",
+  "imagery_and_icons": "Rendered 3D scenes (clouds, sun, moon, floating rock island, extruded type), flat-shaded cartoon weather glyphs with blue rain capsules in widgets, a character skin with googly-eyed block numerals in 06.",
+  "signature_visual_move": "A grainy, game-rendered 3D weather diorama sits above a monospaced, leader-dotted data readout and a scrubbable timeline, so the scene and the numbers describe the same moment.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Toy / Game-Engine Tactile",
+    "secondary": "Glance Board (the mono readout panel)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Physically lit 3D scene mapped to data (rain columns height, moon illumination), scrubber as primary navigation, and swappable skins confirm the toy direction; the mono leader-dot readouts add an instrument/glance layer."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "Type is the surprise: the text record had nothing, but the stills show a firm system of condensed display numerals + all-caps mono labels. 01 (awards) and 03 (widgets) should not be used for in-app judgements."
+}

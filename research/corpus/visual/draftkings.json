@@ -1,0 +1,46 @@
+{
+  "slug": "draftkings",
+  "track_name": "DraftKings: Sports & Casino",
+  "version": "5.57",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Very heavy. 01 is pure marketing (a football render, 'DraftKings Sports | Football' lockup, '#1 SPORTSBOOK FOR LIVE BETTING'). Every frame uses a diagonal split between DraftKings green (#60b511) and black, with a condensed bold all-caps caption and an 'odds and screens shown for illustrative purposes only' disclaimer. No full app screen is shown. 03, 04 and 06 show UI components cut out and floated on the backdrop, many with a thick orange (#f47a20-ish) highlight outline. 02 overlays a white bet-slip card on a dimmed phone and a collage of player photos. 05 shows a phone with a white 'Order Successful' card overlaid. 06 adds 3D dice, chips, a slot '7' and coins. Real UI is about 0% in 01 and about 35-55% elsewhere, all restaged.",
+  "typography": {
+    "display": "Marketing: condensed bold all-caps grotesk, white with green emphasis words (family unsure). In-app: bold sans titles ('Football', 'Bet Slip', 'Order Successful', 'Follow Your Hart').",
+    "body": "unsure. A neutral neo-grotesk, possibly SF, for rows and metadata ('Today 7:10 PM', 'Min $1 • Max $4000').",
+    "numerals": "tabular-looking medium weight for American odds (-110, +160, -192, +3700); the line (+3.5, O 44.5) sits above the price in smaller white or grey; payouts bold ($62.50); not condensed in-app",
+    "weights": "Bold for headers and selections, medium for odds, regular for metadata",
+    "case_and_tracking": "Title or sentence case in-app; all-caps small tracked label for 'EVENTS'; all-caps condensed only in marketing",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#121212",
+    "surfaces": ["#131312", "#101115", "#0e0e0e"],
+    "text": "#ffffff",
+    "accents": ["#8ec957", "#98cc66", "#60b511"],
+    "accent_strategy": "Green carries both brand and money. Odds prices are in green text (-110, +160), payouts and 'Trade Placed' are green, the wallet balance '$813.96 +' is green and the success check is lime. Orange appears as a social-proof flame ('25K People Place This Bet', '8.1K People Placed This Bet') and as the marketing highlight outline. Yellow outlines the 'Live SGP' badge; a green outline marks 'Parlay'. The bet slip and success sheet are white light-mode cards inside the dark app.",
+    "source": "palette.json 03 (#131312 26% UI surface, #60b511 backdrop), 04 (#121212, #8ec957 green odds text), 05 (#0e0e0e, #ffffff 25% success card, #98cc66), 06 (#101115). #000000 and #60b511 at scale are the diagonal-split backdrop. Orange visually matched, unmeasured."
+  },
+  "shape": {
+    "radius_language": "medium: about 12-16pt on event and parlay cards, about 6-8pt on odds cells; pill for the 'Weekly' chip and search field; rounded-square sport-icon tiles",
+    "concentric": "no",
+    "borders_shadows": "Odds cells are flat grey blocks with 2pt gaps; badges ('Parlay', 'Live SGP') are outlined; the thick orange outlines are marketing callouts, not UI",
+    "materials": "flat in-app; 3D casino props in marketing"
+  },
+  "liquid_glass_visible": "no",
+  "density": "high. The event card is a 2 × 3 odds grid per game (spread, total, moneyline) with line over price; the casino list is 90pt rows of thumbnail, title, limits and Play.",
+  "layout": "Not shown as a full screen. Components: a search field with sport tiles (Football, NBA, CFB, UCL, ATP Vienna, MLB); an EVENTS card with sport header, 'View All', two team rows against a 3-column odds grid, and time; a 'Race to 10 Points' three-way market; a featured parlay card (celebrity photo, three legs, social-proof flame, a big price button); a bet slip (SGP legs with radio-line connectors, stake input boxes, combined odds +450); a predictions market (Bitcoin; Timeframe / Governors tabs; an 'Order Successful' sheet with trade amount and payout); and a casino lobby list with a hero banner ('DraftKings ROCKET').",
+  "navigation": "No tab bar is visible in any frame. Top bar on predictions: back arrow, title with dropdown ('Bitcoin ▾'), green balance pill and profile circle; text tabs with a green underline. Custom chrome.",
+  "imagery_and_icons": "Sport icons are glossy ball glyphs that look like Apple emoji (🏈 🏀 ⚽ 🎾 ⚾) in rounded tiles and inline before 'Football'; helmet renders as team icons; celebrity photography (Kevin Hart) inside a parlay card; slot-game art thumbnails; an orange flame glyph for social proof",
+  "signature_visual_move": "Odds sit in a tight grey grid with the line in white above the price in DraftKings green, so every price reads as 'money' at a glance.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji (sport ball glyphs appear to be emoji; medium confidence)", "Dark navy or black plus a neon accent plus a team-logo grid (sports-study cliché)","Confetti-and-multiplier 'arcade' mechanics (sports-study cliché: casino props, 'ROCKET' crash game, celebrity parlays)"],
+  "direction_fit": {
+    "primary": "Pick'em Arcade (anti-reference; sportsbook-plus-casino variant)",
+    "secondary": "Loud Owned Shell (owned green and crown, condensed caps)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's unverified tag holds up. The super-app mixes a sportsbook odds grid, social-proof parlays ('25K People Place This Bet'), celebrity picks, prediction-market trades on crypto and politics, and a casino lobby with a crash game ('Rocket'). The in-app odds grid itself is a conventional dark sportsbook, so the arcade character comes from the promo, social-proof and casino layers and from the brand-green-as-money colouring."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Scoreboard anatomy. Score numerals: no live score shown. Yellow live counters ('46', '85') beside Live SGP legs look like live stat progress. Team colour and logos: helmet renders as team icons (Dallas, San Francisco, LA, Houston); no team-colour fills. Live state: a yellow-outlined 'Live SGP' badge only. No Live Activity or widget is shown. Match-centre density: n/a (no game screen). Betting and odds typesetting: American odds throughout; each cell stacks the line in white ('+3.5', 'O 44.5') over the price in green ('-110'); moneyline cells show the price alone (+160 / -192); combined parlay odds are right-aligned bold (+450, -105); stake inputs are '$ 0.00' boxes; the predictions success card lists 'Trade Amount: $10.00' and 'Payout: $62.50', with the payout in green; casino rows show 'Min $1 • Max $4000'. Green colours every price, favourites included, so colour signals 'bettable' rather than good or bad. Social proof ('25K People Place This Bet' with a flame) sits directly above the bet button."
+}

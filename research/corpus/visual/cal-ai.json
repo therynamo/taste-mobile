@@ -1,0 +1,46 @@
+{
+  "slug": "cal-ai",
+  "track_name": "Cal AI - Calorie Tracker",
+  "version": "26.46.1",
+  "screenshots_examined": 4,
+  "marketing_wrapper": "Near-black purple (#1d1a23) backdrop, white two-line caption in the top ~17%, a silver-bezel iPhone (~75%). Marketing pop-outs overlap the frame: an enlarged 'Calories left' card (01), food-label bubbles (03), and coloured Protein/Carbs/Fats pills (04). The screens underneath are real-looking UI: home dashboard, scanner, nutrition result, analytics. None of the quiz/paywall funnel that defines the app is shown.",
+  "typography": {
+    "display": "Geometric grotesque in semibold/bold for the big calorie number (1250) and titles; resembles Manrope or a similar geometric sans (also used in captions), unsure",
+    "body": "custom geometric sans (unsure which), not SF",
+    "numerals": "proportional, large bold hero number; small bold macro grams (45g, 89g); chart axis numbers regular; not tabular",
+    "weights": "Bold numbers and card titles, regular grey labels (Calories left, Carbs left)",
+    "case_and_tracking": "Sentence case; units glued to numbers (67Kg, 93g); default tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f7f6fa", "#f2f2f5", "#1d1a23"],
+    "text": "#111111",
+    "accents": ["#e06c6c", "#e0a06a", "#6a9ae0", "#6cd47e"],
+    "accent_strategy": "Semantic per macro: coral-red protein, orange carbs, blue fats (rings, icons, stacked bars) plus green for a positive trend and health score; black is the action colour (FAB, Done, segment selection). A faint pink-lavender haze tints the top of each screen.",
+    "source": "palette.json 01–04: #1d1a23 ~50% = marketing backdrop (also matches the black FAB/Done button); #fefdfe / #ffffff 26–36% = app background; #aba6a1 / #b3a9ac = device bezel; #b0a38c / #39342c in 02 = food photo. Macro hexes are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~16pt cards and tiles, pill segmented controls, pill Done/Fix Results buttons, circular FAB and progress rings, ~12pt photo corners in meal rows",
+    "concentric": "yes",
+    "borders_shadows": "Very light grey card fills with faint borders; soft shadow on the floating FAB; marketing pop-outs have bigger shadows",
+    "materials": "Flat; translucent dark circles over the camera image; a white pill tool tray over the viewfinder"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium-high: hero card, three macro ring tiles in a row, then meal rows with photo + 5 data points each; analytics stacks two segmented controls and two charts",
+  "layout": "Home: logo + bell, Today/Yesterday text tabs, a hero 'calories left' card with a ring, a paged row of three macro ring cards, then 'Recently uploaded' meal rows (photo left, name/time/kcal/macros right), floating black + FAB.",
+  "navigation": "Bottom tab bar with 3 labelled tabs (Home, Analytics, Settings), SF-like outline icons, plus a detached black circular + FAB; camera has circular back/overflow buttons and a mode tray (Scan food, barcode, gallery, label, edit).",
+  "imagery_and_icons": "Stock-style food photography; small filled colour glyphs for macros (drumstick, wheat, water drop, flame); outline tab icons; a sparkle glyph on 'Fix Results'.",
+  "signature_visual_move": "A black-arc calorie ring beside a huge bold number, followed by three colour-coded macro rings — the standard fitness-dashboard grammar.",
+  "tells_present": ["Cards everywhere; icon-plus-title-plus-value tile anatomy", "Per-screen drift (tab bar in 04 shows an extra gear where the FAB sits in 01)"],
+  "direction_fit": {
+    "primary": "Funnel-First Utility (anti-reference)",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The visible UI is a competent but generic ring-and-card dashboard with no ownable visual idea; the identity is the conversion funnel, which the screenshots don't show. Nothing here argues for a dealable direction."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Analytics weight axis is inverted (60Kg at top, 80Kg at bottom) and the heading reads 'Nutritions' — small craft slips. Sparkle on 'Fix Results' is labelled, so the unlabelled-sparkle tell does not apply."
+}

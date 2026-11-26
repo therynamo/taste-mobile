@@ -1,0 +1,46 @@
+{
+  "slug": "rainbow",
+  "track_name": "Rainbow - Ethereum Wallet",
+  "version": "v2.0.50",
+  "screenshots_examined": 2,
+  "marketing_wrapper": "Heavy and dated. 01: pastel sky-blue-to-lilac gradient backdrop, a bold black caption plus a navy sub-caption in the top ~22%, and a realistic black iPhone 12/13-style notched device frame with a 9:41 status bar; real UI fills ~65%. 02: peach-to-pink gradient backdrop with two notched device frames, the top one cropped to show only the bottom of a connect sheet, the bottom one showing a third-party dApp (Zora) in the in-app browser; only ~30% of 02 is Rainbow's own UI. The notched device frames suggest the screenshots predate recent iPhones and may not reflect the v2.0.50 UI.",
+  "typography": {
+    "display": "Heavy rounded-terminal grotesque in captions and in-app titles ('Discover', '43', 'Protect Your Wallet', 'Create your profile'); consistent with SF Pro Rounded at bold/heavy weights, med confidence.",
+    "body": "system SF (likely SF Pro Rounded for UI labels; regular SF for grey secondary text)",
+    "numerals": "rounded - '43' Gwei in large heavy rounded lining figures; no other amounts shown",
+    "weights": "Heavy/bold dominate: bold titles, heavy card headlines, heavy white button labels; secondary copy in medium grey.",
+    "case_and_tracking": "Title Case headlines ('Protect Your Wallet', 'Create your profile' mixed), all-caps tracked-out eyebrow 'LEARN' with a sparkle; default tracking elsewhere.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f9f7f9", "#e8e7e8"],
+    "text": "#202138",
+    "accents": ["#ff5ca0 (approx, pink Learn card; visual estimate)", "#3b7cf5 (approx, blue Connect button and verified badge; visual estimate)", "#8a5cf5 to #6a5af0 (approx, purple gradient DeFi Pulse card; visual estimate)", "#2fb34a (approx, green 43 Gwei; visual estimate)"],
+    "accent_strategy": "Per-content, colour-flooded cards: each Discover card carries its own saturated fill or gradient (pink, purple) beside white cards; green is semantic (low network fee); blue is the interactive/primary colour on Connect and the verified-domain badge. No single owned accent is visible in these two frames - the 'one fixed rainbow gradient' from the text record is not visible in-app.",
+    "source": "palette.json 01: #ffffff UI background, #f9f7f9/#e8e7e8 search field and card greys, #202138 near-black navy text, #a9d6fb/#bec3ed/#99b8d7 = marketing sky gradient, #c566cd = pink/purple cards. 02: #ffc3c0/#ffd2b7/#ecbebc = peach-pink marketing backdrop, #140715 device frame, #736983 grey text. Small accent hexes are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~20-24pt on Discover cards, full pills for search field, Cancel/Connect and Filters buttons; rounded-square app icon for the dApp",
+    "concentric": "unclear",
+    "borders_shadows": "Soft, wide, low-opacity drop shadows under white cards and under both Cancel and Connect pills (shadows on buttons, not borders); no hairline borders except a divider in the connect sheet.",
+    "materials": "flat with soft shadow depth; gradient fills on some cards; faint grid texture behind the profile-avatar card"
+  },
+  "liquid_glass_visible": "no - opaque white sheets and cards, older iOS chrome",
+  "density": "low - two-up cards with big numerals, single wide promo cards, generous gutters (~20pt) and gaps (~16pt)",
+  "layout": "Discover: back chevron + centred bold title; full-width search pill; a two-up row (network fee card with big green '43 Gwei', pink Learn card 'Protect Your Wallet' with lock badge); a wide 'Create your profile' card with a strip of NFT/emoji avatars; a purple gradient 'DeFi Pulse Index' card. Connect sheet: dApp icon, '<Zora> wants to connect to your wallet' with the dApp name bold and the rest grey, a blue verified-check domain chip, Cancel (white pill) and Connect (blue pill). Home/wallet screen not shown.",
+  "navigation": "Native-looking back chevron with a centred title on Discover; a bottom sheet for the connect request with a home indicator. No tab bar visible. The bottom frame of 02 shows a dApp's own header (search, black Connect button), which is not Rainbow chrome.",
+  "imagery_and_icons": "NFT profile pictures (pixel-art and illustrated avatars) and a rainbow emoji in the profile card; sparkle glyph on 'LEARN' and a magic-wand sparkle on the profile card; lock icon badge; 3D sphere dApp icon (Zora's logo); verified badge.",
+  "signature_visual_move": "Chunky heavy rounded type on big soft-shadowed cards, each card flooded in its own candy colour, like a consumer social app rather than a wallet.",
+  "tells_present": ["Sparkle icon without AI meaning (sparkles on LEARN and on Create your profile)", "Cards everywhere (Discover is a card grid)", "Gradient backgrounds (purple gradient card; pastel gradient wrapper)"],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "Authored Illustration",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Text record proposed 'Friendly Spectrum Crypto' (anti-neon, soft) mixed with Gen-Z Expressive; that maps to Loud Owned Shell in the 17. The two frames agree on the friendly, light, candy-coloured, heavy-rounded-type feel and anti-neon semantics, but do not show the owned rainbow gradient, the token-tinted rows or the balance screen, so the fit is only partly confirmed. Secondary is weak: the imagery is user NFT avatars, not one illustrator's hand."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Balance and amount anatomy: not visible - no balance, token list or send screen in either frame. The only numeral is '43' Gwei, large heavy rounded, coloured green to mean 'Low' fees (semantic, matching the text record's 'bright but not neon' green). Trust and risk signals: the connect sheet shows the requesting dApp's icon, name in bold, and a blue verified-check domain chip (zora.co), with Cancel and Connect as equal-width pills (Connect blue, Cancel white). A 'Protect Your Wallet' Learn card puts security education on Discover. No transaction simulation, signing sheet or risk warning is visible. Crypto cliché: absent - light UI, pastel wrapper, no neon or black; the only 3D sphere is Zora's own logo. Too marketing-heavy and too few frames (2 screenshots, one half third-party dApp, old notched device frames) to judge typography or palette with confidence."
+}

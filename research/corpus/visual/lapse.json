@@ -1,0 +1,46 @@
+{
+  "slug": "lapse",
+  "track_name": "Lapse - Disposable Camera",
+  "version": "4.1.1",
+  "screenshots_examined": 4,
+  "marketing_wrapper": "Four frames, no device bezel: a rounded-corner screen crop (~70%) under a large serif/italic caption on a blurred photo, flat electric blue (#0000fe) or black field. 01 and 02 show the real camera viewfinder (though 01 overlays caption words 'for FRIENDS' on the UI). 03 shows a locked/developing grid with a marketing-placed notification. 04 is a single film photo with a thumbnail strip, mostly photography. In-app text is almost absent, so type cannot be judged from UI.",
+  "typography": {
+    "display": "Not visible in-app. Marketing pairs a light high-contrast serif with italic (disposable, the moment, aesthetic) and a heavy all-caps grotesque (CAMERA, FRIENDS)",
+    "body": "unsure (only a notification in SF bold: 'SNAPS DEVELOPED')",
+    "numerals": "rounded/regular small counters (6, 2) on the roll stack; '10+' badge",
+    "weights": "n/a in-app",
+    "case_and_tracking": "Notification title all-caps bracketed by 💥 emoji; marketing mixes lowercase serif italic with caps grotesque",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#2b2b2b", "#ffffff"],
+    "text": "#ffffff",
+    "accents": ["#ff4a1c", "#ff6a00"],
+    "accent_strategy": "The viewfinder image is the screen; chrome is translucent dark circles and a white shutter, with a single red-orange used for the focus brackets, the badge and the flash bolt. Locked undeveloped shots are shown as blurred purple-red-orange gradients with a lock glyph.",
+    "source": "palette.json 02: #0000fe 33% = marketing blue field; 03: #000000 36% = black grid gutters/background, #983345 / #46304d = locked-tile gradients; 01/04 dominated by photo colours. Red-orange accents are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~36pt on the full-screen viewfinder corners, circles for every control (shutter, flash, add-friend, inbox), ~8pt rounded tiles in the photo stack, ~20pt notification card",
+    "concentric": "yes",
+    "borders_shadows": "White ring around the shutter; thin dark gutters between grid tiles; no shadows",
+    "materials": "Dark translucent/blurred circular buttons over the live image; film grain in photos"
+  },
+  "liquid_glass_visible": "unclear: the circular buttons over the viewfinder are translucent and could be glass, but no lensing is visible",
+  "density": "low: a full-bleed viewfinder with four small corner controls and one big shutter",
+  "layout": "Camera-first: rounded full-height viewfinder, add-friend top-left, inbox with count badge top-right, bottom row of roll-stack counter / large white shutter / flash; a tab bar sits under the viewfinder (avatar, camera, friends) but is cropped. Developed roll appears as a two-column grid where undeveloped shots are locked gradient tiles.",
+  "navigation": "Bottom tab bar (partly visible in 01: profile avatar, camera, friends glyph with blue dot) below the viewfinder; no top bar.",
+  "imagery_and_icons": "Users' film-processed photos; filled white glyphs in dark circles; a lock glyph on blurred gradient placeholders; app icon is a glowing orange smiley on black; emoji inside notification copy (💥, 🎞).",
+  "signature_visual_move": "Undeveloped shots sit in the grid as blurred colour-gradient tiles with a padlock until the roll 'develops'.",
+  "tells_present": ["Emoji as icons (💥 and 🎞 in the develop notification)", "Gradient backgrounds (locked-shot placeholders, though they carry meaning)"],
+  "direction_fit": {
+    "primary": "Rationed Ritual",
+    "secondary": "Analog Instrument (camera-app chrome, weakly)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The locked gradient tiles make the delayed develop visible as UI, and the camera mirrors the stock Camera layout with a big white shutter, as reviews said. Too little chrome is shown to say much about type or palette."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Too marketing-heavy to judge typography and navigation; 04 is almost entirely a photo. Captions overlap real UI in 01. The gradient tiles are semantic (locked), so the gradient tell is weak here."
+}

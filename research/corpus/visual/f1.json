@@ -1,0 +1,46 @@
+{
+  "slug": "f1",
+  "track_name": "Formula 1®",
+  "version": "13.29.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Every frame is a caption band in the wide Formula1 display face over a near-black backdrop with red halftone blocks, plus a black device frame that is Android hardware (punch-hole camera, Android status icons in 06), tilted in 02, 04 and 06. Real UI is roughly 50-60% of each image; 05 also overlays a red-outlined 'callout' pill on top of the UI.",
+  "typography": {
+    "display": "Custom: the F1 house face (Formula1 Display family, wide geometric sans) used for in-app section titles in all caps ('MY DRIVERS', '2026 SEASON') as well as the captions",
+    "body": "custom: the same Formula1 family appears in list rows (driver names in regular over bold surname, e.g. 'Fernando / Alonso'), tabs and chips; not SF",
+    "numerals": "tabular in the live-timing tower and standings (right-aligned points 423/421/410); timetable times '12:00 - 12:30' look monospaced/slab; '24/24' in the fantasy progress uses a bold italic display numeral",
+    "weights": "Regular for given names and labels, Bold/Black for surnames, headers and numbers; strong two-weight contrast within a single row",
+    "case_and_tracking": "All-caps wide display for section headers and caps three-letter driver codes (VER, NOR, PIA); sentence case elsewhere; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#15151d",
+    "surfaces": ["#27212d", "#0c0d10", "#f9f6f2", "#ffffff"],
+    "text": "#ffffff",
+    "accents": ["#cb0b0a", "#b50908"],
+    "accent_strategy": "Brand red floods chrome (Live Timing header bar, selected-tab underline, season stripe, progress bar) and team colours carry identity per content (driver cards filled in Aston green, Ferrari red, McLaren orange, Red Bull/Williams blue; team-coloured position ticks in the timing tower). A separate bright blue (unmeasured, ~#1a73d0) marks LIVE badges; lime/yellow marks EVENT chips. Live-timing deltas use green/yellow semantic text.",
+    "source": "palette.json 01/02/04/05/06 (#15151d app and backdrop base, ~37-48% share), 03 (#f9f6f2/#ffffff light timetable surface, #cb0b0a red), 04 (#b50908 red, #27212d card surface) + visual match"
+  },
+  "shape": {
+    "radius_language": "mixed: small 6-10pt on cards and driver rows, pill segmented controls and filter chips, full circles for driver avatars and story bubbles",
+    "concentric": "no",
+    "borders_shadows": "Hairline dividers between list rows; diagonal speed-stripe graphics in the top bar; cards on light mode have faint shadows; few borders",
+    "materials": "flat; diagonal stripe texture in the header is the only decorative surface"
+  },
+  "liquid_glass_visible": "no; the tab bar is opaque black and the device shown is Android",
+  "density": "high on Live Timing (track map plus position tower plus sector comparison table in one screen) and standings; medium on Home and Grand Prix guide; tight 8-12pt row rhythm",
+  "layout": "Home: logo top bar, a session strip (TEST countdown chip plus favourite-driver avatars with positions), a hero photo card with LIVE badge and headline, a row of circular story bubbles (Instagram-style), a sponsor banner, then the 5-tab bar. Live Timing is a separate full-screen mode with a red header, a dark track map with driver dots, and a split position tower plus head-to-head sector table below.",
+  "navigation": "Visible 5-tab bar: Home, Schedule, Results, Fantasy, More (outline icons, red top indicator on the active tab). Top bar with F1 logo and a profile icon. Underlined text sub-tabs (Races/Drivers/Teams/Awards) and pill segmented controls (Timetable / My Timetable; F1 Fantasy / F1 Predict). The Grand Prix guide uses its own different icon-only bottom bar with a raised centre pill. Custom chrome throughout, not native.",
+  "imagery_and_icons": "Press photography of cars and drivers, driver headshot cut-outs on team-colour cards, circular avatar bubbles; generic outline icons (house, calendar, chequered flag, trophy, hamburger)",
+  "signature_visual_move": "Live Timing puts a dark circuit map with labelled driver dots above a team-colour-ticked position tower and a head-to-head sector delta table, under a solid F1-red header bar.",
+  "tells_present": ["Cards everywhere; 'icon top-right, title top-left, description bottom' anatomy", "Not native, ignores HIG"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Loud Owned Shell",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record called it Broadcast Scoreboard plus social-video feed; the report folds Broadcast Scoreboard into Glance Board's fandom variant. Screens confirm a dense timing board with tabular numerals and team colour on identity surfaces (driver cards, tower ticks), wrapped in an owned F1 red-and-wide-type shell. The vertical-video feed is not shown; story bubbles are."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Sports module: team colour is used on identity surfaces (driver cards, position ticks) over a neutral #15151d base, consistent with the module rule. Live Timing is the one signature visualisation (track map plus sector deltas). Sponsor banners appear inside Home and Standings. Device frames are Android, so these screenshots may not show iOS chrome at all; the Grand Prix guide (03) uses a light theme with a separate nav, which reads as a sub-app. Story bubbles and a fantasy section show the portal tendency the sports module warns about."
+}

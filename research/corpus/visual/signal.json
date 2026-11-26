@@ -1,0 +1,46 @@
+{
+  "slug": "signal",
+  "track_name": "Signal - Private Messenger",
+  "version": "8.38.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Flat periwinkle backdrop #e3e8fe (~48% of every frame), a navy two-line headline and subline in the top ~25%, and an old home-button-era iPhone frame (iPhone 8 style, thick top bezel, 11:11 AM status bar) cropped at the bottom. Real UI is ~55% of each frame. The UI itself is pre-iOS 26 (opaque bars, full-width tab bar), so these screenshots are older than the listed version 8.38.1 and the changelog's Liquid Glass bubbles.",
+  "typography": {
+    "display": "System SF Pro: centred semibold nav titles (Chats, Maya Johnson), bold section headers (Pinned, Chats); marketing headline in a bold geometric-leaning grotesque (possibly Inter; unsure)",
+    "body": "system SF",
+    "numerals": "proportional system; relative timestamps (20m, 40m, 9:30 AM) right-aligned; disappearing-message timer glyphs next to times",
+    "weights": "Semibold names, regular grey previews, bold section headings, coloured semibold sender names in groups",
+    "case_and_tracking": "Sentence case; default tracking",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#efeff1", "#ebebeb", "#2b2a2f", "#000000"],
+    "text": "#000000",
+    "accents": ["#2463fe", "#ce1340"],
+    "accent_strategy": "One brand accent (Signal ultramarine) for outgoing bubbles and unread badges, but users can recolour per chat: crimson in 05, a lilac-to-pink wallpaper gradient with tinted bubbles in 06. Red is semantic only (end call, notification badges).",
+    "source": "palette.json 01–06: #e3e8fe = marketing backdrop, #ffffff = list background, #000002/#131012 = dark chat background and device frame, #5c5c65 = grey text. Outgoing blue #2463fe, dark incoming #2b2a2f, light incoming #ebebeb, crimson #ce1340 and search field #efeff1 sampled by pixel from 01, 02 and 05; caption navy measured #000043."
+  },
+  "shape": {
+    "radius_language": "large: bubbles ~18pt with no tail, search field ~10pt, attachment tiles ~16pt, circular call controls and avatars",
+    "concentric": "no",
+    "borders_shadows": "None; flat fills, no dividers in the chat list",
+    "materials": "flat; opaque bars; optional chat wallpaper (06)"
+  },
+  "liquid_glass_visible": "no: the screenshots predate iOS 26 (opaque nav bars, full-width three-tab bar, home-button device); the text record's glass bubbles over wallpaper are not shown",
+  "density": "medium: chat list rows ~75px with 48pt avatars and two-line previews; Pinned and Chats section headers; message runs with ~6pt gaps",
+  "layout": "Chat list: avatar top left, centred 'Chats', camera and compose top right, search field, Pinned section, Chats section. Chat: back + avatar + name with timer, video/call icons right, bubbles, then a plain composer row (+, Message field with sticker icon, camera, mic).",
+  "navigation": "Full-width native tab bar with three labelled tabs (Chats with badge, Calls, Stories); standard iOS nav bars; attachment picker as an inline tray with circular grey buttons (Photos, GIF, File, Contact, Location)",
+  "imagery_and_icons": "SF Symbols outline icons; photo avatars; a lilac Note to Self glyph; emoji reactions as content",
+  "signature_visual_move": "Plain iOS chrome where the only branded act is the ultramarine outgoing bubble, which users may recolour per chat.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "none of the 17: system-native default",
+    "secondary": "platform-material overlay (native adopter) per the text record, not visible",
+    "confidence": "low",
+    "agrees_with_text_record": "no",
+    "why": "The text record tags Signal as Liquid Material / native glass on the strength of 7.86–7.96 changelogs. The store screenshots show pre-iOS 26 UI with no glass, so the visual record cannot confirm it; the listing is stale relative to version 8.38.1. What is visible is restrained system UI with one brand blue and user-chosen chat colours."
+  },
+  "visual_distinctiveness": 1,
+  "notes": "Chat anatomy: tail-less ~18pt bubbles; outgoing ultramarine #2463fe with white text and an inline time plus delivery ticks; incoming #2b2a2f in dark and #ebebeb in light; group sender names are coloured per member; reactions sit as a small pill under the bubble. Composer: + button, rounded 'Message' field with a sticker glyph inside, camera and mic outside, flat with no glass. Chat list density: medium with Pinned/Chats grouping. These screenshots cannot settle the native-glass question; a device capture on iOS 26 is needed."
+}

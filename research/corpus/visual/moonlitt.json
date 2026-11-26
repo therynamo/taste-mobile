@@ -1,0 +1,46 @@
+{
+  "slug": "moonlitt",
+  "track_name": "Moonlitt: Moon Phase Tracker",
+  "version": "2.11.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium. A navy-to-indigo gradient backdrop with a white SF caption and a modern iPhone frame holding about 65-70% real UI. 01 overlays an ADA 2026 winner laurel and award cube on the bottom third of the screen; 03 overlays an Editors' Choice quote on the widget view; 05 is the Apple Watch app on a rendered Ultra with an App of the Day laurel. 02, 04 and 06 show clean full screens.",
+  "typography": {
+    "display": "System SF Pro: semibold titles ('Total Solar Eclipse', 'Waning Gibbous'), bold day numbers in the lunar calendar.",
+    "body": "system SF",
+    "numerals": "SF proportional semibold; times in white pill labels ('09:41 PM', '05:30 PM') with leading zero, which suggests a fixed-width time format; eclipse times in semibold ('7:36:34 PM'). Zodiac glyphs under calendar days.",
+    "weights": "Semibold labels and values, regular secondary in muted lavender-grey.",
+    "case_and_tracking": "Title and sentence case; no all-caps.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#10194c",
+    "surfaces": ["#1e2773", "#25307d", "#2c2c2e"],
+    "text": "#ffffff",
+    "accents": ["#c6c9f5", "#c8643a"],
+    "accent_strategy": "Near-monochrome, data-driven: everything is navy/indigo night with white and lavender-grey type; photoreal moon images carry the content, and the only warm colour is a copper-red moon marking a lunar eclipse day. White pills mark the current time and date on the scrubbable rails.",
+    "source": "palette.json 01 (#070f36 / #10194c / #18225e), 02 (#1e2773 / #25307d calendar), 04 (#010101 globe view, #2c2c2e sheet); lavender text and eclipse copper are visual estimates"
+  },
+  "shape": {
+    "radius_language": "pill and large: capsule buttons and time pills, grouped capsule toolbars, circular icon buttons, sheet about 30 pt top radius, grouped inset cards about 18 pt, widgets at system radius",
+    "concentric": "yes: the eclipse sheet's inset cards and segmented control follow the sheet and screen corners (matching WWDC26's 'concentric sheet edges')",
+    "borders_shadows": "Glass rims with a light edge on buttons; hairline separators in the calendar; no drop shadows.",
+    "materials": "Liquid Glass controls over a dark sky; photoreal moon renders; 3D globe map; AR camera view."
+  },
+  "liquid_glass_visible": "yes: grouped glass toolbar capsules top-right (telescope; layers plus ellipsis), circular glass compass and close buttons, a floating 3-icon glass tab bar (list, calendar, telescope) in 02, a glass segmented control and sheet in 04, glass chips over the AR view in 06",
+  "density": "low on the main sky view; medium-high in the lunar calendar (7-column grid of moon images with day numbers and zodiac glyphs)",
+  "layout": "Main: a dark sky stage with a compass button top-left and glass tool groups top-right; a horizontal 'Today' date rail and a vertical time rail with white pill labels at the edges; centre: the moon on a dotted orbit arc over a ground ellipse with a 3D direction pointer. Lunar Calendar: filter and settings glass buttons, location/month/time pills, then a weekly grid of moon-phase images. Eclipse: a 3D globe with the eclipse path and a glass sheet with Info/Times segments.",
+  "navigation": "Floating glass tab capsule with 3 icon-only tabs; glass toolbar groups; sheets with drag handles; the main view scrubs time and date along edge rails.",
+  "imagery_and_icons": "Photoreal moon photography per phase, a 3D globe, an AR camera feed, zodiac glyphs, SF Symbols in glass buttons (telescope, layers, compass, calendar).",
+  "signature_visual_move": "The moon hangs on a dotted path in a dark navy sky, and time and date are scrubbed along white pill rails at the screen edges under glass controls.",
+  "tells_present": ["Purple, indigo, violet; purple-to-blue gradient (indigo night palette, motivated by the subject)"],
+  "direction_fit": {
+    "primary": "Ambient Sky",
+    "secondary": "Liquid Glass overlay (platform-material axis)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The palette is the night sky, content is real moon imagery positioned by data, and there is a scrubbable time axis; deep, idiomatic Liquid Glass sits on top, as Apple's citation says."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "This is the clearest Liquid Glass reference in the batch: grouped toolbar capsules, a floating icon tab bar, concentric sheet insets. The indigo palette would trip the purple/indigo tell in a lint, but here it is the subject (night sky), so the tell needs a 'motivated by content' exemption."
+}

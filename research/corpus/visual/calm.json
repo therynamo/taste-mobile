@@ -1,0 +1,55 @@
+{
+  "slug": "calm",
+  "track_name": "Calm",
+  "version": "7.6",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 and 02 are 100% marketing (sky photo, script wordmark, laurels, press logos; no UI). 03-06 are ~65-75% UI inside a black iPhone frame on a sky-blue to periwinkle gradient backdrop, with a 2-3 line white caption band on top; 03 is tilted with floating content tiles behind it.",
+  "typography": {
+    "display": "Light-to-regular geometric sans for screen titles ('Daily Practice', 'Sleep' in a light weight); semibold for content titles ('Bilateral Stimulation for Nervous System Reset'). Looks custom or a licensed geometric face, not SF. The script 'Calm' wordmark appears only on marketing and the curator avatar.",
+    "body": "custom geometric sans (unsure of name; not SF: round 'a', geometric 'o')",
+    "numerals": "n/a",
+    "weights": "light for section headers, regular body, semibold for card titles and buttons",
+    "case_and_tracking": "sentence/title case, normal tracking; marketing uses tracked caps for 'FEATURED IN' and 'WINNER' only",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#185d91",
+    "surfaces": [
+      "#2c5288",
+      "#32467d",
+      "#162238"
+    ],
+    "text": "#ffffff",
+    "accents": [
+      "#eae8f8",
+      "#9096af"
+    ],
+    "accent_strategy": "No chromatic accent. A deep blue/indigo scene background, white text, and a white-lavender pill for the primary Play action. Colour comes from per-content photo and illustration tiles.",
+    "source": "palette.json 03 (#185d91 phone screen, 22%), 05 (#2c5288, #32467d), 03 #162238 dark gradient bottom; Play pill read visually. #59b9f5/#55aceb are the marketing backdrop."
+  },
+  "shape": {
+    "radius_language": "large, ~16-20pt on artwork tiles; pill chips (outlined) and pill buttons",
+    "concentric": "unclear",
+    "borders_shadows": "1pt light outlines on unselected filter chips and the secondary Shuffle pill; no shadows; thin hairline divider between shelves",
+    "materials": "translucent circular back and overflow buttons over hero art (05/06); otherwise flat over a blue gradient"
+  },
+  "liquid_glass_visible": "unclear: the circular back and '...' buttons on the 06 hero are translucent tinted circles, consistent with glass or a plain blur",
+  "density": "low; one large hero card or 2-up tiles per viewport, generous 20-24pt gutters, horizontal shelves with 'See All'",
+  "layout": "Streaming-catalog home: screen title, filter chip row, then horizontal shelves of large artwork tiles (Featured, Soundscapes, Soothing Music); 2-column grid for Daily Practice; detail page = full-bleed art top half, title, curator row, Play/Shuffle pills, description.",
+  "navigation": "No tab bar visible in any frame. Top: large left-aligned screen title, filter chips as segment control. Detail: floating circular back and overflow buttons over the hero image.",
+  "imagery_and_icons": "Celebrity and presenter photos with gradient tint, painterly/anime-style illustrated scenes for music, nature photos for soundscapes, abstract 3D render for the nervous-system track. Minimal outline icons (heart, play triangle, shuffle).",
+  "signature_visual_move": "Everything sits on one deep sky-to-indigo gradient, so the night-sky blue is the brand and the content art is the only other colour.",
+  "tells_present": [
+    "Gradient backgrounds and gradient text (marketing backdrop and in-app blue-to-indigo screen gradient)"
+  ],
+  "direction_fit": {
+    "primary": "NEW: Dark Content Stage (tinted variant) - streaming-catalog shelves on one night-blue stage where content art carries the colour",
+    "secondary": "Authored Illustration (weak: illustration appears only as content tiles, not as a governing hand)",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record suggested Sensory-First plus Authored Illustration (BUCK) and a possible Glow-Dark Wellness exemplar. The screenshots show no single illustrator's hand and no glow; they show a Spotify-like shelf catalog of celebrity and photo tiles on a blue gradient. Sensory-First cannot be judged from stills."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Two of six frames are pure trust marketing (laurels, press logos), which itself signals a funnel-heavy store posture. The in-app UI could be any premium audio catalog with a blue skin. Glow-Dark Wellness is not supported by these frames."
+}

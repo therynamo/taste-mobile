@@ -1,0 +1,46 @@
+{
+  "slug": "raycast",
+  "track_name": "Raycast: Keyboard, AI and more",
+  "version": "1.5.6",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Near-black backdrop with a deep red vignette (#260106–#2a0105) in the top corners, a monospace uppercase eyebrow (AI CHAT, RAYCAST NOTES, DICTATION, SNIPPETS & QUICKLINKS, & MORE, KEYBOARD) and a white bold headline in the top ~22%. Below, real UI appears either in a dark thin-bezel phone (01, 02, 04) or as floating, slightly rotated fragments: keyboard panels, widgets, a share-sheet card (03, 05, 06). Blurred glossy 3D red/purple app-icon objects and a glowing red sparkle float behind. Real UI is ~55–70% of each frame, but in 03, 05 and 06 it is composited panels, not full screens.",
+  "typography": {
+    "display": "System SF Pro semibold for in-app titles (Paris Roubaix winner inquiry, Meeting Notes, Todos); marketing headline in SF Pro Display bold and the eyebrow in a grey monospace (wrapper only)",
+    "body": "system SF",
+    "numerals": "proportional system; source citations are tiny numerals in grey filled circles; unread badge numerals in a red pill",
+    "weights": "Semibold titles, regular body, bold inline labels in AI answers (Race date:, Runner-up:), regular grey for secondary rows",
+    "case_and_tracking": "Sentence case in-app; uppercase tracked mono eyebrows only in the wrapper",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#0f0f0f",
+    "surfaces": ["#171717", "#1e1e1e", "#232323", "#282828"],
+    "text": "#ececec",
+    "accents": ["#ff3647", "#fa5865"],
+    "accent_strategy": "One accent: Raycast red, used sparingly for the record button, todo checkboxes, the text cursor, unread badges and the + on widgets. Extension icons bring their own colour per-content. System blue appears only on the native Done button in the share extension.",
+    "source": "palette.json 01–06: #000000/#010000/#0f0f0f = app and backdrop ground, #0f0103/#260106 = red marketing vignette, #6b6564/#786d6c = mid-grey text and icons. Surfaces #171717–#282828, record red #ff3647 and badge #fa5865 sampled by pixel from 01 and 03. Text #ececec measured as the lightest 2% of pixels in the 01 answer block."
+  },
+  "shape": {
+    "radius_language": "large and pill: circular 44pt header buttons, user bubble ~14pt, composer panel and keyboard panels ~28pt, snippet tiles ~14pt, pill filter chips (Email, Notes, Translate Spanish)",
+    "concentric": "yes",
+    "borders_shadows": "Surfaces separated by small lightness steps; floating panels carry a faint 1px light rim; no drop shadows on content",
+    "materials": "Dark frosted glass on the floating composer, header buttons and keyboard panels (answer text is visibly blurred under the composer in 01); content flat"
+  },
+  "liquid_glass_visible": "yes: circular glass back/+ buttons and a grouped undo/redo capsule in the header, a two-row frosted composer floating over the thread, and a frosted custom keyboard; dark and low-tint, consistent with native Liquid Glass in dark mode",
+  "density": "medium: comfortable AI answer text at ~17pt, snippet and quicklink lists at ~60pt rows with grey section headers (Yesterday, This Month), keyboard tiles in a two-column grid",
+  "layout": "AI chat: centred two-line title (topic over model 'Auto'), right-aligned grey user bubble, full-width unbubbled answer with inline citation chips, and a floating composer whose top row picks the model (Raycast ▸ Auto) and bottom row holds attach, 'Ask Raycast AI...' and a voice button. Notes: plain document with red checkboxes and a formatting bar above a dark keyboard.",
+  "navigation": "Native-style top bar with circular glass buttons; no tab bar visible; a custom keyboard extension with an icon-only top strip (history, AI, dictation, quicklinks, snippets, search); widgets, Controls and a share-extension card extend the app into the system",
+  "imagery_and_icons": "SF Symbols outline glyphs for chrome; extension icons are small coloured squircles; marketing uses glossy 3D icon objects; a 4-point sparkle marks AI",
+  "signature_visual_move": "A near-black, nearly colourless shell where Raycast red appears only at the points of action: record, check, cursor and unread.",
+  "tells_present": ["Sparkle without a label (sparkle-only AI buttons in the note toolbar and keyboard strip; labelled only in the 06 legend)", "Neon glow; glowing badges (glowing red 3D sparkle and haloed record button)"],
+  "direction_fit": {
+    "primary": "Dark Pro Minimal",
+    "secondary": "platform-material overlay (native dark glass)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Several near-black surface levels separated by lightness, one restrained red accent, system type, and dark glass only on floating chrome, matching the text record's Dark Pro Minimal + Liquid Material tag. The companion scope is visible: notes, snippets, dictation and a keyboard rather than a full launcher."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "AI chat anatomy: user turn is a small grey #232323 bubble aligned right; the answer is unbubbled body text with numbered grey citation dots; the model switcher lives in the composer, not the nav bar. The glow effects are marketing art; in-app the only glow is the record button's concentric red rings, which does encode a recording state. The Dictation screen's record control is the strongest state visual among this batch's AI apps."
+}

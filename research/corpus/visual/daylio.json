@@ -1,0 +1,46 @@
+{
+  "slug": "daylio",
+  "track_name": "Daylio Journal - Mood Tracker",
+  "version": "1.79.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is mostly marketing (laurels, press logos, floating mood-face stickers, illustrated landscape) over a partial calendar mock. 02-06 use a flat saturated backdrop that changes per frame (blue, coral, green, teal, amber), a large bold white caption (top ~20%), and a frameless rounded phone screen with ~70-75% real UI, cropped at the bottom. 04 shows a different status bar (12:07), so frames come from different builds.",
+  "typography": {
+    "display": "SF Pro bold for screen titles and questions ('How are you?', 'What have you been up to?', 'March', 'Mood Chart'); mood names in a bold rounded-looking weight coloured per mood",
+    "body": "system SF",
+    "numerals": "proportional SF; large light grey '30' in the mood-count gauge; mood-coloured totals (71 73 69 80 72) in Year in Pixels",
+    "weights": "bold titles, bold coloured mood labels, regular grey activity tags",
+    "case_and_tracking": "sentence case; tracked small caps for date headers (TODAY, 24 MAR; YESTERDAY, 23 MAR); lowercase mood and activity labels (rad, good, meh, bad, awful)",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f1f3f1",
+    "surfaces": ["#ffffff", "#edf2ef"],
+    "text": "#000000",
+    "accents": ["#1bb394", "#00b98d", "#8fd13f", "#56a9de", "#ff9f2e", "#f23d5c"],
+    "accent_strategy": "Semantic five-step mood scale (teal rad, lime good, sky-blue meh, orange bad, red-pink awful) colours faces, labels, chart line segments, gauge arcs and the year grid; a single teal for UI actions (chevrons, Save, plus, tab bar).",
+    "source": "palette.json 04 (#f1f3f1 grey background, #ffffff cards, #2bcc70 backdrop), 05 (#f2f6f7, #00b98d), 06 (#edf2ef); mood hues read visually from 02/05/06"
+  },
+  "shape": {
+    "radius_language": "medium-large: ~14-16pt cards, circles for mood faces and activity icons, pill for selectors ('average mood', 'friends'), rounded-square mood tiles in the calendar",
+    "concentric": "no",
+    "borders_shadows": "soft drop shadows under white cards on a grey ground; 1pt grey outlines on unselected activity circles and outlined pills; hairline chart gridlines",
+    "materials": "flat with drop shadows; translucent teal tab bar on 04/05"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium-high; entry cards pack mood + time + 4-6 activity tags + note + photos; activity picker shows 4-5 circles per row in grouped cards",
+  "layout": "Entries: month header with chevrons, stacked timeline cards (mood face left, connector line, coloured mood word + time, dot-separated icon+label activity tags, note, photo row). Mood picker: centred question, five coloured faces in a row. Stats: Mood Chart (multi-colour line), Mood Count (semicircle gauge). Year in Pixels: 12x31 dot grid.",
+  "navigation": "Bottom tab bar with 5 labelled items (Entries, Stats, centre raised '+' FAB in a white ring, Calendar, More) on a translucent teal bar; top month switcher with circled chevrons and search; modal sheets for entry creation with circled X close.",
+  "imagery_and_icons": "Custom drawn mood faces (simple dot-eye smiley circles, not system emoji), custom filled pictogram set for activities (bed, people, heart, controller, carrot), selected = filled teal circle with white glyph, unselected = white circle with teal glyph and grey outline; 01 adds a flat vector landscape illustration (marketing). User notes contain system emoji.",
+  "signature_visual_move": "A five-colour mood scale that paints every surface, from the face picker to the chart line to a 365-dot Year in Pixels grid.",
+  "tells_present": ["Emoji as icons (user notes and the 'Morning run' sample entry use system emoji; core icons are custom)", "Cards everywhere (card-on-grey for every section)"],
+  "direction_fit": {
+    "primary": "Body-State Companion (weak member): drawn faces and a semantic mood colour vocabulary report state",
+    "secondary": "Chromatic Timeline (colour-per-mood calendar and year grid)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The screens confirm the emotion-colour vocabulary and calendar-of-states record. It is weak as a direction exemplar because the chrome is 2016-era iOS: grey cards with shadows, a raised centre FAB and teal tints, with no authored type or shape."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The Year in Pixels grid is the strongest artifact and also Shareable-Artifact-like (share icon). Red is used for 'awful', which is the opposite of The Outsiders' 'no alarm red' restraint rule."
+}

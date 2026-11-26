@@ -1,0 +1,46 @@
+{
+  "slug": "beeper",
+  "track_name": "Beeper: Every Chat in One App",
+  "version": "4.5.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Violet-to-royal-blue vertical gradient backdrop (#5b54f2 at the top to #2b4cf6 at the bottom), a two-line white bold headline in the top ~15%, then an oversized black-bezel modern iPhone cropped at the bottom. 03 and 06 add an enlarged glass sheet (Switch chats, Spaces menu) that breaks out of the phone. Real UI is ~75% of each frame and close to uncropped.",
+  "typography": {
+    "display": "System SF Pro: bold 'Inbox' header with a chevron, a large bold blue in-app headline 'Connect Chat Accounts', semibold centred sheet titles (Name & Icon)",
+    "body": "system SF",
+    "numerals": "proportional system; time stamps right-aligned (10:45 PM); unread counts in blue pills including mention pills (@ 5, @ 10); muted counts in grey",
+    "weights": "Bold headers, semibold names, regular grey two-line previews",
+    "case_and_tracking": "Sentence case; default tracking",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f0f0f0", "#dbdadf", "#e5e9ed"],
+    "text": "#000000",
+    "accents": ["#104cfc"],
+    "accent_strategy": "One accent: a saturated cobalt blue for outgoing bubbles, unread and mention badges, the confirm checkmark and the 'Connect Chat Accounts' title; per-network colour arrives only through small network badges (WhatsApp, Instagram, LinkedIn, Discord, Telegram) on avatars and the connect grid.",
+    "source": "palette.json 01–06: #5253f3 / #5750ee / #4f53f4 = violet backdrop, #2b4cf6 / #2f42f6 = blue backdrop bottom, #ffffff = app background, #f0f0f0 / #e5e9ed = grouped surfaces and keyboard. Accent #104cfc, incoming bubble #dbdadf and title #263ebe sampled by pixel from 01, 03 and 05."
+  },
+  "shape": {
+    "radius_language": "pill and large: circular glass buttons, capsule search field, bubbles ~18pt with no tail, large circular pinned avatars, ~32pt glass sheets and menus, rounded-square colour/icon picker, squircle app icons in the connect grid",
+    "concentric": "yes",
+    "borders_shadows": "Soft shadows and light rims on glass controls and sheets; inset hairline dividers in the inbox list",
+    "materials": "Native Liquid Glass on buttons, menus, the chat-switcher sheet, the floating search capsule and the keyboard; content flat white"
+  },
+  "liquid_glass_visible": "yes (native): glass circle back/more/compose buttons (01–06), a floating glass search capsule with detached close circle (04), a large glass Spaces menu with a + New Space capsule and settings circle (06), a glass Switch chats sheet (03) and the iOS 26 keyboard",
+  "density": "medium: two-line previews in ~100px rows with 56pt avatars and network badges; a 3-column grid of large pinned-chat circles above the list",
+  "layout": "Inbox: account/space switcher title with chevron and a compose circle, a grid of pinned contacts as big circles (with a tooltip-style latest message bubble), then the unified list. Chat: back capsule with count, centred avatar over a name capsule, per-network section labels (WhatsApp, LinkedIn) inside one merged thread.",
+  "navigation": "No tab bar visible; navigation is a title menu that opens a glass Spaces popover (Inbox, Archive, Reminders, Send Later, Low Priority, each account); glass top buttons; sheets for labels; a floating search capsule at the bottom",
+  "imagery_and_icons": "SF Symbols outline icons; photo and Memoji avatars with small third-party network badges; third-party app icons in the connect grid",
+  "signature_visual_move": "One person's chats from several networks merge into one thread, with grey network labels between runs and a glass sheet to switch identities.",
+  "tells_present": ["Purple, indigo, violet; purple-to-blue gradient (marketing wrapper only)"],
+  "direction_fit": {
+    "primary": "none of the 17: native adopter (platform-material overlay), Messages-like",
+    "secondary": "none",
+    "confidence": "med",
+    "agrees_with_text_record": "no text record",
+    "why": "The text record exists but left direction and visuals unknown, noting only that iOS was rewritten to match the Android app. The screenshots show a thoroughly iOS 26-native app: Liquid Glass chrome, Messages-style pinned circles and tail-less blue bubbles. Nothing Android-shaped is visible."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Chat anatomy: outgoing tail-less cobalt #104cfc bubbles with white text, incoming light grey #dbdadf; reactions as small grey circles under a bubble; the merged thread inserts centred grey network labels (WhatsApp, LinkedIn) between runs. Composer not shown. Chat list density medium, with Messages-like pinned circles that show a speech-bubble preview. Of the messaging set, Beeper shows the most complete native Liquid Glass (menus, sheets, search capsule), more than WhatsApp or the stale Signal screenshots; compared with Telegram the glass is visually equivalent, so the difference between native and replica glass is not visible in stills."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "meta-ai",
+  "track_name": "Meta AI",
+  "version": "300.0.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Minimal: white backdrop, a bold dark slate two-line caption with a full stop, and a black-bezel iPhone. Real UI is ~75% of each image. All six are real app screens.",
+  "typography": {
+    "display": "Captions in a heavy rounded-terminal grotesk in dark slate (#1c2b33-like), consistent with Meta's Optimistic Display (unsure); in-app the conversation title in the top bar is semibold ~17pt",
+    "body": "unsure: a neutral grotesk close to Meta's Optimistic Text or SF; cannot separate at this size",
+    "numerals": "proportional (times '9:00 AM – 10:00 AM', prices '$16', battery '100%')",
+    "weights": "Regular body; bold inline labels and section heads in answers ('Today at a glance', 'Shelf-Worthy Staples'); semibold top-bar title",
+    "case_and_tracking": "Sentence case; default tracking; captions end with full stops",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f4f4f6", "#ffffff"],
+    "text": "#1c2b33",
+    "accents": ["#006bf1", "#b341f9"],
+    "accent_strategy": "One accent: Meta blue on the voice/send button and 'See all' links. A small purple-to-indigo multi-petal glyph marks 'Show thinking'. Semantic green for 'Open'. Otherwise white and light grey.",
+    "source": "palette.json 01–06: #ffffff 54–76% = app canvas and backdrop; #e1e1e2 / #f4f5f5 = bubbles and controls; #191b1d / #24272a / #1f211e = text and caption. Pixel samples: voice button #006bf1 (01), thinking glyph #b341f9 to #564fb6 (01), user bubble #f4f4f6 (03), caption #172d38-ish (01), 'Open' green #1fb62b (02)."
+  },
+  "shape": {
+    "radius_language": "pill and large: user bubbles ~20pt, composer panel with ~24pt top corners, circular buttons, pill 'Thinking' chip, map/product cards ~16–20pt, device settings tiles full pill",
+    "concentric": "yes",
+    "borders_shadows": "Soft shadows on the floating top buttons, the map place card and the settings tiles; hairline outline on the 'Thinking' chip and mic button",
+    "materials": "Frosted glass on the Instant/Thinking popover and the iOS 26 keyboard (06); floating capsule top bar"
+  },
+  "liquid_glass_visible": "yes: the model popover (Instant / Thinking) in 06 is a frosted glass panel, the keyboard is the iOS 26 glass keyboard, and the top circle/capsule buttons float over scrolled content (02 shows text passing beneath them).",
+  "density": "medium: answers are long, markdown-structured briefings with bullets; product carousels and map cards inline",
+  "layout": "Thread with a conversation title in the top bar: right-aligned light-grey user bubbles, a 'Show thinking >' row with the purple glyph, bubble-less assistant markdown, rich cards (map with pins and a place carousel, product carousel). Other screens: an AI glasses hub (device image, battery, setting tiles, gallery, reminders) and an image-preset Library (segmented Presets / Created / Imported, 2-column grid).",
+  "navigation": "Circular hamburger top-left with the chat title beside it; capsule with new-chat pen and overflow top-right (or settings + add on the glasses screen). No tab bar. Composer is a bottom panel: 'Ask Meta AI…' on top, then '+', a 'Thinking' mode chip, mic and a blue voice circle.",
+  "imagery_and_icons": "Outline monoline icons; product photography and AI-generated images; a 3D-rendered product image of the glasses; the purple multi-petal glyph as the AI marker.",
+  "signature_visual_move": "A purple petal glyph labelled 'Show thinking' above an otherwise ChatGPT-identical white thread.",
+  "tells_present": ["Gestalt sameness: 'they all look the same'", "Purple, indigo, violet; purple-to-blue gradient"],
+  "direction_fit": {
+    "primary": "Neutral Hyper-Minimal Assistant (anti-reference)",
+    "secondary": "Feed-Grafted Assistant (anti-reference)",
+    "confidence": "high",
+    "agrees_with_text_record": "no",
+    "why": "The chat surface is a clone of ChatGPT down to the chrome (circular menu button, pen + overflow capsule, blue voice circle). But the Discover/Vibes feed that defines the text record's 'Feed-Grafted' tag appears nowhere; the store set sells a daily briefing, local search, shopping, AI glasses and an image-preset library instead. The graft is now a device hub and a preset grid, not a social feed."
+  },
+  "visual_distinctiveness": 1,
+  "notes": "Composer: a white bottom panel with rounded top corners (two rows: placeholder, then '+', 'Thinking' outlined pill, outlined mic circle, blue filled voice circle with waveform); on the glasses screen it shrinks to a '+' circle and a pill field. With the keyboard up (06) the mode chip opens a glass popover with 'Instant — Answers right away' and 'Thinking — Reasons longer before answering', and the voice button becomes a blue send arrow. Greeting/empty state: not shown. Voice: only the blue waveform button; no orb visible. Thinking: a collapsed 'Show thinking >' row with the purple glyph above each answer, i.e. reasoning on demand, which matches the module requirement. Streaming: not shown (a scroll-down chevron floats mid-answer in 01). Conversation list: not shown (drawer). The thinking glyph is labelled, so it avoids the unlabelled-sparkle tell."
+}

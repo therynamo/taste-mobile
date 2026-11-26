@@ -1,0 +1,46 @@
+{
+  "slug": "luma",
+  "track_name": "Luma: Events & Invites",
+  "version": "2.18.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is 100% marketing: wordmark, headline with magenta-to-orange gradient text, and a scatter of user event-cover tiles. 02-06 use one template: a per-screen tinted gradient backdrop (orange, yellow, magenta, coral, violet) matching a tinted glass-like device outline, a 2-line headline in a darker shade of the tint (top ~20%), and ~70% real UI with a modern Dynamic Island screen. The UI looks unretouched.",
+  "typography": {
+    "display": "SF Pro semibold/medium for screen and event titles ('Discover', 'Collage: Vision Board', 'Reading Rhythms NYC'); marketing headlines in a tighter grotesque",
+    "body": "system SF",
+    "numerals": "proportional SF (times 6:30 PM, temperature 76°, counts 2 Hosted)",
+    "weights": "semibold titles, medium row titles, regular grey metadata; lighter weight than most event apps",
+    "case_and_tracking": "sentence case, default tracking; date headers as 'Tomorrow / Friday' with the weekday in grey",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f3f3f3", "#5f446e"],
+    "text": "#111111",
+    "accents": ["#111111", "#3a84f5"],
+    "accent_strategy": "Per-content: the app chrome is white/grey/black (black Follow pill, white Register button), and each event page takes its background tint from its cover art (purple-magenta for Vision Board). Category chips carry their own small coloured outline icons. Blue appears only for sent chat bubbles.",
+    "source": "palette.json 01/03/05/06 (#ffffff UI 24-48%); 04 #5f446e/#602761 = cover-derived event page background; backdrop tints #ed8b4a, #ffd167, #ea5cee, #ffb3af, #9f81eb are marketing; blue bubble read visually"
+  },
+  "shape": {
+    "radius_language": "large and concentric: ~16-20pt event cover cards, ~10-12pt list thumbnails, pill chips and Follow button, circular glass buttons, ~12pt Register/Contact/More tiles",
+    "concentric": "yes: Register/Contact/More tiles and the cover card share radius steps with the screen corners; tab capsule nests a selected lens",
+    "borders_shadows": "1pt light outlines on category chips; soft shadow under floating top-bar button clusters; hairline row separators",
+    "materials": "glass: floating tab bar and circular nav buttons are Liquid Glass; event page uses a cover-tinted blurred backdrop"
+  },
+  "liquid_glass_visible": "yes: floating capsule tab bar (Home, Discover, Chat) with a lensed selected pill on 02/03/04, and glass circular back/search/more/share buttons over content on 03/04/05/06",
+  "density": "low-medium; list rows ~110pt with 80pt thumbnails, generous 16-20pt margins, grouped sections with chevron headers",
+  "layout": "Discover: avatar + title, map/search glass buttons, city link, list of popular events with cover thumbnail + host + title + time, category chips, horizontal city cards. Event page: cover art card, title, host, date, three action tiles, location with weather, map. Profile: avatar, stats line, horizontal mutual-events covers, hosting list.",
+  "navigation": "iOS 26 native floating Liquid Glass tab bar with 3 labelled tabs (Home, Discover, Chat), custom glyphs; glass circle back buttons; grouped glass button clusters top-right (map + search; chat + more).",
+  "imagery_and_icons": "User-made event covers (collage, posters, photos) are the colour; custom outline category icons in multiple hues (Fitness, Wellness, Climate, AI, Crypto); small SF-style outline glyphs for time and location; emoji in user chat only.",
+  "signature_visual_move": "A quiet white native shell whose event pages flood with a tint sampled from the user's cover art, behind iOS 26 glass controls.",
+  "tells_present": ["Gradient backgrounds and gradient text (marketing headline only)"],
+  "direction_fit": {
+    "primary": "User-Authored Poster",
+    "secondary": "platform-material overlay: native adopter (Liquid Glass)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Expression lives on the host's cover art and the cover-tinted event page; chrome, RSVP (Register) and chat stay conventional and native. That is exactly the direction's restraint rule, and the text record's verdict."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "One of the cleanest native Liquid Glass adopters in the batch. Cover-derived page tint is the same per-content colour move as Spotify's artwork-tinted cards."
+}

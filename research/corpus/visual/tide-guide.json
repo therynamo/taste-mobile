@@ -1,0 +1,46 @@
+{
+  "slug": "tide-guide",
+  "track_name": "Tide Guide: Charts & Tables",
+  "version": "27.1.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium. An ocean-blue vertical gradient backdrop with white bold SF captions on every image. 01 adds a cyan headline and ADA winner, Watch App of the Year finalist and Editors' Choice badges, and crops the phone at the chart. 02 and 03 show near-complete screens at about 75%. 04 is four Apple Watch faces, 05 the Live Activity and Dynamic Island, 06 a widget collage. So three of six are system surfaces.",
+  "typography": {
+    "display": "System SF Pro bold: the current height ('3.8′'), state ('Rising Tide'), card values ('5:13p', '74°'), date heads ('Sep 3').",
+    "body": "system SF",
+    "numerals": "SF proportional bold with compact lower-case 'a'/'p' suffixes and prime marks for feet ('4:57a', '4.7′'); small all-caps card labels; units in small caps ('MPH'). Not mono; time columns line up by layout rather than tabular figures.",
+    "weights": "Bold for values and times, semibold card labels, regular grey for secondary heights.",
+    "case_and_tracking": "Small all-caps tracked card labels ('RISING TIDE', 'AIR TEMP', 'WIND SPEED'); title case elsewhere.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#354c67",
+    "surfaces": ["#2e4766", "#314862", "#1b2a43"],
+    "text": "#ffffff",
+    "accents": ["#1a8fe0", "#8fd0f0", "#e8443a", "#e8b84a"],
+    "accent_strategy": "Data-semantic and aquatic: the tide curve is a mid-blue fill with a lighter past segment, a red dot marks now, temperature lines are amber, sunrise/sunset and moonrise/moonset chips use warm orange and violet tiles, rising/falling arrows in blue circles. The selected tab and chips are cyan-tinted.",
+    "source": "palette.json 02 and 03 (#354c67 / #2e4766 / #314862 slate-blue app surfaces, #0f5792 blue backdrop), 05 (#00020a Live Activity); curve blue, red dot and amber line are visual estimates"
+  },
+  "shape": {
+    "radius_language": "large and pill: cards about 22 pt, pill period selectors (24H, 2D, 3D...) and month chips, capsule location picker, circular glass buttons, floating capsule tab bar",
+    "concentric": "yes: cards, tab capsule and inner selected-tab capsule nest with matching curvature",
+    "borders_shadows": "A 1 pt light-blue rim on every card and chip; no drop shadows; gradient fill under curves.",
+    "materials": "Liquid Glass chrome over a slate-blue base; glassy card rims; smooth gradient-filled charts."
+  },
+  "liquid_glass_visible": "yes: floating glass tab bar with 4 labelled tabs and a lensed selected capsule, circular glass buttons (waves, play, ellipsis), glass location capsule and pill chips in 01-03",
+  "density": "medium-high: three full charts per screen on Charts; Tables pack a curve, weather, four sun/moon chips and four tide events per day card",
+  "layout": "Today: location capsule between two circular buttons; a glass strip of conditions (air, water temp, wind, swell period); centred current height with an up arrow, 'Rising Tide' and time to high; sun/moon time chips; a compact list of today's tide events; then a full-width tide curve to the bottom edge. Charts: range pills, then stacked chart cards (tide, air temp, wind). Tables: month chips, then one card per day.",
+  "navigation": "Floating glass tab bar with 4 labelled tabs (Today, Charts, Tables, Solunar); top circular glass buttons; a location picker capsule with a chevron.",
+  "imagery_and_icons": "Charts as imagery (sinusoidal tide curves with dot labels), photoreal moon phase icons, colourful filled weather symbols (SF Symbols multicolour), custom sunrise/moonrise tiles.",
+  "signature_visual_move": "The tide is drawn as a smooth filled wave with labelled high/low dots and a red 'now' dot, repeated at every size from full screen to Watch to Dynamic Island.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Ambient Sky",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The screenshots show a dense readout: labelled values, per-event rows, semantic arrows and charts, extended to widgets, Watch and Live Activities. The text records file it under Ambient Sky for its 'sky-matching palette', but every frame here uses the same slate ocean blue, so palette-follows-sky cannot be confirmed from these images."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The Ambient Sky claim rests on Apple's citation that the palette changes through the day; it may still be true at other times of day, but these daytime-only frames do not show it. A device-capture pass at dusk/night would settle it. The Live Activity wallpaper gradient in 05 is the system wallpaper, not the app."
+}

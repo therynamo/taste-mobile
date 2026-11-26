@@ -1,0 +1,46 @@
+{
+  "slug": "partiful",
+  "track_name": "Partiful: Party Invite Maker",
+  "version": "3.11.20",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Each frame: a backdrop that echoes an event theme (purple-blue grid glow in 01/06, navy starfield in 02/04, peach gradient in 03, blurred photo in 05), a bold title-case caption with grey subline in the top ~22%, and a black-bezel iPhone cropped at the bottom (~65%). Marketing pop-outs overlap the frame: the iridescent 'Going' orb (01), category chips (02), a pixel-art 'partiful' speech bubble (03), and 'Ben is Going 👍' / emoji count stickers (05, 06). 04 is mostly the system Messages app showing a Partiful text blast, not Partiful UI. Real app UI: event page (01), image picker sheet (02), share sheet (03), Explore (05), photo album + activity feed (06).",
+  "typography": {
+    "display": "Custom-looking wide grotesque in bold for in-app titles and the wordmark (lexi's 26th, Trending in LA, Date my friend, Photo Album); lowercase event titles; name unsure. User poster art brings its own type (serif, 3D chrome, condensed slab)",
+    "body": "custom grotesque or SF — unsure; secondary text (dates, 'Grace +32 are Interested') in a regular grey",
+    "numerals": "proportional; dates and times written out in body text (Wed, January 22, 9:30pm – 11:30pm); emoji reaction counts in pills",
+    "weights": "Bold display, semibold card titles, regular body; strong weight contrast",
+    "case_and_tracking": "Event titles often lowercase (lexi's 26th, explore los angeles in a torn-paper label); tight display tracking; times lowercase am/pm",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#dbe0f1",
+    "surfaces": ["#ffffff", "#21201f", "#2a2a2c"],
+    "text": "#111111",
+    "accents": ["#8302c7", "#18045e", "#1a7cf5"],
+    "accent_strategy": "Per-content and brand-flooded at once: each event page takes its theme from the user's poster (iridescent lavender for one event, deep indigo-violet grid glow for another), so the page colour is user-authored. Chrome stays neutral (white sheets, dark Explore cards) and emoji provide most small-scale colour.",
+    "source": "palette.json 01: #dbe0f1 / #b5d2f1 = iridescent event-page theme, #8302c7 / #18045e / #522b80 = purple-blue marketing glow; 06: #07052e / #350365 / #2a005c = dark violet event theme; 05: #21201f = Explore dark cards; 03: #fbf9fb / #f9e8e1 = share sheet and peach backdrop. #1a7cf5 is the iMessage View button (system)."
+  },
+  "shape": {
+    "radius_language": "pill and large: pill category chips, reaction chips and buttons (Upload, View all), ~16pt cards and sheets, circular icon buttons and avatars, ~4pt on poster images",
+    "concentric": "unclear",
+    "borders_shadows": "1px light outlines on pills over dark themes; iridescent gradient edge around the shared poster card; soft drop shadow on stickers (marketing)",
+    "materials": "Mixed: frosted/iridescent sheet surfaces over themed backgrounds, torn-paper and sticker collage graphics in Explore, animated-looking glow grid themes"
+  },
+  "liquid_glass_visible": "unclear: the 'Going' RSVP orb in 01 is a glossy iridescent bubble and the image-picker search field is frosted, but it reads as Partiful's own effect rather than system glass",
+  "density": "medium: event page is a title, square poster, date/time and host block; Explore cards are thumbnail + title + time + blurb + attendee facepile",
+  "layout": "Event page: small wordmark, centred lowercase event title, a square user poster, then date/time, host and RSVP. Explore: torn-paper city hero, 'Trending in LA' heading, then dark rounded cards with a poster thumbnail, emoji category tag, title, time and facepile. Album: horizontal photo strip then an activity feed with emoji reaction pills.",
+  "navigation": "No tab bar visible in any frame. Bottom sheets with grab handles for image search and Share Link; share targets as a circular icon row (Copy Link, Messages, WhatsApp, More); top-right outline pill buttons.",
+  "imagery_and_icons": "User/house poster art (collage, 3D chrome type, photography), users' party photos, heavy emoji as category icons and reactions (💃 🎂 🧘 👋 🎨 🔥 📣 👍), a pixel-art speech bubble, sticker/torn-paper graphics; few line icons.",
+  "signature_visual_move": "The event page wears the user's poster: the whole page background shifts to match the chosen theme (iridescent lavender, violet grid glow) while the RSVP sits as a glossy emoji orb.",
+  "tells_present": ["Emoji as icons (category chips, reactions, RSVP button)", "Purple, indigo, violet; purple-to-blue gradient (event themes and marketing)", "Neon glow (violet grid themes)", "Gradient backgrounds"],
+  "direction_fit": {
+    "primary": "User-Authored Poster",
+    "secondary": "Shareable Artifact Studio",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The poster and theme set the page; chrome is a thin neutral layer. The tells appear as deliberate, user-chosen expression rather than default output, which fits the direction's 'permission to be tacky'."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Tells here are on-brand, not template residue; the dealer should treat emoji-as-icon and purple glow as allowed only on the user's artifact, per the direction's restraint rule. 04 is system Messages, so it shouldn't be used for chrome judgements."
+}

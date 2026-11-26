@@ -1,0 +1,10 @@
+.cache/
+.DS_Store
+node_modules/
+build/
+dist/
+.expo/
+DerivedData/
+*.app/
+examples/*/ios/
+examples/*/android/

@@ -1,0 +1,46 @@
+{
+  "slug": "rooms",
+  "track_name": "Rooms",
+  "version": "4.0.49",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light after the first image. 01 is pure marketing: a hexagonal mosaic of user-made voxel rooms with the 'Rooms' wordmark and tagline, no UI chrome. 02-06 are full-bleed raw screen captures (status bar visible, no frame, no caption), about 100% real UI. Images are 600x1300.",
+  "typography": {
+    "display": "Custom display face with squarish, slightly blocky rounded letterforms in heavy weight for screen and section titles ('Create', 'Activities', 'Ghost', 'Pick an action, any action'); retro/game feel, name unsure. The wordmark in 01 uses a hexagonal 'oo'.",
+    "body": "system SF for descriptions, labels, counts ('Small creative projects you can finish in minutes', '1.0k')",
+    "numerals": "proportional SF for engagement counts; n/a otherwise",
+    "weights": "Heavy custom display for titles; regular/medium SF for body; semibold white labels on coloured tiles",
+    "case_and_tracking": "Sentence/title case; small ALL-CAPS status pills ('OPEN') ; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#1c1918", "#2a2a2a", "#ffffff"],
+    "text": "#ffffff",
+    "accents": ["#2f7bf6", "#e84b4b", "#2fbf71"],
+    "accent_strategy": "Chrome is near-monochrome dark with one system-blue accent for status pills and links; all saturation comes from user-built voxel scenes and their per-room gradient backdrops (indigo, teal). The action picker floods each tile with its own hue (green, red, blue, orange, purple, yellow, cyan, lime, grey).",
+    "source": "palette.json 03 (#010101 bg, #1c1918 and #595654 card greys), 02 (#6c74e5/#6765de indigo room backdrop), 06 (#689695 teal backdrop), 04 (purple neon scene); blue accent and red/green cancel/confirm matched visually"
+  },
+  "shape": {
+    "radius_language": "large: ~16pt cards and tiles, ~20pt room-viewer card, pill segmented edit/play toggle and status pills, capsule tab bar",
+    "concentric": "yes: centre '+' lozenge sits inside the capsule tab bar",
+    "borders_shadows": "Thin lighter-grey 1pt borders on dark cards; dashed hexagon outline for 'Blank space'; no shadows in chrome; real-time lighting and shadows inside the 3D scenes",
+    "materials": "Liquid Glass tab bar; translucent bottom info bar on the room viewer; voxel 3D with lighting in content"
+  },
+  "liquid_glass_visible": "yes: floating glass capsule tab bar in 03 (home, +, profile) refracting the challenge image beneath; translucent creator bar in 02 and 06 (unclear if glass or blur)",
+  "density": "low-medium: 3-up create tiles, one featured activity card with paging dots, full-bleed challenge image; viewer is one room per screen",
+  "layout": "Feed/viewer: one isometric voxel room centred on a soft gradient card, close X top-left, sound toggle, bottom bar with creator avatar, room name, comments and likes. Create: centred icon + title, 3 starter tiles, Activities carousel, Challenge banner. Editor: full-bleed scene with edit/play segmented toggle, transform gizmo arrows, a white bottom sheet with object name and action icons.",
+  "navigation": "3-item floating glass tab bar (home icon, centre '+', profile icon), icons only. Editor uses a top segmented edit/play control and a draggable bottom sheet. Modal action picker as a centred white card over a dimmed scene.",
+  "imagery_and_icons": "Voxel 3D scenes (the content); Apple colour emoji used as large icons on action tiles (runner, speaker, cloud, speech bubble, mirror, flashlight, camera, magnet, stopwatch); outline SF Symbols in the editor toolbar",
+  "signature_visual_move": "Each room is a lit isometric voxel diorama floating on its own soft gradient, viewed one at a time like a toy on a shelf.",
+  "tells_present": ["Emoji as icons (action picker tiles, deliberate and on-brand here)"],
+  "direction_fit": {
+    "primary": "Toy / Game-Engine Tactile",
+    "secondary": "User-Authored Poster (content is user-made rooms; chrome stays quiet)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Game-engine-lit voxel scenes are the whole product; chrome is conventional dark iOS with a glass tab bar, matching the restraint rule that pro tools sit under the toy surface."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "Emoji-as-icons is the community's top tell, but here it is a toy-box choice paired with bold flat colour tiles; a skill should treat it as acceptable only inside a Toy direction. The custom blocky display face is a second ownable element."
+}

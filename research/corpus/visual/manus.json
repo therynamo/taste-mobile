@@ -1,0 +1,46 @@
+{
+  "slug": "manus",
+  "track_name": "Manus - AI Agent & Automation",
+  "version": "26.20.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Very heavy. All six frames sit on a flat #f5f5f5 backdrop with a charcoal headline that embeds a pastel tinted pill (Web & App, Slides, Video, Game Dev, Connect). Only 01 shows Manus's own UI (wordmark, headline and the task composer, ~35% of the frame) plus a scatter of tilted capability tags. 02–05 show agent OUTPUTS rather than Manus chrome: a generated travel-planner app, a slide deck, a grid of video thumbnails and a generated 3D game. 06 is an integrations logo wall. No thread, task list, progress, notification or approval screen is shown.",
+  "typography": {
+    "display": "Lowercase serif wordmark 'manus' beside a hand-drawn hand mark; marketing headlines in a tight heavy grotesque (unsure; not obviously SF)",
+    "body": "unsure: the composer placeholder (Assign a task or ask anything) is a light-grey neo-grotesque that could be SF",
+    "numerals": "n/a",
+    "weights": "Serif wordmark at regular weight; headline grotesque bold/heavy; capability tags bold in a darkened hue of their pastel fill",
+    "case_and_tracking": "Sentence case; tight negative tracking on headlines; lowercase wordmark",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f5f5f5",
+    "surfaces": ["#fbfbfb", "#e2f6f2", "#faead1"],
+    "text": "#32312d",
+    "accents": ["#0c5b48", "#550774", "#55060b"],
+    "accent_strategy": "Per-capability tints: each capability (Automation, Docs, Slides, Game Dev, Remote Control, Website, App Builder) gets a pastel fill with bold text in a dark shade of the same hue. No single brand accent; the shell itself is warm charcoal on near-white.",
+    "source": "palette.json 01 and 06: #f5f5f5 = backdrop and app ground, #fbfbfb = composer card, #e2f6f2 / #eaefed = pastel tag fills. Text #32312d and tag text colours #0c5b48, #550774, #55060b sampled by pixel from 01. The darker hues in 03–05 (#1d3124, #362924, #2d3339) belong to generated outputs, not Manus."
+  },
+  "shape": {
+    "radius_language": "large and pill: composer card ~24pt, circular 44pt tool buttons inside it, capability tags ~10pt rounded rectangles; output previews ~20pt",
+    "concentric": "unclear",
+    "borders_shadows": "Composer floats on a soft wide shadow with no border; tool buttons are hairline-outlined circles",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "unclear: no glass on the only Manus screen (01); a dark translucent dropdown appears in 05 but it belongs to a generated game preview",
+  "density": "low on 01: a centred mark, two-line headline and one composer card; the output showcases are dense but are not Manus UI",
+  "layout": "Home (01): centred serif wordmark with hand mark, large headline, then one multi-line composer card whose bottom row holds +, a connector/plug button and a computer/remote button on the left, and voice-chat, mic and a disabled grey send arrow on the right.",
+  "navigation": "Not visible. No tab bar, drawer or top bar appears in any frame.",
+  "imagery_and_icons": "Outline monoline icons in circular buttons; hand-drawn mascot-like mark; capability tags carry small outline glyphs; showcase frames are AI-generated photography and illustration",
+  "signature_visual_move": "Capabilities are sold as colour-coded pastel tags whose text is a dark shade of the tag's own hue, scattered like stickers under the composer.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Neutral Hyper-Minimal Assistant (anti-reference) on the composer screen",
+    "secondary": "Shareable Artifact Studio",
+    "confidence": "low",
+    "agrees_with_text_record": "no",
+    "why": "The text record tags Manus 'Async Dispatch / Mission Control', an interaction model the screenshots never show (no task progress, notification or approval UI). What is visible is the converged assistant home (centred mark, headline, big composer with + and voice) lifted by a serif wordmark and the pastel capability system, and a store listing that sells generated artifacts (apps, decks, videos, games) as the product."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Too marketing-heavy to judge the agent UI. The direction evidence here is about what Manus sells (outputs) rather than how it looks. The 01 composer has six controls, more than the chat-module template's single +, which hints at a tool-forward dispatcher, but tool descriptions are not visible. Cream-plus-serif is present in the wordmark only and there is no orange, so the 2026 default tell is not triggered."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "notion-calendar",
+  "track_name": "Notion Calendar",
+  "version": "2.2.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All 6: pale blue #e4f1fa backdrop with a large bold black two/three-line headline (top ~25%) and a frameless rounded phone screen (no bezel) showing ~65-70% real UI cropped at the bottom. 01 adds Notion's black-ink hand-drawn people illustration perched on the phone and two fanned background screens. The UI itself looks unretouched.",
+  "typography": {
+    "display": "Inter-like grotesque, bold for the month title ('October') and semibold for sheet titles ('Manage Calendars', 'Scheduling links'); not SF (straight-legged 'R', Inter-style 't')",
+    "body": "custom: Inter or very close (Notion's UI face)",
+    "numerals": "proportional; day numbers regular grey, today in white on a red rounded square; time ranges compact (9:15-9:45...)",
+    "weights": "bold month titles, medium event titles, regular grey metadata and time gutters",
+    "case_and_tracking": "sentence case, default tracking; weekday abbreviations two letters (Sa Su Mo)",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f9f8f6", "#f9f9f9"],
+    "text": "#37352f",
+    "accents": ["#e03e3e", "#2f80ed"],
+    "accent_strategy": "Per-calendar colour: each event is a pale tint fill with a 3pt left bar and same-hue text (blue Work, red Family, green Fitness, pink Personal, purple Learning). A red rounded-square marks today and the current-time line. One blue for the primary 'Join Google Meet' button. Chrome is warm off-white and grey.",
+    "source": "palette.json 04 (#f9f8f6 warm header/sheet surface 32%), 01/02 (#ffffff, #f9f9f9); #e4f1fa is the marketing backdrop; event and today hues read visually"
+  },
+  "shape": {
+    "radius_language": "mixed small/large: ~4pt event blocks and colour swatches, ~6pt today marker, ~18-20pt grouped cards and the view-picker popover, circles for close and menu buttons",
+    "concentric": "no",
+    "borders_shadows": "very light grid hairlines; dotted outline for tentative events ('Update', 'Daily Standup'); soft shadows under floating circular close/menu buttons and the popover",
+    "materials": "flat; floating white circles with shadow"
+  },
+  "liquid_glass_visible": "no: floating circular buttons are opaque white with shadow",
+  "density": "high in calendar views (3-day view with 3 time-zone gutters, month grid with '3 more' overflow), medium in sheets",
+  "layout": "Calendar grid: large month title with up/down chevron switcher, weekday header row with date numbers, time gutter left, tinted event blocks with left colour bars, red current-time line with red time pill. View picker as a rounded popover menu from a floating hamburger circle (Schedule, Month, Week, 3 days, 2 days, 1 day).",
+  "navigation": "No tab bar. Floating circular hamburger button bottom-left opens the view menu; modal sheets with a floating circular X close button and a centred title; Save as grey text button.",
+  "imagery_and_icons": "Outline icon set (clock, repeat, person, pin, doc, lines) in grey at ~1.5pt; menu icons show the view geometry (grid, columns). Avatars in participants; the hand-drawn Notion people illustration is marketing-only.",
+  "signature_visual_move": "Pale per-calendar tinted event blocks with a solid left colour bar and same-hue text, plus a red today marker, on a warm off-white Notion grid.",
+  "tells_present": ["Generic font (Inter, Geist)"],
+  "direction_fit": {
+    "primary": "Chromatic Timeline",
+    "secondary": "posture: unified custom system (Notion web look ported to iOS)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Colour per event block on a vertical time axis is the reading layer, which is the Chromatic Timeline signature. It lacks the per-block icon cue that Structured uses, so it is a weak member. The near-white warm neutral matches that direction's restraint rule. It is not Dark Pro Minimal."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Brand identity (the ink people illustration) appears only on marketing. In-app it reads as a clean Notion-styled cross-platform calendar."
+}

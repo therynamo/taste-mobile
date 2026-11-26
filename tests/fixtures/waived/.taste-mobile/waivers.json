@@ -1,0 +1,4 @@
+[
+  { "rule": "T03", "file": "src/Brand", "reason": "brand-owned indigo, token brand.primary" },
+  { "rule": "T04", "reason": "x" }
+]

@@ -1,0 +1,46 @@
+{
+  "slug": "capwords",
+  "track_name": "CapWords: AI Language Tutor",
+  "version": "2.0.20",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Speckled pastel backdrops (butter yellow, dusty rose, mauve, mustard) with die-cut photo stickers, line-drawn fruit outlines and confetti dots scattered around. 01 is pure marketing (headline in a sticker outline, rainbow-lettered 'language', serif wordmark, award laurels). 03 is a staged composition of stickers around the Cappy mascot with a black 'Talk with Cappy' pill, possibly an in-app screen but with no chrome. 02, 04, 05 and 06 show a real screen in a tilted or straight iPhone frame at about 55-65% of the image, with stickers overflowing the frame. Images are 600x1300. The sticker wrapper is itself brand evidence: it reuses the app's own output.",
+  "typography": {
+    "display": "Two voices: a heavy rounded geometric sans for sticker labels, set with a thick white outline ('Helado', 'Perro', 'Glace'), and a classic bold serif for dates and the wordmark ('Feb 03', 'CapWords', 'Hola'), italic serif on the camera date. Names unsure.",
+    "body": "custom-looking grotesque for sentences (bold Spanish line, wider grey regular translation); possibly SF for small labels ('19 Words', 'light up words'); unsure",
+    "numerals": "serif lining for dates ('Feb 03'); rounded sans for counters ('0/15')",
+    "weights": "Heavy/black sticker words, bold serif dates, bold sentence lines over regular translations",
+    "case_and_tracking": "Sentence case; normal tracking; IPA transcription in grey ('/e'la.ðo/')",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f4f4f4",
+    "surfaces": ["#ffffff", "#faf6f3"],
+    "text": "#2b2b2b",
+    "accents": ["#ffeb76", "#e98aa8", "#f5a623", "#7b68c8"],
+    "accent_strategy": "Per-content: the app chrome is light grey and near-black, and colour comes from the photographed objects and the stickers; a confetti of saturated dots (pink, purple, orange, red) marks words being lit up; orange underline highlights the target word in a sentence. Brand yellow dominates marketing.",
+    "source": "palette.json 05/06 (#f4f4f4 app background), 04 (#faf6f3 conversation screen), 01/03 (#ffeb76 brand yellow backdrop), 04/05 (#d4938d, #c492ad marketing backdrops); confetti and underline hues matched visually"
+  },
+  "shape": {
+    "radius_language": "mixed: die-cut organic sticker outlines with thick white borders, circular buttons (close, capture, menu), pill CTA, rounded camera viewfinder corner brackets",
+    "concentric": "no",
+    "borders_shadows": "Thick white sticker stroke plus a soft drop shadow on every cut-out word and object; polaroid frames; chrome itself is borderless",
+    "materials": "Photographic die-cut stickers with paper-like shadow on flat grey; speckle paper texture in marketing; translucent circular buttons over camera"
+  },
+  "liquid_glass_visible": "unclear: translucent circular buttons in camera and conversation views could be glass or plain blur",
+  "density": "low: one object or one prompt per screen, a sticker shelf row at the top, lots of empty space",
+  "layout": "Capture: full-screen camera with corner brackets, serif date top-left, multicolour-ringed shutter centre-bottom flanked by close and gallery buttons. Day view: serif date title + word count, a horizontal shelf of the day's stickers (unselected greyed), the selected object large in the centre with translations as stickers around it, the word and IPA below. Conversation: Cappy mascot bottom, the AI's sentence centred with the target word underlined, a progress counter 'light up words 0/15' top.",
+  "navigation": "No tab bar visible. Back chevron + centred serif date title; circular close X; minimal custom chrome.",
+  "imagery_and_icons": "User photos turned into die-cut stickers (ice cream, cone, tomato, dog); a pink donut mascot 'Cappy' with googly eyes and sprinkles; flag icons; outline system icons (speaker waves, chevron, close)",
+  "signature_visual_move": "Every photographed object becomes a die-cut sticker with a thick white edge, labelled in an outlined rounded word sticker in each language.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Shareable Artifact Studio",
+    "secondary": "Authored Illustration (dimensional sticker variant), with a Coach Character note (Cappy)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The output is a collectable sticker object with its own art direction, which matches both halves of the text record's tag (Texture-Era Pictographic, now merged into Authored Illustration, plus Shareable Artifact Studio). Sharing/export itself is not shown."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "Mixing a bookish serif (dates, wordmark) with chunky outlined sticker type is the ownable pairing. The Cappy mascot gives the AI tutor a character, a light Coach Character overlay. Rainbow-letter 'language' in the hero is marketing only."
+}

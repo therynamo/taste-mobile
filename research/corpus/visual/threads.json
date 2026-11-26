@@ -1,0 +1,52 @@
+{
+  "slug": "threads",
+  "track_name": "Threads",
+  "version": "457.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All 6 share one template: pure black backdrop, a two-line white caption with one phrase on a hand-drawn yellow highlighter swash (top ~30%), and a frameless white phone outline cropped at the bottom showing ~60% real UI. 02, 03, 05 and 06 lift one card out of the screen and enlarge it (marketing pop-out); the rest of the UI under it is real.",
+  "typography": {
+    "display": "SF Pro bold for screen titles ('Search', 'Book Threads', 'Thread'); the Threads '@' glyph mark is the only brand display element in-app. Marketing captions use a different grotesque (not in UI).",
+    "body": "system SF",
+    "numerals": "proportional SF, small grey counts beside action icons",
+    "weights": "semibold username, regular post body, regular grey timestamps and counts; bold large titles",
+    "case_and_tracking": "sentence case, default tracking; lowercase usernames dominate the visual texture",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": [
+      "#f3f4f3",
+      "#f6f5f4"
+    ],
+    "text": "#000000",
+    "accents": [
+      "#000000",
+      "#0095f6"
+    ],
+    "accent_strategy": "Monochrome chrome: black is the action colour (filled black Follow/Join pills, black poll bar, filled black home tab). Colour appears only as semantic signals (blue verified badge and blue links/community names, red filled heart when liked, red LIVE pill, green online dot) and in user avatars and media.",
+    "source": "palette.json 01-06 (#ffffff UI, #000000 marketing backdrop and UI text, #f3f4f3/#f6f5f4 grey fills); blue and red read visually"
+  },
+  "shape": {
+    "radius_language": "mixed: circle avatars; ~12-16pt on poll bars, quote cards and chat bubbles; ~8pt black buttons; grey rounded-square (~10pt) behind the compose '+' tab",
+    "concentric": "unclear",
+    "borders_shadows": "hairline grey separators between posts; thin grey vertical thread line connecting replies; no card shadows in real UI (shadows only on marketing pop-outs)",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no: tab bar and top bars are flat white",
+  "density": "medium; ~4-5 posts per screen, 12-16pt vertical padding per post, text-led rows with left avatar gutter",
+  "layout": "Single-column text-first timeline: centred '@' mark top bar, composer row ('What's new?'), then posts as avatar + username/time + body + action row, separated by hairlines.",
+  "navigation": "Bottom tab bar, 5 icon-only tabs (home filled, send/DM, '+' compose in a grey rounded square, heart activity, person profile); no labels. Top bar: hamburger left, logo centre, search right on home; standard back chevron with large bold title elsewhere. Native-feeling but custom-drawn.",
+  "imagery_and_icons": "Custom outline icon set at ~1.5pt stroke (heart, speech bubble, repost arrows, paper-plane send); filled only for selected state (home tab, liked heart in red). Imagery is user avatars and post media only. Emoji appear inside user content and as reactions in live chat.",
+  "signature_visual_move": "Pure black-and-white chrome where black itself is the accent (black Follow pills, black poll bar, filled black home tab), leaving avatars, media and a few semantic blues and reds as the only colour.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "posture-only: feed core with monochrome chrome (black as the action colour, user media the only hue); close to the 'Inherited Parent Grammar' anti-reference shape",
+    "secondary": "none of the 17",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The screens confirm the text record's 'content-deferent monochrome feed': no brand hue in UI, SF type, standard feed anatomy and Instagram-like 5-icon tab bar. The only authored element is the '@' mark and the highlighter swash, which lives on marketing, not in the app."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "The yellow highlighter swash is marketing-only brand evidence. The search frame advertises 'What people are saying, summarized by AI'. Hide/send icons and the compose '+' in a soft grey square match Instagram's tab treatment."
+}

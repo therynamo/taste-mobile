@@ -1,0 +1,46 @@
+{
+  "slug": "tot",
+  "track_name": "Tot Pocket",
+  "version": "2.1.1",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "All 5: a saturated per-frame gradient backdrop (purple, blue, teal, green, orange) matching the colour of the selected dot, with faint large serif watermark text ('crazy ones...'), a 2-line white caption (top ~15%) and a neon-outlined phone silhouette in the same hue; ~75% of each frame is real UI. Stale assets: iOS 12/13-era status bars ('Carrier', 'No SIM'), pre-iOS 14 keyboard and widget styling.",
+  "typography": {
+    "display": "No display tier; section labels in the note are user text set in bold all-caps in the dot colour (NOTES, LINKS, QUOTES, TODO)",
+    "body": "user-selectable: system SF (01, 02), a transitional book serif (03; Georgia/Iowan-like, unsure), and a monospace (04; SF Mono-like, light)",
+    "numerals": "proportional in SF; tabular in the mono setting; status line counts '23 lines · 73 words · 424 characters'",
+    "weights": "regular body, bold for headings and links, italic for sub-headings",
+    "case_and_tracking": "all-caps headings in the user's text, normal tracking; the mono setting is wide-tracked by nature",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#1e1623",
+    "surfaces": ["#e7eeff", "#effafd", "#fbfff5", "#141f23"],
+    "text": "#000000",
+    "accents": ["#e1b12c", "#d9732b", "#c0392b", "#9b4de0", "#3e6bd6", "#3ca4c8", "#6cbd45"],
+    "accent_strategy": "Seven fixed dot colours (yellow, orange, red, purple, blue, teal, green) are the whole system: each dot tints its page background, headings, links, selection handles and toolbar keys in its own hue. In-app chrome is otherwise grey.",
+    "source": "palette.json 01 (#1e1623 dark purple-black page), 02 (#e7eeff blue page tint), 03 (#effafd/#141f23 teal light/dark split), 04 (#fbfff5 green page tint); the seven ring hues read visually; #740698, #075695, #017884, #49781d, #d78727 are marketing backdrops"
+  },
+  "shape": {
+    "radius_language": "small: ~6pt keyboard toolbar keys, ~12-14pt widgets (system), circles for the seven ring dots",
+    "concentric": "no",
+    "borders_shadows": "hairline under the dot bar; no shadows; keyboard accessory keys use the dot tint",
+    "materials": "flat; tinted paper colours per dot"
+  },
+  "liquid_glass_visible": "no (pre-iOS 14 screenshots)",
+  "density": "low; one full-page plain-text note per dot, standard reading margins, a single status line at the bottom",
+  "layout": "Fixed seven-slot structure: a centred row of seven coloured rings at the top (selected = filled), info button left, settings gear right; the entire screen below is one text page tinted in the slot colour; a footer status line with line/word/character counts and an expand chevron.",
+  "navigation": "The seven ring dots replace tabs and lists; no tab bar, no back stack. Custom keyboard accessory bar (bold, italic, list, move, bullet, check, send). Home Screen widgets list the seven dots as coloured rings.",
+  "imagery_and_icons": "None in-app beyond rings and a few thin outline glyphs (info, gear, chevron); no photos or illustration. Emoji and kaomoji only inside user text (widget sample).",
+  "signature_visual_move": "Seven coloured rings across the top as the only navigation, with each ring repainting the whole page in its hue.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "NEW: Typographic Writing Surface (fixed-slot variant): the page and user-chosen type are the interface, colour indexes seven slots",
+    "secondary": "Rationed Ritual (spatial cousin: a fixed seven-slot constraint instead of a time constraint); Toy accent is not visible in screenshots",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record leaned on a Toy accent (live icon) over a constraint utility. The screenshots show no toy surface, only the constraint: seven colour slots, a plain-text page and a choice of SF, serif or mono type. Visually that sits with Bear and Craft as a writing surface, with the slot constraint as its own signature."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Screenshots are several iOS versions old (version 2.1.1 dated 2025-10, frames show iOS 12/13). The seven-dot system is unmistakable and very cheap to describe, which makes Tot a good small-scale exemplar of 'one constraint as the art direction'."
+}

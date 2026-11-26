@@ -1,0 +1,46 @@
+{
+  "slug": "oko",
+  "track_name": "Oko - Cross streets and Maps",
+  "version": "4.7.5",
+  "screenshots_examined": 4,
+  "marketing_wrapper": "Very heavy. All four images sit on a peach/blush gradient backdrop with big dark-brown captions. 01 is a faded, tinted map under a caption, a mock search field and 'Featured in Forbes / 4.8 Rating' badges: essentially marketing art. 02 is a review bubble, a caption, and a phone cropped to its top third showing a camera feed, with an enlarged 'Walk Signal' banner breaking out of the frame. 03 and 04 show a cropped phone with an Apple Maps route and an oversized banner card overflowing the frame. Real UI is about 30-45% of each image, and the banner cards are staged at enlarged size.",
+  "typography": {
+    "display": "SF Pro bold in banners ('Walk Signal', 'Signal ahead', '730 ft'); captions also bold SF Pro in dark brown",
+    "body": "system SF (secondary lines in regular grey)",
+    "numerals": "proportional SF ('730 ft')",
+    "weights": "Bold/semibold primary line, regular secondary line",
+    "case_and_tracking": "Sentence case, default tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#ffffff", "#f4eee3"],
+    "text": "#1c1c1e",
+    "accents": ["#3fa35a", "#ffcc00", "#ff9500"],
+    "accent_strategy": "Semantic only: green full-bleed banner for Walk, yellow tint and warning triangle for 'Signal ahead', orange route line and location dot. The peach/blush gradient is marketing backdrop.",
+    "source": "palette.json 01-04 (#fbe3da, #fed5c5, #fff2f0 = marketing peach backdrop; #f4eee3 / #ddd9d2 = Apple Maps base), 02 (#6b7a5c/#84ac86 green banner region); route orange and warning yellow matched visually"
+  },
+  "shape": {
+    "radius_language": "large ~20pt banner cards; circular icon badge; diamond road-sign glyph",
+    "concentric": "unclear",
+    "borders_shadows": "Banners carry soft glows/shadows (likely marketing enlargement); yellow banner has a pale yellow rim",
+    "materials": "flat cards over MapKit and a live camera feed"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low: one instruction banner over a full-screen map or camera view",
+  "layout": "Full-screen camera feed (signal detection) or Apple Maps route view with a single large status/instruction banner at the top.",
+  "navigation": "Not visible: no tab bar or nav bar appears in any frame.",
+  "imagery_and_icons": "Live camera feed; Apple Maps (MapKit) basemap; SF Symbols-style walking figure, warning triangle, turn-left diamond sign",
+  "signature_visual_move": "A single oversized, colour-coded status banner (green walk, yellow caution) sitting over the camera or map view.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Sensory-First",
+    "secondary": "Glance Board (one status at a time, semantic colour)",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Screenshots can't show haptics or audio, which is where the text record puts the direction. What is visible is a minimal, high-contrast, one-state-at-a-time banner over native map and camera views, consistent with a screen that is secondary to sound and haptics."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Too marketing-heavy to judge chrome, density or navigation. The listing now leads with 'Navigate confidently with AI' and a review quote, a marketing shift away from the accessibility framing. Visual evidence is not enough for the direction; it needs device capture with VoiceOver and haptics."
+}

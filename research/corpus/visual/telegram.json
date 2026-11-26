@@ -1,0 +1,46 @@
+{
+  "slug": "telegram",
+  "track_name": "Telegram Messenger",
+  "version": "13.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Each frame has a different two-colour blurred gradient backdrop (green, violet, orange-yellow, royal blue, orange-pink, blue-teal), a one-word headline in a very wide extended bold display (Fast, Powerful, Private, Secure, Creative, Cloud-based) with a white two-line subline in the top ~20%, and a modern Dynamic Island iPhone frame whose bezel colour matches the backdrop. Real UI fills ~70% of each frame and is uncropped: chat list, group chat, private chat with keyboard, secret chat, photo-wallpaper chat and a profile.",
+  "typography": {
+    "display": "System SF Pro: semibold centred nav titles inside a glass capsule, semibold chat-list names; profile name ~24pt semibold over the header colour",
+    "body": "system SF",
+    "numerals": "proportional system; small timestamps inside bubbles with ticks; poll percentages (67%, 33%) semibold; unread counts in round badges",
+    "weights": "Semibold names and titles, regular previews and message text, coloured semibold sender names in groups",
+    "case_and_tracking": "Sentence case; uppercase only for small section labels (ANIMATED EMOJI) with positive tracking; a user-styled folder name (WORK) in custom spaced letters",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f3f3f3", "#fffdd7", "#202e39", "#346f9b", "#2d2135"],
+    "text": "#000000",
+    "accents": ["#0871e7", "#028dff", "#9745ff"],
+    "accent_strategy": "Per-content and user-themed: the chat wallpaper and theme set the outgoing-bubble colour (pale yellow on a desert wallpaper, steel blue in the dark secret chat, violet on a dark doodle wallpaper, pink-to-blue gradient over a photo). The system blue stays constant for unread badges, links, the mic button and selection.",
+    "source": "palette.json 01 (#f9f9f8/#fffffe = list, green/olive = backdrop), 02 (#6d54d7/#8146dd = backdrop, #010001 = dark wallpaper), 04 (#0f61c0 = backdrop, #0c1c29 = secret-chat wallpaper). Bubble colours sampled by pixel: #fffdd7 (03 outgoing), #346f9b / #202e39 (04 outgoing/incoming), #9745ff (02 outgoing), #0871e7 / #028dff (01 folder badge and active tab)."
+  },
+  "shape": {
+    "radius_language": "large and pill: bubbles ~16–18pt with a small tail on the last bubble, capsule title pills, capsule folder bar, floating capsule tab bar with a separate circular search button, circular avatars with story rings, round video messages",
+    "concentric": "yes",
+    "borders_shadows": "No borders; floating glass elements carry a soft shadow and light rim; chat-list rows use inset hairline dividers",
+    "materials": "Custom glass everywhere: capsule tab bar, header buttons, title capsules, composer and the emoji-panel tab bar, all translucent over wallpaper and photos; chat wallpapers are doodle patterns, gradients or photos"
+  },
+  "liquid_glass_visible": "yes (custom): floating capsule tab bar plus detached circular search button (01), grouped header capsules (01), glass title capsule and back circle over wallpaper (02–05), glass composer pill with separate circular attach and mic (03–05), glass GIFs/Stickers/Emoji switcher (03). In still frames it is visually very close to native iOS 26 Liquid Glass.",
+  "density": "medium-high: chat list rows ~68px with a 56pt avatar, two-line preview, time and badge; a stories row and a folder capsule bar sit above the list; group chat packs avatars, names, replies, polls and voice messages tightly",
+  "layout": "Chat list: Edit / 'Chats ★' / new-story + compose header, horizontal stories row with gradient rings and LIVE tags, folder capsule (All, Groups 6, WORK 2, Bots), then the list. Chat: glass title capsule with member count or last-seen, avatar top right, messages over a wallpaper, glass composer at the bottom.",
+  "navigation": "Floating glass capsule tab bar with four labelled tabs (Contacts, Calls, Chats with red badge, Settings) plus a detached circular search button; glass top buttons; the keyboard area hosts a glass media switcher",
+  "imagery_and_icons": "Filled glyph tab icons; animated stickers and animated emoji as content; photo avatars with story rings; doodle-pattern wallpapers; emoji statuses next to names",
+  "signature_visual_move": "Chrome is a set of glass capsules floating over a user-chosen wallpaper, so each chat's colour comes from its theme rather than from the brand.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Custom Glass Replica (anti-reference; a posture rather than a look)",
+    "secondary": "User-Authored Poster (expression lives in user wallpapers and themes; chrome stays conventional)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Glass on the tab bar, composer, title and sticker/emoji panel is visible as the text record describes. On iOS the replica is hard to tell from native in stills; the anti-reference judgment rests on its Android port and pre-iOS 26 rendering, which screenshots cannot show. Colour per chat is user-themed, which is why the secondary leans to user-authored expression."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Chat anatomy: bubbles are ~16pt rounded with a small tail on the last bubble of a run; outgoing colour follows the theme (pale yellow #fffdd7, steel blue #346f9b, violet #9745ff, pink-to-blue gradient), incoming is white in light themes and #202e39 in dark; timestamps and double ticks sit inside the bubble's bottom-right. Composer: glass capsule 'Message' field with a keyboard/sticker toggle and a self-destruct timer in secret chats, flanked by separate circular attach and mic buttons; the recording state shows a slide-to-cancel line and a large glowing blue mic with a lock affordance. Chat list density: high, with stories and folders stacked above. Custom vs native glass: Telegram matches Apple's anatomy (floating capsule tab bar, detached search circle, capsule title) almost exactly, and the difference is invisible in stills. It shows up only in behaviour (refraction-on-scroll, Power Saving toggle) and on platforms without native glass. The text record's 'custom' claim cannot be confirmed or refuted from pixels."
+}

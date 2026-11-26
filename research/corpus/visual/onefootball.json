@@ -1,0 +1,46 @@
+{
+  "slug": "onefootball",
+  "track_name": "OneFootball Live Soccer scores",
+  "version": "16.212",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "None. All 6 frames are raw full-screen captures with no caption, backdrop or device frame, so about 100% is real UI. The status bar is the old iPhone 8-style layout (9:41 AM, Bluetooth, 100%), and the content is from summer 2024 (Euro 2024, Matchday 1 on 16 August). The captures therefore predate iOS 26 and may not show current chrome.",
+  "typography": {
+    "display": "custom grotesk with geometric touches (single-storey feel, round 'o'), consistent with the 2020 custom font noted in the text record (name unsure). The 'ONEFOOTBALL' wordmark is a heavy, slightly extended all-caps sans.",
+    "body": "custom (same family; not SF)",
+    "numerals": "proportional, medium-to-bold weight: form-guide scores '1 - 3' and '3 - 2', penalty shoot-outs set as '1(3) - 1(4)' with grey parentheses, kick-off '21:00', transfer fees '50.000.000 €' in European grouping; not condensed",
+    "weights": "Bold headlines and section titles ('Top News', 'Premier League'); regular grey subtitles; bold all-caps small labels ('WHO WILL WIN?', 'FORM GUIDE', 'DONE DEAL')",
+    "case_and_tracking": "Sentence case headlines; all-caps bold with slight tracking for small card headers; normal elsewhere",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f6f6f7", "#f3f3f4", "#000000"],
+    "text": "#17181c",
+    "accents": ["#000000"],
+    "accent_strategy": "Near-monochrome. Black is the interactive colour: selected tab underline, filled selected tab icon, and black headers on the match and competition screens. Colour comes only from content and semantics: a green fee pill on transfers, green, red and grey result dots in the form guide, team-colour outlines on the 'Who will win?' poll (Chelsea navy, City sky blue), a blue ring on the Stories bubble and a pink play glyph on 'FREE'.",
+    "source": "palette.json 01 (#ffffff 50%, #17181c 14% text), 05 (#ffffff 66%, #f3f3f4 / #fafafc grey ground), 04 (#000000 22% match header), 06 (#2630a1 is Ulsan crest content, not UI). Green fee pill visually matched, unmeasured (~#00703c)."
+  },
+  "shape": {
+    "radius_language": "small: about 6-8pt on cards (shortcut tiles, form-guide tiles, transfer cards, video card); fully rounded pills for the segmented control and the 'Who will win?' three-way control; circles for avatars and the Stories ring",
+    "concentric": "no",
+    "borders_shadows": "Soft, faint drop shadows under white cards on a light-grey ground; hairline dividers; a vertical rule separating teams from kick-off time",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no. The captures are old iOS with an opaque white tab bar and nav bar.",
+  "density": "medium. Generous 24pt side margins; feed headlines at about 22pt; fixture rows about 110pt tall for two teams. Comfortable rather than dense.",
+  "layout": "Home: a wordmark and search, a horizontal row of shortcut tiles (Stories ring with 🔥, Transfers 'Big movers', recent-result tiles '1 - 3 Overview'), then 'Top News' with a grey subtitle line, a split two-photo hero, a bold headline with source avatar and comment count, then text-left / thumbnail-right rows. Competition: a black header with the league logo and follower count, scrolling text tabs (Overview, Matchday, Table, News, Transfers, Stats), a matchday picker and day-grouped fixture cards. Match preview: a black header with crests and date, tabs, a 'WHO WILL WIN?' poll and a FORM GUIDE grid.",
+  "navigation": "Visible 4-tab bar: Home, Matches, TV, Profile. Filled black icon when selected, outline otherwise, with labels. A top bar with back arrow and actions (comments count, bookmark, share). Text tabs with a black underline. A three-segment pill control on Transfers (My Teams / Top / All).",
+  "imagery_and_icons": "News photography, club crests, publisher avatars (The Independent, 90min), player headshots; a simple outline icon set; one emoji used as an icon (🔥 in the Stories ring)",
+  "signature_visual_move": "Transfer cards set the fee in a solid green pill on the hairline between the player and the from → to clubs.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji (🔥 as the Stories avatar)", "Subtitles on everything; descriptions of obvious UI ('The hottest news and views from the world of football', 'Latest videos based on your following', 'Join us for the latest matches')", "Unstyled default white sheet; the 'unstyled RN default' (white, grey borders, system sizes)"],
+  "direction_fit": {
+    "primary": "Broadcast Network Portal (held candidate, not one of the 17; light, news-led variant)",
+    "secondary": "Glance Board (only on fixture and form-guide screens)",
+    "confidence": "low",
+    "agrees_with_text_record": "no",
+    "why": "The text record tagged OneFootball 'Gen-Z Expressive Poster at the brand layer'. Nothing in these screens shows the 'Hype' generative identity, poster type or loud colour. The UI is a plain white news-plus-scores-plus-TV portal with a black accent, closer to a light ESPN-style portal than to any of the 17. Low confidence because the captures are about 2024 and old-iOS."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Scoreboard anatomy. Score numerals: medium-bold proportional sans in centred tiles ('3 - 2'), with shoot-outs in grey parentheses; the match header shows date and time rather than a score (pre-match). Team colour and logos: crests everywhere at 28-60pt; team colour appears only as the outline colour of each side in the 'Who will win?' poll and as the split-colour backgrounds of the 'Watch live' video card (Suwon navy, Ulsan blue). Live state: none shown live; 'Live games · Watch now' and a pink ▶ 'FREE' pill point to streaming. No Live Activity or widget is shown. Match-centre density: low-medium in these frames (poll plus form guide; no stats screen shown). Form-guide dots are semantic green, red and grey. Betting: none, though the poll has a betting shape. The screens look like a stock white list template, which is why the 'unstyled default' tell is listed."
+}

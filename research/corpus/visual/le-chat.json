@@ -1,0 +1,46 @@
+{
+  "slug": "le-chat",
+  "track_name": "Vibe by Mistral (ex-Le Chat)",
+  "version": "2.17.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Deep navy backdrop (#19182a) with a faint square grid and a thin outline device silhouette; white tight-tracked grotesk captions with full stops ('Go deep on any topic.'). 01 adds the orange pixel 'M' mark and a Mistral wordmark inside the phone. Each frame shows ~65% real UI, and most add one oversized breakout card that overlaps the phone edges (suggestion cards, document header, 'Loading skill' row, connector logos, voice panel). 05 is mostly a connector sheet with the app greyed behind it. All six are UI-based; the breakout cards are enlarged copies of real UI elements.",
+  "typography": {
+    "display": "Neo-grotesk sans in-app for the greeting ('Welcome back, Charlie.', ~26pt regular) and document headings (semibold); captions in a tightly tracked grotesk",
+    "body": "unsure: a neutral neo-grotesk (could be Inter or a close cut), not identifiable at this size",
+    "numerals": "proportional in body ('$4.2M', '68.5%'); no mono",
+    "weights": "Regular greeting and body; semibold document titles; grey regular for step labels",
+    "case_and_tracking": "Sentence case, with full stops even on short captions and the greeting; default tracking in-app",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#fbfbf9",
+    "surfaces": ["#ffffff", "#f3f3f1", "#fff8f5"],
+    "text": "#19182a",
+    "accents": ["#fa500f", "#06ff00", "#c2ff00"],
+    "accent_strategy": "One brand accent (Mistral orange) used only as pixel art: the 'M' mark in the greeting, the pixel 'Working' loader glyph and the pixel cat. Cards carry a faint warm-pink top tint. Voice mode adds a lime-to-green bar waveform on a yellow/peach gradient panel. Everything else is off-white and navy-black.",
+    "source": "palette.json 01–06: #19182a / #151424 / #10101e 40–60% = navy marketing backdrop (also matches the app's text colour visually); #fbfbf9 23–29% = app canvas; #f3f3f2 / #eeeeed = user bubble; #fff8f5 / #fef2e2 / #e9f4d1 = card tint and voice panel. Pixel samples: pixel 'M' #ff4d07–#cf5023 (01), loader #fb821a (03), voice bars #06ff00 and #c2ff00 (06), user bubble #f3f3f1 (03), canvas #fbfbf9."
+  },
+  "shape": {
+    "radius_language": "mixed, smaller than the category: user bubbles ~20pt, suggestion and document cards ~10–12pt, composer a soft rounded rectangle ~12pt, the voice-panel buttons nearly square (~6pt); pixel art has no curves at all",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline borders on composer and cards; soft drop shadows on breakout cards (some of that is marketing); faint off-white circular top buttons with soft shadow",
+    "materials": "Flat; warm gradient tint on card headers and the voice panel"
+  },
+  "liquid_glass_visible": "unclear: the top circular buttons are soft-shadowed discs but show no translucency; nothing else looks glass.",
+  "density": "medium: step lists ('Ran 2 web searches', 'Thought for 3s', 'Loading skill …') are compact with connecting rails; documents are set as full cards",
+  "layout": "Home: pixel 'M' mark, left-aligned greeting with full stop, horizontally scrolling suggestion cards (connector logo top-left, two-line action) with the pixel cat sitting on top of the cards, then the composer. Thread: right-aligned light-grey user bubbles, plain assistant text, a vertical timeline of agent steps, inline source list and document cards.",
+  "navigation": "Circular menu button top-left, workspace switcher 'Work ▾' centred, an agent/ghost icon top-right. No tab bar. Connectors open as a bottom sheet with search, Reset and checkbox rows with descriptions.",
+  "imagery_and_icons": "Pixel art as the brand system: the orange pixel 'M', a black-and-orange pixel cat, a pixel 'Working' loader, pixel X and up-arrow glyphs on the voice panel. Chrome otherwise uses outline monoline icons; third-party logos for connectors and favicons for sources.",
+  "signature_visual_move": "8-bit pixel glyphs replace the usual spinner, mark and voice controls, and a pixel cat sits on top of the suggestion cards.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Pixel Heritage (held candidate, not among the 17)",
+    "secondary": "Neutral Hyper-Minimal Assistant (anti-reference) for the chrome",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record could not tell whether the pixel identity reached the app. It does: the loader, mark, cat and voice controls are pixel art, which is the 'metaphor drawn from the mark' lever. The canvas, bubbles and composer are still standard, so the escape sits in status visuals and icons, not structure."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Rebranded as 'Vibe by Mistral' (store name 'Vibe by Mistral (ex-Le Chat)'), which confirms the rename the text record marked as unverified. Composer: low rounded rectangle with a bordered '+' square, 'Ask Vibe anything' and a mic; no send/voice button visible on the empty state. Greeting: pixel 'M' + 'Welcome back, Charlie.' left-aligned, not centred, which is a small departure from the centred-greeting template. Voice: a floating panel with a symmetrical lime/green vertical-bar waveform flanked by dashed dots, a pixel X (cancel) and a black square button with a pixel up-arrow (send), and an 'Autosend OFF' toggle; a waveform, not an orb. Thinking/streaming: 'Working · Searching web ▾' header with the orange pixel loader, then a vertical rail of steps with check circles ('Ran 2 web searches', 'Thought for 3s') and a spinner on the active step ('Loading skill pipeline-analysis.md'); this matches the module's 'thinking as short status lines' requirement. Conversation list: not shown."
+}

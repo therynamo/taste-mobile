@@ -1,0 +1,46 @@
+{
+  "slug": "bear",
+  "track_name": "Bear Markdown Notes & Journal",
+  "version": "3.0.6",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is 100% marketing (charcoal backdrop, laurels, headline, big white bear silhouette). 02-06: white backdrop with thin grey hand-drawn line illustrations (stars, hills, pines, a red bird), 'For the <persona>' headline, and a black iPhone 8-style home-button frame showing ~60% real UI, cropped at the bottom. Each frame shows a different editor theme, which is the point of the set.",
+  "typography": {
+    "display": "Custom geometric-humanist sans, bold for note titles ('My 3D printing journal', 'The caffeine model', 'Pip the Reckless'); matches the marketing face, likely Bear's own Bear Sans, unconfirmed",
+    "body": "custom (same family, regular, generous line height); not SF",
+    "numerals": "n/a (formula set in a serif italic math face in 04)",
+    "weights": "bold titles and H2, regular body, bold/italic inline Markdown; light grey Markdown syntax markers (**) stay visible beside the bold text",
+    "case_and_tracking": "sentence case, slightly open tracking in body; lowercase tags (#wildlands, hobby/3D printing)",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#fefcf0", "#2e3235", "#2d4054", "#363845"],
+    "text": "#3a3a3a",
+    "accents": ["#dd4c4f", "#e89a2c", "#7ee787"],
+    "accent_strategy": "Theme-driven: each editor theme has one accent for links, cursor and headings (Bear red for links and cursor on the default light theme; green headings on the dark theme; amber links on 05). Highlights use soft yellow and teal marker fills. Callouts carry a semantic orange bar.",
+    "source": "palette.json 02/05 (#ffffff default theme), 04 (#fefcf0 cream theme), 03 (#363845 dark theme), 06 (#2d4054 sidebar), 01 #2e3235 marketing charcoal; accents read visually"
+  },
+  "shape": {
+    "radius_language": "medium: ~8-10pt on tag pills, callout, table and drawing canvas; capsule/circle floating buttons; ~14pt sidebar popover",
+    "concentric": "unclear",
+    "borders_shadows": "1pt light borders on the callout, table and drawing card; left orange 3pt bar on the callout; soft shadow on floating buttons and the pen tray",
+    "materials": "glass-like: floating back circle and info/more capsule are translucent rounded controls with a soft edge highlight; flat paper otherwise"
+  },
+  "liquid_glass_visible": "yes, probably: the back circle, info/more capsule, the sidebar menu button and the pencil tray are floating translucent capsules with edge highlights, consistent with Liquid Glass (odd inside an iPhone 8 frame)",
+  "density": "low; one note per screen, wide 28-30pt side margins, body at a comfortable reading size with ~1.6 line height",
+  "layout": "Editor-first: full-page note with large title, inline tags as grey pills, hybrid Markdown (syntax visible, formatting applied), callout blocks, checklists, tables, diagrams, drawings. Sidebar (06): slate-blue tag tree with workspace popover beside a cropped note list.",
+  "navigation": "Floating capsule controls only: back circle top-left, info + more capsule top-right; sidebar with nested tags and a workspace switcher popover; Markdown keyboard toolbar (03) and drawing tool tray (05). No tab bar.",
+  "imagery_and_icons": "Thin outline icon set (info, chevrons, tag hash, briefcase, lightbulb, beaker) at ~1.5pt; realistic pencil/crayon/pen tools in the drawing tray; user drawings and photos inside notes. Marketing uses monoline hand-drawn landscapes.",
+  "signature_visual_move": "A hybrid Markdown page where the type is the interface: faint ** markers stay visible beside rendered bold, and one theme accent colours links and the cursor.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "NEW: Typographic Writing Surface - the page and the type are the art direction, chrome reduced to floating capsules, power hidden behind toolbars",
+    "secondary": "Dark Pro Minimal (only the dark themes, weak)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Every UI frame is a page of type with no persistent chrome beyond two floating capsules. The theme set (light, cream, charcoal, slate) varies colour while the type and the page stay constant, which supports the text record's proposed direction."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Device frames are old (home-button iPhone) although the UI has glass-style capsules. The visible Markdown syntax is a strong, ownable typographic tell."
+}

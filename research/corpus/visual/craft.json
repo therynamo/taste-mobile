@@ -1,0 +1,46 @@
+{
+  "slug": "craft",
+  "track_name": "Craft: Notes, Docs & Tasks",
+  "version": "3.7.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All 6: textured gradient backdrops (cream-gold, orange, lavender-grey, navy-violet, amber) with halftone/grain and cloud wisps, a large serif headline with one italic accent word (top ~20-25%), black iPhone frame with ~60-70% real UI. 02 adds Mac and iPad frames and an 'App Store Awards App of the Year' badge; 03 a 'Design Awards Finalist' badge; 05 overlays a pop-out Style Gallery sheet and style-picker panel. The UI under the overlays looks real.",
+  "typography": {
+    "display": "Document titles use a transitional/old-style serif when the doc style calls for it ('Three days in San Francisco', 'Tokyo Spring Trip', 'Recap the year'), and a sans otherwise ('Big Sur Road Trip'); app chrome titles ('Tasks', 'Calendar', '10 Sep') are SF bold. Serif face unsure (Tiempos-like / Newsreader-like).",
+    "body": "system SF for app chrome and task lists; document body follows the chosen style (serif in 02/04/05, sans in 01)",
+    "numerals": "proportional SF in dates (10 Sep, 8 Sep); n/a otherwise",
+    "weights": "bold serif doc titles, regular/italic serif subtitles, bold coloured inline highlights; SF regular task rows",
+    "case_and_tracking": "sentence case, default tracking; italic used for doc subtitles ('Travel · West Coast notebook')",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#f2f2fa",
+    "surfaces": ["#ffffff", "#f5f0e3", "#472914"],
+    "text": "#1d1e17",
+    "accents": ["#2f7cf6", "#e5484d", "#e28425"],
+    "accent_strategy": "User-composed per document: each doc carries a backdrop gradient and page tint chosen by style (teal-gold, orange, navy, brown), with coloured inline highlights. App chrome (Tasks, Calendar) is a cool near-white with a system blue for today/selected and red for overdue flags (semantic).",
+    "source": "palette.json 03/06 (#f0f3fb/#f2f2fa task and calendar backgrounds), 01 (#f5f0e3 cream doc page), 05 (#472914 dark brown doc page, #120c07); orange #e28425 from 02 doc highlights; blue/red read visually"
+  },
+  "shape": {
+    "radius_language": "large and concentric: ~20pt document page card inset from the screen edge, ~12pt cover images and day tiles inside it, pill segmented controls and tag chips, circular glass buttons",
+    "concentric": "yes: page card, cover image and inner blocks step down in radius together; floating button clusters are capsules",
+    "borders_shadows": "light hairline under doc titles; tinted block backgrounds instead of borders (checklist block, quote block); soft shadow on the selected task row and context menu",
+    "materials": "glass plus texture: Liquid Glass button clusters and bottom bar over coloured gradient backdrops behind a paper-like page card"
+  },
+  "liquid_glass_visible": "yes: top-left back circle and top-right share/more capsule float as glass over the doc backdrop (01, 02, 04, 05); bell/more capsule on Tasks and Calendar; bottom bar on 06 is a glass capsule (home, tasks, calendar) with separate glass circles for an assistant ring and '+'",
+  "density": "low for documents (one cover, title, subtitle, a block or two per viewport), medium for tasks (8-10 rows with inline Inbox and date chips)",
+  "layout": "Document: coloured backdrop, inset page card with cover image, title, centred subtitle, tinted blocks (checklist, quote), image tiles. Tasks: large 'Tasks' title, four icon segments (Inbox, Today, Calendar, Logbook), grouped list with checkboxes and red flag dates. Calendar: day header with 'Today · Thursday', daily-note card, task rows with Inbox/date chips.",
+  "navigation": "iOS 26 floating glass chrome: back circle, share/more capsule; bottom glass capsule tab bar with 3 icon-only tabs (home, tasks, calendar) plus separate glass assistant and '+' buttons; context menus are native-style rounded popovers; pill segmented control (Share/Publish/Export/Transfer).",
+  "imagery_and_icons": "User cover photos and backdrop images; SF Symbols-style outline icons (share, ellipsis, bell, inbox, sunrise, calendar, flag); a colourful ring icon for the assistant; one emoji in a user doc title (05).",
+  "signature_visual_move": "Each document is a paper page card floating on a user-chosen colour backdrop, with a serif or sans style applied to the whole doc, under native glass controls.",
+  "tells_present": ["Cream plus serif plus orange (the 2026 default) (marketing 02/05 and the San Francisco doc style)", "Sparkle without a label (05 user doc heading prefixed with a sparkle emoji)"],
+  "direction_fit": {
+    "primary": "NEW: Typographic Writing Surface - the document is the art direction: user-chosen type style, page tint and backdrop on a page card, quiet native chrome",
+    "secondary": "platform-material overlay: native adopter (Liquid Glass); composition axis: user-composed",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Screens confirm the text record: document styles (serif/sans, page tint, backdrop) carry the identity while task and calendar chrome stay SF and system. It is user-composed rather than one fixed look, so the signature is the page-card-on-backdrop structure rather than any one palette."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "The store wrapper (textured gradient + serif headline + italic accent word) is itself the most consistent brand evidence. The default doc styles lean into the 2026 cream/serif/orange default, which is worth flagging if Craft is used as a reference."
+}

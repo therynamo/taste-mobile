@@ -1,0 +1,46 @@
+{
+  "slug": "perplexity",
+  "track_name": "Perplexity: AI Agent & Search",
+  "version": "26.46.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Dark #1a1a1a backdrop with a faint hairline geometric line pattern (an echo of the mark's construction lines). 01 is the heaviest: an illustrated night sky with flying books and rocks behind a black-bezel phone. Captions mix a grotesk with an italic condensed serif for one keyword ('answers', 'stories', 'Pro Search', 'Collections', 'follow ups'); 01's caption is a large condensed serif. Each phone shows ~60% real UI, cropped at the bottom. The UI shown is visibly dated: 'perplexity pro' wordmark header, pre-iOS 26 chrome, varied status-bar times (7:25, 3:18, 9:04), so these screenshots likely predate the current 26.46.0 build.",
+  "typography": {
+    "display": "Neo-grotesk sans for question titles ('What is kabuki theater?', ~28pt regular) and section headers ('Answer', 'Related'); marketing uses an italic condensed serif accent word that never appears in-app",
+    "body": "custom grotesk, consistent with FK Grotesk (unsure); a monospace for suggestion chips on the home screen and for metadata counts (views, forks, time)",
+    "numerals": "mono in metadata ('30,418', '1356', '3d', '3m', '5m'); proportional in body; citation numbers in small grey circular badges",
+    "weights": "Regular for big question titles and body; medium for list titles and labels; no heavy weights",
+    "case_and_tracking": "Sentence case; lowercase wordmark; mono chips at default tracking; no uppercase labels",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#1a1a1a",
+    "surfaces": ["#232524", "#2d2f2f", "#404040"],
+    "text": "#ffffff",
+    "accents": ["#20b8cd"],
+    "accent_strategy": "One accent: turquoise on the mark, the 'Continue' primary button, active filter chip, the asterisk Pro badge and the '+' follow-up glyphs. All other colour comes from content (Discover card tinted from its photo, #bc6d5d in 03).",
+    "source": "palette.json 02, 04–06: #1a1a1a 42–62% = app canvas (and backdrop); #1d1e1e / #1f1d1d / #212327 = card surfaces. 03 #bc6d5d 31% = Discover card's photo-derived tint. Pixel samples: turquoise #1abad2–#1fb9d1 (04 Continue button, 01 mark), cards #232524 (04, 01 chips), active chip fill #0f434e (05). Body text white; secondary grey ~#7d7f7e."
+  },
+  "shape": {
+    "radius_language": "mixed: cards ~12pt, suggestion and option chips ~8–10pt rounded rectangles, primary/secondary buttons full pill, text input a sharp-ish ~4pt rectangle with a hairline border, Discover card ~16pt",
+    "concentric": "no",
+    "borders_shadows": "Hairline dividers between list rows and sections; outlined Skip button and input field; no shadows",
+    "materials": "Flat opaque dark surfaces; no blur"
+  },
+  "liquid_glass_visible": "no: opaque dark headers and sheets; the screenshots predate iOS 26 styling, so this says nothing about the current build.",
+  "density": "medium-high: Library rows stack title, two-line grey preview, four thumbnails and a mono timestamp with hairline dividers; answers are long with citations inline",
+  "layout": "Home: centred turquoise mark + 'Where knowledge begins' above horizontally scrolling mono suggestion chips. Thread: big question as title, collapsible 'Pro Search · 3 steps' and 'Sources' rows with favicon stack, then 'Answer' with image strip and a knowledge card, then action row and 'Related' follow-up list with + glyphs. Library: segmented pills (Library / Pages / Collections) above a divided list. Discover: one tall photo card per story.",
+  "navigation": "Header with 'G' avatar left, wordmark centre, add-person right on home; threads open as a sheet with X, 'Thread' dropdown title and share. Library has search, title, '+'. No tab bar visible in any screenshot (the text record's edge-swipe navigation cannot be seen in stills).",
+  "imagery_and_icons": "Outline monoline icons; emoji inside home suggestion chips; favicon stacks for sources; photography from search results; the asterisk/cursor mark used as a Pro Search glyph.",
+  "signature_visual_move": "A citation apparatus rendered as UI: collapsible step and source rows with favicon stacks, numbered grey citation pills and mono metadata, all on near-black with a single turquoise.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji"],
+  "direction_fit": {
+    "primary": "Dark Pro Minimal",
+    "secondary": "Research Index (held candidate)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The visible UI confirms 'citation-first, teal on black': sources and steps are first-class rows, mono numerals, one turquoise. Hairlines over shadows and a flat dark stack also fit Dark Pro Minimal. The text record's off-white mode is not shown."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Composer: not visible in any screenshot (the store set never shows the input bar). Greeting/empty state: centred turquoise mark plus 'Where knowledge begins' with three rows of mono suggestion chips, each led by an emoji. Voice: not shown, apart from a headphones 'listen' button on answers and Discover. Thinking: shown as a 'Pro Search' disclosure row with a step count ('3 steps') and, in 04, a clarifying-question card ('Understanding question', option chips, free-text field, Skip / Continue) — a structured interruption rather than shimmer text. Streaming: not shown. Conversation list: Library is a divided list with title, two-line preview, thumbnail row and mono relative time. Caveat: these screenshots appear stale relative to v26.46.0 (Nov 2026), so judge current chrome and glass usage from device captures."
+}

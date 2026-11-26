@@ -1,0 +1,46 @@
+{
+  "slug": "fotmob",
+  "track_name": "FotMob - Soccer Live Scores",
+  "version": "1247",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light. Each frame is a pale mint-green grainy backdrop (#b4fbbc / #cff8d3 / #c3fcc9) with soft diagonal light bands, a short black bold grotesk caption ('Follow every match', 'Player ratings'), and an upright modern iPhone (Dynamic Island) in a titanium frame. Real UI is about 70% of each image and the bottom is cropped through the tab bar. 02 is entirely system surfaces: a Lock Screen Live Activity, a Dynamic Island and a Home Screen widget, shown on two stacked phones over a goal-net photo.",
+  "typography": {
+    "display": "In-app: system-looking bold sans for headers ('Player of the Match', 'Top stats', 'Heatmap'). The 'FOTMOB+' wordmark is custom. Captions use a tighter grotesk that is not SF (marketing only).",
+    "body": "system SF (team names, tabs, commentary and stat labels read as SF Pro)",
+    "numerals": "regular-to-light weight, wide-set match scores ('2 - 1', '3 - 5') rather than condensed; tabular right-aligned stat values; small bold numerals inside the rating chips (8.4, 6.6, 9.4★)",
+    "weights": "Light or regular large score; semibold section titles and team names; regular body; the selected tab is semibold black while the others are medium grey",
+    "case_and_tracking": "Sentence and title case throughout; no all-caps headers; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f1f1f1",
+    "surfaces": ["#ffffff", "#fefefe", "#eaf2ea"],
+    "text": "#191a1f",
+    "accents": ["#00935c", "#1b9968"],
+    "accent_strategy": "Mostly semantic and per-content. The FotMob green appears in the lineup pitch (#00935c), the selected tab-bar icon, the 'Highlights' tag and the source dot. Player-rating chips are colour-coded by value: green around 7-8, orange around 5.5-6.9, and blue with a star for the top rating. Team colours appear in match-stat visuals: the possession bar split into Man City sky blue and Arsenal red, the xG pill and the shot-map dots. The player sheet header is tinted in the player's team or country colour (a pink-red wash for Haaland). The live state is a small green dot.",
+    "source": "palette.json 01 (#ffffff 25%, #f1f1f1 12% grouped background), 03 (#191a1f text, #fcfcfc), 04 (#00935c 32% pitch, #1b9968), 06 (#ffffff, #f9fbfa). The mint clusters (#b4fbbc, #cff8d3, #c3fcc9, #e0fae3) are the marketing backdrop."
+  },
+  "shape": {
+    "radius_language": "large: about 16-20pt on the grouped league cards, news card, highlights card and stats cards; pill for 'Hide all', the 'Live' toggle and the All / 1st / 2nd segmented control; full circles for glass toolbar buttons and player photos; small rounded chips for ratings",
+    "concentric": "yes. Cards inset from the screen edge with radii that read as nested inside the device corner, and the floating tab bar capsule follows the bottom corners.",
+    "borders_shadows": "Hairline separators between fixture rows inside cards; cards sit on a light-grey ground with no visible shadow; glass buttons have soft shadows",
+    "materials": "glass for toolbar buttons and the tab bar; otherwise flat"
+  },
+  "liquid_glass_visible": "yes. Circular glass buttons for back, share/star and more (03, 04, 06); a glass capsule grouping 'Live / calendar / menu' at top right (01); a floating capsule tab bar with a selected-item pill plus a separate circular button at the right (01, 03-06, cropped); and the Lock Screen Live Activity is a translucent glass card (02).",
+  "density": "high in the match centre (shot map, possession bar, xG, then eight-plus stat rows) and on lineups (eleven players with rating, number, event badges and sub minutes); medium on fixture lists, which run about 80pt per row with roomy cards",
+  "layout": "Matches: a wordmark with a glass action cluster, a horizontally scrolling day strip (Yesterday / Today / Tomorrow), then one rounded card per league (flag, league name, collapse chevron) holding centred fixtures: home team right-aligned, crest, kick-off time, crest, away team left-aligned. Match: crests and a large score header with scorers and minutes, scrolling text tabs (Facts, Commentary, Lineup, Table, Stats, H2H), then stacked cards (news, highlights video, Player of the Match). The player sheet is a modal with a team-tinted header, heatmap, highlights callout and top stats.",
+  "navigation": "A floating glass capsule tab bar at the bottom: about 4 icon items, the selected one in a pill tinted FotMob green, plus a detached circular button at the right (likely search). Labels are not visible in the crop. Top: native-style circular glass bar buttons and the scrolling text tab row. The player detail is a page sheet with a red grabber.",
+  "imagery_and_icons": "Club crests and national flags in circles; player headshot cut-outs on lineups and sheets; video thumbnails; SF Symbols-style toolbar icons; small event badges (ball, boot, card, substitution arrow) on lineup avatars",
+  "signature_visual_move": "The lineup draws all eleven players on a solid green pitch, each with a colour-coded rating chip and event badges pinned to the headshot.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Platform material overlay (native glass)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Neutral light surfaces, centred one-line fixtures, strictly semantic rating colour and team colour only inside data visuals: the match-centre variant of Glance Board that the text record predicted. iOS 26 glass is adopted natively for bar buttons and the tab bar. It is not Broadcast Scoreboard: scores are light-weight and wide, not condensed, and team colour never floods a surface except the player-sheet header wash."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Scoreboard anatomy. Score numerals: large, light or regular weight, set as '2 - 1' with spaced hyphens; not condensed. In fixture lists the kick-off time sits stacked between the two crests ('7:30 / AM'). Team colour and logos: crests flank the score; team colours appear only in the possession bar, xG pill, shot-map dot colours and the player-sheet tint. Live state: a green dot plus a running clock pill ('● 88:23') on the Live Activity; a 'Live' toggle with a grey dot in the Matches header. Live Activity and widget (02): a translucent glass Lock Screen card with circular flag avatars, big white scores, a globe competition icon and the green-dot clock; a compact Dynamic Island with flag, score, score, flag; an expanded black Dynamic Island version; and a solid-blue small Home Screen widget ('Next · Australia · Fri 19 Jun 9:00 p.m.'). The text record's 'dressed in country colors' shows here only as flags; the card itself is neutral glass, not colour-filled. Match-centre density: high, with a shot map on a full pitch in team colours with goal markers, a possession split bar, xG, total shots and shots on target with team-coloured numeric pills, a heatmap with a touches count, and player ratings. No betting shown. Text-record update: the 2021 five-tab icon-over-label bar is now a floating iOS 26 glass capsule, and the default shown is light mode."
+}

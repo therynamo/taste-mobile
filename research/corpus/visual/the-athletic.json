@@ -1,0 +1,46 @@
+{
+  "slug": "the-athletic",
+  "track_name": "The Athletic: All Sports News",
+  "version": "13.160.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy and dated. Every frame is a charcoal backdrop (#2f2f2f / #1d1d1d) crossed by two horizontal white stripes, with a large white serif caption ('Every football story that matters.', 'Exclusive Stories'). The device is an old home-button iPhone (iPhone 8 class), tilted in 01 and 02 and upright in 03-06. Real UI is about 55-65% of each image. Content dates from about 2023 (the Caicedo and Kane transfer story), so these frames may predate the current build and any iOS 26 chrome.",
+  "typography": {
+    "display": "A transitional or text serif with bookish proportions for headlines and article titles (e.g. 'Wayne Rooney – The Ornstein interview'), also used for standfirsts and body copy. The family is unsure; it may be a custom or NYT-licensed face. The 'The Athletic' wordmark is a separate heavy sans (bold italic in the 02 nav bar).",
+    "body": "custom / unsure. Article body is the serif. UI labels (bylines, team names in the Following sheet, tab labels, the score ticker) use a clean geometric-leaning sans that does not look like SF.",
+    "numerals": "proportional sans in the score ticker (MNC 4 / RMD 3), small and regular weight; comment counts in small sans; no condensed or display numerals",
+    "weights": "Regular serif for headlines (large, not bold); regular serif body; medium sans for bylines and list rows; semibold serif or sans for the 'Following' sheet title",
+    "case_and_tracking": "Sentence case headlines; all-caps only for three-letter team codes in the ticker and the red 'LIVE' tag; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#1a1a1a",
+    "surfaces": ["#232323", "#1f1f1f", "#121212"],
+    "text": "#ece8e7",
+    "accents": ["#683334"],
+    "accent_strategy": "Near-monochrome charcoal with warm off-white text. Red is the one UI accent and is used sparingly: the 'Edit' label in the Following sheet, the 'LIVE' tag and 'Updated 5m ago' (06). It was not measured as UI; the #683334 cluster in 05 is mostly the red editorial illustration. Colour otherwise comes from photography, illustrations and crests.",
+    "source": "palette.json 03 (#1a1a1a 30.8%, #232323 24.3%), 06 (#121212, #282727), 01 (#ece8e7 text / white stripe), 05 (#683334 red illustration). #2f2f2f and #1d1d1d in 01 are largely the marketing backdrop. Red UI accent visually matched, approx #e5484d, unmeasured."
+  },
+  "shape": {
+    "radius_language": "mixed, mostly sharp: hero and article images are square-cornered and full-bleed; the score-ticker cells are rectangles with about 4pt corners; the Following sheet has large top corners (about 16pt); followed entities are full circles",
+    "concentric": "no",
+    "borders_shadows": "Hairline dividers between feed items and list rows; no shadows; the ticker cells are separated by thin gaps",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no. The frames are old-iPhone renders with an opaque tab bar and nav bar.",
+  "density": "medium. The feed alternates a full-width hero with text-left / thumbnail-right rows, with roomy leading in the serif headlines and about 16pt gutters. Article pages are low density, reading-first.",
+  "layout": "Home: a horizontal row of circular followed-entity chips (Edit, AVL, LIV, UEFA, EPL, a writer headshot), a horizontally scrolling score ticker of small two-line cells, then an editorial feed with a lead hero image and serif headline, then text-left / thumbnail-right rows with byline and comment count. Article: a back chevron and an Aa / comments / bookmark / share toolbar, a full-bleed image, a large serif title, a byline avatar and serif body.",
+  "navigation": "Visible 5-tab bar: Home, Scores, Discover, Listen, Account. Outline icons with small labels; the Scores icon is a stylised '0-1' scoreboard. The top bar on Discover holds the italic wordmark and a circular search button. A Following sheet (03) is presented with a grabber, a red 'Edit' and a '+' button. Chrome is custom but conventional.",
+  "imagery_and_icons": "Editorial photography (posed interviews, match action), mixed-media collage illustration (05's red cut-out football graphic, 02's sticker-style dog and club crests), club and league crests, writer headshots; thin outline icon set",
+  "signature_visual_move": "Newspaper-style serif headlines and serif body set in warm off-white on charcoal, with editorial collage art as the hero.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "none of the 17 (editorial sports newspaper shell)",
+    "secondary": "Private-Bank Editorial (type genre only: serif display, editorial spacing; not a money app)",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record guessed Dark Pro Minimal plus editorial at low confidence and said the serif was unconfirmed. The screens confirm the serif and show it is the governing asset: newspaper typography on charcoal, with no borders-over-shadows pro density. That is not Dark Pro Minimal. The scores live in a thin ticker, so this is not Glance Board either. It is closest to an editorial direction that the taxonomy only covers for money (Private-Bank Editorial)."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Scoreboard anatomy. Score numerals: small regular-weight sans in a two-row ticker cell (crest, three-letter code, score; day or status 'Tues' / 'FT' at right), not condensed and with no team colour. Team colour and logos: crests only, inside small circles in the followed-entity row, with the circle tinted in the club colour (AVL claret, LIV red). Live state: a red filled 'LIVE' tag plus red 'Updated 5m ago' on live-blog articles (06); no live clock is shown in the ticker. No Live Activity or widget is shown. Match-centre density cannot be judged (no match-centre screen). No betting. Text-record disagreements: the tab set is Home / Scores / Discover / Listen / Account, not 'feed, podcasts, search, standings, scores', and the team filter appears as a row of circular follow chips with an Edit chip, not a hamburger. Screens look 2023-era and may not reflect v13.160."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "discord",
+  "track_name": "Discord - Talk, Play, Hang Out",
+  "version": "355.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Navy-to-blurple vertical gradient backdrop (#232258 at the top to #565fe0 at the bottom), a heavy wide uppercase headline in lavender-white (GROUP CHAT THAT'S FUN, STREAM TOGETHER, SEE WHAT'S HAPPENING, HOP IN WHENEVER, WATCH, CHAT AND PLAY, WHEREVER YOU GAME) with a white sentence-case subline, then a cropped black phone. Floating UI cards (Upload Emoji, a game invite, status picker, voice channel popover, Join Voice bar, Watch Stream tile) are composited over the phone edges. 06 is mostly 3D marketing art: a monitor, a purple controller and a tilted phone. Real UI is ~60% of 01–05.",
+  "typography": {
+    "display": "Custom: in-app titles and names in Discord's own rounded grotesque (looks like gg sans); marketing headlines in a wide heavy uppercase display (looks like Ginto Nord; unsure)",
+    "body": "custom (looks like gg sans; med confidence)",
+    "numerals": "proportional; small grey timestamps (Today at 2:11 PM, 15m); red notification counts on server icons",
+    "weights": "Semibold usernames coloured by role, regular message text, semibold channel names, medium grey section labels (Chat, Voice Hangout)",
+    "case_and_tracking": "Sentence case in-app; uppercase wide display only in the wrapper",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#1a191e",
+    "surfaces": ["#201f24", "#25242a", "#343339", "#37363c"],
+    "text": "#ffffff",
+    "accents": ["#5c61fb", "#008544", "#e0383e"],
+    "accent_strategy": "Brand blurple for primary actions (Upload Emoji, add +, selected DM icon); green for voice/join and online; red for hang-up and badges. Per-content colour floods in from role-coloured usernames, avatar art, server banners and voice tiles that take each member's profile colour.",
+    "source": "palette.json 01–05: #1b1a22 / #1a191f = app background, #565fe0 / #575fde = blurple backdrop bottom and buttons, #232258 / #292766 = navy backdrop. Blurple #5c61fb, background #1a191e, surfaces #201f24–#37363c, green #008544 sampled by pixel from 01, 03 and 04; hang-up red is a visual estimate."
+  },
+  "shape": {
+    "radius_language": "mixed by rule: circles for people (avatars, DMs, status dots), squircles ~30% for servers and apps in the left rail, ~12–16pt rounded tiles for voice participants, pill composer, ~20pt floating panels",
+    "concentric": "yes",
+    "borders_shadows": "Lightness steps separate surfaces; the speaking participant gets a green 2px ring; floating cards (You Bar, popovers, Join Voice) carry soft dark shadows",
+    "materials": "flat dark surfaces; colourful server banners and voice tiles; no glass"
+  },
+  "liquid_glass_visible": "no: custom opaque chrome throughout, including the floating You Bar and call control tray",
+  "density": "high: server rail plus channel list side by side, DM rows ~55px with small avatars, two-line previews and role chips; message rows without bubbles stack tightly",
+  "layout": "Two-column home: a vertical squircle server rail on the left (DMs, favourites, servers, +) and a Messages or channel list on the right, with a floating You Bar (avatar, name, status, bell) at the bottom. Channel: # name with online count, flat message rows (avatar, coloured name, time, text), a pill composer with + and emoji/gift/mic, and an emoji sheet with tabs.",
+  "navigation": "Custom: left server rail instead of a visible tab bar, floating You Bar at the bottom, a bottom sheet for emoji/GIFs/stickers with a segmented control, and a floating pill call-control tray (camera, mic, share, soundboard, red hang-up)",
+  "imagery_and_icons": "Custom filled icon set; illustrated avatars; the Wumpus mascot; pixel and 3D custom emoji; 3D server art (shield, gem)",
+  "signature_visual_move": "Shape encodes the entity: people are circles, servers and apps are squircles, visible side by side in the left rail and the DM list.",
+  "tells_present": ["Purple, indigo, violet; purple-to-blue gradient (owned brand blurple and the wrapper gradient, not a default)"],
+  "direction_fit": {
+    "primary": "Dark Pro Minimal",
+    "secondary": "Loud Owned Shell (blurple, custom typefaces, Wumpus and 3D art)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Multi-level dark surfaces and the circle/squircle rule are visible as the text record describes. But Discord is louder than Linear or Raycast: floating shadowed cards, mascot art, role colours and blurple flood, so it sits between Dark Pro Minimal and Loud Owned Shell. Only the Dark theme appears; Light, Ash and Onyx are not shown."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Chat anatomy: no bubbles; each message is a row with a 40pt circular avatar, role-coloured username, grey timestamp and plain text, with custom emoji inline. Composer: dark pill 'Message #general' with + on the left and gift, emoji and mic on the right, matching the blog's 'more breathing room' and quick actions on the right. Chat list density is high, with the server rail always present. No Liquid Glass, so Discord is the 'custom cross-platform system' posture made visible: none of the iOS chrome conventions (tab bar, nav bar glass) appear."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ladder",
+  "track_name": "LADDER Strength Training Plans",
+  "version": "4.16.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy in 01-02: 01 is a lime gradient poster with award laurels and a cropped tilted phone (UI under 15%); 02 tilts three overlapping phones on lime/white, so each screen is partial (~50% UI in fragments). 03-06 are a black extended-caps caption on white with one or two upright iPhone frames; real UI ~70%.",
+  "typography": {
+    "display": "Custom-looking extended heavy grotesque in all caps for program and workout names ('LIMITLESS', 'PEACH PALACE', 'PYTHON PUMP', 'FORGED'), matching the caption face; typeface name unsure",
+    "body": "system SF (likely) for greetings, list rows, metadata and tab labels",
+    "numerals": "bold proportional numerals in set tables (40 lbs, 60 lb with small unit); an italic heavy timer '0:28' inside a gauge; effort percentages coloured; '28:54 • 48%' progress in condensed bold",
+    "weights": "Black/Heavy extended for titles; Bold for exercise names and values; Regular grey for metadata",
+    "case_and_tracking": "All-caps extended display, tight tracking; sentence and title case body",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#0f0f0f", "#1c1b1b", "#1f1f20"],
+    "text": "#ffffff",
+    "accents": ["#e8ff11", "#ecff2a"],
+    "accent_strategy": "One brand accent: electric lime fills primary buttons (START WORKOUT, TRY), completed-day check circles, rep multipliers ('4x'), durations, 'Change Teams' and the logged checkbox. Effort percentages use a per-intensity colour (purple 50%, blue 75%, amber 80%).",
+    "source": "palette.json 06 (#000000 40% UI, #e7ff0d 3% buttons), 03 (#0e0e0e/#1c1b1b UI, #ecff2a), 05 (#e8ff11), 01 (#e9ff1f lime backdrop) + visual match; #ffffff in 03-06 is the white marketing backdrop"
+  },
+  "shape": {
+    "radius_language": "mixed: full pill primary buttons (~28pt), ~12pt photo cards and coach tiles, circles for day checks and avatar ring, small ~8pt video thumbnails",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline dividers between exercise rows; outline pill secondary buttons; no shadows on black",
+    "materials": "flat black; gym photography with a textured concrete backdrop carrying the LADDER mark"
+  },
+  "liquid_glass_visible": "no; opaque black tab bar and plain chrome, older iOS look",
+  "density": "medium: photo-led home with one hero workout card; workout detail is a dense set table (Sets, Effort, Reps, Previous, Coach); 12-16pt rhythm",
+  "layout": "Home (Workouts tab): avatar with a lime progress ring and level badge, 'Good Morning, Lauren' and 'You're crushing it this week!', a week strip of day circles (lime checks for done days, outlined today), team name with 'Change Teams', then a full-width photo card for today's workout with extended-caps title, duration and type, and like/share/participants actions.",
+  "navigation": "Visible 5-tab bar: Workouts, Chat, Teams, Profile, Rewards with filled grey custom glyphs and labels; back chevron and mute toggle in the top bar; full-screen coach video with START WORKOUT pinned at the bottom",
+  "imagery_and_icons": "Coach photography in dark gyms and outdoor coach video is the main imagery; coach portrait tiles in a 3-column grid; emoji in workout and block titles (🔥, 🐍, 😊, 🔋) and floating fire reactions over live workout video; filled custom tab glyphs",
+  "signature_visual_move": "Each day's workout is a dark gym photo of the team's coach under a huge extended-caps workout name, with one lime START WORKOUT pill.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji", "Streak counter plus 🔥"],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "Coach Character",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's 'Coached Program, dark gym variant' with lime accents and dark gym photography is confirmed. Coached Program is a fitness-module pattern, not a direction; visually it is an owned shell (pure black, one owned lime, a custom extended display face) with real human coaches carrying the motivation."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Daily score: none; progress is a lime ring around the avatar plus a level badge. Streak/calendar: a week strip of circles with lime checkmarks for completed days and an outlined letter for today, with 'You're crushing it this week!'; the fire emoji is used heavily (titles and live reactions), which is close to the streak-plus-🔥 template. Charts: none; the live workout timer is an italic numeral inside a speedometer arc of lime ticks, with reps and weight to either side. Numerals: bold proportional with small units ('40 lbs'); 'Total Volts ⚡1,450' rewards currency. The 'Workout Wall' from the text record is not shown. The text record's look ('generic beast mode') risk is real: without the coaches, this is pure black + lime + extended caps."
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "monzo",
+  "track_name": "Monzo Bank - Mobile Banking",
+  "version": "8.11.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Hot coral #ff4f40 or navy #112331 backdrops with heavy bold captions, white sparkle stars and trust badges (Switch Guarantee, Which?). 01, 05 and 06 show a realistic iPhone frame at ~55-60% of the image. 02, 03 and 04 are mostly lifestyle photography with only a floating account card or notification chip; 03 and 04 are effectively marketing art. Floating UI fragments ('24/7 support', ISA card) are overlaid outside the device on 05 and 06.",
+  "typography": {
+    "display": "Captions: heavy warm grotesk with ink-trap-like softness, consistent with Oldschool Grotesk. In-app titles ('Savings', 'Privacy & security') in a neutral sans at semibold",
+    "body": "custom: consistent with Monzo Sans (unsure)",
+    "numerals": "lining; split-size pounds and pence on every amount; tabular unsure",
+    "weights": "Amounts medium; merchant names medium; subtitles regular grey; section labels small caps-like uppercase ('SECURITY')",
+    "case_and_tracking": "Sentence case; small uppercase section headers with slight positive tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f4faf5",
+    "surfaces": [
+      "#ffffff",
+      "#fefffe"
+    ],
+    "text": "#112331",
+    "accents": [
+      "#ff4f40",
+      "#2b7fc1 (visual estimate, action blue)",
+      "#3cb55a (visual estimate, credit green)"
+    ],
+    "accent_strategy": "Hot coral is the account card and logo only; interactive elements (+ button, Add money pill, toggle) are a separate blue; green is semantic for credits and progress.",
+    "source": "palette.json 01 (#f4faf5 16% UI canvas, #ff4f40 46% backdrop and card), 06 (#f2f8f4, #fefffe); navy #112331 measured as 02/05 backdrop and matched to in-app text visually"
+  },
+  "shape": {
+    "radius_language": "large: account card ~20pt, list container ~18pt, tinted row highlights ~12pt, pill buttons; savings pot image ~24pt squircle",
+    "concentric": "yes",
+    "borders_shadows": "Hairline row dividers; soft shadow under floating marketing fragments only",
+    "materials": "Floating tab bar and circular nav buttons look like iOS 26 glass; otherwise flat"
+  },
+  "liquid_glass_visible": "yes, likely: 01 shows a floating rounded tab bar with the selected tab in a grey capsule, and 05/06 use circular translucent back, close and settings buttons in the style of iOS 26",
+  "density": "medium-high in the activity feed (~56pt rows, logos, two-line text); medium elsewhere",
+  "layout": "Home: top bar (avatar, Upgrade pill, gift/search capsule, blue + button), coral account card with balance and two dark pills, then an 'Activity' list card with tinted rows for upcoming (grey) and incoming (mint). Pot detail: centred photo tile, balance, Withdraw/Add money pills, goal progress card, activity list.",
+  "navigation": "Bottom tab bar with 4 labelled tabs (Home, Trends, Payments, Help), custom glyphs, floating; system back/close in circles",
+  "imagery_and_icons": "Merchant logos in rounded squares, user photos on pots, filled custom glyphs in tab bar; marketing photography warm and sunlit. No googly-eyed characters visible in UI.",
+  "signature_visual_move": "Every amount is set with full-size pounds and small pence on the same baseline, and only credits carry a plus sign and green.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Owned hot coral confined to the account card and logo, custom faces, a strict quiet money core in the feed. The text record's secondary (Character-Led Playful) is not visible: no characterful illustration appears in UI; the wrapper uses photography and sparkles instead."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "MONEY ANATOMY. Balance on the coral card: '£1,234.56' white, medium weight, ~2x body, right-aligned with 'Balance' label below; £ small and raised, pence ~60% size on the baseline. Same split anatomy on every list amount ('26.00', '5.80', '+1,992.03') and on pot balances. List rows drop the currency symbol entirely. Debits: no sign, near-black. Credits: '+' and green ('+12.00', '+3.59', '+100.00'). Pending/upcoming: grey figures on a grey tinted row ('47.83'). Incoming scheduled: green figure on a mint-tinted row. Tabular: unsure, amounts are right-aligned. ISA card shows '£13,069.38' in green, an investment-gain convention or a brand choice (unclear). Charts: none shown; savings goal is a green progress bar. No amount entry or confirm screen shown. Security screen uses system-style grouped rows with a blue toggle."
+}

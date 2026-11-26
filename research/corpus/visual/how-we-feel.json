@@ -1,0 +1,46 @@
+{
+  "slug": "how-we-feel",
+  "track_name": "How We Feel",
+  "version": "1.17.17",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium. A flat #181818 charcoal backdrop with a centred white serif caption on the top ~25%, and the real screen as a frameless rounded rectangle (no device bezel) cropped at the bottom, about 65-70% of the image. 06 is pure brand illustration (yellow droplet character holding a padlock and key, privacy caption), with no UI. Status bars show 2023 dates and pre-notch layouts, so the frames may be dated relative to 1.17.17.",
+  "typography": {
+    "display": "Bold transitional/text serif for screen titles ('Monthly', 'Tools', 'Friends'), tile names ('Rethink', 'Best Self') and emotion words, with a bold italic for 'I'm feeling' / 'Rayna feels'. Exact face unsure. The marketing captions use the same serif.",
+    "body": "sans for dates, counts and meta ('Fri Mar 31 8:08 am', '6 strategies'); likely system SF but unsure",
+    "numerals": "proportional sans in the calendar grid and timestamps",
+    "weights": "Bold serif display, bold italic serif for the feeling sentence, regular sans for meta",
+    "case_and_tracking": "Sentence case serif; month tabs in ALL CAPS sans with slight tracking ('MAR 2023'); weekday initials in caps",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#181818", "#0c294b", "#333347"],
+    "text": "#ffffff",
+    "accents": ["#f2564b", "#f7d55c", "#7dc4f5", "#6fe3a1"],
+    "accent_strategy": "Colour is an emotion vocabulary: red/orange = high-energy unpleasant, yellow = high-energy pleasant, blue = low-energy unpleasant, green = low-energy pleasant. Emotion words in feeling sentences take their quadrant colour; Tools tiles use muted jewel tones (teal, violet, plum, navy). The chrome itself is black and white.",
+    "source": "palette.json 03 (#000000 app bg), all (#181818 marketing backdrop), 01 (#d8e483 yellow-green and #b46e48 orange clusters from the bubble map), 04 (#0c294b navy, #333347 tile surfaces), 06 (#fae189 yellow character); quadrant hues matched visually"
+  },
+  "shape": {
+    "radius_language": "large and squircle: ~32pt continuous-corner photo cards, superellipse Tools tiles, circular emotion bubbles; custom abstract emotion glyphs (flower, crescent, notch shapes)",
+    "concentric": "unclear",
+    "borders_shadows": "No borders or shadows; photo cards use a bottom dark gradient scrim for text",
+    "materials": "flat on black; dark translucent circular buttons over the bubble map"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low: one entry card per ~third of screen; 2x2 Tools grid; the bubble map is the only dense view",
+  "layout": "Check-in: a pannable field of circles, each an emotion word in the quadrant's colour, with close/help/search buttons floating on top. Journal: a vertical stack of big photo cards with date, 'I'm feeling <emotion>' in serif and the emotion's glyph. Patterns: a monthly calendar where each day shows stacked emotion glyphs. Tools: a story-like carousel of rounded thumbnails, then a 2x2 grid of big squircle tiles.",
+  "navigation": "No tab bar visible. Top bars are custom: hexagon settings icon + '+' add, large serif titles with a dropdown chevron, an underlined month tab strip. Close/help/search as dark circular overlays.",
+  "imagery_and_icons": "User/stock photography in cards; a custom abstract glyph set (one coloured shape per emotion); a yellow droplet mascot drawn with line-art limbs (06); outline system icons; emoji in friend reactions",
+  "signature_visual_move": "Each check-in becomes a sentence set in bold serif, with the emotion word coloured by its mood quadrant and stamped with that emotion's abstract glyph.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Body-State Companion",
+    "secondary": "Shareable Artifact Studio (Friends feed shares feeling cards)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Colour is literally an emotion vocabulary (quadrant hues), confirming the text record's 'chromatic emotion map'; state is reported in plain language ('I'm feeling grateful') with no nagging. The serif-on-black voice is a distinctive variant inside the direction."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "Bold serif on true black with rainbow-quadrant colour is unusual in wellbeing apps and avoids the 2026 'cream + serif + orange' tell by being dark. The custom emotion glyph set does the same job as Structured's icons as a non-colour cue."
+}

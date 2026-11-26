@@ -1,0 +1,55 @@
+{
+  "slug": "klarna",
+  "track_name": "Klarna: Smarter everyday money",
+  "version": "26.46.339",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Off-white #f9f8f4 backdrop (aubergine #2c2342 on 01) with a heavy condensed caption, sans subcaption, italic 'Available in select countries', and a flat cartoon-like phone outline (thick near-black stroke) showing ~50% UI. 01 is a hand holding a realistic phone. 05 is entirely marketing (floating 3D card renders). 02 crops the phone to the bottom half and replaces content with grey skeleton bars.",
+  "typography": {
+    "display": "Klarna Title: heavy condensed grotesk, very tight tracking, used in captions and in-app hero moments ('Get up to 10% cashback', '$500' balance)",
+    "body": "custom: Klarna Text (consistent with text record)",
+    "numerals": "condensed heavy for hero balance; regular-width bold for home balances; tabular unsure",
+    "weights": "Display black/heavy; row titles medium; subtitles regular grey",
+    "case_and_tracking": "Sentence case; tight negative tracking on the condensed display",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": [
+      "#f3f2f6",
+      "#ece9fa (visual estimate, lavender action circles)"
+    ],
+    "text": "#171227",
+    "accents": [
+      "#ffa8cd (visual estimate, Klarna pink; not in palette.json top colours)",
+      "#2c2342",
+      "#7b4fc9 (visual estimate, link purple)"
+    ],
+    "accent_strategy": "Pink is a brand token, not a data colour: logo badge, 'Plan a purchase' pill, K avatar, promo text. Interactive circles are pale lavender; amounts stay ink.",
+    "source": "palette.json 02 (#f3f2f6 20% UI tint), 04 (#fffefe 27%, #171227 22% ink and phone outline), 01 (#2c2342 42% aubergine backdrop and home header); pink and lavender visual"
+  },
+  "shape": {
+    "radius_language": "large and pill: radio cards ~16pt, card art ~16pt, home bottom sheet ~24pt with grabber, action circles, pill CTAs",
+    "concentric": "yes",
+    "borders_shadows": "Selected payment card gets a grey outline; soft shadow under the pink CTA overlapping the card; otherwise flat",
+    "materials": "Translucent search pill and circular buttons over the dark home header (01); otherwise flat"
+  },
+  "liquid_glass_visible": "unclear: 01's search pill and round buttons over the aubergine header are translucent, but the photo is too small to confirm iOS 26 glass",
+  "density": "medium; home packs two balances, four actions and four list rows above the fold",
+  "layout": "Home: aubergine header with avatar, search pill, promo ('Get a Klarna membership'), and a white sheet with grabber holding Personal account and Purchase power side by side, four round actions, then list rows (Upgrade, Accounts & cards, Payments, Purchases & returns). Balance screen: K avatar, condensed hero balance, account-number chip, four round icon actions, Transactions.",
+  "navigation": "Custom curved back arrow (↩ style) in nav bars; no tab bar visible; home uses a sheet-over-header structure",
+  "imagery_and_icons": "Cut-out product photography (jacket, phone, nail polish, blender); outline custom icons; merchant icons in soft pastel circles",
+  "signature_visual_move": "The account balance is set in Klarna's heavy condensed display face, the same face as the marketing headlines.",
+  "tells_present": [
+    "Gestalt sameness: centred balance over a row of round icon action buttons"
+  ],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Owned pink and custom condensed display face confirmed; in the app the pink is restrained to tokens and one CTA, with the loud part carried by the condensed type and the aubergine header."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "MONEY ANATOMY. Hero balance '$500' in heavy condensed display, ~3x body, centred under a pink K avatar, no cents shown. Home balances '$500' and '$5,500' bold regular-width ~2x body, side by side under small labels with chevrons ('Personal account >', 'Purchase power >'). Cents not shown on any balance; $ full size. Debit '–$110' with minus, ink, not red; no credits shown. Tabular: unsure. No charts. Checkout/confirm: payment-method radio cards (Pay in full, Pay in 4, Pay in 30, Pay over time) with the selected card outlined and a filled radio, then a black full-width pill 'Pay with [pink Klarna badge]'; amounts in this flow are redacted to skeleton bars in the screenshot. List rows put money in subtitles ('$500 total balance', '$350 outstanding balance')."
+}

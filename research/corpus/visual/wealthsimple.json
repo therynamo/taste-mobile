@@ -1,0 +1,53 @@
+{
+  "slug": "wealthsimple",
+  "track_name": "Wealthsimple",
+  "version": "2.253.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Pastel flat backdrops that change per image (#e8dedc blush, #dde8ee pale blue, #e4e9d3 sage, #edece7 stone, #f4eff5 lilac), a serif caption with a geometric sans subcaption, and a flat silver iPhone outline cropped at the bottom showing ~60-65% UI. 02 is an in-app promotional screen (Monthly Millionaire) on black.",
+  "typography": {
+    "display": "Wrapper: classical serif (consistent with the brand's Caslon-family serif and serif wordmark) with a Futura-like geometric sans for subcaptions. In-app: neutral grotesk, semibold to bold for titles and balances; no serif inside the app screens",
+    "body": "custom or licensed neo-grotesk (unsure)",
+    "numerals": "lining; holdings column right-aligned and looks tabular (unsure); countdown digits regular",
+    "weights": "Balances bold; prices medium; change figures medium in semantic colour; nav titles semibold",
+    "case_and_tracking": "Sentence case; small uppercase 'TODAY' section labels with slight tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f3f3f3",
+    "surfaces": [
+      "#ffffff",
+      "#fcfcfc"
+    ],
+    "text": "#1f1f1f",
+    "accents": [
+      "#2e8b3e (visual estimate, gain green)",
+      "#d23c3c (visual estimate, loss red)",
+      "#8fa6ec (visual estimate, periwinkle bar charts)"
+    ],
+    "accent_strategy": "Near-monochrome UI. Colour is semantic (green/red changes, 'Paid on time' green chip, red notification dot) plus one cool periwinkle for charts; brand colour lives in the wrapper pastels and 3D gold coin.",
+    "source": "palette.json 01 and 03 (#f3f3f3 34-36% UI canvas), 04 (#f4f4f4), 05 (#fcfcfc card, #1f1f1f text and black card); backdrops #e8dedc/#dde8ee/#e4e9d3/#edece7/#f4eff5; semantic colours visual"
+  },
+  "shape": {
+    "radius_language": "large: cards ~16-18pt, action tiles ~16pt squircles, filter chips full pills, floating tab bar full pill",
+    "concentric": "yes",
+    "borders_shadows": "Soft diffuse shadows under white cards and tiles; dark action tiles have a glossy top highlight; hairline row dividers",
+    "materials": "Soft-skeuomorphic action tiles (dark glossy Add/Transfer), 3D-rendered coins, dithered bar fills"
+  },
+  "liquid_glass_visible": "yes in 01 and 03: floating pill tab bar with the selected tab in a grey capsule (iOS 26 style); 04-06 show an older flat full-width bottom bar, so two app generations appear in the set",
+  "density": "medium; holdings list is high-ish (~70pt two-line rows, eight per screen), account screens medium with 24-32pt section gaps",
+  "layout": "Chequing: nav title, big left-aligned balance with account-number chip, interest card with bar chart, horizontal row of action tiles (Add, Transfer, e-Transfer, Pay bill), Requests, Activity. Credit card: card art, 2-up stat cards with mini charts, statement card, Activity. Crypto: dismissible promo card with 3D coins, staking carousel, holdings list.",
+  "navigation": "4-tab icon-only bottom bar (home, search, transfer, history); centred nav titles; no large titles",
+  "imagery_and_icons": "3D renders (gold maple-leaf coin, crypto coins, coin jar), ticker logos in rounded squares, outline system-like icons",
+  "signature_visual_move": "Serif-and-pastel editorial wrapper around a nearly colourless grey UI whose only colours are gain green, loss red and one periwinkle chart tint.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Private-Bank Editorial",
+    "secondary": "",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "The serif, earth/pastel neutrals and editorial spacing are present but confined to the store wrapper; the app itself is a quiet, native-feeling neutral grotesk UI with an iOS 26 tab bar. That matches the text record's 'Private-Bank-adjacent heritage plus calm modular' but shows the editorial layer is brand, not in-app."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "MONEY ANATOMY. Chequing balance '$24,014.75' bold, ~2.5x body, left-aligned, no label above (screen title carries it); cents same size and weight; $ full size. Card stats '$137.38', '$37.01' bold ~1.7x body with grey sub-line. Holdings: price right-aligned medium black; change line '+$111.08 (+92.52%)' green and '–$24.55 (–69.75%)' red, with true minus/en dash and the sign repeated inside the percentage; crypto rows append 'CAD' and a help icon. Activity debit '–$28.93' black (debits not red in banking contexts; red only for investment losses). Tabular: right-aligned columns look aligned, unsure. Charts: rounded vertical bars in grey tracks with periwinkle dithered fills for monthly interest; a 5-bar mini chart for cash back; a two-tone horizontal bar for credit used/available. No line chart, amount entry or trade confirm shown (the swipe-to-confirm trade in the text record is not visible). Countdown on the promo uses large regular numerals that look tabular, ringed by a tick-mark dial in gold."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "mela",
+  "track_name": "Mela - Recipe Manager",
+  "version": "2.6.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium. Five images use a flat coral-red backdrop (06 uses yellow) with a heavy rounded all-caps caption in pale pink over a dark-red subline. The UI is shown frameless as a white rounded panel occupying about 70-80% of the image, cropped top or bottom. 01 adds staged food props (rolling pin, dough, tart tin) around the panel. No device chrome except a status bar in 05.",
+  "typography": {
+    "display": "A bold transitional serif for recipe and screen titles ('Torta di mele', 'Groceries', 'Chili sin carne', list item titles); possibly Apple's New York, unsure.",
+    "body": "system SF",
+    "numerals": "SF proportional; large regular day numbers ('26', '27') in the meal plan; bold quantities ('1000 g', '8 cans') in ingredient lists; red quantities on grocery items.",
+    "weights": "Bold serif titles; regular SF body; semibold SF for quantities and day names; italic SF for ingredient notes ('dried').",
+    "case_and_tracking": "Small all-caps tracked labels for 'PREP', 'TOTAL' and weekday names ('SATURDAY'); sentence case otherwise. Caption all-caps in the wrapper.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f8f7f6", "#1c1c1e", "#2d2929"],
+    "text": "#3a3a3a",
+    "accents": ["#df6051", "#f6cc1f"],
+    "accent_strategy": "One accent per appearance: coral red (#df6051) for icons, tab selection, plus buttons, quantities and checkmarks in light mode; yellow (#f6cc1f) for the slider and 'M' chip in the dark scale/convert screen. The coral backdrop in the wrapper repeats the in-app accent. Recipe photos carry the rest of the colour.",
+    "source": "palette.json 01-05 (#ffffff panel, #df6051 backdrop/accent), 06 (#f6cc1f yellow, #1c1c1e / #2d2929 dark surfaces); body text grey is a visual estimate"
+  },
+  "shape": {
+    "radius_language": "small to medium: square-ish recipe thumbnails about 8 pt, popover about 16 pt, circular nav buttons and checkboxes, chip about 6 pt",
+    "concentric": "unclear",
+    "borders_shadows": "Hairline separators inset under titles; vertical dividers between meta items; a soft shadow under the floating scale popover; no card borders.",
+    "materials": "Flat; white or near-black solid surfaces; translucent grey tab bar."
+  },
+  "liquid_glass_visible": "no: classic iOS tab bar with a hairline top border and grey circular nav buttons; screenshots predate iOS 26",
+  "density": "medium: list rows with 104 pt thumbnails and two-line description; cook mode is very low density (one step in focus)",
+  "layout": "Recipes tab: single-column list of rows (square photo, serif title, meta line with SF Symbols for time, tag and source, two-line grey description). Recipe detail: big centred dish photo on white, serif title, meta row (servings, prep, total), action row (Cook, Groceries, Adjust). Cook mode: full-screen steps where the current step is dark and others fade to very light grey. Calendar: day sections with large numerals and meal rows with sun/moon icons.",
+  "navigation": "Native tab bar with 5 labelled tabs (Recipes, Feeds, Browser, Calendar, Groceries), outline icons, coral selected state. Circular back and ellipsis buttons on detail; close and timer buttons in cook mode; a popover for scale/convert.",
+  "imagery_and_icons": "Food photography on white or set; SF Symbols-style outline icons (clock, tag, book, person, timer), with filled coral icons for primary actions.",
+  "signature_visual_move": "Cook mode dims every step except the current one to near-white grey, so the screen becomes a single large-type instruction readable from the counter.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The countertop cook mode is the Glance Board variant (one thing at a time, large type) and the chrome is restrained native with a single accent. Visually the serif titles plus a single warm accent give it an editorial cookbook feel that the text record did not mention."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "The text record (MacStories) says the accent is yellow; the screenshots show coral red in light mode and yellow in the dark screen, so the accent appears to change with appearance or theme. Serif display plus a warm accent on white is near the 'cream plus serif plus orange' 2026 default, but the background is pure white and the app predates that wave, so the tell is not applied. Version 2.6.2 dates from June 2025 and the chrome is pre-Liquid Glass."
+}

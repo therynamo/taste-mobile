@@ -1,0 +1,46 @@
+{
+  "slug": "espn",
+  "track_name": "ESPN: Live Sports & Scores",
+  "version": "8.30.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy brand flood. Every frame is an ESPN-red gradient backdrop (#e01723 / #cc1119 / #9e0c11) with heavy italic all-caps white captions framed by thin horizontal rules, plus a black, upright, modern iPhone frame cropped at the bottom. 01 adds a top band of network logo tiles (ESPN, ESPN2, ESPNU, ESPN+, ESPN Deportes, ACCN). Real UI is about 55-60% of each image. No tab bar is visible in any frame because the device is cropped. 03 is a splash or intro card for 'SC For You' rather than a working screen.",
+  "typography": {
+    "display": "Marketing: heavy italic all-caps sans (ESPN brand style; family unsure). In-app: bold sans for screen titles ('Watch', 'Chiefs @ Eagles') and the ESPN wordmark in the nav bar.",
+    "body": "unsure. A neutral neo-grotesk that could be SF or a licensed brand sans; regular for list rows and secondary metadata.",
+    "numerals": "tabular, regular-to-medium weight, not condensed: scores 17 / 24 and 39 / 31 right-aligned in a column; stat values (160, 142) semibold",
+    "weights": "Bold all-caps for section headers; semibold team names and scores; regular grey metadata ('ESPN • NCAA FOOTBALL', '3rd & 24 CBS')",
+    "case_and_tracking": "All-caps with wide tracking for section headers ('FAVORITES', 'MY GAMES', 'VERTS', 'GAME LEADERS', '1ST QUARTER') and the top text tabs ('HOME', 'CLIPS & HIGHLIGHTS', 'SCHEDULE'); sentence case elsewhere",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#1d1e20", "#302f32", "#232126"],
+    "text": "#dbd2ce",
+    "accents": ["#e01723"],
+    "accent_strategy": "One brand red, used inside the UI for live state (the red clock '12:46 - 3rd', '2:10 - 3rd', the lightning 'LIVE' tag, the LIVE dot), the selected-tab underline and the video scrubber. A system-like blue (unmeasured) marks 'See All', the 'Highlights' outline button and the alert bell. Team colour appears only in matchup artwork: diagonal two-team split tiles with crests.",
+    "source": "palette.json 02 and 05 (#1d1e20 29-34% card surface, #000000 21% nav and video), 06 (#302f32, #232126 cards, #dbd2ce light text). The red cluster (#e01723 / #cc1119 / #ca121b) is shared by the backdrop and the UI accent. Blue visually matched, unmeasured."
+  },
+  "shape": {
+    "radius_language": "small to medium: about 12pt on matchup tiles, Verts video cards and Key Plays cards; pill for the 'Highlights' outline button, the league chip ('8 NCAA Women's Basketball') and the segmented control; circles for favourite-team avatars and player headshots",
+    "concentric": "no",
+    "borders_shadows": "Flat cards a step lighter than the black ground; hairline dividers inside the My Games card; a vertical rule separates scores from status; no shadows",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no. The nav bars are opaque black, the segmented control is a flat grey pill, and no tab bar is visible to judge.",
+  "density": "medium-high. The home stacks Favorites, My Games, Verts and more as full-width modules with about 12pt gaps. The game-leaders table puts headshot, stat, name, position and line on each side of a centred label.",
+  "layout": "Home: an ESPN wordmark top bar (search and inbox icons at left, cast and settings at right), a FAVORITES row of circular team and league chips, a MY GAMES card with two-line matchups (team, score, then status, network and alert bell or Highlights button), then a VERTS row of 9:16 video cards. Watch: text tabs over a carousel of diagonal-split matchup tiles with a LIVE pill and a score line under them. Game: a collapsing header ('Chiefs @ Eagles', 'ESPN • NFL • LIVE'), a GAME LEADERS table, and a persistent mini player with scrubber and transport controls.",
+  "navigation": "Top text tabs with a red underline (HOME / CLIPS & HIGHLIGHTS / SCHEDULE; SC For You / Discover / Following). A three-segment grey pill control (More Live / Stats / Key Plays). The bottom tab bar is not visible in any frame. The mini player is docked at the bottom on the game screen. Custom chrome.",
+  "imagery_and_icons": "Broadcast stills and talent close-ups (Verts, First Take), player headshot cut-outs, diagonal-split team-crest artwork, network logos; outline system-like icons. Emoji appear in Verts captions ('🔥 NBA Season is here! 🔥', '🏆🏀'), which is editorial copy rather than chrome.",
+  "signature_visual_move": "Matchup tiles split diagonally into two team-colour halves, each carrying its crest, sit over a black broadcast-style shell with red live clocks.",
+  "tells_present": ["Emoji as icons, including 🚀 and Live Activity emoji (in Verts caption copy only)", "Flat React Native or Flutter UI that ignores Liquid Glass on iOS 26 (opaque bars; cannot confirm the stack)"],
+  "direction_fit": {
+    "primary": "Broadcast Network Portal (held candidate, not one of the 17)",
+    "secondary": "Loud Owned Shell (marketing wrapper only; in-app UI is a neutral dark shell)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The screens confirm the TV-network structure the text record described: network tiles, a Watch tab, Verts vertical video, AI-narrated SC For You, and a game page with a docked player. Visually the app is a generic dark media shell with one red accent and all-caps tracked headers. The owned red loudness lives in the store wrapper, not the UI. It also matches the sports module's 'everything portal' warning: favourites, games, video and personalised SportsCenter share one home."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Scoreboard anatomy. Score numerals: regular-to-semibold tabular sans, right-aligned in a column next to two-line team names with rank prefixes ('7 Alabama'), not condensed; the leading score is not emphasised. Team colour and logos: small crests inline in score rows; team colour floods only the diagonal-split matchup artwork on Watch tiles and Key Plays thumbnails (player cut-out on a team-colour field). Live state: a red clock-and-period string ('12:46 - 3rd'), a red lightning 'LIVE' tag in the game header, a white 'LIVE' pill with a red dot on video tiles, a red possession football glyph, and an alert bell per game. No Live Activity or widget is shown. Match-centre density: GAME LEADERS is a symmetric two-team table with headshots, a big stat and a stat line (16/27, 1 TD); Key Plays pairs play text with a running score per play. Betting: no odds visible in these frames, even though the text record mentions ESPN BET side panels. 03 is a splash that discloses 'Produced and narrated with the assistance of AI technology'."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "finch",
+  "track_name": "Finch: Self-Care Pet",
+  "version": "3.73.242",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is pure marketing illustration (two birbs hugging on hills under a sky, with trophy/heart bubbles). 02–06 place a light-grey rounded frame (no device bezel detail) on a #a3dfff sky backdrop with a heavy dark-blue caption in the top ~22%; the frame (~70%) holds real UI: Goal Buddies checklist, a Valentine send sheet, the home adventure + goals list, a buddy celebration sheet, and self-care progress.",
+  "typography": {
+    "display": "Rounded-terminal geometric sans in bold/black for captions and in-app headings (3 goals left today!, You & Sam are now Goal Buddies!); closely resembles Rubik, unsure",
+    "body": "custom (Rubik-like rounded geometric sans) / unsure",
+    "numerals": "rounded; small bold energy counts (5 ⚡), a countdown 'back in 7:36'",
+    "weights": "Bold for goal names and titles, regular grey for secondary text and empty-state prompts",
+    "case_and_tracking": "Sentence case; small all-caps tracked section labels (START THE DAY, YOU / SAM, TO)",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f3f4f4",
+    "surfaces": ["#ffffff", "#7bb761", "#e597bc"],
+    "text": "#2f353e",
+    "accents": ["#9b7be6", "#1e9be0", "#4cb050", "#f6a623"],
+    "accent_strategy": "Brand-flooded scenes over neutral UI: illustrated scene backgrounds change per context (green meadow, pink Valentine, NYC skyline at dusk) while list cards stay white. Small accents are per-person (purple for one buddy, blue for the other) and per-area (blue nutrition, yellow movement, green productivity, orange self-kindness); yellow lightning for energy.",
+    "source": "palette.json 02/04: #7bb761 / #81be81 = grass scene; 03: #e597bc / #e06ca9 = Valentine sheet; 05/06: #ffffff / #f3f4f4 = sheets and page; #a3dfff ~20% = marketing sky; 05 #2f353e = dark text/scene. Purple CTA and area colours are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~18pt list cards, ~24pt sheets, pill buttons with a darker bottom lip (chunky pressable look), circular checkmarks and avatar badges, speech bubbles with tails",
+    "concentric": "yes",
+    "borders_shadows": "Buttons and check tiles have a solid 2–3pt darker bottom edge (Duolingo-style faux 3D); cards have a thin grey outline; characters cast soft oval ground shadows",
+    "materials": "Flat vector illustration with soft cheek blush and simple shading; confetti particles; no glass"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium: illustrated scene takes the top ~40%, then roomy rows (~56pt) of goal cards with icon tile, name, energy value and a large check button",
+  "layout": "Home: illustrated scene with the pet (adventure state) at top, a status card with a dotted progress path and countdown, '3 goals left today!' header, then sectioned goal cards (START THE DAY) each with emoji icon, label, ⚡ reward and a check button. Other screens are bottom sheets over the scene.",
+  "navigation": "No tab bar visible in these frames. Bottom sheets with grab handles and circular close (×) buttons; back chevron over the scene; full-width pill CTAs at the bottom (Send a Valentine!, Send encouragement).",
+  "imagery_and_icons": "Flat vector characters (the birbs) with expressive poses and speech bubbles; Apple-style emoji as goal icons (cup with straw, giraffe, broccoli, sunflower, toothbrush) and themed message icons; drawn circular area icons (apple, shoe, target, sunflower).",
+  "signature_visual_move": "Each screen opens on an illustrated scene where the user's birb acts out the current state (adventuring, cheering, watering a heart flower) above a plain checklist.",
+  "tells_present": ["Emoji as icons (goal icons are system emoji)", "Streak/energy counter with a lightning glyph (⚡ per goal)"],
+  "direction_fit": {
+    "primary": "Coach Character",
+    "secondary": "Authored Illustration",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "The pet is the motivator on every screen, with speech-bubble encouragement ('Nourish what matters to you, cheep!'), and the illustration hand is consistent. The checklist UI is conventional and chunky, like Duolingo."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Emoji as goal icons is a deliberate product choice here (user-picked goals), but it's the clearest emoji-icon case in the batch. The ⚡ energy is a currency rather than a streak, so it is only a near-match for the streak tell."
+}

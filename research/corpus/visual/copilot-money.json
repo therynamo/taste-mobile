@@ -1,0 +1,46 @@
+{
+  "slug": "copilot-money",
+  "track_name": "Copilot: Track & Budget Money",
+  "version": "8.8.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Medium-heavy. A pale blue-to-mint gradient backdrop with a small blue eyebrow label and a large navy caption over the top ~25-30%; a white-bezel iPhone frame cropped at the bottom shows the real screen in about 60-65% of the image. 02 and 04 drop the phone screen for floating, enlarged cards (insight cards, suggestion chips) over a faint phone outline: real components, staged composition. Images are 600x1300.",
+  "typography": {
+    "display": "Custom geometric grotesque (not SF) for the 'Copilot' header, balances and card titles; also used in captions. Name unsure.",
+    "body": "custom - same geometric sans at regular for rows and secondary text",
+    "numerals": "Lining figures with a small raised superscript '$' on every amount ('$2,272', '$15,598.32'); amounts right-aligned in columns (budget table) but figures look proportional, not verified tabular",
+    "weights": "Semibold/bold for balances and titles, medium for row names, regular grey for meta",
+    "case_and_tracking": "Sentence case titles; small ALL-CAPS section labels and buttons with open tracking ('TO REVIEW', 'BUDGETS', 'CATEGORY', 'AVG SPENT', 'DISMISS', 'APPROVE ALL', 'TOTAL BUDGET')",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f7f9fc",
+    "surfaces": ["#ffffff", "#0b5fc7", "#ebf3fe"],
+    "text": "#1b2e4a",
+    "accents": ["#1c6cff", "#16b84a", "#ff4433", "#f5a623"],
+    "accent_strategy": "A saturated blue header gradient fading into a near-white canvas is the brand shell; inside the content, colour is strictly semantic money colour (green for under budget, income and gains, red for overspend and losses, blue for interactive labels and the assistant). Category colour comes from per-category emoji and small coloured dots.",
+    "source": "palette.json 01 (#0b3f75, #5489bf = header blue; #f9fafc / #ffffff canvas and cards), 05/06 (#1b5493/#1a5591 header), 02-04 (#ebf3fe, #eaf4fd = backdrop and tinted surfaces); green/red/blue semantic hues matched visually"
+  },
+  "shape": {
+    "radius_language": "large: ~20pt cards, ~12pt emoji icon squircles, pill buttons (Dismiss/Approve), pill period selector and change badges",
+    "concentric": "yes: pill buttons inset inside rounded cards with consistent margins",
+    "borders_shadows": "Cards use very soft, wide diffuse shadows on white rather than borders; faint hairline dividers in lists",
+    "materials": "Mostly flat white; the selected top-tab capsule on the blue header is a translucent lighter-blue pill (glass-like)"
+  },
+  "liquid_glass_visible": "unclear: the selected tab capsule in the blue header ('Dashboard', 'Cash flow', 'Investments') looks like a translucent glass pill, but no glass tab bar or toolbar is visible",
+  "density": "medium-high: dense money rows (merchant, sub-label, amount), a three-column budget table, top-movers mini-chart carousel; comfortable card padding",
+  "layout": "Dashboard: blue header with settings gear, 'Copilot' title, chat icon and a horizontally scrolling text-tab strip; a hero chart card ('$2,272 left' with a budget pace line); 'To review' transaction-fix card with Dismiss/Approve All; budgets row. Cash flow and Investments: hero number with change badge and chart card, then lists.",
+  "navigation": "No bottom tab bar visible. Top navigation is a horizontally scrolling text-tab strip (Investments, Dashboard, Transactions, Cash flow, Accounts) with a capsule highlight inside the blue header. Back arrow + centred title in sub-screens. AI assistant reachable from a chat-bubble icon.",
+  "imagery_and_icons": "Apple colour emoji as category and merchant icons inside pastel squircles (shopping bags, house, plane, car, money bag, key, avocado); line and bar charts as the main imagery; outline icons for settings and chat",
+  "signature_visual_move": "Charts are the hero of every tab, with a raised small '$' on every amount and a gradient pace line that turns from yellow to green as you get under budget.",
+  "tells_present": ["Emoji as icons (category and merchant emoji in squircles throughout)", "Cards everywhere"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Cinematic Dark Data (only in its money-core rules; the store shell is light)",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "The text record (via a third-party teardown) describes a navy near-black 'Deep Space' canvas with 90% white text. All six store frames are light mode: a blue gradient header over a near-white canvas with navy text. What does match is charts as the main interface and a closed semantic money colour set. On store evidence alone, Copilot is a light, calm, editorially fixed money dashboard, not dark cinematic."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "This is the most important disagreement in the batch: Cinematic Dark Data used Copilot as its lead exemplar, and the store screens don't show it. The app may have a dark theme, but it is not the shell it markets. Device capture in dark mode is needed before that direction can be dealt. Category emoji are user-chosen content, but they read as the 'emoji as icons' tell."
+}

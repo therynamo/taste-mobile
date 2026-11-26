@@ -1,0 +1,46 @@
+{
+  "slug": "nike-run-club",
+  "track_name": "Nike Run Club: Running Coach",
+  "version": "7.79.4",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is entirely marketing art (night-run photo, 'RUN' with Swoosh lockup, caps slogan). 06 shows only Apple Watch renders, no phone UI. 02-05 put a simplified grey-outlined phone (no status bar) on black under an off-white caps caption; real UI ~65% of those four. So only four images carry iPhone UI.",
+  "typography": {
+    "display": "Heavy condensed italic caps for hero numerals and guided-run titles ('20.6', 'GRATEFUL 5K RUN', 'START'), Nike's athletic display style; typeface name unsure",
+    "body": "unsure: a neo-grotesque that reads as Helvetica (Nike's house sans) rather than SF, for titles ('Activity', 'Plans'), stats and body",
+    "numerals": "hero total in heavy condensed italic (20.6); secondary stats in bold upright grotesque ('3', '5'14\"', '1:48:04') with grey labels beneath; chart values small grey above bars",
+    "weights": "Black italic for hero numbers and run titles; Bold for stats and headers; Regular grey for labels and body",
+    "case_and_tracking": "All-caps tight italic for hero titles; sentence case UI; captions in all-caps bold grotesque",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#f9f9f8", "#ffffff", "#000000"],
+    "text": "#000000",
+    "accents": ["#4fc3f7 (approx: sky blue chart bars and W segment)", "#ff4400", "#fb5406", "#dc1c91"],
+    "accent_strategy": "Black-and-white base with brand-flooded hero surfaces: plan and guided-run covers flood the screen in Nike orange (#ff4400) or orange-and-magenta duotone photography; data is drawn in a single sky blue. Colour lives on content covers, not chrome.",
+    "source": "palette.json 02 (#ffffff 42% UI, #000000 backdrop), 03 (#fb5406, #dc1c91 duotone run cover), 04 (#ff4400 20% plan cover) + visual match; sky blue not in measured top colours"
+  },
+  "shape": {
+    "radius_language": "mixed: ~12pt cards and plan cover, pill segmented control and outline pill button, circles for the START button and icon buttons; tab bar flat",
+    "concentric": "no",
+    "borders_shadows": "Hairline dividers; outline segmented control; translucent dark circles for icon buttons on covers; no shadows",
+    "materials": "flat; duotone and full-bleed photography; grain texture on the orange cover (03)"
+  },
+  "liquid_glass_visible": "no; flat white tab bar with outline icons",
+  "density": "low-medium: big hero number, three stats, one chart; lots of white space with 20-24pt rhythm",
+  "layout": "Activity: avatar and +, large title 'Activity', W/M/Y/All segmented pill, 'This Week' dropdown, a huge italic total (20.6 Miles), three stats (Runs, Avg. Pace, Time), a weekly bar chart, then Recent Activity. Plans: large title and full-width poster cards (orange 'RUN BEYOND' cover with Swoosh) above a description and level chip.",
+  "navigation": "Visible 5-tab bar: Home, Plans, Run, Club, Activity with thin outline icons and labels, selected item bold; large left-aligned titles; guided-run player is full-screen with bookmark, close, settings, START and music buttons",
+  "imagery_and_icons": "Full-bleed athlete and coach photography; duotone orange/magenta treatments on guided runs; Nike Swoosh and typographic poster covers; thin outline icon set (calendar, shoe, stopwatch)",
+  "signature_visual_move": "A guided run is a full-screen poster: duotone athlete photo on flat orange, a heavy italic caps title and one round white START button.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "Sensory-First",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's low-confidence 'Loud Brand-First (sport-brand) + Coached Program' fits: the shell is quiet white Helvetica-style UI, but plan and run covers are loud owned Nike posters with heavy italic type. The coach-in-your-ear audio core supports Sensory-First as secondary; the screens themselves only show the audio player."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Daily score: none; the hero is the weekly mileage total in heavy italic (20.6 Miles). Streak/calendar: the Watch face (06) shows '3-WEEK STREAK' with three shoe-icon badges and '3 weeks! Incredible!' in orange, a weekly (not daily) streak with no flame. Charts: simple weekly bar chart in sky blue with value labels above bars, a dotted average line labelled 6.9, right-side axis (0km-12), weekday initials with the current day bold. No map visible. Numerals: hero in heavy condensed italic, stats in bold upright with grey labels beneath. The marketing shows guided runs, coach photography and plans, not the in-run screen."
+}

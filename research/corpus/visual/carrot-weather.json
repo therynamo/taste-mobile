@@ -1,0 +1,46 @@
+{
+  "slug": "carrot-weather",
+  "track_name": "CARROT Weather: Alerts & Radar",
+  "version": "6.9.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Very marketing-heavy. 01 and 02 form one panorama of a tilted, older-generation phone (speaker-slot bezel) on a #007aff blue field; they are the only frames with in-app UI (main forecast; radar). 03 is pure marketing (slogan + award laurels). 04 shows home-screen widgets, 05 system notifications plus a red explainer callout, 06 an Apple Watch face. Under 25% of the total pixels are in-app UI, and those frames appear to show a pre-'Glassy Redesign' build.",
+  "typography": {
+    "display": "SF Pro Rounded bold for captions and the city name; large light/regular SF numerals for the current temperature (72°)",
+    "body": "system SF (Rounded in the forecast quip line, which is set large and bold-ish as the hero copy)",
+    "numerals": "rounded/proportional in app; the watch face and widget forecast rows use bold tabular-looking SF numerals",
+    "weights": "Bold rounded for headings and quip; light for the hero temperature; semibold for hourly temps",
+    "case_and_tracking": "Sentence/title case; hourly labels abbreviated 8A/10A/12P; watch face uses all-caps condition text (PARTLY SUNNY) and day names",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#0091fe",
+    "surfaces": ["#fffffd", "#000000", "#1d3579"],
+    "text": "#ffffff",
+    "accents": ["#ffd400", "#40d39c", "#f5a623", "#a347e0"],
+    "accent_strategy": "Condition-flooded: the main screen background is a saturated sky blue tied to the current condition, with white text and a flat illustrated landscape; colourful filled weather glyphs (orange sun, purple night cloud) carry per-hour state. Radar uses the standard green-yellow-red precip ramp. Marketing yellow is a brand accent.",
+    "source": "palette.json 01: #007aff 35% and #0091fe = marketing field and in-app sky (visually very close), #fffffd = hourly sheet, #b8f0c8 / #40a5cc = illustrated hills; 02: #1d3579 / #01617c = radar basemap, #000000 = dark segmented header; 03: yellow from marketing. Accent hexes for glyphs are visual estimates."
+  },
+  "shape": {
+    "radius_language": "small to medium: ~10pt rounded square map buttons on radar, ~22pt widget tiles, a segmented control with ~8pt corners",
+    "concentric": "unclear",
+    "borders_shadows": "Flat; dark translucent square buttons on radar; no visible shadows in-app",
+    "materials": "Flat vector illustration; dark translucent controls over the map"
+  },
+  "liquid_glass_visible": "no (the frames shown predate or don't show the 6.3 glassy redesign)",
+  "density": "low on the main forecast (hero temp, one quip, illustration, then hourly row); high on the watch face and widgets (multi-complication grid)",
+  "layout": "Main screen: city name, circular overflow button, large flat sun icon beside the temperature and feels-like, the persona quip as a full-width bold sentence, an illustrated hillside horizon, then a white hourly panel with icons plotted at heights matching temperature.",
+  "navigation": "Overflow (…) circle top-right; Radar/Forecast segmented control on the map screen with floating square map buttons (share, location, layers, eyedropper). No tab bar visible.",
+  "imagery_and_icons": "Flat vector illustration (sun with pointed rays, rolling hills, a small observatory/robot structure, trees), filled multicolour weather glyphs, CARROT's purple cloud-face app icon in notifications.",
+  "signature_visual_move": "The forecast is a sentence: the persona's quip sits as large bold hero copy under the temperature, over a flat illustrated hillside.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Coach Character",
+    "secondary": "Glance Board (widgets and watch face)",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "The only in-app frame confirms the voice-borne character as hero copy; the rest is widgets, notifications and watch faces, so the 6.x garden/glassy visual layer can't be judged."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Store set is stale relative to the 6.3 'Glassy Redesign' and the 6.0 garden; the tilted phone has a home-button-era earpiece. Treat visual fields as low confidence until a device capture exists."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "duolingo",
+  "track_name": "Duolingo: Learn Languages",
+  "version": "7.149.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light. No device frame and no backdrop: each image is a full-bleed real screen with the marketing caption styled as one of the app's own chunky 3D buttons (orange, purple, green, blue, red) occupying the bottom ~20%. Roughly 80% real UI per image. 05 is a full-bleed isometric scene (in-app conversation mode), not pure marketing art.",
+  "typography": {
+    "display": "Custom heavy rounded geometric display, lowercase, for captions and the streak '3' / 'day streak' (consistent with Duolingo's Feather Bold; name not verified from pixels alone)",
+    "body": "custom - a rounded, squarish DIN-like sans (consistent with DIN Round) for prompts, options and course names; not SF",
+    "numerals": "rounded (heavy rounded display numeral for streak count; rounded small numerals for energy '25')",
+    "weights": "Bold prompts ('Select the correct image'), regular/medium for options; heavy display only for celebration and captions",
+    "case_and_tracking": "Sentence case in UI, all-lowercase captions; character name tag 'EDDY' in caps; normal tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#ffffff", "#f4f5f7", "#e5e5e5"],
+    "text": "#4b4b4b",
+    "accents": ["#58cc02", "#1cb0f6", "#ff9600", "#ce82ff", "#ff4b4b"],
+    "accent_strategy": "Semantic per-system hues on white: green for progress and correct, blue for selection and audio, orange for streak, pink for energy, purple for highlighted keyword; many hues but each mapped to a meaning. Characters add per-content colour.",
+    "source": "palette.json 01/06 (#ffffff dominant, #ff800b orange), 04 (#23b1f2 blue), 03 (#30d1a7 green caption), 05 (#dd524b red caption); progress green and text grey matched visually"
+  },
+  "shape": {
+    "radius_language": "large ~14-16pt on option cards, word chips and buttons; circles for day checks; consistent everywhere",
+    "concentric": "unclear",
+    "borders_shadows": "2pt light-grey borders plus a thicker solid bottom border that makes every card, chip and button read as a pressable 3D slab; no blur shadows",
+    "materials": "flat with faux-3D extruded edges; isometric illustrated world in 05"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low: one task per screen, big tap targets, 2x2 option grid with wide gutters",
+  "layout": "Lesson: close X + green progress bar + energy count on top, bold prompt, character with speech bubble, answer area (word bank or 2x2 image grid), primary button pinned bottom. Celebration: character + giant numeral + week row.",
+  "navigation": "No tab bar in these frames (all are modal lesson/celebration states). Close X top-left; 'Courses' list with plain grey title and chevron rows.",
+  "imagery_and_icons": "Flat vector illustration with soft shading; full character cast (Duo owl, Lily-style people, bear); flag tiles; custom filled icons (speaker, energy battery); isometric scene for conversation practice",
+  "signature_visual_move": "Everything tappable is a thick-bottomed rounded slab, so the whole UI reads as physical buttons, and the store captions copy that button.",
+  "tells_present": ["Streak counter plus flame (the original, illustrated rather than emoji)"],
+  "direction_fit": {
+    "primary": "Coach Character",
+    "secondary": "Toy / Game-Engine Tactile (faux-3D pressable slabs)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Characters with speech bubbles appear in lesson and celebration states and speak in a motivating voice ('I'm off to brag about your streak'); the 3D slab button language matches the reconstructed record."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "The multi-hue palette stays legible because each hue is tied to one system (progress, selection, streak, energy). The streak screen is the canonical source of the 'streak + flame' habit-template tell; a clone copying it reads as Duolingo pastiche."
+}

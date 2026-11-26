@@ -1,0 +1,46 @@
+{
+  "slug": "halide",
+  "track_name": "Halide Mark III - Pro Camera",
+  "version": "3.4.1",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Stale and marketing-heavy. Despite the 'Mark III' listing, the frames are the Mark II set: 02 literally reads 'HALIDE MARK II' (logo, Editors' Choice laurels, four feature icons) and is pure marketing; 01 is a phone on a pegboard of camera gear; 03–06 are home-button iPhones (8/SE-era) under wide all-caps captions with 'NEW' keycaps. Real UI (capture screen, focus/exposure tools, waveform, RAW viewer) fills ~55% of 01, 03–06. Mark III's film-window Look picker and built-in editor are not shown.",
+  "typography": {
+    "display": "Wide, squarish, extended technical sans in all caps with very open tracking (THE MOST POWERFUL CAMERA FOR IPHONE, WAVEFORM, PORTRAIT, AWB, RAW+) — the same family as Kino; custom or licensed, name unsure",
+    "body": "system SF in the library viewer (Library, Yesterday, 5:04 AM); captions use SF/a grotesque in bold + regular",
+    "numerals": "technical readouts in the wide face (+1.5, -1.4, 0.7M); focus scale numerals small and evenly spaced (0.2 0.3 0.5 1 ∞); effectively tabular in the scales",
+    "weights": "Medium readouts and mode labels; regular body",
+    "case_and_tracking": "All-caps with wide tracking for every mode and readout label; outlined format badges (JPEG, DNG) in caps",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#151416", "#1c1c1e", "#2a2a2a"],
+    "text": "#ffffff",
+    "accents": ["#f4e631", "#ff3b30", "#34c759"],
+    "accent_strategy": "One accent: Halide yellow marks active/automatic state (AF ring, RAW+ badge, PORTRAIT pill, INSTANT button, the exposure slider and its handle, depth cube). Red and green appear only in diagnostic overlays (zebras, colour waveform) and a tiny green recording/activity dot. Black chrome otherwise.",
+    "source": "palette.json 02: #151416 / #101011 / #0c0c0d = marketing backdrop and chrome; 06: #030303 42% = app black; 01/03/04/05 dominated by photos (#c3b0a5, #d2cbc0, #dfeaf0). Yellow, red, green are visual estimates (controls are too small to register)."
+  },
+  "shape": {
+    "radius_language": "mixed: circular shutter, AF and lens (1×) buttons; ~6pt rounded-rect badges (RAW+, INSTANT, JPEG/DNG outlines); ~10pt gallery thumbnail; pill PORTRAIT label; tick-mark scales",
+    "concentric": "unclear",
+    "borders_shadows": "Thin outline rings around round controls and badges; yellow outline on active badges; no shadows",
+    "materials": "Flat black chrome; the 'NEW' keycap badge is a skeuomorphic bevel (marketing); a translucent circular focus loupe over the viewfinder"
+  },
+  "liquid_glass_visible": "no (frames predate it; Mark III's reported glass adoption is not shown)",
+  "density": "medium: a viewfinder with an overlay toolbar row (histogram, grid, RAW+), a second control row (flip, timer, flash, AWB, settings), and a bottom bar of AF / shutter / lens plus a manual focus or exposure scale",
+  "layout": "Portrait capture: tall viewfinder with histogram top-left and exposure value top-right, an overlay row at its bottom edge, a hideable control row, then a bottom deck with a manual focus ruler (0.2 → ∞) or exposure slider above AF, a large white shutter, lens switch and gallery thumbnail.",
+  "navigation": "No tab bar; single-screen camera with a pull-down chevron to reveal more controls; the photo viewer uses a native back button ('< Library'), a bottom sheet with format badges, and an action row (favourite, adjust, share, delete).",
+  "imagery_and_icons": "User photography; custom monoline technical glyphs (histogram bars, waveform, grid, depth cube, film canister for Instant RAW, gear-like tutorial icon); marketing uses a photographed pegboard of real camera hardware.",
+  "signature_visual_move": "A tick-marked manual focus ruler running 0.2 to ∞ under the viewfinder, with Halide yellow as the only colour for active state.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Analog Instrument",
+    "secondary": "Glance Board (histogram, waveform and zebra overlays)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "Long-throw tick scales, all-caps technical labels, black chrome and a single-accent active state match the Analog Instrument signature. Confidence is capped because the screens are Mark II, not the Mark III the text record describes."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Kino and Halide share the wide all-caps technical face, the black chrome and the circular AF badge, so 'Lux house style' is a confirmed visual signature across two apps. Halide's single accent is yellow; Kino reserves its saturated colour (red) for record. Mark III needs a device capture."
+}

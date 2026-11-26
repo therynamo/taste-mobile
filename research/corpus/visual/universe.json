@@ -1,0 +1,46 @@
+{
+  "slug": "universe",
+  "track_name": "Universe Website Builder",
+  "version": "2026.9",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Consistent template: electric-blue (#0044ff) backdrop with a thin light blueprint grid, a two-line bold white caption on top, and a realistic iPhone 15-style device frame holding a real screen. The UI fills about 70% of each image; no image is pure marketing. Images are 600x1300 (taller than the other apps' crops). The blueprint grid wrapper echoes the app's grid editor and the 'infinite grid' idea, so it is brand evidence.",
+  "typography": {
+    "display": "Marketing captions: bold wide grotesque (extended proportions, name unsure). In-app titles ('Commerce', 'Choose a template') are bold SF Pro.",
+    "body": "system SF",
+    "numerals": "Proportional SF; balances and prices in bold/regular SF ('$2,318.79', '$45.00'); date stack 'FEB 29' with small caps month over bold day",
+    "weights": "Bold titles, semibold row labels, regular secondary grey; black pill buttons in semibold",
+    "case_and_tracking": "Sentence case in chrome; block-palette labels and 'BLOCKS' header in small ALL CAPS with open tracking; 'BUY' in caps",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#f2f2f2",
+    "surfaces": ["#ffffff", "#000000", "#404858"],
+    "text": "#000000",
+    "accents": ["#0044ff", "#2f5bea"],
+    "accent_strategy": "Chrome is monochrome (grey grouped background, white cards, black pill buttons, black editor shell); colour comes from the user's site content. Brand blue appears in marketing and in selection handles/checkmark; status uses semantic green 'Fulfilled' and orange 'Refunded'.",
+    "source": "palette.json 03 (#f3f3f3/#ffffff grouped list), 04 (#404858 blurred blocks sheet, #131412 dark shell), all images (#0044ff marketing backdrop); selection blue and status colours matched visually"
+  },
+  "shape": {
+    "radius_language": "mixed: large ~20pt cards and sheets, pill buttons (BUY, Publish, filter chips), ~14pt block tiles, circular icon buttons",
+    "concentric": "yes, roughly: grouped cards sit inside the rounded editor sheet with consistent inset",
+    "borders_shadows": "No borders on cards; hairline separators in inset lists; dashed outline for 'Start without a template'; blue rectangular selection boxes with square handles on the canvas",
+    "materials": "Flat grouped-list chrome; the Blocks palette and Style sheet use a translucent blurred material tinted by the canvas behind"
+  },
+  "liquid_glass_visible": "unclear: blurred translucent sheets in 04 and 05 read as pre-26 material, not Liquid Glass; no glass tab bar",
+  "density": "medium: iOS inset-grouped rhythm, 4-column block grid, list rows ~64pt",
+  "layout": "Editor: black shell with back button and white 'Publish' pill on top, the user's site as a rounded card below, a bottom sheet for blocks/style. Commerce home: large title with URL, balance card, grouped settings list, Orders list with search/filters/export. Template picker: 2-column grid of site thumbnails.",
+  "navigation": "No tab bar visible. Top bar in 06 uses three custom icons (smiley face, globe, ringed planet) as a mode switcher. Editor uses floating circular back and pill Publish buttons; bottom sheets for tools.",
+  "imagery_and_icons": "User/template photography and type inside the site canvas; outline SF Symbol-style icons in lists and blocks, plus brand glyphs (PayPal, YouTube, SoundCloud, Vimeo); playful custom top-bar icons",
+  "signature_visual_move": "A neutral black-and-grey native shell that steps back so a freely composed, grid-snapped user site carries all the colour and type personality.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "User-Authored Poster",
+    "secondary": "Shareable Artifact Studio",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record proposed 'Block-Grid Canvas', which is not one of the 17. Visually, expression lives entirely on the user's artifact (site templates in serif, retro mono, photo layouts) while chrome stays conventional, which is the User-Authored Poster restraint rule; the published site is the designed output."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The chrome itself is close to stock iOS (inset grouped lists, SF); distinctiveness comes from the canvas and the blueprint-grid brand. 'Pro' badges on blocks. The block palette is a 4x6 grid of outline icons with caps labels."
+}

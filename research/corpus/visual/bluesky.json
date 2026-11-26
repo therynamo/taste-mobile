@@ -1,0 +1,46 @@
+{
+  "slug": "bluesky",
+  "track_name": "Bluesky Social",
+  "version": "1.138.0",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "All 5 use the same template: saturated brand-blue sky with cloud photo backdrop, heavy bold white headline plus light subline (top ~25%), and a black iPhone frame cropped at the bottom showing ~55-60% real UI. No pop-outs; the in-frame UI looks unretouched.",
+  "typography": {
+    "display": "Inter-like grotesque, bold/heavy for screen titles ('Suggested for you', 'Discover New Feeds'); marketing headline is the same family at black weight",
+    "body": "custom: Inter or very close (single-storey details and tall x-height read as Inter, not SF)",
+    "numerals": "proportional, small slate counts in action row (124, 469, 5.9K)",
+    "weights": "bold display names, regular body, regular slate-grey handles and timestamps; semibold row titles",
+    "case_and_tracking": "sentence case, default tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#eef1f5", "#e9f1f7"],
+    "text": "#0b0f14",
+    "accents": ["#1083fe", "#ec4899"],
+    "accent_strategy": "One brand blue for every action (Follow and Pin Feed pills, sent chat bubbles, selected tab underline, butterfly logo), slate-blue greys for secondary text and icons, pink only for the liked heart, semantic tinted pills for Hot (pink) and New (green).",
+    "source": "palette.json 01-05: #ffffff UI; #006afe/#006bfc are the marketing sky backdrop; #e9f1f7/#dde8f4 match the search field and pill fills; in-app button blue and pink read visually (slightly lighter than backdrop blue)"
+  },
+  "shape": {
+    "radius_language": "mixed: pill buttons and filter chips, circle avatars, ~10-12pt search fields and quote/media cards, ~18pt chat bubbles",
+    "concentric": "no",
+    "borders_shadows": "hairline grey dividers between rows; 1pt grey outline on quoted post card and on unselected chips; no shadows",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium; 3-4 posts per viewport, ~12pt inner padding, avatar gutter left, list rows ~80-90pt tall",
+  "layout": "Twitter-classic timeline: hamburger, centred butterfly, '#' feeds button; horizontal scrolling feed-tab strip (Discover, Following, Science, Catch Up, Quiet) with blue underline; posts as avatar + bold name + grey handle/time + body + 6-icon action row.",
+  "navigation": "Top: hamburger drawer, logo, feeds icon; underlined text tab strip for user-chosen feeds. Bottom tab bar is cropped out of every frame (not visible). Back is a plain left arrow (not iOS chevron), suggesting cross-platform React Native chrome.",
+  "imagery_and_icons": "Custom outline icon set (reply bubble, repost arrows, heart, bookmark, share arrow, ellipsis) in slate grey; filled pink heart for liked. Feed avatars are square rounded app-icon-like tiles. Emoji used inline in feed names (newspaper emoji before 'News'). Imagery = user avatars and post media.",
+  "signature_visual_move": "A swipeable strip of user-chosen feed names across the top of the timeline, with one bright blue reserved for actions.",
+  "tells_present": ["Generic font (Inter, Geist)", "Not native, ignores HIG (left-arrow back, Android-style chrome on iOS)"],
+  "direction_fit": {
+    "primary": "posture-only: unified custom cross-platform system over the X/Twitter timeline grammar (feed core)",
+    "secondary": "NEW candidate Monochrome Feed Chrome does not fit: Bluesky's chrome is white plus one owned blue, so it is closer to 'one-accent feed'",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Screens show a near-copy of the classic Twitter timeline anatomy with a blue accent and Inter-like type. The differentiator visible on screen is IA (feed tabs, Pin Feed, custom feeds), which matches the text record's posture-only verdict."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Marketing is the most brand-flooded part (sky blue + clouds = 'blue sky'); in-app the blue is only on actions. Hot/New pills use tinted semantic fills. Bottom tab bar never shown."
+}

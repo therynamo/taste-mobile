@@ -1,0 +1,46 @@
+{
+  "slug": "whatsapp",
+  "track_name": "WhatsApp",
+  "version": "26.46.74",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Alternating backdrops: saturated brand green #00d756 (01, 03, 05) and warm cream #fdf5ea (02, 04), each with a black headline that mixes bold and regular in one line ('**Message privately** with end-to-end encryption') in the top ~20%, then a thick black-bezel modern iPhone frame. Real UI is ~70% of each frame and uncropped: chat list, a light chat, a group call, a dark group chat and a status viewer.",
+  "typography": {
+    "display": "System SF Pro: a bold iOS large title 'Chats', semibold contact names; marketing headline in a custom grotesque with bold/regular contrast (name unsure)",
+    "body": "system SF",
+    "numerals": "proportional system; green timestamp for unread rows (9:45), grey otherwise; voice-note durations (0:05, 9:35); recording timer 0:01",
+    "weights": "Bold large title, semibold names, regular grey previews, italic 'typing...', coloured semibold sender names in groups",
+    "case_and_tracking": "Sentence case; default tracking",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#d0fecf", "#f7f0e8", "#024e34", "#1e1920", "#feeed4"],
+    "text": "#000000",
+    "accents": ["#0fa565"],
+    "accent_strategy": "One accent: WhatsApp green for unread badges, the + button, unread timestamps, the active filter chip and View Live Location; outgoing bubbles are a pale green in light mode and a deep green in dark. Blue only for read ticks; red for recording and hang-up.",
+    "source": "palette.json: #00d756 = green marketing backdrop, #fdf5ea / #f5f2e9 = cream backdrop, #282020 / #091814 = dark UI and frame. Outgoing bubbles #d0fecf (light) and #024e34 (dark), wallpaper #f7f0e8, dark incoming #1e1920, encryption banner #feeed4 and badge #0fa565 sampled by pixel from 01, 02 and 04."
+  },
+  "shape": {
+    "radius_language": "large and pill: bubbles ~14pt with a tail on the first bubble, pill filter chips (All, Unread, Groups), circular top buttons, rounded composer field, circular call controls",
+    "concentric": "unclear",
+    "borders_shadows": "Inset hairline dividers in the chat list; no shadows; bubbles flat",
+    "materials": "Doodle-pattern wallpaper behind chats (beige in light, charcoal in dark); bars mostly opaque; a translucent full-width tab bar"
+  },
+  "liquid_glass_visible": "partial: circular button chrome (…, camera, +) in the 01 header has the iOS 26 shape, and the bottom tab bar looks translucent, but it is a full-width bar rather than a floating capsule; chat headers and composer look opaque",
+  "density": "medium: chat list rows ~80px with 56pt avatars and one-line previews; filter chips above; chats are roomy with ~8pt gaps",
+  "layout": "Chat list: …, camera and green + top, large title 'Chats', pill filters, then the list. Chat: back + avatar + name/status, video and call icons, doodle wallpaper, yellow encryption banner, bubbles, composer.",
+  "navigation": "Five-tab labelled bottom bar (Updates, Calls, Communities, Chats with green badge, Settings); standard nav bars; status viewer with progress bars at top",
+  "imagery_and_icons": "Outline SF-style tab icons with the selected tab filled; photo avatars; custom sticker characters; doodle wallpaper as brand texture",
+  "signature_visual_move": "The doodle wallpaper under pale-green or deep-green bubbles, unchanged in idea for a decade, is the brand inside the app; everything else is system.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "none of the 17: native adopter posture with an owned accent",
+    "secondary": "Loud Owned Shell (only in the marketing wrapper: flood green, custom grotesque)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record tags WhatsApp as native glass and scores distinctiveness 1. The in-app UI is close to stock iOS with one green accent and the doodle wallpaper; glass is only partly visible (circular header buttons, translucent tab bar). The wrapper is far louder than the app."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Chat anatomy: outgoing bubbles pale green #d0fecf (light) / deep green #024e34 (dark), incoming white / #1e1920, with a small tail, inline time and blue double ticks; group sender names coloured per member; reactions as a pill under the bubble. Composer (04): + button, rounded field with sticker glyph, camera and mic outside; recording state (02) replaces the row with a red mic, timer and 'slide to cancel', plus a floating lock pill. Chat list density medium, single-line previews. Compared with Telegram the glass is applied lightly and the tab bar keeps the full-width form, consistent with a conservative native adoption."
+}

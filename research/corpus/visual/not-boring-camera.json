@@ -1,0 +1,46 @@
+{
+  "slug": "not-boring-camera",
+  "track_name": "(Not Boring) Camera",
+  "version": "1.64",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. No device frames. 01 is a hero render of a green-and-orange 3D toy camera over a dark grid of camera parts with ADA and 15,000+ review laurels. 02 is a full-bleed sample photo (SuperRAW) with a badge. 03 shows the colourway picker (real UI: segment labels and glossy colour spheres) beneath a rendered camera. 04 and 05 show the viewfinder region of the app cropped tight, with a caption and a feature legend. 06 is a macro close-up of the 3D control deck. The real UI is visible in fragments in 03-06, never as a whole screen.",
+  "typography": {
+    "display": "Custom: a heavy geometric grotesk for in-app labels ('Lens', 'Top', 'Buttons', 'Cinematic') and the 'A' auto button; marketing captions use a similar grotesk plus an italic serif 'from' (unsure of names).",
+    "body": "custom / unsure",
+    "numerals": "mono: the focus dial and feature legend use a monospaced all-caps face ('MACRO', '.02m', 'EXPOSURE', 'SHUTTER SPEED')",
+    "weights": "Heavy/bold for segment labels; regular mono for technical labels.",
+    "case_and_tracking": "All-caps tracked mono for technical readouts; title case for picker segments.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#191919",
+    "surfaces": ["#2a2a2a", "#1f221e", "#000000"],
+    "text": "#ffffff",
+    "accents": ["#ffd60a", "#f07a1a", "#6b3fd8"],
+    "accent_strategy": "User-authored colourway: the camera body, lens ring and buttons take colours the user picks from 17 glossy swatches plus a custom wheel. Feature icons use a fixed multi-colour set (yellow exposure, blue shutter, red white balance, teal focus, purple histogram). Default control accents are yellow-orange (flash toggle, focus ring gradient).",
+    "source": "palette.json 01, 05, 06 (#191919, #2a2a2a, #1f221e dark plastic body, #000000 viewfinder surround); accent hexes are visual estimates (flash toggle yellow, focus ring orange, 04 purple dial)"
+  },
+  "shape": {
+    "radius_language": "large and physical: chunky rounded-rect deck with about 40 pt corners, circular buttons, pill toggle, knurled cylinder dials; viewfinder about 12 pt",
+    "concentric": "yes: buttons and toggle sit in recessed wells that follow the deck's corner",
+    "borders_shadows": "Real-time 3D shading: recessed wells with inner shadows, cast shadows from knobs, specular highlights on glossy swatches and dials.",
+    "materials": "Rendered 3D plastic and rubber (matte black deck, knurled dials, glossy toggles); textured concrete in the backdrop."
+  },
+  "liquid_glass_visible": "no: everything is a custom 3D render; no system bars visible",
+  "density": "low on the main shooting surface (a few oversized controls around the viewfinder); medium in the colour picker grid",
+  "layout": "Main: a viewfinder window set into a dark 3D camera body, with a flash toggle, a vertical knurled scroll wheel, a settings button and an 'A' (auto) button in the deck, and a purple knurled dial above. Manual focus: an orange-yellow knurled focus ring around the circular viewfinder with a mono 'MACRO' arc scale from .02m to infinity. Customise: rendered camera on top, a horizontal text segment (Body, Top, Lens, Buttons), and a grid of glossy colour spheres.",
+  "navigation": "Fully custom: no tab bar or nav bar in view. Controls are physical: toggle, scroll wheel, dials, round buttons; style selection by a tick-marked carousel ('Cinematic').",
+  "imagery_and_icons": "3D rendered camera and controls; a custom flat geometric icon set for features (multi-colour, filled); hexagon badges for LUT and style; sample photography.",
+  "signature_visual_move": "The whole UI is a lit 3D camera body: a knurled focus ring wraps the viewfinder and a chunky flash toggle and scroll wheel sit in recessed wells.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Toy / Game-Engine Tactile",
+    "secondary": "Analog Instrument",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Physically lit 3D controls and user colourways are the toy layer; the mono technical scale, focus peaking, zebras and histogram are the instrument layer underneath, exactly as the text record's mixed tag says."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "No whole-screen capture exists in the set, so layout is pieced together from crops. The typography confirms one fact the text record lacked: technical readouts use a monospaced all-caps face."
+}

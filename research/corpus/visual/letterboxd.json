@@ -1,0 +1,46 @@
+{
+  "slug": "letterboxd",
+  "track_name": "Letterboxd",
+  "version": "4.13.12",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All 6: slate blue-grey gradient backdrop, 3-4 line bold white caption on top (~20%), a white iPhone 7-era device frame with home-button bezel; the screen area shows ~55-60% real UI and is cropped at the bottom. The frames are stale: iOS 10-era status bars ('Carrier', 9:41 AM with battery glyph), so the screenshots predate the current 4.13 release by years and may not reflect the current UI.",
+  "typography": {
+    "display": "Custom grotesque, semibold/bold for film titles ('Annihilation', 'Drive', list titles); looks like Graphik (Letterboxd's known face) but unconfirmed from pixels",
+    "body": "custom grotesque in a light weight for long review text and descriptions (not SF)",
+    "numerals": "light, proportional; diary dates in a light large numeral inside a bordered square; rating '3.9' light",
+    "weights": "light body and metadata, semibold titles; a strong light/semibold contrast",
+    "case_and_tracking": "tracked all-caps small labels for section headers (JANUARY 2016, RATINGS, MY SERVICES, FEAR WHAT'S INSIDE., TRAILER); titles in title case",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#181b20",
+    "surfaces": ["#1f242a", "#384551", "#0b0d10"],
+    "text": "#f8f8f8",
+    "accents": ["#00e054", "#ff8000", "#40bcf4"],
+    "accent_strategy": "Semantic-brand triad tied to actions: green for stars/rating and 'watched' eye, orange for liked heart, blue-grey/blue for patron badges and links. Chrome is slate neutral; posters supply the rest.",
+    "source": "palette.json 03/04/06 (#181b20 UI background 29-35%, #1f242a, #0b0d10 nav bar); #384551/#3c5062 is the marketing slate backdrop and also close to in-app section-header and pill fills; green/orange read visually"
+  },
+  "shape": {
+    "radius_language": "small: ~2-4pt on poster thumbnails and the diary date boxes, pill for the TRAILER button and small badges (CREW, PATRON)",
+    "concentric": "no",
+    "borders_shadows": "hairline dark dividers between rows; 1pt outline around the diary date squares; poster thumbnails have a thin light inner border",
+    "materials": "flat; hero backdrop image fades into the dark background on the film page"
+  },
+  "liquid_glass_visible": "no (pre-iOS 26 screenshots)",
+  "density": "medium-high; diary rows ~75pt tall with date box, poster, title+year, star row and icons; poster grid 4 across with ~6pt gutters",
+  "layout": "Film page: full-bleed backdrop still, title over gradient, small poster inset right, year/director, trailer pill, tagline in tracked caps, synopsis, ratings histogram. Diary: grouped by month, date square + poster + title/year + green stars + heart/rewatch/review glyphs. Lists: 4-up numbered poster grid.",
+  "navigation": "Standard iOS 10-style nav bars (back chevron with previous title, centred bold title, share/ellipsis right) in near-black; card-swiping poster view with a bottom action row of large coloured glyphs (green eye, orange heart, blue-grey star, watchlist clock-plus). No tab bar visible.",
+  "imagery_and_icons": "Film posters and stills are the imagery. Icons: custom glyphs, filled and colour-coded for the log actions (eye, heart, star); thin outline for share and ellipsis; small grey glyphs for review/rewatch flags.",
+  "signature_visual_move": "Green star rows and the orange heart against a slate near-black, with film posters as the only other colour, on a ruled diary that reads like a ledger of dates.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "NEW: Collector's Shelf / Catalog - poster grids and a dated diary ledger on a dark slate stage, with a small semantic action triad (green watched/rated, orange liked, blue)",
+    "secondary": "NEW: Dark Content Stage (dark slate so posters glow)",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The screens show exactly the text record's posters-on-a-shelf, diary-by-date and dark-slate signature. The colour-coded action triad is a real authored element the feed apps lack. Confidence is held at med because the screenshots are years old."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Stale store assets: device frame and status bar are iOS 10-era. A device capture is needed before treating this as a current visual signature. The tracked-caps light labels plus light body is a strong typographic fingerprint."
+}

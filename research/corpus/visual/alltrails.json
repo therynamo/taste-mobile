@@ -1,0 +1,46 @@
+{
+  "slug": "alltrails",
+  "track_name": "AllTrails: Hike, Bike & Run",
+  "version": "26.11.30",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "01 is entirely marketing art (caption plus a thick lime trail-line graphic on dark forest green). 02-06 are clean: a pale sage backdrop, a two-line caption (bold line plus regular line) and an upright iPhone frame with Dynamic Island; real UI ~75%, with no popped-out callouts.",
+  "typography": {
+    "display": "Custom grotesque with slightly geometric, quirky forms, used for the captions and in-app trail titles ('Lake Blanche Trail', 'Swiftcurrent Nature Trail'); name unsure",
+    "body": "custom (same family; not SF), with a lighter grey weight for metadata",
+    "numerals": "proportional numerals with small units set lower and lighter ('6.4 mi', '2,726 ft', '4 h 43 m', '75%' with superscript percent); not tabular",
+    "weights": "Medium/Semibold for titles and values; Regular for metadata and body; captions pair Bold with Regular",
+    "case_and_tracking": "Sentence case throughout, normal tracking; no all-caps labels",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#ffffff",
+    "surfaces": ["#fbfbfa", "#f6f7f3", "#e5eae6"],
+    "text": "#1b1c16",
+    "accents": ["#9eef8a", "#aef798"],
+    "accent_strategy": "One accent: a pale lime green fills the primary actions (Map, Download, Download 104 trails) and the route line on the map; dark green-black is used for map pins, the selected segment and text. Imagery and maps supply the rest of the colour; weather overlays bring their own scale.",
+    "source": "palette.json 02/03 (#fbfbfa, #fdfdfd UI; #1b1c16/#23231b text), 05 (#9eef8a 10% buttons/route, #abdead map green), 06 (#bbcaad/#c1e7b2 topo greens), #dce1db/#e5eae6 is the sage backdrop, 01 (#151f14/#aef798 marketing) + visual match"
+  },
+  "shape": {
+    "radius_language": "large: ~16-20pt photo cards and sheets, pill buttons and segmented control, ~8pt outlined filter chips, circular white map and photo buttons",
+    "concentric": "unclear",
+    "borders_shadows": "1pt dark outline on the selected filter chip, light grey outlines on others; hairline dividers; soft shadow on floating map controls",
+    "materials": "flat white; opaque white circular buttons over photography and maps; photography and topographic maps carry texture"
+  },
+  "liquid_glass_visible": "no; opaque white tab bar and opaque white circular buttons",
+  "density": "low-medium: one trail card per screen width with photo, name, place and one stats line; trail page shows a 2x2 stat grid; 16-24pt rhythm",
+  "layout": "Explore: a search pill ('Find trails') with filter button, a row of outlined category chips with custom pictograms (Nearby, Wildflowers, Among the trees), then a vertical feed of full-width photo cards (carousel dots, bookmark) with name, park and '★ 4.6 · Hard · 2.6 mi · Est. 52m', plus a floating lime 'Map' pill. Trail page: hero photo carousel, title, rating/difficulty/area, a 2x2 grid of Distance, Elevation gain, Estimated time, Route type, then Download and Map buttons.",
+  "navigation": "Visible 5-tab bar: Explore, Community, Navigate, Saved, Profile with outline icons (selected filled/bold); floating Map pill toggles list and map; bottom sheets over the map; circular back/share/check/bookmark buttons on photos",
+  "imagery_and_icons": "Large user and landscape photography; topographic maps; custom filled pictograms for categories (wildflower, trees); outline UI icons; a weather glyph",
+  "signature_visual_move": "A green trail line on a topographic map with a scrubbable elevation or condition profile underneath.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Ambient Sky",
+    "secondary": "Glance Board",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The text record's 'Social Map Feed (outdoor variant) / field guide' with trailhead facts above the fold is confirmed (2x2 stat grid without scrolling). The visible core is outdoor conditions on a scrubbable axis (hourly precipitation along the route, photo tour scrubbed along an elevation profile), which is Ambient Sky's 'scrubbable time axis' for outdoor apps; the trail page is a Glance Board readout. The social layer is barely visible (only a Community tab)."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Daily score, streak: none shown. Charts: elevation profile as a grey line with photo-point dots and a scrub cursor (Tour); precipitation chance as a stepped blue line with a shaded elevation silhouette behind it, plotted against distance (0-6.0 mi) with a time slider (Sat 11:30 am). Map style: Mapbox outdoors/topographic basemap with hillshade, green forest and tan high ground; the route is a thick lime line with a dark green outline; trail clusters are dark green-black teardrop pins with counts, plus photo pins and tree pins for parks; a rain-to-snow precipitation overlay with a rainbow legend; floating white controls (layers, 3D, compass, location broadcast). Metric numerals: proportional, values large with small lowered units ('4 h 43 m')."
+}

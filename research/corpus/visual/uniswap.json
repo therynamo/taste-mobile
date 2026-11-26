@@ -1,0 +1,46 @@
+{
+  "slug": "uniswap",
+  "track_name": "Uniswap: Crypto & NFT Wallet",
+  "version": "1.87.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. Each frame has its own pastel tint (pink, pink, cream-orange, lilac, ice-blue, mint) with a matching coloured eyebrow pill ('Trade on the go', 'Go direct to DeFi', 'Explore web3', 'Collect & curate NFTs') and a large coloured caption in the same hue. 01 and 02 tilt the phones ~30 degrees over blurred floating token-icon bubbles, so the UI is skewed and partly cut off. 03 and 05 pull cards out of the phone wider than the device; the rest of the screen is faded. 04 is the most honest frame (straight, unfaded Buy screen). 06 shows the same home in light and dark side by side. Real UI is ~40-60% of each frame. Token data (MATIC, ETH at ~$1,712, 'Friends With Benefits') and Dynamic Island frames suggest the shots date from about 2023 and have not been refreshed for v1.87.",
+  "typography": {
+    "display": "A neutral grotesque with a slightly squarish, low-contrast build and tall x-height, used in captions and in-app (consistent with Basel Grotesk, the face Uniswap is known for, but not verified from glyphs - treat as unsure). Captions are regular weight at very large size, not bold.",
+    "body": "custom (same grotesque; name unsure)",
+    "numerals": "Lining, proportional; balance '$22,323.75' with cents in light grey (two-tone); swap amounts '1.2' / '1952.16' large regular; Buy '$300' large regular, no cents.",
+    "weights": "Mostly regular and medium - the brand avoids bold: the balance is medium, captions regular, row titles regular. Semibold only on the eyebrow pills and pill buttons.",
+    "case_and_tracking": "Sentence case everywhere; default to slightly tight tracking on large sizes; no all-caps except tickers.",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#f8f8f8", "#fdfdfd"],
+    "text": "#222222 (approx near-black; visual estimate)",
+    "accents": ["#fc72ff (approx, Uniswap pink on Swap pill, Max link, selected $300 chip and icon-button tints; visual estimate - palette.json only catches the tinted #db94dc/#ffefff backdrop)", "#40b66b (approx, gain green triangle; visual estimate)", "#f2555a (approx, loss red triangle; visual estimate)"],
+    "accent_strategy": "One owned accent: a bright pink used for the primary Swap pill, the Max link, the selected preset chip and the pale-pink tinted action tiles; semantic green/red only on change triangles; everything else greyscale. Marketing frames rotate through other hues (orange, violet, cyan, green) but the UI stays pink.",
+    "source": "palette.json 02: #ffffff/#f8f8f8 UI surfaces; 01: #ffefff/#fbe7fa/#db94dc pink marketing backdrop and bubbles; 03: #fff8e8 cream backdrop; 04: #f1edfc lilac backdrop; 05: #f2fcfe ice-blue backdrop; 06: #eaf4e9 mint backdrop, #0b1913/#2e242e dark-mode UI and device, #4cb47b green caption. In-app pink, green and red are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~20pt swap cards and favourite cards, ~16pt rounded-square action tiles, full pills for Swap button, Search bar, preset amount chips and Volume dropdown; circular token icons and a rounded-square swap-direction button",
+    "concentric": "yes - the swap-direction button sits in a notch between the two swap cards with an even ring; floating Search and Swap pills sit at matching insets from the screen edge",
+    "borders_shadows": "Very soft, wide shadows under pulled-out cards (partly marketing); in-app cards are separated by light grey fills rather than borders; hairline dividers inside the swap card.",
+    "materials": "flat light surfaces; a floating bottom bar of a Search pill and a pink Swap pill over content, with a blurred/translucent look on the dark Search pill in 06"
+  },
+  "liquid_glass_visible": "unclear - the floating bottom Search pill in 06 (dark) looks translucent over the NFT grid, but this predates iOS 26 and is a custom blur, not system Liquid Glass",
+  "density": "low - big amounts, a lot of empty space on Swap and Buy, a custom keypad taking the lower half; token rows are two-line with generous height",
+  "layout": "Home: avatar + ENS name + truncated address with copy, settings gear top-right; large two-tone balance with green-triangle day change; a row of four pink-tinted icon tiles (buy card, send, receive, scan); underline-free text tabs (Tokens / NFTs / Activity) with the active one darker; token list; floating bottom Search pill plus pink Swap pill. Swap: 'Swap' label, two stacked cards (You pay with amount, fiat and token pill / You receive) separated by a square arrow button, a rate line, a custom keypad and a full-width pink Swap button. Buy: centred '$300' with ETH equivalent, three preset chips, keypad. Search sheet: grabber, search pill, Favorite tokens two-up cards, Favorite wallets chips, ranked Top tokens list.",
+  "navigation": "No tab bar. A floating bottom pair - Search pill and pink Swap pill - is the persistent navigation on Home (02, 06). Search and Buy open as sheets with a grabber. Text-only tabs on home (no underline). Custom in-app keypads.",
+  "imagery_and_icons": "Token logos; ENS avatar as a pink flower-like generative mark; NFT art (illustrated frog, pixel art, product photo of socks); filled pink glyph icons inside tinted rounded tiles (card, paper plane, down-arrow circle, scan frame); blurred oversized token icons as marketing bokeh.",
+  "signature_visual_move": "A calm greyscale wallet with a two-tone balance whose only colour is Uniswap pink on a floating Swap pill and pink-tinted action tiles.",
+  "tells_present": ["Cards everywhere (favourites as floating cards; mostly a marketing exaggeration)"],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "Dark Pro Minimal",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Text record tagged Loud Brand-First Money (Uniswap pink) at low confidence; the screenshots confirm an owned pink and a custom grotesque, which matches Loud Owned Shell. But the shell is quieter than Cash App or Monzo: the pink is confined to the swap action and icon tiles, and the dark variant in 06 is near-black with pink accents. The text record's 'pink-tinted shadows' are not visible; shadows are neutral."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Balance and amount anatomy: '$22,323.75' large medium weight, dollars dark and cents light grey at the same size; day change '▲ $156.01 (0.69%)' small grey with a green triangle - the change text itself stays grey and only the triangle is coloured. Row percentages likewise grey with a green or red triangle. Swap amounts regular weight, fiat equivalents small grey; 'Max' in pink. Buy '$300' large regular with no cents and the token equivalent below. Trust and risk: rate line with an info icon on Swap; no warning labels, token stats, signing sheet, simulation or Face ID prompt is shown, so the 'token stats and warning labels' from the listing copy are not visually confirmed. Light and dark both shipped (06). Crypto cliché: absent in UI (pastel, light, no neon); the dark mode is near-black with pink, closer to the cliché but without glow. Marketing uses blurred floating token-coin bubbles (01, 02), a soft echo of the '3D coin' cliché. Screenshots appear ~3 years old relative to v1.87.0 (MATIC, Friends With Benefits)."
+}

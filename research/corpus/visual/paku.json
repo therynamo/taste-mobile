@@ -1,0 +1,46 @@
+{
+  "slug": "paku",
+  "track_name": "Paku - Air Quality & AQI Map",
+  "version": "7.5.2",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "All 6: a pale lilac-to-white backdrop, a two-line heavy dark-indigo headline top-left (~15%), and a current titanium iPhone frame with ~75-80% real UI. 02 and 04 show Lock Screen and Home Screen widgets (system surfaces), not in-app UI. The in-app UI looks unretouched.",
+  "typography": {
+    "display": "SF Pro: large regular-weight numerals for the reading ('181', '151', '24') and bold for sheet titles ('Air Quality Alerts', 'Hope and Havemeyer')",
+    "body": "system SF",
+    "numerals": "SF regular, large and plain for readings; small proportional SF on map pins; Lock Screen uses the system's tall glass clock",
+    "weights": "regular large numerals, semibold labels ('Unhealthy', 'Good'), regular grey metadata",
+    "case_and_tracking": "sentence case, default tracking",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f3f2f8",
+    "surfaces": ["#ffffff", "#e3dcef"],
+    "text": "#000000",
+    "accents": ["#34c759", "#e8c11c", "#f08a24", "#d32f3c", "#8e1f5b", "#007aff"],
+    "accent_strategy": "Strictly semantic: the EPA AQI scale (green, yellow, orange, red, maroon-purple) colours map pins, heat map, hourly bars and widget backgrounds; system blue for location, system green toggles. No brand accent in the UI.",
+    "source": "palette.json 06 (#f3f2f8 grouped background, #ffffff cells, #e3dcef), 01 (#f1f2ee/#fcfbf7 map and sheet); AQI hues read visually from 01/03/05; #faf5ff/#fcf9fe lilac is marketing backdrop"
+  },
+  "shape": {
+    "radius_language": "large and concentric: ~26-30pt sheet corners following the screen, ~18-20pt inner cards, pills for the search field and action capsules, circles for map buttons, teardrop map pins",
+    "concentric": "yes: sheet, inner cards and the bottom action capsule nest by radius (01, 06)",
+    "borders_shadows": "none on cards (fill contrast only); soft shadows under floating map buttons",
+    "materials": "glass: Liquid Glass bottom sheet over the map, glass control clusters, glass menu popover, glass search capsule"
+  },
+  "liquid_glass_visible": "yes: the station sheet (01) is translucent glass showing pins through it; vertical glass button stack on the map (settings, layer, brightness, location); glass search bar with '...' (03, 05); glass layer menu (05); glass circle back and '+' buttons (06); glass action capsule (star, share, more) and bell",
+  "density": "medium; map full-bleed with dense pins, sheet with one big reading, a 24h bar chart and a row of three stat tiles",
+  "layout": "Map-first: full-bleed Apple Maps with AQI-coloured value pins, a floating vertical control stack top-right, a pull-up glass sheet with the station name, EPA guidance card, reading + category + 24h bar chart, and Temperature/Humidity/PM2.5 tiles. Settings are an inset-grouped native list.",
+  "navigation": "No tab bar. Floating glass search capsule at the bottom, glass control stack on the map, a pull-up sheet with a grabber, native nav bars with glass circle buttons in sheets, native menus. Fully platform chrome.",
+  "imagery_and_icons": "No photos or illustration; Apple Maps is the imagery. SF Symbols throughout (gear, sun, location arrow, star, share, ellipsis, bell slash, thermometer, humidity); a custom dotted-hexagon sensor glyph for AQI.",
+  "signature_visual_move": "AQI-coloured number pins on Apple Maps under a Liquid Glass sheet, with the same colour scale carried into hourly bar charts and widgets.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "platform-material overlay: native adopter (Liquid Glass); posture: native per platform",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One value per entity (pin number), strictly semantic status colour, plain large numerals, and system-surface extensions (Lock Screen, Home Screen widgets) are the Glance Board signatures, and all are visible here. The chrome is pure iOS 26."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Purple appears only as the AQI 'very unhealthy' step and the lilac marketing backdrop. The best example in the batch of how far stock iOS 26 glass plus one semantic scale can go."
+}

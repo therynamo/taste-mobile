@@ -1,0 +1,57 @@
+{
+  "slug": "monarch",
+  "track_name": "Monarch: Budget & Track Money",
+  "version": "2.0.134",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Cream #fcf8ed backdrop (pale blue on 04) with a serif headline that italicises a key phrase, a small orange monospace uppercase eyebrow ('CASH FLOW', 'BUDGETING'), award laurels on 01 and 04, and a realistic iPhone with an orange frame showing ~50-55% UI. 04 is mostly a family photo with two floating UI cards.",
+  "typography": {
+    "display": "Wrapper: transitional serif with italic emphasis plus an orange monospace eyebrow. In-app: neutral grotesk at medium/semibold for titles ('Reports', 'June Budget')",
+    "body": "neo-grotesk, unsure (not recognisable)",
+    "numerals": "lining, medium weight; table columns right-aligned and look tabular (unsure)",
+    "weights": "Balances medium (not bold); budget figures bold with grey regular qualifiers ('remaining'); labels regular",
+    "case_and_tracking": "Sentence case in app; uppercase tabs 'NET WORTH / CASH / CREDIT CARDS' with slight tracking",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f6f5f3",
+    "surfaces": [
+      "#ffffff",
+      "#fffefc"
+    ],
+    "text": "#1d1b19 (visual estimate, warm near-black)",
+    "accents": [
+      "#2b9a6a (visual estimate, budget green)",
+      "#e84a4f (visual estimate, expenses red)",
+      "#1aa3c4 (visual estimate, chart teal)",
+      "#f26b2a (visual estimate, brand orange)"
+    ],
+    "accent_strategy": "Semantic and per-content: green income/left-to-budget, red expenses, teal goals and chart line, per-category colours in the Sankey; brand orange lives on the device frame, eyebrow and logo, not inside screens.",
+    "source": "palette.json 02 and 06 (#f6f5f3 25-29% UI canvas), 01 (#f5f5f2), 03 (#ffffff 24% cards); wrapper cream #fcf8ed 30-34%; semantic colours visual"
+  },
+  "shape": {
+    "radius_language": "small-medium: cards ~10-12pt, stat tiles ~10pt, dropdown fields ~10pt bordered; segmented tabs and range chips pills",
+    "concentric": "unclear",
+    "borders_shadows": "Bordered dropdowns and editable amount fields; cards on warm grey with no visible shadow; dashed underlines on 'Remaining' and '% of assets' to signal tooltips",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no",
+  "density": "high: table-like budget rows, Sankey with 15+ labelled nodes, net worth chart plus account list on one screen",
+  "layout": "Accounts: hamburger + bell, centred title, more + add; NET WORTH/CASH/CREDIT CARDS tabs, net worth figure and change, full-width area chart, range chips, then account group cards. Reports: segmented Cash Flow/Spending/Income, Chart and Display dropdowns, Sankey. Budget: full-width green 'Left to budget' banner, three progress-bar summaries, then an editable Budget/Remaining table.",
+  "navigation": "Hamburger menu (top left) rather than a visible tab bar in these crops; centred titles; segmented pills for sub-views",
+  "imagery_and_icons": "Bank logos in circles, emoji as category icons (house, apple, coffee, money bag), photo headers on goals; wrapper photography of a family",
+  "signature_visual_move": "A full-height Sankey diagram of income to spending categories, coloured per category and labelled with emoji, as a primary report.",
+  "tells_present": [
+    "Emoji as icons (category emoji in the Sankey and budget rows)",
+    "Cream plus serif plus orange (store wrapper only; it is the brand system here, so a false-positive risk)"
+  ],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "Private-Bank Editorial (wrapper only)",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Text record had it as calm modular money with low confidence. The screens show a light, data-dense, semantically coloured board of tables, bars and charts with no shell loudness inside the app. None of the 17 fits cleanly; Glance Board's one-line-per-entity rows and strict semantic colour are the closest. The serif/cream/orange identity is store-wrapper only."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "MONEY ANATOMY. Net worth '$748,606' medium weight ~1.8x body, rounded to dollars with no cents; portfolio '$270,239.50' medium with cents at the same size; $ full size. Change '↑ $32,483.59 (4.5%) 1 month' with green arrow and figure, grey period. List amounts right-aligned medium black with cents, timestamp below ('4 hours ago'). Budget: bold spent figure + grey 'remaining' qualifier; editable budget amount in a bordered box ('$8,400') beside the remaining amount in a green pill ('$4,200'). Goals: '+$4,000.00' and '+$3,000.00' in green for saved/available, black for spent; 'At risk' yellow chip with yellow progress. Negative shown once as '-$1,' (hyphen, looks truncated in the marketing data). Tabular: columns appear aligned, unsure. Charts: teal line with pale gradient area fill and a dotted baseline (net worth); two-series line chart (portfolio teal vs S&P orange) around a dashed 0% line with legend dots; stepped green area for goal progress with a dashed projection to a target marker; Sankey with category colours; horizontal budget bars with a tick marking today. Range chips 1M/3M/6M/YTD/1Y/ALL, selected in grey pill."
+}

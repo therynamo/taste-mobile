@@ -1,0 +1,46 @@
+{
+  "slug": "amie",
+  "track_name": "Amie - Todos, calendar",
+  "version": "1.15.20",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "No device frames and no complete screen in any frame. Each image is an exploded composite of UI fragments on a #f5f5f5 field: a calendar slice with a tilted, extruded drag block (01), a tilted stack of widgets (02), stacked list cards (03), account/attendee cards (04), and stacked integration sheets (05). A coloured kicker + black headline caption takes the top or bottom ~15%. The fragments look like real components, but layout, navigation and chrome are invisible.",
+  "typography": {
+    "display": "Neo-grotesque semibold for captions and card titles (Today, Emails, Multiple Accounts); consistent with Inter but could be SF — unsure",
+    "body": "custom (likely Inter) / unsure",
+    "numerals": "proportional; calendar hour labels 15:00 in grey regular; time chips (02:30 PM) set small in grey pills; a large regular 15:32 timer",
+    "weights": "Semibold titles and event names, regular secondary text, medium coloured event text",
+    "case_and_tracking": "Sentence case; one all-caps grey widget label (FRIENDS' BIRTHDAY); slightly tight display tracking",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#f5f5f5",
+    "surfaces": ["#ffffff", "#ebebeb"],
+    "text": "#1a1a1a",
+    "accents": ["#e9d5ff", "#bfe5fb", "#e7faf3", "#1199e0", "#ef4444"],
+    "accent_strategy": "Per-content: each event block is a pale tint with a saturated same-hue title (lavender/purple, sky/blue, mint/green); a red current-time line; a saturated blue for the dragged/scheduled item and Today widget. Section kickers in the captions rotate orange/purple/green/blue. Neutrals are near-white and white cards.",
+    "source": "palette.json 01: #f5f5f5 49% = background, #dbebf4 / #75a2c6 = sky event block and the blue dragged block; 02: #348abb = blue Today widget; 03: #edf7f2 = mint list tint; 04: #f8eff0 = pink account card. Purple tint and red line are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~20pt white cards and sheets, ~10pt event blocks, pill chips for dates, rounded-square checkboxes (~6pt), circular avatars",
+    "concentric": "yes",
+    "borders_shadows": "Soft low-opacity shadows under white cards; dashed outlines for drop targets and empty placeholders; hairline row dividers",
+    "materials": "Flat pastel with a toy-like 3D extrusion on dragged/featured blocks (marketing treatment, unclear in-app); a soft cyan glow behind the breathing timer"
+  },
+  "liquid_glass_visible": "no",
+  "density": "medium: ~64pt list rows, 60pt-ish calendar hour spacing, generous padding inside cards",
+  "layout": "Unclear from the fragments. Pieces imply a day timeline with hour labels and tinted event blocks, a collapsible list stack (Today / Emails / Linear sections with counts), and a split view where todos and emails sit below the calendar to be dragged in.",
+  "navigation": "Not visible. Sheets with grab handles (05) and a search field with Close button (04) are the only chrome.",
+  "imagery_and_icons": "Apple Memoji as avatars throughout, filled circular integration icons (moon, Spotify, meditation, runner), outline checkbox glyphs, partial-pie progress icons beside list names, third-party app logos (Notion, Things, Todoist).",
+  "signature_visual_move": "A todo picked up as a thick, extruded blue tile and dropped onto a dashed 'Release to schedule' slot between pale colour-tinted event blocks.",
+  "tells_present": ["Cards everywhere"],
+  "direction_fit": {
+    "primary": "Chromatic Timeline",
+    "secondary": "Toy / Game-Engine Tactile (the extruded drag tile, as a marketing accent)",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "Pale per-event hues with saturated same-hue titles on a near-white neutral, plus a distinct blue for the scheduling action, match the text record; but no full timeline screen is shown, so the direction's 'one vertical axis' is only implied by one fragment."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Too marketing-heavy to judge layout or navigation. Listing is from Aug 2025. The near-white #f5f5f5 neutral and distinct CTA blue are consistent with the third-party token claims (#FAFAFA, separate CTA blue)."
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "runna",
+  "track_name": "Runna: Running Plans & Coach",
+  "version": "8.64.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Moderate-heavy. A dark teal-to-rust diagonal gradient backdrop with a left-aligned title and subtitle caption, an iPhone frame cropped at the bottom, and one card in each image enlarged and popped out of the frame with a white outline (Week 1, Coach callout, plan details, chart, map). 03 is a marketing list of plan cards with no device. Real UI ~55-65%. The in-UI dates (Dec 2023, Mar-Apr 2024) suggest the screenshots are older than v8.64.0.",
+  "typography": {
+    "display": "Semibold geometric grotesque for screen titles ('Plan Overview', 'Your plan is ready', 'Afternoon Long Run'); same family as the captions; name unsure (resembles Manrope)",
+    "body": "custom geometric grotesque (same family), not SF; unsure",
+    "numerals": "proportional semibold numerals with small caps units ('45.3', '3h 48m', '9.21KM', '198/526 mi'); live-run pace in bold caps '400M @ 4:23/km'; plan distances set inside shield badges",
+    "weights": "Semibold/Bold for titles and values; Regular for body; small caps labels in Medium",
+    "case_and_tracking": "Small all-caps labels for metrics ('TOTAL WEEKS', 'KILOMETERS', 'VIEW BY: WEEK', 'CURRENT', 'UP NEXT'); sentence case titles; normal tracking",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#f4f7f9",
+    "surfaces": ["#ffffff", "#161616", "#22272d"],
+    "text": "#161616",
+    "accents": ["#f07a5f (approx: coral selected tab, RUN pill, current-week bar, race name)", "#3cc8b0 (approx: teal route line and icons)", "#4ade80 (approx: live pace green)", "#8b5cf6 (approx: Long Run purple)"],
+    "accent_strategy": "Coral is the interactive/brand accent in light screens; teal draws routes and icons in dark screens. Workout types get their own colours (purple long run, lavender mobility, green pilates, navy easy run), and plan badges get one colour per distance (green Fit, blue 5K, gold 10K, teal half, red marathon). Per-content colour coding rather than one accent.",
+    "source": "palette.json 01/05 (#ffffff, #f4f7f9 light UI), 02/04/06 (#161616 dark UI), 03 (#22272d plan card surface), #1e433c/#243e39/#2b413c are the teal backdrop gradient + visual match"
+  },
+  "shape": {
+    "radius_language": "mixed: ~16pt cards, pill segmented controls and buttons, small ~6pt colour squares and chips; shield (crest) badges for plans and hexagon badges for PBs",
+    "concentric": "no",
+    "borders_shadows": "Coloured 2pt outlines on plan cards (03); soft shadows on light cards; hairline gridlines in charts",
+    "materials": "flat; dark-mode map basemap; city photography behind the plan-ready badge"
+  },
+  "liquid_glass_visible": "no; small rounded-square grey icon buttons and a plain underline tab control, pre-iOS 26 chrome",
+  "density": "medium-high: plan overview and week cards pack labels, counts and day rows; the live-run screen stacks current, up next, lap stats and a map",
+  "layout": "Plan Overview: back arrow, large title and avatar; a plan card (name, race date and race, a dot progress strip of weeks, TOTAL WEEKS 5/26 and TOTAL DISTANCE 198/526 mi) with a crest badge; then week cards with segment bars and one row per day (colour square, weekday, workout). Activities: Workouts/Performance underline tabs, sport pills, a weekly bar chart card, then hexagon PB badges.",
+  "navigation": "Tab bar not visible in any screenshot; top bars with bell, centred title, + and avatar; underline text tabs; segmented pills for sport type; back arrows and close X",
+  "imagery_and_icons": "Crest-shaped plan badges and hexagon PB medals; city photography for the race; dark maps; small line icons in teal/coral (calendar, pin, clipboard, shoe); a flag emoji in location rows",
+  "signature_visual_move": "Every plan and personal best is a coloured crest or hexagon badge stamped with the distance (26.2, 10K, 1MI), so the training plan reads like a collection of race patches.",
+  "tells_present": ["Cards everywhere; 'icon top-right, title top-left, description bottom' anatomy"],
+  "direction_fit": {
+    "primary": "Glance Board",
+    "secondary": "",
+    "confidence": "low",
+    "agrees_with_text_record": "yes",
+    "why": "The text record had Coached Program (a fitness-module pattern, unknown visuals). The visible plan calendar, plan-reveal screen and coach callout confirm that pattern. Visually it is a conventional card-and-chart utility with training-readout screens (live pace in big green caps), the closest fit being Glance Board's training-readout variant; no owned shell strong enough for Loud Owned Shell."
+  },
+  "visual_distinctiveness": 2,
+  "notes": "Daily score: none. Streak/calendar: plan progress is a row of dots (filled for completed weeks) and segmented week bars; each day row has a colour-coded workout-type square. Charts: weekly distance bar chart with grey bars and the current week in coral, right-side y-axis (0km/25/50), month labels; clean gridlines. Map: dark basemap with a teal route and a teal start dot (06), similar to Strava's dark map but teal instead of orange. Numerals: proportional semibold with small caps units. Watch (02): GOOD PACE band in teal between red edges with a pace pointer. The text record's coral progress bar is consistent with the coral accent. Screenshot UI dates to 2023-2024, so this may not reflect the current Strava-owned app."
+}

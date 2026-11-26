@@ -1,0 +1,46 @@
+{
+  "slug": "bereal",
+  "track_name": "BeReal: Photos & Friends Daily",
+  "version": "4.143.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Dark grey textured backdrop with wavy line-art and a two-tone (white bold + grey) title-case caption in the top ~20%, then a black-bezel phone cropped at the bottom (~65% of the image). Several frames add marketing pop-outs with a white glow halo (the front-cam inset and calendar tiles in 01 and 04, the RealMoji bubbles in 06, the notification in 03) plus an App of the Year laurel and review quote in 01. Underneath, every frame shows real UI: feed post, DualCam capture/send, calendar of memories, 'Share to view' lock state, post detail with comments.",
+  "typography": {
+    "display": "Bold geometric/grotesque wordmark 'BeReal.' centred in the top bar; screen titles (My BeReals) in semibold sans",
+    "body": "system SF or Inter-like grotesque, unsure",
+    "numerals": "proportional; calendar day numbers in white medium over photo tiles; comment count chips",
+    "weights": "Bold usernames in comments, semibold titles, regular grey metadata (5 min late, 5 min ago)",
+    "case_and_tracking": "Sentence case UI; calendar month and weekday labels all-caps with mild tracking (APRIL, MON TUE)",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#000000",
+    "surfaces": ["#1c1c1e", "#2b2a2b", "#ffffff"],
+    "text": "#ffffff",
+    "accents": ["#ff3b30", "#1ed760"],
+    "accent_strategy": "Monochrome black/white/grey UI; colour comes only from the photos. The only accents are a red notification-count badge and Spotify's own green on a music attachment chip.",
+    "source": "palette.json 01–06: #000000 / #010101 / #020203 = app background; #353535 / #3a3937 / #444444 = marketing textured backdrop; #2b2a2b ≈ pill buttons; other entries are photo colours. Red and green are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~18pt on the main photo, ~14pt on the inset front-camera photo with a black 2pt border, pill buttons and chips (My Friends privacy chip, See Profile, comment count, Post a BeReal.), circular avatars",
+    "concentric": "yes",
+    "borders_shadows": "Black outline around the inset selfie; hairline grey dividers above 'View N comments'; no in-app shadows (the white glows are marketing)",
+    "materials": "Flat black; heavy Gaussian blur over locked friend photos with an eye-slash glyph"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low: one post per screen height, a thin header row, two small action chips and one caption line",
+  "layout": "Feed: centred 'BeReal.' wordmark with a notifications bell, My Friends / Friends of Friends text tabs, then one post at a time — avatar + name + lateness, a large rounded back-camera photo with the front-camera inset top-left, reply/comment chips, caption and 'View N comments'. Memories: a month calendar grid of photo tiles with day numbers.",
+  "navigation": "No visible bottom tab bar in any frame. Top bar with the wordmark and bell, text segment tabs below it; chevron-down dismiss on capture; pill 'See Profile' on post detail.",
+  "imagery_and_icons": "Users' unretouched dual-camera photos; RealMoji selfie reaction bubbles; small filled white glyphs (paper plane, speech bubble, eye-slash); emoji appear only in user captions.",
+  "signature_visual_move": "A back-camera photo with the front-camera selfie inset in a black-bordered rounded rectangle at its top-left, on pure black.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Rationed Ritual",
+    "secondary": "",
+    "confidence": "med",
+    "agrees_with_text_record": "yes",
+    "why": "The constraint shows up visually: '5 min late' stamps, a 'Share to view' blurred lock on friends' posts, and a one-photo-per-day calendar. The UI recedes to black and white."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "The glow halos, laurels and textured backdrop are marketing only. Friends of Friends and celebrity copy suggest the dilution the text record notes. Emoji are user content, so not counted as a tell."
+}

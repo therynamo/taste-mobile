@@ -1,0 +1,46 @@
+{
+  "slug": "kraken",
+  "track_name": "Kraken: Buy Crypto & Stocks",
+  "version": "3.91.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Moderate to heavy. All frames sit on a near-black violet backdrop (#09041a) with a large white sentence-case caption. 01 and 02 add stacks of 3D iridescent rainbow-purple coins flying across the frame and tilt the phone in perspective (01 shows only the top third of the UI; 02 is skewed). 03-06 are straight phones with a faint violet rim glow and a 9:41 status bar; real UI fills ~65-75% and is cropped at the bottom. 01 also carries the Kraken wordmark.",
+  "typography": {
+    "display": "Captions and in-app headings use a geometric grotesque with round bowls and a single-storey-looking 'y' tail (custom brand face, name unsure). Explore section headers ('Gainers', 'Hot', 'Trending', 'Highest volume') are set in bold italic - an unusual in-app move. 'Portfolio value' hero '$89,858.43' is bold.",
+    "body": "custom (same grotesque at text sizes; unsure). The Buy keypad in 03 is the system number pad with letters.",
+    "numerals": "Lining, proportional; the Buy entry '$10' is very large and light weight with a grey dollar sign and white digits; chart axis labels small grey; percentages with diagonal arrow glyphs (↗ / ↙).",
+    "weights": "Bold for portfolio value, headings and tickers; bold italic for Explore section headers; light/thin for the big entry amount; regular grey for captions under headers.",
+    "case_and_tracking": "Sentence case; tickers in caps (BTC, SHIB, PTECH); small all-caps 'LIVE' badge; default tracking.",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#f8f7fb",
+    "surfaces": ["#ffffff", "#e7e6f2"],
+    "text": "#211b41",
+    "accents": ["#7132f5 (approx, Kraken purple on Trade pill, active tab, arrow button and Highest volume card; visual estimate - palette.json shows #5f2e98/#8251b7 which mixes the purple card and 3D coins)", "#1fa86a (approx, gain green; visual estimate)", "#e04b5a (approx, loss red; visual estimate)"],
+    "accent_strategy": "One brand purple, used loudly: primary Trade button and arrow CTA as a purple gradient, active tab, the full-bleed purple 'Highest volume'/'Trending' cards with 3D coin art inside the UI, purple-tinted toast. Semantic green/red with arrow glyphs for change. Dark screens (Buy, Set target price) are deep violet-black with the same purple and a mint-green price line.",
+    "source": "palette.json 01/04/05: #f8f7fb/#f6f5fa/#f9f8fb = light in-app background; #e7e6f2 = grey chips and toast surface; #211b41/#291d4a = deep violet text and dark cards; #09041a = marketing backdrop and also the dark-mode app background in 03 and 06 (#130d28/#342b4d dark surfaces). #5f2e98/#8251b7 in 02 = purple card plus 3D coins. Small accents are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large: ~20pt cards (Gainers tiles, Hot card), ~12pt chips and pills for filters (Stocks New), Deposit/@satoshi buttons and Instant/One time selectors, full pills for Top Up/Trade; circular avatars; ~16pt rounded-square purple arrow button",
+    "concentric": "yes - the Highest volume card contains an inset darker list card with matching corners; Top Up and Trade pills sit in a rounded translucent bottom tray",
+    "borders_shadows": "Soft low shadows on white Gainers tiles; mostly fill-based separation; dashed horizontal guide lines on the target-price chart.",
+    "materials": "mixed: flat light surfaces plus 3D-rendered coin art inside cards and as user avatars; a translucent frosted bottom tray holding Top Up and Trade above the tab bar (04)"
+  },
+  "liquid_glass_visible": "unclear - the bottom tray in 04 and the tab bar look frosted/translucent over content, but it reads as a custom blur rather than iOS 26 Liquid Glass",
+  "density": "medium - home stacks a toast, hero value, two action chips, a horizontal avatar row and an activity list; Explore uses horizontal carousels of tiles and big promo cards; Buy is sparse",
+  "layout": "Home (05): a purple-tinted success toast at top ('Sent 0.0005 BTC to @satoshi · Arrived instantly'), 'Portfolio value' label over a large bold value with an arrow button, Deposit and @handle chips, a row of contact avatars, then an Activity feed grouped by Today/Yesterday with handles, status line, amount and an attached payment note bubble ('Thanks for the pizza 🍕'). Earlier home (01): portfolio value with green monthly change, purple line chart, Watchlist/Most popular/Gainers tabs. Explore (02, 04): avatar + search + bell, category chips (All, Crypto, Stocks New, ETFs), 'Gainers 🚀' tile carousel, 'Hot 🔥' carousel of purple cards with 3D coins, persistent Top Up | Trade buttons. Buy (03): dark, centred '$10' entry with BTC conversion, frequency selector, USD balance row and a purple arrow CTA over the system keypad with $25/$50/$100/MAX presets. Set target price (06): full-screen chart with draggable '-5% $87,348.34' handle and a 'Set ✓' pill.",
+  "navigation": "Custom 5-item bottom tab bar with outline icons and labels: Home, Portfolio, Explore, Activity, Pay; active item in purple (04). A persistent Top Up / Trade button pair sits above the tab bar on Explore. Modal flows use back chevron (Buy) or close X (target price) with a centred title.",
+  "imagery_and_icons": "3D-rendered iridescent coins (marketing and inside Hot cards); 3D abstract objects as user avatars (asterisks, rings, blobs); emoji in section headers (🚀, 🔥) and in payment notes (🍕); token logos; outline tab icons; meme-coin imagery (Dogwifhat, 'Donald Tremp', Pepe).",
+  "signature_visual_move": "Iridescent 3D coins and 3D avatar objects carried from the marketing into the UI's purple promo cards, framed by bold italic section headers.",
+  "tells_present": ["Emoji as icons (🚀 Gainers, 🔥 Hot section headers)", "Gradient backgrounds (purple gradient cards and Trade button)", "Cards everywhere"],
+  "direction_fit": {
+    "primary": "Loud Owned Shell",
+    "secondary": "Cinematic Dark Data",
+    "confidence": "med",
+    "agrees_with_text_record": "no",
+    "why": "Text record guessed Calm Modular Money ('mature, modern investment platform'). The listing is loud: owned Kraken purple flooding promo cards and CTAs, a custom face with bold italic headers, an authored 3D object system for coins and avatars, emoji headers, and a social payments feed. That is Loud Owned Shell. Dark trading screens (Buy, target price) on #09041a violet-black with a mint price line lean toward Cinematic Dark Data."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Balance and amount anatomy: 'Portfolio value' label above '$89,858.43', bold, large, cents at full size, deep violet rather than black; monthly change '↗ $12,789.23 (+9.16%) this month' in green with a diagonal arrow. Buy entry '$10' is huge and light weight with the dollar sign in grey and digits in white, '≈0.0024 BTC' below. Activity amounts bold right-aligned: '$50.00', '$30' (inconsistent cents), '-0.0006 ETH' with a minus sign in the same violet - debits are not coloured red. Explore percentages green ↗ or red ↙. Trust and risk: success toast 'Arrived instantly'; a red 'LIVE' tag on the live price; no confirmation or review screen is shown; no AI agent is visible in any frame. Crypto cliché: strongly present - near-black violet backdrop, rainbow-iridescent 3D coins in the marketing and inside in-app cards, 3D object avatars, purple gradients. It is not neon-on-black in the app itself, whose main surfaces are light lavender. Social payments ('Turn your crypto into payments', @handles, notes with emoji) look like a Social Ledger graft. Device frames are Dynamic Island era."
+}

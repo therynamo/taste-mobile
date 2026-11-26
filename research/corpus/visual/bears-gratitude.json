@@ -1,0 +1,46 @@
+{
+  "slug": "bears-gratitude",
+  "track_name": "Bears Gratitude",
+  "version": "1.0.3",
+  "screenshots_examined": 5,
+  "marketing_wrapper": "Medium. Each image uses a pastel backdrop matching that screen's theme hue, a two-line caption with a hand-drawn underline swash under one word, and a simple black notched-iPhone frame cropped at the bottom. Real UI fills about 70-75% of each image. No pure-marketing frame. Frames show iOS 15/16-era notch devices (listing is from 2022).",
+  "typography": {
+    "display": "Rounded-terminal bold sans for screen titles and entry titles ('Rewards', 'One Entry Everyday', 'Horrible Good First Date'); consistent with SF Pro Rounded but unsure",
+    "body": "system SF (likely SF Pro Rounded for body too); unsure",
+    "numerals": "rounded (date '14', time picker digits, '2:00 PM')",
+    "weights": "Bold/heavy titles, semibold body text set in tinted colour rather than black",
+    "case_and_tracking": "Title case titles, sentence-case centred body paragraphs, normal tracking",
+    "confidence": "low"
+  },
+  "palette": {
+    "mode": "light",
+    "background": "#fde28b",
+    "surfaces": ["#fee0ea", "#ff9380", "#4d28ac", "#91ccc6", "#a7d3ff"],
+    "text": "#e2673f",
+    "accents": ["#ff7043", "#ffd23f"],
+    "accent_strategy": "Brand-flooded per screen: each screen is washed in one pastel hue (butter yellow, coral, violet, mint, sky blue) and its text, controls and selection are darker tints of that same hue. Two section titles use gradient text.",
+    "source": "palette.json 01 (#fde28b yellow app bg, #fee0ea pink card), 02 (#ff9380 coral), 03 (#4d28ac violet), 04 (#91ccc6 mint), 05 (#a7d3ff blue); tinted text colours matched visually"
+  },
+  "shape": {
+    "radius_language": "large: ~20-24pt entry cards and sheets, ~10pt segmented and chip controls, circular selected-sticker halo",
+    "concentric": "yes: segmented-control selection pills nest inside rounded tracks",
+    "borders_shadows": "Thick tinted border around the active entry card and selected thumbnail; no shadows; thin outline 'Off/On' toggle group",
+    "materials": "flat"
+  },
+  "liquid_glass_visible": "no",
+  "density": "low: centred single-column content, large illustration areas, generous vertical spacing",
+  "layout": "Home: horizontally paged entry cards (neighbours peek at the edges), each card with a big date, an illustration of the bear characters and the entry text. Rewards sheet: Cancel/Done, title, featured sticker character with quote, Mind/Body/Spirit segmented control, horizontal sticker carousel. Articles: horizontal thumbnail carousel, centred title and essay, illustrated sub-cards.",
+  "navigation": "Custom top bar: red backpack icon left, text tabs 'Home' and 'Entries' each with a small leading vertical bar (selected tab gets a tinted pill), calendar icon right. No bottom tab bar. Cancel/Save text buttons with a vertical bar glyph.",
+  "imagery_and_icons": "Hand-drawn outline illustration with flat fills and pink blush cheeks: polar bear and friends; a sticker cast of costumed bears and anthropomorphic food; custom filled icons (backpack, calendar); emoji inline in copy",
+  "signature_visual_move": "Each screen is washed in a single pastel hue, with a white blushing polar bear drawn in loose outline as the recurring protagonist.",
+  "tells_present": ["Gradient text (section titles 'Mental Health', 'Bucket List')", "Emoji in UI copy ('Many more articles to come! 🎉')"],
+  "direction_fit": {
+    "primary": "Authored Illustration",
+    "secondary": "Coach Character (light: sticker characters reward the user)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One consistent illustrator's hand (outline bears with blush) carries every screen; the pastel palette noted in the text record is confirmed as per-screen hue floods."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "Navigation is not native (custom text-tab top bar), which diverges from the direction's 'navigation stays native' restraint rule. Gradient title text and inline emoji would read as template tells in a generated app, but here they sit inside an otherwise strongly authored system."
+}

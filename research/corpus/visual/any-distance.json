@@ -1,0 +1,46 @@
+{
+  "slug": "any-distance",
+  "track_name": "Any Distance Running Tracker",
+  "version": "4.48",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Heavy. 01 is pure marketing (wordmark, 'Track your runs', stars, Editors' Choice laurels on a grainy orange-to-red gradient, no UI). 02 and 03 show one tilted, cropped iPhone run screen (roughly 60% and 35% of frame) on a grainy red backdrop. 04 is two Apple Watch renders (watch UI, not iPhone). 05 and 06 show a framed iPhone screen under a big caption, about 65-70% of frame. The noisy gradient backdrop and a faint looping route stroke are marketing wrapper, but they echo the brand's documented Metal gradient, so they count as brand evidence.",
+  "typography": {
+    "display": "Wide/extended geometric grotesque in bold for captions and the 'Activity' nav title (brand face, exact name unsure); the wordmark in 01 is a different, narrower bold humanist sans",
+    "body": "system SF for nav ('Activities', 'Share', 'Run'), story-card stat labels ('Miles', 'Hours') and frame-picker labels",
+    "numerals": "Run screen uses light-weight large numerals ('1.12 MI') plus a red monospaced/digital-clock style timer ('10:50') - mono. Watch uses SF Rounded-ish bold numerals. Story card uses medium SF numerals with small superscript units.",
+    "weights": "Display bold/heavy; in-app stats light (thin numerals) with small all-caps medium labels; strong light-vs-caps contrast",
+    "case_and_tracking": "Metric labels ALL CAPS with slight positive tracking (DISTANCE, MINUTES, ACTIVE CAL); captions sentence/title case tight",
+    "confidence": "med"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#080707",
+    "surfaces": ["#181818", "#282626"],
+    "text": "#ffffff",
+    "accents": ["#e8352f", "#f5a623", "#0256b9"],
+    "accent_strategy": "In-app is near-black with white data; colour is per-content and per-metric: red for the live timer and scrub slider, green 'Tracking' dot, a yellow-orange circular primary action, blue distance on Watch. The warm orange-red and blue gradients belong to the marketing/brand backdrop. Medals are each individually coloured artwork.",
+    "source": "palette.json 02 (#181818, #282626, #080707 = dark map/surface; #b02731 = backdrop), 01 (#f5821c..#c3352f = marketing gradient), 06 (#0256b9 = blue backdrop); red timer, yellow FAB hex estimated visually"
+  },
+  "shape": {
+    "radius_language": "mixed: capsule/oval medal shapes (the brand oval), large ~24pt rounded story card, pill-ish frame-picker tiles ~12pt, circular FAB",
+    "concentric": "unclear",
+    "borders_shadows": "Thin metallic gold/silver rims on medals; frame-picker tiles outlined with a white stroke when selected; no visible drop shadows in-app",
+    "materials": "Flat dark UI over a dark map; medals are textured/rendered objects; marketing backdrop has film grain"
+  },
+  "liquid_glass_visible": "no (screens pre-date iOS 26; standard dark nav bar in 06)",
+  "density": "medium: run screen is a full-bleed map with a 2x2-ish stat grid at the bottom; medals grid 4 across with generous gutters",
+  "layout": "Run screen: full-bleed dark map with the route in white and a 'Tracking' pill, large stats stacked bottom-left with a scrub slider. Collectibles: 4-column grid of oval medals. Story designer: preview card filling the screen with a horizontal frame-shape picker (Circle, Arch, Dip, Rounded, Full Screen) at the bottom.",
+  "navigation": "Custom bottom bar in 05: icon-only tabs (run figure, target, box, toggle) with a raised yellow-orange circular '+' in the centre. Standard back-chevron nav bar with title and 'Share' action in 06. Large-title 'Run' in 02.",
+  "imagery_and_icons": "User photos inside mask shapes with route line overlay; collectible medals as illustrated/3D-ish badges and merch renders; SF Symbols for tabs and activity glyphs (bike, hiker) - filled",
+  "signature_visual_move": "The export card: a user photo cropped by a selectable mask (oval, arch, dip, rounded) with a white route line and stacked stats laid over it.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Shareable Artifact Studio",
+    "secondary": "Glance Board (run readout) with depth modifier implied",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Two of five UI frames are about producing designed objects (story card with frame-shape picker, collectible medals); the oval mask from the text record is visible as medal and frame shapes."
+  },
+  "visual_distinctiveness": 4,
+  "notes": "3D/AR routes not shown in these six frames. Mono red timer plus light large numerals is an unusual, ownable data-typography pairing. Marketing backdrop grain matches the 'gradient swirly thing' but the in-app UI itself is dark and flat."
+}

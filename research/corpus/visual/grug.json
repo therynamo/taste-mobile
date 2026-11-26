@@ -1,0 +1,46 @@
+{
+  "slug": "grug",
+  "track_name": "grug",
+  "version": "1.5.3",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "Light. A plain white backdrop, a hand-lettered 'grug.' wordmark at the bottom and faint oversized scribbles (flower, arrow, 'Life' sign) bleeding behind the frame. 01 is a frameless intro card (sun drawing plus four lines of grug-speak), likely the app's own onboarding screen. 02-06 show the main screen in a modern iPhone frame at about 65%. Even the status bar time and battery are drawn in the hand-lettered style, so the status bar is a marketing mock-up, not the real system bar.",
+  "typography": {
+    "display": "Custom hand-lettered (handwriting-style) face used for everything: wordmark, wisdom text, dates, nav labels. Lower-case only. Name unsure; looks like a font made from the maker's own handwriting.",
+    "body": "custom hand-lettered (same face)",
+    "numerals": "hand-drawn, proportional; dates shown as 'grug. 5.11', '5.9'",
+    "weights": "Single weight throughout; hierarchy comes from size and position only.",
+    "case_and_tracking": "All lower-case, including the wordmark and the deliberately broken grammar ('grug share one small wisdom'); normal tracking with generous line height.",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "both",
+    "background": "#ffffff",
+    "surfaces": ["#00483c", "#7dcafe", "#c7f6e4", "#090818"],
+    "text": "#000000",
+    "accents": ["#f0e6c8", "#1e3a40", "#8a1a1a", "#f08a3a"],
+    "accent_strategy": "Per-content, two colours per day: each daily wisdom gets one flat background and one matching ink colour (black on white, cream on forest green, dark teal on sky blue, maroon on mint, orange on near-black navy). The ink colour also fills the small dot top-right. No gradients, no other accents.",
+    "source": "palette.json 02 (#ffffff, #000000), 03 (#00483c), 04 (#7dcafe), 05 (#c7f6e4), 06 (#090818); ink colours are visual estimates because the lines are thin"
+  },
+  "shape": {
+    "radius_language": "none drawn by code: shapes are hand-drawn wobbly lines; the share control is a hand-drawn oval",
+    "concentric": "no",
+    "borders_shadows": "None; single-weight ink outlines only.",
+    "materials": "Flat solid colour fields; line drawings."
+  },
+  "liquid_glass_visible": "no",
+  "density": "low: one drawing, three to five lines of text and a date per screen, with large empty space",
+  "layout": "Top: 'grug.' wordmark left, a small ink dot right. Centre: one hand-drawn picture (sun, flower, heart with arrow, 'Life' sign, smiling bag) or an empty area with 'you draw for grug' and an arrow. Lower: the day's wisdom in grug-speak and 'grug. <date>'. Bottom: a horizontal row of previous/next days, each a tiny drawn icon (sprout, hut, fire, rock, moon) with its date, around a central drawn oval share button with a smiling up-arrow.",
+  "navigation": "Fully custom: no tab or nav bar. A day strip at the bottom acts as navigation between daily wisdoms; 'grug back sun rise' marks the next locked day.",
+  "imagery_and_icons": "Hand-drawn scribble illustrations and a hand-drawn icon set (sprout, hut, fire, rock, moon, asterisk), outline only; one drawing per day. The 'you draw for grug' state suggests user drawings.",
+  "signature_visual_move": "Every pixel is drawn by hand (type, icons, share button, even the mocked status bar), and each day swaps to a new flat two-colour pairing.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "Authored Illustration",
+    "secondary": "Rationed Ritual",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "One maker's hand is the governing asset across type, icons and drawings. The one-wisdom-per-day strip with locked future days ('grug back sun rise') is a light time constraint, hence Rationed Ritual as secondary."
+  },
+  "visual_distinctiveness": 5,
+  "notes": "Identity confirmed: seller Ocho B.V., version 1.5.3; scribbled hand-drawn design with daily Neanderthal-speak wisdom, matching the 2026 ADA Delight and Fun winner. No account, sign-in or sync UI appears in any frame, which fits 'no login' but cannot prove it. Navigation is custom, which goes against the Authored Illustration rule 'navigation stays native'; for grug that rule does not hold."
+}

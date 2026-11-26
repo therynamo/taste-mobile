@@ -1,0 +1,46 @@
+{
+  "slug": "apple-invites",
+  "track_name": "Apple Invites",
+  "version": "1.13.0",
+  "screenshots_examined": 6,
+  "marketing_wrapper": "None. All six are full-screen app captures with a status bar and no caption, backdrop or device frame (welcome carousel, Upcoming, invite detail top, invite detail lower section, shared album, guest list). This is the cleanest evidence in the batch.",
+  "typography": {
+    "display": "SF Pro Bold for event titles centred over the cover (Sophie's 25th, Tyler Turns 3!) and for the large left-aligned 'Upcoming' title; 'Apple Invites' in SF Bold at welcome size",
+    "body": "system SF",
+    "numerals": "proportional SF; dates written out (Wed, September 16 at 7:30 PM); counts inline (12 Going • 3 Maybe • 4 Not Going)",
+    "weights": "Bold titles, semibold section headers (Host, 12 Going, Hosted by…), regular body, translucent-grey secondary text",
+    "case_and_tracking": "Sentence/title case, default system tracking; no caps labels",
+    "confidence": "high"
+  },
+  "palette": {
+    "mode": "dark",
+    "background": "#2e1f1b",
+    "surfaces": ["#512216", "#013562", "#1c1c1e"],
+    "text": "#ffffff",
+    "accents": ["#34c759", "#cdf3ff"],
+    "accent_strategy": "Per-content: every invite derives its background gradient from its cover image (warm brown/rust for one event, shifting to deep blue lower on the page, olive-green for another), so the page is tinted by the user's photo. Fixed accents are only semantic: system green for Going, a pale cyan pill for Add Photos.",
+    "source": "palette.json 01: #2e1f1b / #21120f = welcome backdrop; 02/03: #512216 / #672a1c / #40261c = cover-derived rust gradient; 04: #013562 26% = blue lower section; 05: #141414 = album sheet; 06: #3a463e / #242e24 = olive guest-list tint. Green and cyan are visual estimates."
+  },
+  "shape": {
+    "radius_language": "large and pill: ~36pt invite cards (concentric with the display corners), ~24pt content cards, pill buttons (Create Invitation, Add Photos), capsule glass button groups, circular avatars in a packed bubble cluster, ~12pt photo tiles",
+    "concentric": "yes",
+    "borders_shadows": "No borders; translucent card fills; slight shadow under the floating invite cards in the carousel",
+    "materials": "Liquid Glass and tinted translucency throughout; cover photo bleeds into a blurred gradient behind all content"
+  },
+  "liquid_glass_visible": "yes: close (×) circle and grouped calendar/overflow capsule at top, the '+' and RSVP 'Going' segmented control (glass with a cream selected lozenge), Going badge on cards, guest-list check button; cards are tinted translucent panels over the cover blur.",
+  "density": "low: one invite card fills the Upcoming screen; detail sections are large centred cards with generous padding",
+  "layout": "Upcoming: large title with a stepper chevron, + and avatar buttons, then one full-width poster card (cover photo, avatar cluster, centred title, date, place, 'Going' badge). Detail: cover photo full-bleed with centred title, 3-way RSVP control, then stacked centred cards (host + description, attendee bubble cluster, Shared Album fan, Shared Note link).",
+  "navigation": "No tab bar. Top-left glass close, top-right glass action capsules; detail is a modal over Upcoming; album and guest list are sheets. Fully native chrome.",
+  "imagery_and_icons": "User cover photos or Image Playground 3D-clay renders (dinosaur volcano cake), Memoji and photo avatars packed in bubble clusters, initials monograms, SF Symbols (checkmark.circle, xmark.circle, questionmark.circle, calendar.badge.plus), emoji in user descriptions and as reactions on guest rows.",
+  "signature_visual_move": "The cover image becomes the page: it bleeds into a blurred colour gradient behind every card, so each invite's chrome is tinted by its own photo.",
+  "tells_present": [],
+  "direction_fit": {
+    "primary": "User-Authored Poster",
+    "secondary": "platform-material overlay (native glass adopter)",
+    "confidence": "high",
+    "agrees_with_text_record": "yes",
+    "why": "Expression lives entirely on the user's cover and its derived tint; RSVP, lists and buttons are stock SF and Liquid Glass. It is the quiet, system-native counterpart to Partiful, as the text record predicted."
+  },
+  "visual_distinctiveness": 3,
+  "notes": "Emoji appear only as user content and reactions, not as UI icons. The avatar bubble cluster (mixed sizes) is a reusable signature for people lists."
+}
